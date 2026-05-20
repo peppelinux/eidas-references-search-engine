@@ -1,0 +1,59 @@
+{
+  "celex": "32025R0847",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/574269fb-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/847/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/574269fb-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-847/2025-847.html",
+      "sha256": "a87320bddc72d4fa66c9496da4fbdaba82cddbb5b3cac70dec6906727d49017b",
+      "size": 103600
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/574269fb-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-847/2025-847.pdf",
+      "sha256": "f7024a39a0f1b04b4c7cb28cbb8bd5cadf8c9b1fc669338acbc3acdad465a18b",
+      "size": 578787
+    }
+  },
+  "id": "2025-847",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "across",
+    "breach",
+    "breaches",
+    "council",
+    "data",
+    "digital",
+    "european",
+    "framework",
+    "identification",
+    "identity",
+    "member",
+    "out",
+    "parliament",
+    "personal",
+    "reactions",
+    "regulation",
+    "secure",
+    "security",
+    "solution",
+    "states",
+    "trust",
+    "union",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reactions to security breaches of European Digital Identity Wallets The European Digital Identity Framework (\u2018framework\u2019) set out in Regulation (EU) No\u00a0910/2014 is a crucial component in the establishment of a secure and interoperable digital identity ecosystem across the Union. With the European Digital Identity Wallets (\u2018wallets\u2019) as its cornerstone, the framework aims to facilitate access to services across Member States, while ensuring the protection of personal data and privacy. \u2018wallet solution\u2019 means a combination of software, hardware, services, settings, and configurations, including wallet instances, one or more wallet secure cryptographic applications and one or more wallet secure cryptographic devices;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.506150+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Security breaches \u2014 procedures and mitigation"
+}

@@ -1,0 +1,59 @@
+{
+  "celex": "32025R2532",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2532/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2532/2025-2532.html",
+      "sha256": "cb920d9b75851f712fecc6b47fbce552323ce1e7f51fa560b5a27a78a449449f",
+      "size": 60846
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2532/2025-2532.pdf",
+      "sha256": "57c34f8fc5b638fb9cd0b357f1a50e176351c594a8efa77f0fa01fa3c328f05d",
+      "size": 754546
+    }
+  },
+  "id": "2025-2532",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "archiving",
+    "commission",
+    "council",
+    "data",
+    "documents",
+    "electronic",
+    "establish",
+    "european",
+    "integrity",
+    "list",
+    "origin",
+    "parliament",
+    "period",
+    "preservation",
+    "qualified",
+    "reference",
+    "regulation",
+    "service",
+    "services",
+    "signatures",
+    "specifications",
+    "standards",
+    "their",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards and specifications for qualified electronic archiving services By Regulation (EU)\u00a02024/1183 of the European Parliament and of the Council\u00a0 ( 2 ) , a list of new trust services and qualified trust services, including the qualified electronic archiving service, was introduced in Regulation (EU) No\u00a0910/2014. The Commission is to establish a list of reference standards and, where necessary, establish specifications for such services. Electronic archiving is a service for the receipt, storage, retrieval and deletion of electronic data and electronic documents to ensure their durability and legibility as well as to preserve their integrity, confidentiality and proof of origin throughout the preservation period. Qualified electronic archiving\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.467104+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified electronic archiving services"
+}

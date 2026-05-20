@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1568",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/e85cbfd7-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1568/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/e85cbfd7-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1568/2025-1568.html",
+      "sha256": "5105c1633a94a6f5e1fa0157a380014814e44740d49e5eee52c0a6489606b68a",
+      "size": 145893
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/e85cbfd7-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1568/2025-1568.pdf",
+      "sha256": "238d0c11456716ce62a2af8c6b586cdede77504a0f150add1634acd8ce43b809",
+      "size": 625912
+    }
+  },
+  "id": "2025-1568",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "arrangements",
+    "article",
+    "commission",
+    "cooperation",
+    "decision",
+    "electronic",
+    "established",
+    "european",
+    "group",
+    "identification",
+    "implementing",
+    "member",
+    "notified",
+    "peer",
+    "procedural",
+    "regulation",
+    "review",
+    "reviews",
+    "rules",
+    "scheme",
+    "schemes",
+    "state",
+    "states",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards procedural arrangements for peer reviews of electronic identification schemes and for cooperation on the organisation of such reviews within the Cooperation Group and repealing Commission Implementing Decision (EU)\u00a02015/296 Regulation (EU) No\u00a0910/2014 provides for a peer review mechanism with respect to electronic identification schemes that are to be notified, in which Member States can participate on a voluntary basis. Peer reviews should enable Member States to understand the electronic identification schemes to be notified in accordance with Article\u00a09(1), point (a), of Regulation (EU) No\u00a0910/2014 and effectively cooperate with a\u2026 Commission Implementing Decision (EU)\u00a02015/296\u00a0 ( 2 ) established the procedural arrangements for cooperation on electronic\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.185260+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Peer review of electronic identification schemes"
+}

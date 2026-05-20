@@ -1,0 +1,59 @@
+{
+  "celex": "32025R0849",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/6cc3a1f7-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/849/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6cc3a1f7-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-849/2025-849.html",
+      "sha256": "0931fc172046a8cc8e5d7ea4425e90b8ee142910e60a9ac8e0c27be4e3f64995",
+      "size": 63474
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6cc3a1f7-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-849/2025-849.pdf",
+      "sha256": "09e29f48593fb7cbea3c61d2c445a9cdd7dfbac860bb671dd0d4bdab22a2e3cf",
+      "size": 495300
+    }
+  },
+  "id": "2025-849",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "application",
+    "certified",
+    "commission",
+    "cooperation",
+    "council",
+    "cryptographic",
+    "digital",
+    "european",
+    "framework",
+    "group",
+    "identification",
+    "identity",
+    "information",
+    "list",
+    "means",
+    "member",
+    "parliament",
+    "regulation",
+    "secure",
+    "solution",
+    "states",
+    "union",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards the submission of information to the Commission and to the Cooperation Group for the list of certified European Digital Identity Wallets The European Digital Identity Framework (\u2018framework\u2019) set out in Regulation (EU) No\u00a0910/2014 is a crucial component in the establishment of a secure and interoperable digital identity ecosystem across the Union. With the European Digital Identity Wallets (\u2018wallets\u2019) as its cornerstone, the framework, aims to facilitate access to online services across Member States, for citizens, residents, and businesses, while\u2026 \u2018wallet solution\u2019 means a combination of software, hardware, services, settings, and configurations, including wallet instances, one or more wallet secure cryptographic applications and one or more wallet secure\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.539549+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "List of certified EUDI Wallets \u2014 information submission"
+}

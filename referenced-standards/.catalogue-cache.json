@@ -1,0 +1,442 @@
+{
+  "CEN|CEN/TS 18170": {
+    "description": "Cybersecurity evaluation of ICT products (Common Criteria related)",
+    "purpose": "Cybersecurity evaluation of ICT products (Common Criteria related)",
+    "sources": [
+      "wikipedia"
+    ],
+    "title": "CEN/TS 18170"
+  },
+  "CEN|CEN/TS 419261": {
+    "description": "Electronic signatures and trust infrastructures \u2014 cryptographic suites and protocols",
+    "purpose": "Electronic signatures and trust infrastructures \u2014 cryptographic suites and protocols",
+    "sources": [
+      "wikipedia"
+    ],
+    "title": "CEN/TS 419261"
+  },
+  "ETSI|EN 3191 22-1": {
+    "description": "Electronic signatures and trust infrastructures \u2014 CAdES digital signatures",
+    "purpose": "Electronic signatures and trust infrastructures \u2014 CAdES digital signatures",
+    "sources": [],
+    "title": "EN 3191 22-1"
+  },
+  "ETSI|EN 319403-1": {
+    "description": "Electronic signatures and trust infrastructures \u2014 trust service provider policies",
+    "purpose": "Electronic signatures and trust infrastructures \u2014 trust service provider policies",
+    "sources": [],
+    "title": "EN 319403-1"
+  },
+  "IEEE|IEEE 1003.1": {
+    "description": "The Portable Operating System Interface (POSIX; IPA: ) is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. In order to define a level of compatibility, POSIX specifies many aspects of functionality that can be classified as application programming interface (API), command-line shell, and shell commands. Originally derived from commonly-found Unix APIs, shells, and commands (partly because Unix was considered manufacturer-neutral), today many systems conform to the standard \u2013 including branded Unix systems, Unix-like systems, and many systems that were historically unrelated to Unix.\nThe standardized user command line and scripting interface were based on the UNIX System V Bourne shell. Many user-level programs, services, and utilities (including awk, echo, ed) were also standardized, based on UNIX System V versions of them, along with required program-level services (including basic I/O: file, terminal, and network). POSIX also defines a standard threading library API which is supported by most modern operating systems.\nThe POSIX standard is developed by the Austin Group (a joint working group among the IEEE, The Open Group, and the ISO/IEC JTC 1/SC 22/WG 15).\nPOSIX is intended to be used by both application and system developers.",
+    "purpose": "The Portable Operating System Interface (POSIX; IPA: ) is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems.",
+    "sources": [
+      "wikipedia"
+    ],
+    "title": "POSIX"
+  },
+  "IEEE|IEEE 105": {
+    "description": "Open Systems Interconnection \u2014 terminology",
+    "purpose": "Open Systems Interconnection \u2014 terminology",
+    "sources": [
+      "wikipedia"
+    ],
+    "title": "IEEE 105"
+  },
+  "IETF|RFC 0020": {
+    "description": "ASCII format for network interchange",
+    "purpose": "ASCII format for network interchange",
+    "sources": [
+      "rfc_editor"
+    ],
+    "title": "RFC 20: ASCII format for network interchange"
+  },
+  "IETF|RFC 0793": {
+    "description": "Transmission Control Protocol",
+    "purpose": "Transmission Control Protocol",
+    "sources": [
+      "rfc_editor"
+    ],
+    "title": "RFC 793: Transmission Control Protocol"
+  },
+  "IETF|RFC 0822": {
+    "description": "STANDARD FOR THE FORMAT OF ARPA INTERNET TEXT MESSAGES",
+    "purpose": "STANDARD FOR THE FORMAT OF ARPA INTERNET TEXT MESSAGES",
+    "sources": [
+      "rfc_editor"
+    ],
+    "title": "RFC 822: STANDARD FOR THE FORMAT OF ARPA INTERNET TEXT MESSAGES"
+  },
+  "ISO-IEC|ISO 100646-1": {
+    "purpose": "Universal Coded Character Set (UCS) \u2014 Part 1",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 10646-1"
+  },
+  "ISO-IEC|ISO 10646": {
+    "purpose": "Universal Coded Character Set (UCS)",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 10646"
+  },
+  "ISO-IEC|ISO 14641": {
+    "purpose": "Electronic document management",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 14641"
+  },
+  "ISO-IEC|ISO 14721": {
+    "purpose": "Space data \u2014 Open archival information system (OAIS)",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 14721"
+  },
+  "ISO-IEC|ISO 19794-5": {
+    "description": "ISO/IEC 19794 Information technology\u2014Biometric data interchange formats\u2014Part 5: Face image data, or ISO/IEC 19794-5 for short, is the fifth of 8 parts of the ISO/IEC standard ISO/IEC 19794, published in 2005, which describes interchange formats for several types of biometric data. ISO/IEC 19794-5 defines specifically a standard scheme for codifying data describing human faces within a CBEFF-compliant data structure, for use in facial recognition systems. Modern biometric passport photos should comply with this standard. Many organizations and have already started enforcing its directives, and several software applications have been created to automatically test compliance to the specifications.\nThe standard is intended to allow computer analysis of face images for automated face identification and authentication, as well as human identification of distinctive facial features and human verification of computer identification results.",
+    "purpose": "Biometric data interchange formats \u2014 Part 5: Face image data",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 19794-5"
+  },
+  "ISO-IEC|ISO 23257": {
+    "purpose": "Building information modelling",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 23257"
+  },
+  "ISO-IEC|ISO 3166": {
+    "description": "ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions.",
+    "purpose": "Codes for the representation of names of countries and subdivisions",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 3166"
+  },
+  "ISO-IEC|ISO 3166-1": {
+    "description": "ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions.",
+    "purpose": "Codes for the representation of names of countries and subdivisions \u2014 Part 1",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 3166-1"
+  },
+  "ISO-IEC|ISO 3166-2": {
+    "description": "ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions.",
+    "purpose": "Codes for the representation of names of countries and subdivisions \u2014 Part 2",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 3166-2"
+  },
+  "ISO-IEC|ISO 39794": {
+    "purpose": "Biometric recognition across devices and systems",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 39794"
+  },
+  "ISO-IEC|ISO 8859": {
+    "description": "ISO/IEC 8859 is a series of technical standards for 8-bit character encodings developed jointly by the International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC). Each part is numbered: ISO/IEC 8859-1, ISO/IEC 8859-2, etc. There are 15 parts, excluding the abandoned ISO/IEC 8859-12. The ISO working group maintaining this series of standards has been disbanded.\nISO/IEC 8859 parts 1, 2, 3, and 4 were originally Ecma International standard ECMA-94.",
+    "purpose": "Information technology \u2014 8-bit single-byte coded graphic character sets",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 8859"
+  },
+  "ISO-IEC|ISO 8859-1": {
+    "description": "ISO/IEC 8859-1, commonly referred to as Latin-1, is a character encoding in the ISO/IEC 8859 series of ASCII-based standard character encodings. It encodes 191 characters from the Latin script. It is the basis for many popular 8-bit character sets and the second block of characters in Unicode, the Latin-1 Supplement. It is used throughout the Americas, Western Europe, Oceania, and much of Africa.\nIt is the most declared single-byte character encoding for web pages; however, per the HTML5 standard, web browsers interpret it as the superset Windows-1252, so these documents may include characters from that set.\nISO-8859-1 is the Internet Assigned Numbers Authority (IANA) preferred name for this standard when supplemented with the C0 and C1 control codes from ISO/IEC 6429. The following other aliases are registered: iso-ir-100, csISOLatin1, latin1, l1, IBM819, Code page 28591 a.k.a. Windows-28591 is used for it in Windows. IBM calls it code page 819 or CP819 (CCSID 819). Oracle calls it WE8ISO8859P1.",
+    "purpose": "Information technology \u2014 8-bit single-byte coded graphic character sets \u2014 Part 1",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 8859-1"
+  },
+  "ISO-IEC|ISO/IEC 10181-5": {
+    "description": "Information technology \u2014 Open Systems Interconnection \u2014 Security frameworks \u2014 Confidentiality architecture",
+    "purpose": "Information technology \u2014 Open Systems Interconnection \u2014 Security frameworks \u2014 Confidentiality architecture",
+    "sources": [
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 10181-5"
+  },
+  "ISO-IEC|ISO/IEC 10646": {
+    "purpose": "Universal Coded Character Set (UCS)",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 10646"
+  },
+  "ISO-IEC|ISO/IEC 15408": {
+    "description": "The Common Criteria for Information Technology Security Evaluation, or simply Common Criteria (CC), is an international standard (ISO/IEC 15408) for computer security certification. It is currently in version 2022 revision 1.\nCommon Criteria is a framework in which computer system users can specify their security functional and assurance requirements (SFRs and SARs, respectively) in a Security Target (ST), and may be taken from Protection Profiles (PPs). Vendors can then implement or make claims about the security attributes of their products, and testing laboratories can evaluate the products to determine if they actually meet the claims. In other words, Common Criteria provides assurance that the process of specification, implementation and evaluation of a computer security product has been conducted in a rigorous and standard and repeatable manner at a level that is commensurate with the target environment for use. Common Criteria maintains a list of certified products, including operating systems, access control systems, databases, and key management systems.",
+    "purpose": "Information technology security evaluation (Common Criteria)",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 15408"
+  },
+  "ISO-IEC|ISO/IEC 15408-1": {
+    "description": "The Common Criteria for Information Technology Security Evaluation, or simply Common Criteria (CC), is an international standard (ISO/IEC 15408) for computer security certification. It is currently in version 2022 revision 1.\nCommon Criteria is a framework in which computer system users can specify their security functional and assurance requirements (SFRs and SARs, respectively) in a Security Target (ST), and may be taken from Protection Profiles (PPs). Vendors can then implement or make claims about the security attributes of their products, and testing laboratories can evaluate the products to determine if they actually meet the claims. In other words, Common Criteria provides assurance that the process of specification, implementation and evaluation of a computer security product has been conducted in a rigorous and standard and repeatable manner at a level that is commensurate with the target environment for use. Common Criteria maintains a list of certified products, including operating systems, access control systems, databases, and key management systems.",
+    "purpose": "Information technology security evaluation (Common Criteria) \u2014 Part 1: Introduction and general model",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 15408-1"
+  },
+  "ISO-IEC|ISO/IEC 15408-3": {
+    "description": "The Common Criteria for Information Technology Security Evaluation, or simply Common Criteria (CC), is an international standard (ISO/IEC 15408) for computer security certification. It is currently in version 2022 revision 1.\nCommon Criteria is a framework in which computer system users can specify their security functional and assurance requirements (SFRs and SARs, respectively) in a Security Target (ST), and may be taken from Protection Profiles (PPs). Vendors can then implement or make claims about the security attributes of their products, and testing laboratories can evaluate the products to determine if they actually meet the claims. In other words, Common Criteria provides assurance that the process of specification, implementation and evaluation of a computer security product has been conducted in a rigorous and standard and repeatable manner at a level that is commensurate with the target environment for use. Common Criteria maintains a list of certified products, including operating systems, access control systems, databases, and key management systems.",
+    "purpose": "Information technology security evaluation (Common Criteria) \u2014 Part 3: Security assurance components",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 15408-3"
+  },
+  "ISO-IEC|ISO/IEC 17000": {
+    "purpose": "Conformity assessment \u2014 vocabulary and general principles",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17000"
+  },
+  "ISO-IEC|ISO/IEC 17011": {
+    "purpose": "Conformity assessment \u2014 accreditation bodies",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17011"
+  },
+  "ISO-IEC|ISO/IEC 17020": {
+    "purpose": "Conformity assessment \u2014 inspection bodies",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17020"
+  },
+  "ISO-IEC|ISO/IEC 17021-1": {
+    "purpose": "Conformity assessment \u2014 certification of management systems \u2014 Part 1",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17021-1"
+  },
+  "ISO-IEC|ISO/IEC 17025": {
+    "description": "ISO/IEC 17025 General requirements for the competence of testing and calibration laboratories is the main standard used by testing and calibration laboratories. In most countries, ISO/IEC 17025 is the standard for which most labs must hold accreditation in order to be deemed technically competent. In many cases, suppliers and regulatory authorities will not accept test or calibration results from a lab that is not accredited. Originally known as ISO/IEC Guide 25, ISO/IEC 17025 was initially issued by ISO/IEC in 1999. There are many commonalities with the ISO 9000 standard, but ISO/IEC 17025 is more specific in requirements for competence and applies directly to those organizations that produce testing and calibration results and is based on more technical principles. Laboratories use ISO/IEC 17025 to implement a quality system aimed at improving their ability to consistently produce valid results. Material in the standard also forms the basis for accreditation from an accreditation body.\nThere have been three releases; in 1999, 2005 and 2017. The most significant changes between the 1999 and 2005 release were a greater emphasis on the responsibilities of senior management, explicit requirements for continual improvement of the management system itself, and communication with the customer. The 2005 release also aligned more closely with the 2000 version of ISO 9001 with regard to implementing continuous improvement.\nThe 2005 version of the standard comprises four elements:\n\nNormative References\nTerms and Definitions\nManagement Requirements - related to the operation and effectiveness of the quality management system within the laboratory\nTechnical Requirements - factors that determine the correctness and reliability of the tests and calibrations performed in the laboratory.\nThe 2017 version comprises eight elements:\n\nScope\nNormative References\nTerms and Definitions\nGeneral Requirements - related to the organization of the laboratory\nStructural Requirements -related to the organization of the laboratory\nResource Requirements - cites issues related to the people, plant, and other organizations used by the laboratory to produce its technically valid results\nProcess Requirements -  the heart of this version of the standard describes the activities to ensure that results are based on accepted science and aimed at technical validity.\nManagement System Requirements -steps taken by the organization to give itself quality management system tools to support the work of its people in the production of technically valid results",
+    "purpose": "Testing and calibration laboratories",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 17025"
+  },
+  "ISO-IEC|ISO/IEC 17029": {
+    "purpose": "Conformity assessment \u2014 certification of persons",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17029"
+  },
+  "ISO-IEC|ISO/IEC 17065": {
+    "purpose": "Conformity assessment \u2014 product certification",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17065"
+  },
+  "ISO-IEC|ISO/IEC 17067": {
+    "purpose": "Conformity assessment \u2014 certification schemes",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 17067"
+  },
+  "ISO-IEC|ISO/IEC 18013-5": {
+    "purpose": "Personal identification \u2014 ISO-compliant driving licence (mDL) \u2014 Part 5: Mobile driving licence (mDL) application",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 18013-5"
+  },
+  "ISO-IEC|ISO/IEC 27001": {
+    "description": "ISO/IEC 27001 is an information security standard. It specifies the requirements for establishing, implementing, maintaining and continually improving an information security management system (ISMS). Organizations with an ISMS that meet the standard's requirements can choose to have it certified by an accredited certification body following successful completion of an audit. There are also numerous recognized national and sector specific variants of the standard. \nIt was originally published jointly by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) in 2005, with revisions in 2013 and 2022.",
+    "purpose": "Information security management systems",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 27001"
+  },
+  "ISO-IEC|ISO/IEC 30111": {
+    "purpose": "Vulnerability handling processes",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 30111"
+  },
+  "ISO-IEC|ISO/IEC 5218": {
+    "description": "ISO/IEC 5218 Information technology \u2014 Codes for the representation of human sexes is an international standard that defines a representation of human sexes through a language-neutral single-digit code. It can be used in information systems such as database applications.\nThe four codes specified in ISO/IEC 5218 are:\n\n0 = Not known;\n1 = Male;\n2 = Female;\n9 = Not applicable.\nThe standard specifies that its use may be referred to by the designator \"SEX\".\nThe standard explicitly states that no significance is to be placed on the encoding of male as 1 and female as 2; the encoding merely reflects existing practice in the countries that initiated this standard. The standard also explains that it \"meets the requirements of most applications that need to code human sexes. It does not provide codes for sexes that may be required in specific medical and scientific applications or in applications that need to code sex information other than for human beings.\" Since its 2022 revision, the standard also states that its scope does not cover human gender identities and therefore does not provide codes for those.\nISO/IEC 5218 was created by ISO's Data Management and Interchange Technical Committee, proposed in November 1976, and updated in June 2022.  The standard is currently maintained by \nthe ISO/IEC Joint Technical Committee (ISO/IEC JTC 1) subcommittee on Data management and interchange (ISO/IEC JTC 1/SC 32).\n\nThis standard is used in several national identification numbers. For example, the first digit of the French INSEE number and the first digit of the Republic of China National Identification Card (Chinese: \u4e2d\u83ef\u6c11\u570b\u570b\u6c11\u8eab\u5206\u8b49) are based on ISO/IEC 5218 values.",
+    "purpose": "Codes for the representation of human sexes",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 5218"
+  },
+  "ISO-IEC|ISO/IEC 8824-1": {
+    "purpose": "Abstract Syntax Notation One (ASN.1) \u2014 Part 1",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 8824-1"
+  },
+  "ISO-IEC|ISO/IEC 8824-4": {
+    "purpose": "Abstract Syntax Notation One (ASN.1) \u2014 Part 4",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 8824-4"
+  },
+  "ISO-IEC|ISO/IEC 8825-1": {
+    "purpose": "ASN.1 encoding rules \u2014 Part 1",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 8825-1"
+  },
+  "ISO-IEC|ISO/IEC 8859-1": {
+    "description": "ISO/IEC 8859-1, commonly referred to as Latin-1, is a character encoding in the ISO/IEC 8859 series of ASCII-based standard character encodings. It encodes 191 characters from the Latin script. It is the basis for many popular 8-bit character sets and the second block of characters in Unicode, the Latin-1 Supplement. It is used throughout the Americas, Western Europe, Oceania, and much of Africa.\nIt is the most declared single-byte character encoding for web pages; however, per the HTML5 standard, web browsers interpret it as the superset Windows-1252, so these documents may include characters from that set.\nISO-8859-1 is the Internet Assigned Numbers Authority (IANA) preferred name for this standard when supplemented with the C0 and C1 control codes from ISO/IEC 6429. The following other aliases are registered: iso-ir-100, csISOLatin1, latin1, l1, IBM819, Code page 28591 a.k.a. Windows-28591 is used for it in Windows. IBM calls it code page 819 or CP819 (CCSID 819). Oracle calls it WE8ISO8859P1.",
+    "purpose": "Information technology \u2014 8-bit single-byte coded graphic character sets \u2014 Part 1",
+    "sources": [
+      "iso_series",
+      "wikipedia"
+    ],
+    "title": "ISO/IEC 8859-1"
+  },
+  "ISO-IEC|ISO/IEC 9594-1": {
+    "purpose": "Open Systems Interconnection \u2014 The Directory \u2014 Part 1: Overview of concepts, models and services",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 9594-1"
+  },
+  "ISO-IEC|ISO/IEC 9594-2": {
+    "purpose": "Open Systems Interconnection \u2014 The Directory \u2014 Part 2: Models",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 9594-2"
+  },
+  "ISO-IEC|ISO/IEC 9594-6": {
+    "purpose": "Open Systems Interconnection \u2014 The Directory \u2014 Part 6: Selected attribute types",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 9594-6"
+  },
+  "ISO-IEC|ISO/IEC 9594-8": {
+    "purpose": "Open Systems Interconnection \u2014 The Directory \u2014 Part 8: Public-key and attribute certificate frameworks",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 9594-8"
+  },
+  "ISO-IEC|ISO/IEC 9834-1": {
+    "purpose": "IT security techniques \u2014 Part 1",
+    "sources": [
+      "iso_series"
+    ],
+    "title": "ISO/IEC 9834-1"
+  },
+  "ITU-T|ITU-T X.411": {
+    "description": "Message Handling Systems (MHS) \u2014 message transfer system",
+    "purpose": "Message Handling Systems (MHS) \u2014 message transfer system",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "ITU-T X.411"
+  },
+  "ITU-T|ITU-T X.500": {
+    "description": "X.500 is a series of computer networking standards covering electronic directory services.  The X.500 series was developed by the Telecommunication Standardization Sector of the International Telecommunication Union (ITU-T) and was first approved in 1988.  The directory services were developed to support requirements of X.400 electronic mail exchange and name lookup. The International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC) were partners in developing the standards, incorporating them into the Open Systems Interconnection suite of protocols.  ISO/IEC 9594 is the corresponding ISO/IEC identification.",
+    "purpose": "X.500 is a series of computer networking standards covering electronic directory services.",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "X.500"
+  },
+  "ITU-T|ITU-T X.501": {
+    "description": "The Directory \u2014 Models",
+    "purpose": "The Directory \u2014 Models",
+    "sources": [
+      "itu"
+    ],
+    "title": "ITU-T X.501"
+  },
+  "ITU-T|ITU-T X.509": {
+    "description": "In cryptography, X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols, including TLS/SSL, which is the basis for HTTPS, the secure protocol for browsing the web. They are also used in offline applications, like electronic signatures.\nAn X.509 certificate binds an identity to a public key using a digital signature. A certificate contains an identity (a hostname, or an organization, or an individual) and a public key (RSA, DSA, ECDSA, ed25519, etc.), and is either signed by a certificate authority (CA) or is self-signed. When a certificate is signed by a trusted certificate authority, or validated by other means, someone holding that certificate can use the public key it contains to establish secure communications with another party, or validate documents digitally signed by the corresponding private key.\nX.509 also defines certificate revocation lists, which are a means to distribute information about certificates that have been deemed invalid by a signing authority, as well as a certification path validation algorithm, which allows for certificates to be signed by intermediate CA certificates, which are, in turn, signed by other certificates, eventually reaching a trust anchor.\nX.509 is defined by the ITU's \"Standardization Sector\" (ITU-T's SG17), in ITU-T Study Group 17 and is based on Abstract Syntax Notation One (ASN.1), another ITU-T standard.",
+    "purpose": "In cryptography, X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates.",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "X.509"
+  },
+  "ITU-T|ITU-T X.520": {
+    "description": "The Directory \u2014 Selected attribute types",
+    "purpose": "The Directory \u2014 Selected attribute types",
+    "sources": [
+      "itu"
+    ],
+    "title": "ITU-T X.520"
+  },
+  "ITU-T|ITU-T X.660": {
+    "description": "Procedures for registration of object identifiers",
+    "purpose": "Procedures for registration of object identifiers",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "ITU-T X.660"
+  },
+  "ITU-T|ITU-T X.680": {
+    "description": "Abstract Syntax Notation One (ASN.1): Specification of basic notation",
+    "purpose": "Abstract Syntax Notation One (ASN.1): Specification of basic notation",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "ITU-T X.680"
+  },
+  "ITU-T|ITU-T X.683": {
+    "description": "ASN.1 \u2014 Parameterization of ASN.1 specifications",
+    "purpose": "ASN.1 \u2014 Parameterization of ASN.1 specifications",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "ITU-T X.683"
+  },
+  "ITU-T|ITU-T X.690": {
+    "description": "X.690 is an ITU-T standard specifying several ASN.1 encoding formats:\n\nBasic Encoding Rules (BER)\nCanonical Encoding Rules (CER)\nDistinguished Encoding Rules (DER)\nThe Basic Encoding Rules (BER) were the original rules laid out by the ASN.1 standard for encoding data into a binary format.  The rules, collectively referred to as a transfer syntax in ASN.1 parlance, specify the exact octets (8-bit bytes) used to encode data.\nX.680 defines a syntax for declaring data types, for example: Booleans, numbers, strings, and compound structures.  Each type definition also includes an identifying number.  X.680 defines several primitive data types, for example: BooleanType, IntegerType, OctetStringType.  (ASN.1 also provides for constructed types built from other types.)  Types are associated with a class.  For example, the primitive types are part of the universal class.  The three other classes (application, private, and context-specific) are essentially different scopes to support customization for specific applications.  Combined, the class and type form a tag, which therefore corresponds to a unique data definition.  X.690 includes rules for encoding those tags, data values (content), and the lengths of that encoded data.\nBER, along with two subsets of BER (the Canonical Encoding Rules and the Distinguished Encoding Rules), are defined by the ITU-T's X.690 standards document, which is part of the ASN.1 document series.",
+    "purpose": "X.690 is an ITU-T standard specifying several ASN.1 encoding formats: Basic Encoding Rules (BER) Canonical Encoding Rules (CER) Distinguished Encoding Rules (DER) The Basic Encoding Rules (BER) were the original rules laid out by the ASN.1 standard for encoding data into a binary format.",
+    "sources": [
+      "wikipedia",
+      "itu"
+    ],
+    "title": "X.690"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "celex": "32025R2530",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/79adb6f5-daec-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2530/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/79adb6f5-daec-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2530/2025-2530.html",
+      "sha256": "e6f16aa9226e8f8411c3373be4b34f3305a682d5128a27c4611409cdd1c08fcb",
+      "size": 70267
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/79adb6f5-daec-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2530/2025-2530.pdf",
+      "sha256": "1242fbac54db57d101d29abafdad413a89ef5c78c6531fb33b177d6f84786a39",
+      "size": 558795
+    }
+  },
+  "id": "2025-2530",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "certificates",
+    "commission",
+    "compliance",
+    "council",
+    "down",
+    "electronic",
+    "ensuring",
+    "european",
+    "implementing",
+    "management",
+    "parliament",
+    "provider",
+    "providers",
+    "providing",
+    "qualified",
+    "reference",
+    "regards",
+    "regulation",
+    "risk",
+    "service",
+    "services",
+    "signatures",
+    "termination",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards requirements for qualified trust service providers providing qualified trust services Qualified trust service providers play a crucial role in ensuring secure and reliable digital interactions by delivering qualified trust services in compliance with Regulation (EU) No\u00a0910/2014. For qualified trust services for the issuance of qualified certificates for electronic signatures: clauses 5.2, 6.1, 6.4, 6.5, 6.8 and\u00a06.9 of the standard as referenced and adapted in point 1 of Annex\u00a0I to Commission Implementing Regulation (EU)\u00a02025/1943\u00a0 ( 1 ) .",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.408730+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified trust service providers"
+}

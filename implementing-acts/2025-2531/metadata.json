@@ -1,0 +1,59 @@
+{
+  "celex": "32025R2531",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2531/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2531/2025-2531.html",
+      "sha256": "59a927c37a98ac20d009012497fe173acd53b2bea32a5afea586ab7a31881abe",
+      "size": 93940
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2531/2025-2531.pdf",
+      "sha256": "be7bf1cfb854f402481e0e8dc0e50df4aa8089979d792c581d7994b73dd2a34c",
+      "size": 777193
+    }
+  },
+  "id": "2025-2531",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "commission",
+    "council",
+    "data",
+    "down",
+    "electronic",
+    "establish",
+    "european",
+    "http",
+    "https",
+    "ledger",
+    "ledgers",
+    "list",
+    "new",
+    "parliament",
+    "qualified",
+    "recording",
+    "records",
+    "reference",
+    "regards",
+    "regulation",
+    "services",
+    "specifications",
+    "standards",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards and specifications for qualified electronic ledgers By Regulation (EU)\u00a02024/1183 of the European Parliament and of the Council\u00a0 ( 2 ) , a list of new trust services and qualified trust services, including the recording of electronic data in a qualified electronic ledger, was introduced in Regulation (EU) No\u00a0910/2014. The Commission is to establish a list of reference standards and, where necessary, establish specifications for such services. An electronic ledger is a sequence of electronic data records which is to ensure the integrity of those data records and the accuracy of the chronological ordering of those records. In order to ensure that the recording of data in a qualified electronic ledger is chronologically ordered, consistent and\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.440900+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified electronic ledgers"
+}

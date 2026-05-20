@@ -1,0 +1,59 @@
+{
+  "celex": "32024R2982",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2982/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2982/2024-2982.html",
+      "sha256": "6dcd6d801df70c72976faf396166d82990cd6b3b152a10828be5eda3e7b8c213",
+      "size": 64398
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2982/2024-2982.pdf",
+      "sha256": "52008a3723815c0ba3e4473dae6ce14a1e569218ae408375e636c4a9201b731c",
+      "size": 550657
+    }
+  },
+  "id": "2024-2982",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "across",
+    "attestation",
+    "attestations",
+    "attributes",
+    "council",
+    "data",
+    "digital",
+    "electronic",
+    "european",
+    "framework",
+    "identification",
+    "identity",
+    "interfaces",
+    "member",
+    "parliament",
+    "person",
+    "protocols",
+    "regulation",
+    "services",
+    "states",
+    "union",
+    "units",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards protocols and interfaces to be supported by the European Digital Identity Framework The European Digital Identity Framework established by Regulation (EU) No\u00a0910/2014 is a crucial component in the establishment of a secure and interoperable digital identity ecosystem across the Union. With the European Digital Identity Wallets (\u2018wallets\u2019) being the cornerstone of the framework, it aims at facilitating access to services across Member States, for natural and legal persons, while ensuring the\u2026 the issuance of person identification data and electronic attestations of attributes to wallet units;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.136443+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Protocols and interfaces for EUDI Wallets"
+}

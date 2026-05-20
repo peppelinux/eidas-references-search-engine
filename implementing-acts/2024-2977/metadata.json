@@ -1,0 +1,59 @@
+{
+  "celex": "32024R2977",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/acccd446-b1e0-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2977/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/acccd446-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2977/2024-2977.html",
+      "sha256": "e6823fd65f11dc56c803daac4e5e5fde5c6404b0fad6924f80bd54264bcb3e94",
+      "size": 82808
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/acccd446-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2977/2024-2977.pdf",
+      "sha256": "d1cb63b80d86706d7c6d604668b872abe5fd5a3689bfd3c26ad683801f9b5365",
+      "size": 586855
+    }
+  },
+  "id": "2024-2977",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "access",
+    "across",
+    "attestation",
+    "attestations",
+    "attributes",
+    "certificates",
+    "council",
+    "data",
+    "digital",
+    "electronic",
+    "european",
+    "framework",
+    "identification",
+    "identity",
+    "member",
+    "parliament",
+    "person",
+    "personal",
+    "regulation",
+    "services",
+    "states",
+    "union",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards person identification data and electronic attestations of attributes issued to European Digital Identity Wallets The European Digital Identity Framework established by Regulation (EU) No\u00a0910/2014, is a crucial component in the establishment of a secure and interoperable digital identity ecosystem across the Union. With the European Digital Identity Wallets (\u2018wallets\u2019) as the cornerstone of the framework, it aims at facilitating access to services across Member States, while ensuring the protection of personal data and privacy. \u2018wallet user\u2019 means a user who is in control of the wallet unit;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.028032+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "PID and electronic attestations of attributes (lifecycle)"
+}

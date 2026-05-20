@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1943",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/c3d31ae8-9d97-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1943/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/c3d31ae8-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1943/2025-1943.html",
+      "sha256": "5fd6f28c95fea3df07d0f1a0d4587dfaaea74c6fc4c671fa932f87853a9c58a2",
+      "size": 176060
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/c3d31ae8-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1943/2025-1943.pdf",
+      "sha256": "a01ada3899bc226a92fb06bf42cef1bc4e5bfe9cbc08b8b5fb4130fdc7a7c728",
+      "size": 580587
+    }
+  },
+  "id": "2025-1943",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "article",
+    "certificate",
+    "certificates",
+    "council",
+    "data",
+    "electronic",
+    "european",
+    "http",
+    "natural",
+    "parliament",
+    "policy",
+    "profiles",
+    "qualified",
+    "reference",
+    "regulation",
+    "seal",
+    "seals",
+    "service",
+    "services",
+    "signature",
+    "signatures",
+    "standards",
+    "trust",
+    "validation"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards for qualified certificates for electronic signatures and qualified certificates for electronic seals Qualified certificates for electronic signatures and qualified certificates for electronic seals play a crucial role in the digital business environment by promoting the transition from traditional paper-based processes to electronic equivalent ones. By linking electronic signature validation data or electronic seal validation data to a natural or legal person respectively and by confirming the name of that\u2026 The presumption of compliance laid down in Article\u00a028(6) and Article\u00a038(6) of Regulation (EU) No\u00a0910/2014 should only apply where qualified trust services for the issuance of qualified certificates for electronic signatures and qualified\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.302771+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Reference standards and validation procedures (QTSP)"
+}

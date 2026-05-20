@@ -1,0 +1,59 @@
+{
+  "celex": "32024R2981",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2981/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2981/2024-2981.html",
+      "sha256": "e45c7c805a4c14082e8537d14805b159e86aa279c45a4715e2a2e161952be210",
+      "size": 450763
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2981/2024-2981.pdf",
+      "sha256": "5957c8b08fc411c97d0fc62a9285d3b16aeb4581f40d07878bb91b46720d2a3a",
+      "size": 1221411
+    }
+  },
+  "id": "2024-2981",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "article",
+    "certification",
+    "conformity",
+    "council",
+    "cryptographic",
+    "cybersecurity",
+    "data",
+    "digital",
+    "ensure",
+    "european",
+    "high",
+    "identity",
+    "level",
+    "market",
+    "order",
+    "parliament",
+    "protection",
+    "pursuant",
+    "regulation",
+    "software",
+    "solution",
+    "trust",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and the Council as regards the certification of European Digital Identity Wallets Pursuant to Article\u00a05c of Regulation (EU) No\u00a0910/2014, the certification of European Digital Identity Wallets (\u2018wallets\u2019) is to be made in accordance with functional, cybersecurity, and data protection requirements to ensure a high level of security and trust in the wallets. Those certification requirements need to be harmonised across Member States in order to prevent market fragmentation and to build a robust\u2026 \u2018wallet solution\u2019 means a combination of software, hardware, services, settings, and configurations, including wallet instances, one or more wallet secure cryptographic applications and one or more wallet secure cryptographic devices;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.116641+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Certification of EUDI Wallets"
+}

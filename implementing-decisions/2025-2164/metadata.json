@@ -1,0 +1,59 @@
+{
+  "celex": "32025D2164",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/dec_impl/2025/2164/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-decisions/2025-2164/2025-2164.html",
+      "sha256": "8623cd654017fc3ea5045e1e3064837fc3d9d807f39fea66f707e4c1b59c320a",
+      "size": 97717
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-decisions/2025-2164/2025-2164.pdf",
+      "sha256": "c7b006707431357cd1f07bbcf2a467a6fbbbc42bc05ca075436ecad1d13aff82",
+      "size": 906175
+    }
+  },
+  "id": "2025-2164",
+  "kind": "implementing_decision",
+  "scope_keywords": [
+    "article",
+    "commission",
+    "common",
+    "decision",
+    "electronic",
+    "european",
+    "formats",
+    "has",
+    "http",
+    "implementing",
+    "lists",
+    "market",
+    "providers",
+    "qualified",
+    "regards",
+    "regulation",
+    "service",
+    "services",
+    "set",
+    "specifications",
+    "status",
+    "trust",
+    "trusted",
+    "validation"
+  ],
+  "summary": "amending Implementing Decision (EU)\u00a02015/1505 as regards the version of the standard on which the common template for the trusted lists is based Trusted lists provided for in Article\u00a022(1) of Regulation (EU) No\u00a0910/2014 are essential for building trust among market operators as they allow a validation of the qualified status of the trust service providers and of the trust services they provide. Therefore, qualified trust service providers are only to begin to provide a qualified trust service after the qualified status has been indicated in the trusted lists. Commission Implementing Decision (EU)\u00a02015/1505\u00a0 ( 2 ) lays down technical specifications and formats relating to trusted lists. Those specifications and formats leverage the specifications and requirements set out in standard ETSI TS 119\u00a0612 version 2.1.1.",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.579050+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Trusted lists of trust service providers"
+}

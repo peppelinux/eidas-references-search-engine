@@ -1,0 +1,59 @@
+{
+  "celex": "32024R2980",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/e331b1f3-b1e0-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2980/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/e331b1f3-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2980/2024-2980.html",
+      "sha256": "f9d82eb35f4b5b8f7bdf209936306593b965925e8aef2dccad62bdcfc20e1345",
+      "size": 83812
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/e331b1f3-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2980/2024-2980.pdf",
+      "sha256": "b3ca8d38825e87a7377ce420fd8949a08dc70efd6c8035ac6b634f0dee555141",
+      "size": 567496
+    }
+  },
+  "id": "2024-2980",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "article",
+    "commission",
+    "council",
+    "data",
+    "digital",
+    "ecosystem",
+    "electronic",
+    "european",
+    "framework",
+    "identification",
+    "identity",
+    "information",
+    "member",
+    "notifications",
+    "parliament",
+    "parties",
+    "registered",
+    "registers",
+    "regulation",
+    "states",
+    "union",
+    "wallet",
+    "wallet-relying",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards notifications to the Commission concerning the European Digital Identity Wallet ecosystem The European Digital Identity Framework established by Regulation (EU) No\u00a0910/2014 is a crucial component in the establishment of a secure and interoperable digital identity ecosystem across the Union. With the European Digital Identity Wallets (\u2018wallets\u2019) being the cornerstone of the framework, it aims at facilitating access to services across Member States, while ensuring the protection of personal data and\u2026 the electronic registers used by a Member State to publish information on wallet-relying parties registered in that Member State in accordance with Article\u00a05b(5) of Regulation (EU) No\u00a0910/2014 (\u2018registers of wallet-relying parties\u2019), the location of the registers of\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.071300+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Trust framework and electronic notification system"
+}

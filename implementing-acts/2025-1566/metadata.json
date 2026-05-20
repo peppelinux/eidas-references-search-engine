@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1566",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1566/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1566/2025-1566.html",
+      "sha256": "e5f933072b3c76a9e88d9f222a15eb66f380e7aa481d9d4955956bb9ff5f943e",
+      "size": 26051
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1566/2025-1566.pdf",
+      "sha256": "4af0976d9f9304d468e2a0ec04d90544bba7e530bcf04c3951e6272d12773dda",
+      "size": 477654
+    }
+  },
+  "id": "2025-1566",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "article",
+    "attestation",
+    "attestations",
+    "attributes",
+    "certificate",
+    "certificates",
+    "council",
+    "electronic",
+    "european",
+    "http",
+    "identification",
+    "identity",
+    "parliament",
+    "person",
+    "process",
+    "providers",
+    "qualified",
+    "reference",
+    "regards",
+    "regulation",
+    "service",
+    "standards",
+    "trust",
+    "verification"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards for the verification of the identity and attributes of the person to whom the qualified certificate or the qualified electronic attestation of attributes is to be issued Article\u00a024 of Regulation (EU) No\u00a0910/2014 requires that qualified trust service providers verify the identity and, if applicable, any specific attributes of a natural or legal person when issuing qualified certificates or qualified electronic attestations of attributes to that person. In order to ensure equal treatment and ability to trust the result of the verification process, verifications should be carried out in an equivalent manner by all qualified trust service providers when issuing a qualified certificate or a qualified electronic attestation of attributes. In\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.149326+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Identity and recipients of qualified certificates"
+}

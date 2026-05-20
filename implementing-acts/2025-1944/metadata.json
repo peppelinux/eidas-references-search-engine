@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1944",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1944/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1944/2025-1944.html",
+      "sha256": "726c6fc75820068633d1b4d64f93604bf14445c7145c3fa12a5c1f046760ba8d",
+      "size": 86721
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1944/2025-1944.pdf",
+      "sha256": "ad8e3d12ac7455ad46b25371ae051658fa11ded70d7936b06e5f7e21470e0b19",
+      "size": 527934
+    }
+  },
+  "id": "2025-1944",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "article",
+    "council",
+    "data",
+    "delivery",
+    "down",
+    "electronic",
+    "eli",
+    "european",
+    "http",
+    "identification",
+    "out",
+    "parliament",
+    "qualified",
+    "reference",
+    "regards",
+    "registered",
+    "regulation",
+    "sending",
+    "service",
+    "services",
+    "set",
+    "signatures",
+    "standards",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards for processes for sending and receiving data in qualified electronic registered delivery services and as regards interoperability of those services Qualified electronic registered delivery services provide a secure channel for the transmission of documents, including proof of sending and receiving the data. They aim at providing certainty in identifying the addressee and ensure a high level of confidence in the identification of the sender. The presumption of compliance laid down in Article\u00a044(1a) of Regulation (EU) No\u00a0910/2014 should only apply where qualified trust services for the provision of qualified electronic registered delivery services comply with the standards set out in this Regulation. These standards should reflect established\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.316312+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified electronic registered delivery services"
+}
