@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-05-20T08:57:29.816250+00:00
+Generated: 2026-05-20T13:30:20.780996+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -1191,6 +1191,7 @@ flowchart LR
   ITU_T_ITU_T_X_683["ITU-T ITU-T X.683"]:::spec
   ITU_T_ITU_T_X_690["ITU-T ITU-T X.690"]:::spec
   W3C_vc_data_model_V1_1["W3C vc-data-model<br/>V1.1"]:::specOk
+  legal_eidas_consolidated["eidas-consolidated<br/>Regulation (EU) No 910/2014 (eIDAS) — consoli..."]:::legal
   legal_2025_2162 -->|cites| CEN_CEN_TS_18170_V2025
   legal_2025_2532 -->|cites| CEN_CEN_TS_18170_V2025
   legal_2025_1943 -->|cites| CEN_CEN_TS_419261_V2015

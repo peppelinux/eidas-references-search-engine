@@ -1,4 +1,5 @@
 {
+  "corpus_anchor_id": "legal:eidas-consolidated",
   "edges": [
     {
       "from": "legal:2025-2162",
@@ -2167,7 +2168,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS11)"
     }
   ],
-  "generated_at": "2026-05-20T08:57:29.816250+00:00",
+  "generated_at": "2026-05-20T13:30:20.780996+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -2531,6 +2532,20 @@
       "act_id": "2025-2162",
       "celex": "32025R2162",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/2162/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-2162/2025-2162.html",
+          "sha256": "e94ac9c98fc3ea6f81632c17a99cd8c92dfdd286bca066fb304035141d92986e",
+          "size": 217758
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-2162/2025-2162.pdf",
+          "sha256": "36c99f0cb42d6fde9b287cf8383e8b04ad63a3ecca03e53fb8b392f961cc39e2",
+          "size": 664557
+        }
+      },
       "id": "legal:2025-2162",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -2578,6 +2593,20 @@
       "act_id": "2025-2532",
       "celex": "32025R2532",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/2532/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-2532/2025-2532.html",
+          "sha256": "cb920d9b75851f712fecc6b47fbce552323ce1e7f51fa560b5a27a78a449449f",
+          "size": 60846
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-2532/2025-2532.pdf",
+          "sha256": "57c34f8fc5b638fb9cd0b357f1a50e176351c594a8efa77f0fa01fa3c328f05d",
+          "size": 754546
+        }
+      },
       "id": "legal:2025-2532",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -2670,6 +2699,20 @@
       "act_id": "2025-1943",
       "celex": "32025R1943",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1943/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/c3d31ae8-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1943/2025-1943.html",
+          "sha256": "5fd6f28c95fea3df07d0f1a0d4587dfaaea74c6fc4c671fa932f87853a9c58a2",
+          "size": 176060
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/c3d31ae8-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1943/2025-1943.pdf",
+          "sha256": "a01ada3899bc226a92fb06bf42cef1bc4e5bfe9cbc08b8b5fb4130fdc7a7c728",
+          "size": 580587
+        }
+      },
       "id": "legal:2025-1943",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -2782,6 +2825,20 @@
       "act_id": "2025-1942",
       "celex": "32025R1942",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1942/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1942/2025-1942.html",
+          "sha256": "2cd7cdf85c0a8f990380a873992b9272867b6c924e99e6990a9f6090129817b3",
+          "size": 102860
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1942/2025-1942.pdf",
+          "sha256": "dee6af13b0dbd6a7e8d080afea4604e926a2a01202e1ab126669f62050e89516",
+          "size": 537268
+        }
+      },
       "id": "legal:2025-1942",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -2829,6 +2886,20 @@
       "act_id": "2025-1945",
       "celex": "32025R1945",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1945/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/dead57ac-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1945/2025-1945.html",
+          "sha256": "45105e39f05717000e78dac718743b399450f26336306c8a326f27172e3fefc9",
+          "size": 58292
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/dead57ac-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1945/2025-1945.pdf",
+          "sha256": "6bf7de9160da98f73d89aae0779e7a722d2339b9fb28b0d5c312db2cb8f8ed59",
+          "size": 503855
+        }
+      },
       "id": "legal:2025-1945",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -2876,6 +2947,20 @@
       "act_id": "2025-1946",
       "celex": "32025R1946",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1946/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1946/2025-1946.html",
+          "sha256": "a1e54901417db951b2adb46a9a5ec8fbc888c2ea19c936e4d83694dd4dcbffcc",
+          "size": 73380
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1946/2025-1946.pdf",
+          "sha256": "c76af17d87b592f7dbe5d13f129a86d954826435119bdaa0685e4932d5a14bd2",
+          "size": 513651
+        }
+      },
       "id": "legal:2025-1946",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -2965,6 +3050,20 @@
       "act_id": "2025-2531",
       "celex": "32025R2531",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/2531/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-2531/2025-2531.html",
+          "sha256": "59a927c37a98ac20d009012497fe173acd53b2bea32a5afea586ab7a31881abe",
+          "size": 93940
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-2531/2025-2531.pdf",
+          "sha256": "be7bf1cfb854f402481e0e8dc0e50df4aa8089979d792c581d7994b73dd2a34c",
+          "size": 777193
+        }
+      },
       "id": "legal:2025-2531",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3065,6 +3164,20 @@
       "act_id": "2024-2979",
       "celex": "32024R2979",
       "eli": "https://data.europa.eu/eli/reg_impl/2024/2979/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2024-2979/2024-2979.html",
+          "sha256": "ac7e5fff2a72a3bb4ad6fa442745e59ee59ad3e65dc578f6acdd6575040b8b5a",
+          "size": 93583
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2024-2979/2024-2979.pdf",
+          "sha256": "3e4a72ef042bba0904e3801ae92d9efd81235fe3e3a1eb7c84674a2c4b96a2e8",
+          "size": 607301
+        }
+      },
       "id": "legal:2024-2979",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3377,6 +3490,20 @@
       "act_id": "2025-1566",
       "celex": "32025R1566",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1566/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1566/2025-1566.html",
+          "sha256": "e5f933072b3c76a9e88d9f222a15eb66f380e7aa481d9d4955956bb9ff5f943e",
+          "size": 26051
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1566/2025-1566.pdf",
+          "sha256": "4af0976d9f9304d468e2a0ec04d90544bba7e530bcf04c3951e6272d12773dda",
+          "size": 477654
+        }
+      },
       "id": "legal:2025-1566",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3424,6 +3551,20 @@
       "act_id": "2025-1567",
       "celex": "32025R1567",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1567/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1567/2025-1567.html",
+          "sha256": "827de55730176c120628a972672ca99a2b82c0d39e22bd6a26e45676be5bf937",
+          "size": 29116
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1567/2025-1567.pdf",
+          "sha256": "aefd18408155044b3cde95c80d2fd236893756c9b29d3083bd66b854f3348e56",
+          "size": 481239
+        }
+      },
       "id": "legal:2025-1567",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3471,6 +3612,20 @@
       "act_id": "2025-1569",
       "celex": "32025R1569",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1569/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/990be0dd-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1569/2025-1569.html",
+          "sha256": "23c8a3afa32dabf28c76ed30529cba0f7fcf93dbb4ef22d58f070dd02b9fcfd6",
+          "size": 98096
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/990be0dd-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1569/2025-1569.pdf",
+          "sha256": "9e763ef037964c10385c43abfc73f7ae8d032c55c3a64229b6b834a5475600bd",
+          "size": 596450
+        }
+      },
       "id": "legal:2025-1569",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3518,6 +3673,20 @@
       "act_id": "2025-1929",
       "celex": "32025R1929",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1929/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1929/2025-1929.html",
+          "sha256": "835e781cf749d86666a81b4faed073d507b8603c271e79ca8fdcf0bd12dbb0bf",
+          "size": 86495
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1929/2025-1929.pdf",
+          "sha256": "30e21df469306e69584ca2e95e2165bd2cf1d04fbc9f8f74b8551a67270edade",
+          "size": 523779
+        }
+      },
       "id": "legal:2025-1929",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3565,6 +3734,20 @@
       "act_id": "2025-1944",
       "celex": "32025R1944",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1944/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1944/2025-1944.html",
+          "sha256": "726c6fc75820068633d1b4d64f93604bf14445c7145c3fa12a5c1f046760ba8d",
+          "size": 86721
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1944/2025-1944.pdf",
+          "sha256": "ad8e3d12ac7455ad46b25371ae051658fa11ded70d7936b06e5f7e21470e0b19",
+          "size": 527934
+        }
+      },
       "id": "legal:2025-1944",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3612,6 +3795,20 @@
       "act_id": "2025-2160",
       "celex": "32025R2160",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/2160/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-2160/2025-2160.html",
+          "sha256": "2a4ae9ca1a2277100c05aaff58a64fe31eeeca4d959e66fe5fcd756bd4b4bcaa",
+          "size": 48908
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-2160/2025-2160.pdf",
+          "sha256": "e9d4815d67f154c00caa8007fc41449a7f4098a0d1137493184647c65d9fa1ab",
+          "size": 512230
+        }
+      },
       "id": "legal:2025-2160",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -3814,6 +4011,20 @@
       "act_id": "2025-2527",
       "celex": "32025R2527",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/2527/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-2527/2025-2527.html",
+          "sha256": "6740c4702f84d990c441e85d2bfadbdbbb1d2db76200366ef955484d15568f83",
+          "size": 18944
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-2527/2025-2527.pdf",
+          "sha256": "421b3186a650a3812809d230ce5c56e70d114f89c89f23c58e9fb33cf5afaee1",
+          "size": 474645
+        }
+      },
       "id": "legal:2025-2527",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -4798,6 +5009,20 @@
       "act_id": "2026-798",
       "celex": "32026R0798",
       "eli": "https://data.europa.eu/eli/reg_impl/2026/798/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2026-798/2026-798.html",
+          "sha256": "3d367d68afb6ac16f90d71e11ece5ee06e374eb037ab2f3964333151c89c634a",
+          "size": 53730
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2026-798/2026-798.pdf",
+          "sha256": "cde2d10b67a421be7a6945fcdc3f4318ddde9700d3503cf88533f4b845604941",
+          "size": 529662
+        }
+      },
       "id": "legal:2026-798",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -5008,6 +5233,20 @@
       "act_id": "2025-2164",
       "celex": "32025D2164",
       "eli": "https://data.europa.eu/eli/dec_impl/2025/2164/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-decisions/2025-2164/2025-2164.html",
+          "sha256": "8623cd654017fc3ea5045e1e3064837fc3d9d807f39fea66f707e4c1b59c320a",
+          "size": 97717
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-decisions/2025-2164/2025-2164.pdf",
+          "sha256": "c7b006707431357cd1f07bbcf2a467a6fbbbc42bc05ca075436ecad1d13aff82",
+          "size": 906175
+        }
+      },
       "id": "legal:2025-2164",
       "kind": "implementing_decision",
       "scope_keywords": [
@@ -7674,6 +7913,20 @@
       "act_id": "2024-2980",
       "celex": "32024R2980",
       "eli": "https://data.europa.eu/eli/reg_impl/2024/2980/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/e331b1f3-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2024-2980/2024-2980.html",
+          "sha256": "f9d82eb35f4b5b8f7bdf209936306593b965925e8aef2dccad62bdcfc20e1345",
+          "size": 83812
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/e331b1f3-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2024-2980/2024-2980.pdf",
+          "sha256": "b3ca8d38825e87a7377ce420fd8949a08dc70efd6c8035ac6b634f0dee555141",
+          "size": 567496
+        }
+      },
       "id": "legal:2024-2980",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -8939,6 +9192,20 @@
       "act_id": "2024-2977",
       "celex": "32024R2977",
       "eli": "https://data.europa.eu/eli/reg_impl/2024/2977/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/acccd446-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2024-2977/2024-2977.html",
+          "sha256": "e6823fd65f11dc56c803daac4e5e5fde5c6404b0fad6924f80bd54264bcb3e94",
+          "size": 82808
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/acccd446-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2024-2977/2024-2977.pdf",
+          "sha256": "d1cb63b80d86706d7c6d604668b872abe5fd5a3689bfd3c26ad683801f9b5365",
+          "size": 586855
+        }
+      },
       "id": "legal:2024-2977",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -9815,6 +10082,20 @@
       "act_id": "2026-248",
       "celex": "32026R0248",
       "eli": "https://data.europa.eu/eli/reg_impl/2026/248/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/c539cc01-00a1-11f1-825d-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2026-248/2026-248.html",
+          "sha256": "f4513524bc2bdedd1556379b64cad8821138e8f98416d7dc810076fd91ba35d3",
+          "size": 68040
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/c539cc01-00a1-11f1-825d-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2026-248/2026-248.pdf",
+          "sha256": "d5794d9ad1717d8140dcd82cf8a416b2b2ad89c5dc99e794212e061f825775ea",
+          "size": 545023
+        }
+      },
       "id": "legal:2026-248",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -9994,6 +10275,20 @@
       "act_id": "2025-848",
       "celex": "32025R0848",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/848/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-848/2025-848.html",
+          "sha256": "ad3e50c59821596b3e829d6fdf08125d1da8255c9d0613648b79e0013a88226e",
+          "size": 157516
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-848/2025-848.pdf",
+          "sha256": "07ce6b4187a8e051f86992c01e113f41de7d6d0503ebae50279906606b4db1a3",
+          "size": 634312
+        }
+      },
       "id": "legal:2025-848",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -11757,6 +12052,20 @@
       "act_id": "2024-2981",
       "celex": "32024R2981",
       "eli": "https://data.europa.eu/eli/reg_impl/2024/2981/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2024-2981/2024-2981.html",
+          "sha256": "e45c7c805a4c14082e8537d14805b159e86aa279c45a4715e2a2e161952be210",
+          "size": 450763
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2024-2981/2024-2981.pdf",
+          "sha256": "5957c8b08fc411c97d0fc62a9285d3b16aeb4581f40d07878bb91b46720d2a3a",
+          "size": 1221411
+        }
+      },
       "id": "legal:2024-2981",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -12325,6 +12634,20 @@
       "act_id": "2024-2982",
       "celex": "32024R2982",
       "eli": "https://data.europa.eu/eli/reg_impl/2024/2982/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2024-2982/2024-2982.html",
+          "sha256": "6dcd6d801df70c72976faf396166d82990cd6b3b152a10828be5eda3e7b8c213",
+          "size": 64398
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2024-2982/2024-2982.pdf",
+          "sha256": "52008a3723815c0ba3e4473dae6ce14a1e569218ae408375e636c4a9201b731c",
+          "size": 550657
+        }
+      },
       "id": "legal:2024-2982",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -12422,6 +12745,20 @@
       "act_id": "2025-1568",
       "celex": "32025R1568",
       "eli": "https://data.europa.eu/eli/reg_impl/2025/1568/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/e85cbfd7-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+          "path": "implementing-acts/2025-1568/2025-1568.html",
+          "sha256": "5105c1633a94a6f5e1fa0157a380014814e44740d49e5eee52c0a6489606b68a",
+          "size": 145893
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/e85cbfd7-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+          "path": "implementing-acts/2025-1568/2025-1568.pdf",
+          "sha256": "238d0c11456716ce62a2af8c6b586cdede77504a0f150add1634acd8ce43b809",
+          "size": 625912
+        }
+      },
       "id": "legal:2025-1568",
       "kind": "implementing_regulation",
       "scope_keywords": [
@@ -13269,6 +13606,68 @@
       "title": "Verifiable Credentials Data Model 1.1",
       "type": "specification",
       "version": "1.1"
+    },
+    {
+      "act_id": "eidas-consolidated",
+      "celex": "02014R0910-20241018",
+      "consolidated_as_of": "2024-10-18",
+      "eli": "http://data.europa.eu/eli/reg/2014/910/2024-10-18/oj/eng",
+      "files": {
+        "html": {
+          "item_url": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1.0007.02/DOC_2",
+          "path": "regulation/eidas-consolidated/eidas-consolidated.html",
+          "sha256": "b4ab7d733d234eef3a505330717d8a8d4d6388f2d9a0a4bfcde2d1b497ba72ce",
+          "size": 454927
+        },
+        "pdf": {
+          "item_url": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1.0007.03/DOC_2",
+          "path": "regulation/eidas-consolidated/eidas-consolidated.pdf",
+          "sha256": "1fded3274b202801de22c820bed859bf27b50529faf72fdeabd0a29c32f73604",
+          "size": 735403
+        }
+      },
+      "id": "legal:eidas-consolidated",
+      "kind": "regulation",
+      "scope_keywords": [
+        "authentication",
+        "certificate",
+        "certificates",
+        "delivery",
+        "electronic",
+        "european",
+        "identification",
+        "legal",
+        "means",
+        "natural",
+        "person",
+        "persons",
+        "qualified",
+        "registered",
+        "regulation",
+        "seal",
+        "service",
+        "services",
+        "signature",
+        "signatures",
+        "trust",
+        "union",
+        "validation",
+        "wallets"
+      ],
+      "search_text": "eidas-consolidated Regulation (EU) No 910/2014 (eIDAS) \u2014 consolidated text 02014R0910-20241018 regulation regulation on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC This Regulation aims to ensure the proper functioning of the internal market and the provision of an adequate level of security of electronic identification means and trust services used across the Union, in order to enable and facilitate the exercise by natural and legal persons of the right to participate in digital society safely and to access online public and private services throughout the Union. For those purposes, this Regulation:\n\n \n\n \n\n(a)\u00a0\n\n \n\n \n\nlays down the conditions under which Member States are to recognise natural and legal persons\u2019 electronic identification means falling under a\u00a0notified electronic identification scheme of another Member State and provide and recognise European Digital Identity Wallets;\n\n \n\n \n\n \n\n \n\n(b)\u00a0\n\n \n\n \n\nlays\u2026 authentication certificate certificates delivery electronic european identification legal means natural person persons qualified registered regulation seal service services signature signatures trust union validation wallets",
+      "section": "regulation",
+      "summary": "on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC This Regulation aims to ensure the proper functioning of the internal market and the provision of an adequate level of security of electronic identification means and trust services used across the Union, in order to enable and facilitate the exercise by natural and legal persons of the right to participate in digital society safely and to access online public and private services throughout the Union. For those purposes, this Regulation:\n\n \n\n \n\n(a)\u00a0\n\n \n\n \n\nlays down the conditions under which Member States are to recognise natural and legal persons\u2019 electronic identification means falling under a\u00a0notified electronic identification scheme of another Member State and provide and recognise European Digital Identity Wallets;\n\n \n\n \n\n \n\n \n\n(b)\u00a0\n\n \n\n \n\nlays\u2026",
+      "summary_meta": {
+        "artifact": "md",
+        "generated_at": "2026-05-19T08:14:14.996299+00:00",
+        "sources": [
+          "eli-subtitle",
+          "article-1-subject-matter"
+        ],
+        "status": "ok"
+      },
+      "title": "Regulation (EU) No 910/2014 (eIDAS) \u2014 consolidated text",
+      "type": "legal_regulation"
     }
   ]
 }
