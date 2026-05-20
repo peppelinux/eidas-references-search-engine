@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>eIDAS references — search</title>
+  <link rel="stylesheet" href="report-layout.css"/>
+</head>
+<body class="search-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header" role="banner">
+      <h1>Search eIDAS references</h1>
+      <p class="site-meta">Full-text search over legal markdown and specification metadata (summary and scope keywords). Case-insensitive; use <code>+term</code> / <code>-term</code> to require or exclude words, and <code>"exact phrase"</code> for phrase matching.</p>
+    </header>
+
+    <nav class="site-nav" id="site-nav" aria-labelledby="nav-heading">
+      <div class="site-nav-bar">
+        <span class="site-nav-title" id="nav-heading">Report</span>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-panel">
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+      </div>
+      <div class="site-nav-panel" id="site-nav-panel" role="navigation">
+        <ul class="site-nav-list">
+          <li><a href="index.html">Report index</a></li>
+          <li><a href="index.html#graph">Interactive graph</a></li>
+          <li><a href="search.html" aria-current="page">Search corpus</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main" class="site-main">
+      <form id="search-form" class="search-form" role="search" aria-label="Corpus search">
+        <label for="q">Full text</label>
+        <input type="search" id="q" name="q" placeholder='e.g. ETSI +"qualified certificate" -draft · "Wallet Unit" +TS03' autocomplete="off"/>
+
+        <div class="form-row">
+          <div>
+            <label for="body">Standardization body <span class="hint">(specifications only)</span></label>
+            <select id="body" name="body">
+              <option value="">All standardization bodies</option>
+            </select>
+            <div id="sdo-chips" aria-label="Quick filter by standardization body"></div>
+          </div>
+          <div>
+            <label for="kind">Document type</label>
+            <select id="kind" name="kind">
+              <option value="">All types</option>
+              <option value="legal">EU legal act (markdown)</option>
+              <option value="specification">Specification (metadata)</option>
+              <option value="specification_document">Specification (document text)</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="tags">Tags <span class="hint">(comma-separated; all must match)</span></label>
+        <input type="text" id="tags" name="tags" placeholder="e.g. cited-by-eu-law, 319-series" autocomplete="off"/>
+        <div id="facet-tags" aria-label="Suggested tags"></div>
+
+        <div class="form-actions">
+          <button type="submit">Search</button>
+          <button type="button" id="clear">Clear</button>
+        </div>
+      </form>
+
+      <p id="status" role="status" aria-live="polite">Loading…</p>
+      <p class="hint">Index loads from <code>search-index.js</code> beside this page.</p>
+      <div id="results" aria-live="polite" aria-relevant="additions"></div>
+    </main>
+  </div>
+
+  <script src="search-index.js"></script>
+  <script src="eidas-search-core.js"></script>
+  <script src="document-links.js"></script>
+  <script src="report-nav.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>

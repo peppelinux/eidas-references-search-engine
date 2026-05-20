@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1942",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1942/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1942/2025-1942.html",
+      "sha256": "2cd7cdf85c0a8f990380a873992b9272867b6c924e99e6990a9f6090129817b3",
+      "size": 102860
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1942/2025-1942.pdf",
+      "sha256": "dee6af13b0dbd6a7e8d080afea4604e926a2a01202e1ab126669f62050e89516",
+      "size": 537268
+    }
+  },
+  "id": "2025-1942",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "apply",
+    "article",
+    "compliance",
+    "council",
+    "data",
+    "digital",
+    "down",
+    "electronic",
+    "european",
+    "http",
+    "laying",
+    "parliament",
+    "policy",
+    "qualified",
+    "regard",
+    "regards",
+    "regulation",
+    "rules",
+    "seals",
+    "services",
+    "signature",
+    "signatures",
+    "trust",
+    "validation"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards qualified validation services for qualified electronic signatures and qualified validation services for qualified electronic seals Qualified validation services for qualified electronic signatures and for qualified electronic seals ensure the integrity, authenticity and correctness of the process and results of the validation of qualified electronic signatures and of qualified electronic seals respectively. Those qualified trust services play a crucial role in the digital business environment by promoting the transition from traditional\u2026 The presumption of compliance laid down in Article\u00a033(2) and Article (40) of Regulation (EU) No\u00a0910/2014 should only apply where qualified validation services for qualified electronic signatures and for qualified electronic\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.281242+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Recognition of qualified validation services"
+}

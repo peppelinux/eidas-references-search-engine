@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1570",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/fdc40733-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1570/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fdc40733-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1570/2025-1570.html",
+      "sha256": "9ac28380ef66fb0cbbe7a6e9ad44d84e2aa9d37434758713bc3947b3e919cbeb",
+      "size": 26919
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fdc40733-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1570/2025-1570.pdf",
+      "sha256": "3dd95e03f85ea11cfdc27914b9f89ad22135321dd6e333df3590cffef4d168f2",
+      "size": 477139
+    }
+  },
+  "id": "2025-1570",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "article",
+    "certification",
+    "certified",
+    "channel",
+    "commission",
+    "council",
+    "creation",
+    "device",
+    "devices",
+    "electronic",
+    "eli",
+    "european",
+    "http",
+    "identification",
+    "information",
+    "member",
+    "notification",
+    "parliament",
+    "qualified",
+    "regulation",
+    "relevant",
+    "seal",
+    "signature",
+    "states"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards notification of information on certified qualified electronic signature creation devices and certified qualified electronic seal creation devices To establish a transparent and reliable source of information on qualified electronic signature creation devices and on qualified electronic seal creation devices that have been certified, or that are no longer certified, by certification bodies referred to in Article\u00a030(1) of Regulation (EU) No\u00a0910/2014, Member States are to notify the relevant information to the Commission, using a secure electronic channel\u2026 To ensure an adequate time for the Commission to adjust the existing channel for the notifications of information as regards the certification status of qualified electronic signature creation devices and\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.220548+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Certified qualified signature/seal creation devices (notification)"
+}

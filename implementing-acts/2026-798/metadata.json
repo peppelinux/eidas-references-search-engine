@@ -1,0 +1,59 @@
+{
+  "celex": "32026R0798",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2026/798/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2026-798/2026-798.html",
+      "sha256": "3d367d68afb6ac16f90d71e11ece5ee06e374eb037ab2f3964333151c89c634a",
+      "size": 53730
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2026-798/2026-798.pdf",
+      "sha256": "cde2d10b67a421be7a6945fcdc3f4318ddde9700d3503cf88533f4b845604941",
+      "size": 529662
+    }
+  },
+  "id": "2026-798",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "assurance",
+    "council",
+    "data",
+    "digital",
+    "electronic",
+    "european",
+    "high",
+    "http",
+    "identification",
+    "identity",
+    "level",
+    "means",
+    "onboarding",
+    "parliament",
+    "procedures",
+    "regards",
+    "regulation",
+    "remote",
+    "specifications",
+    "standards",
+    "trust",
+    "users",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards and specifications for the remote onboarding of users to the European Digital Identity Wallets by electronic identification means conforming to assurance level substantial in conjunction with additional remote onboarding procedures where the combination meets the requirements of assurance level high The onboarding of users to the European Digital Identity Wallets (\u2018wallets\u2019) is a crucial step as regards the verification of the identity of the wallet users, the binding of the personal identification data of the users to their wallets and to the user device in which the wallet units are installed. To foster a high level of trust and security as well as a harmonised approach across Member States for the onboarding of wallet users with remote\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.568489+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Remote onboarding to EUDI Wallets (eID substantial)"
+}

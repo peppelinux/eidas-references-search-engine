@@ -1,0 +1,59 @@
+{
+  "celex": "32025R0846",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/cf9aac3c-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/846/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cf9aac3c-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-846/2025-846.html",
+      "sha256": "065793e75f3d8142968130c1c65a090fb1d0cfc4788fa2d3fe07ca9b4db37807",
+      "size": 53092
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cf9aac3c-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-846/2025-846.pdf",
+      "sha256": "c7b00c8003873b2017e02b1fd69a473f31591ec40c1ad69fd508c3d1a4af1a47",
+      "size": 524584
+    }
+  },
+  "id": "2025-846",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "attributes",
+    "authentication",
+    "commission",
+    "cross-border",
+    "electronic",
+    "ensure",
+    "european",
+    "identification",
+    "identity",
+    "information",
+    "matching",
+    "means",
+    "member",
+    "natural",
+    "notified",
+    "out",
+    "person",
+    "regulation",
+    "relying",
+    "set",
+    "states",
+    "user",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards cross-border identity matching of natural persons Regulation (EU) No\u00a0910/2014 requires that European Digital Identity Wallets (\u2018wallets\u2019) and notified electronic identification means are available as an option for authentication to gain access to online cross-border public services provided by Member States. In such cross-border authentication cases, records containing information pertaining to the user of the wallet or the user of notified electronic\u2026 The Commission regularly assesses new technologies, practices, standards and technical specifications. To ensure the highest level of harmonisation among Member States for the development and certification of the wallets, the technical specifications set out in this Regulation rely on the work carried out under\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.488424+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Cross-border identity matching (public sector)"
+}

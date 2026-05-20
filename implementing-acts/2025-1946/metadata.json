@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1946",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1946/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1946/2025-1946.html",
+      "sha256": "a1e54901417db951b2adb46a9a5ec8fbc888c2ea19c936e4d83694dd4dcbffcc",
+      "size": 73380
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1946/2025-1946.pdf",
+      "sha256": "c76af17d87b592f7dbe5d13f129a86d954826435119bdaa0685e4932d5a14bd2",
+      "size": 513651
+    }
+  },
+  "id": "2025-1946",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "application",
+    "apply",
+    "article",
+    "compliance",
+    "council",
+    "data",
+    "down",
+    "electronic",
+    "european",
+    "http",
+    "laying",
+    "parliament",
+    "preservation",
+    "qualified",
+    "regard",
+    "regards",
+    "regulation",
+    "rules",
+    "seals",
+    "service",
+    "services",
+    "signature",
+    "signatures",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards qualified preservation services for qualified electronic signatures and for qualified electronic seals Qualified preservation services for qualified electronic signatures and for qualified electronic seals ensure the long-term integrity, authenticity, proof of existence and accessibility of preservation evidence of those electronic signatures and electronic seals. This allows the demonstration of their legal validity over extended periods of time and guarantees that they can be validated irrespective of future\u2026 The presumption of compliance laid down in Article\u00a034(1a) and Article\u00a040 of Regulation (EU) No\u00a0910/2014 should only apply where qualified preservation services for qualified electronic signatures and for qualified electronic seals comply with the\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.342569+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified preservation services for signatures and seals"
+}

@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1567",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1567/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1567/2025-1567.html",
+      "sha256": "827de55730176c120628a972672ca99a2b82c0d39e22bd6a26e45676be5bf937",
+      "size": 29116
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1567/2025-1567.pdf",
+      "sha256": "aefd18408155044b3cde95c80d2fd236893756c9b29d3083bd66b854f3348e56",
+      "size": 481239
+    }
+  },
+  "id": "2025-1567",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "application",
+    "article",
+    "council",
+    "creation",
+    "data",
+    "devices",
+    "digital",
+    "electronic",
+    "european",
+    "http",
+    "management",
+    "parliament",
+    "qualified",
+    "regard",
+    "regards",
+    "regulation",
+    "remote",
+    "seal",
+    "service",
+    "services",
+    "signature",
+    "signatures",
+    "trust",
+    "trustworthiness"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards the management of remote qualified electronic signature creation devices and of remote qualified electronic seal creation devices as qualified trust services Qualified trust services for the management of remote qualified electronic signature creation devices and for the management of remote qualified electronic seal creation devices play a crucial role in the digital business environment by promoting the transition from traditional paper-based processes to electronic equivalents. Those qualified trust services contribute to a secure and trustworthy management of\u2026 To enhance the legal certainty and trustworthiness of qualified trust services for the management of remote qualified electronic signature creation devices and qualified trust services for the\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.162009+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Remote qualified signature/seal creation devices"
+}

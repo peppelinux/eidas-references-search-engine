@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1929",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1929/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1929/2025-1929.html",
+      "sha256": "835e781cf749d86666a81b4faed073d507b8603c271e79ca8fdcf0bd12dbb0bf",
+      "size": 86495
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1929/2025-1929.pdf",
+      "sha256": "30e21df469306e69584ca2e95e2165bd2cf1d04fbc9f8f74b8551a67270edade",
+      "size": 523779
+    }
+  },
+  "id": "2025-1929",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "accuracy",
+    "apply",
+    "article",
+    "binding",
+    "compliance",
+    "council",
+    "data",
+    "date",
+    "digital",
+    "down",
+    "electronic",
+    "european",
+    "http",
+    "information",
+    "parliament",
+    "qualified",
+    "regards",
+    "regulation",
+    "service",
+    "services",
+    "stamps",
+    "standards",
+    "time",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards the binding of date and time to data and establishing the accuracy of the time sources for the provision of qualified electronic time stamps Qualified electronic time stamps play a crucial role in the digital environment by promoting the transition from traditional paper-based processes to electronic equivalents. By binding date and time information to electronic data, qualified electronic time stamps help ensuring the accuracy of date and time they indicate and the integrity of digital documents to which the date and time are bound. The presumption of compliance laid down in Article\u00a042(1a) of Regulation (EU) No\u00a0910/2014 should only apply where qualified trust services for the issuance of qualified time stamps comply with the standards set out in this\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.266317+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified electronic time stamps"
+}

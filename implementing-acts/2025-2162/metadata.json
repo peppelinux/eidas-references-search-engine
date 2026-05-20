@@ -1,0 +1,59 @@
+{
+  "celex": "32025R2162",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2162/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2162/2025-2162.html",
+      "sha256": "e94ac9c98fc3ea6f81632c17a99cd8c92dfdd286bca066fb304035141d92986e",
+      "size": 217758
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2162/2025-2162.pdf",
+      "sha256": "36c99f0cb42d6fde9b287cf8383e8b04ad63a3ecca03e53fb8b392f961cc39e2",
+      "size": 664557
+    }
+  },
+  "id": "2025-2162",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "accreditation",
+    "article",
+    "assessment",
+    "bodies",
+    "certificate",
+    "certificates",
+    "conformity",
+    "council",
+    "directive",
+    "down",
+    "european",
+    "parliament",
+    "provide",
+    "providers",
+    "qualified",
+    "regulation",
+    "report",
+    "rules",
+    "scheme",
+    "service",
+    "services",
+    "subject",
+    "they",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and the Council as regards the accreditation of conformity assessment bodies performing the assessment of qualified trust service providers and the qualified trust services they provide, the conformity assessment report and the conformity assessment scheme Pursuant to Articles\u00a020(1) and\u00a021(1) of Regulation (EU) No\u00a0910/2014, qualified trust service providers and the qualified trust services they provide are to be audited by conformity assessment bodies. The resulting conformity assessment reports confirm whether the requirements laid down in that Regulation and in Article\u00a021 of Directive (EU)\u00a02022/2555 of the European Parliament and of the Council\u00a0 ( 2 ) are\u2026 \u2018scheme owner\u2019 means an entity or a group of entities which is responsible for developing and maintaining a conformity assessment scheme;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.382887+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Accreditation of conformity assessment bodies"
+}

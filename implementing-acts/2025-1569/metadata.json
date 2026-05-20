@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1569",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/990be0dd-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1569/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/990be0dd-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1569/2025-1569.html",
+      "sha256": "23c8a3afa32dabf28c76ed30529cba0f7fcf93dbb4ef22d58f070dd02b9fcfd6",
+      "size": 98096
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/990be0dd-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1569/2025-1569.pdf",
+      "sha256": "9e763ef037964c10385c43abfc73f7ae8d032c55c3a64229b6b834a5475600bd",
+      "size": 596450
+    }
+  },
+  "id": "2025-1569",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "attestation",
+    "attestations",
+    "attributes",
+    "authentic",
+    "behalf",
+    "body",
+    "digital",
+    "electronic",
+    "european",
+    "framework",
+    "identity",
+    "member",
+    "parliament",
+    "provided",
+    "providers",
+    "public",
+    "qualified",
+    "regulation",
+    "responsible",
+    "sector",
+    "source",
+    "validation",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards qualified electronic attestations of attributes and electronic attestations of attributes provided by or on behalf of a public sector body responsible for an authentic source Regulation (EU) No\u00a0910/2014 creates a legal framework for the issuance and validation of electronic attestations of attrib.utes, including an obligation for providers of electronic attestations of attributes to provide European Digital Identity Wallet (\u2018wallet\u2019) users with the possibility to request, obtain, store and manage the electronic attestation of attributes irrespective of the Member State where the\u2026 \u2018wallet unit\u2019 means a unique configuration of a wallet solution that includes wallet instances, wallet secure cryptographic applications and wallet secure cryptographic devices provided\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.207907+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Verification of electronic attestations of attributes"
+}

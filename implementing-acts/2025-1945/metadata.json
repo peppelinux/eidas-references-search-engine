@@ -1,0 +1,59 @@
+{
+  "celex": "32025R1945",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/dead57ac-9d97-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1945/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/dead57ac-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1945/2025-1945.html",
+      "sha256": "45105e39f05717000e78dac718743b399450f26336306c8a326f27172e3fefc9",
+      "size": 58292
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/dead57ac-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1945/2025-1945.pdf",
+      "sha256": "6bf7de9160da98f73d89aae0779e7a722d2339b9fb28b0d5c312db2cb8f8ed59",
+      "size": 503855
+    }
+  },
+  "id": "2025-1945",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "advanced",
+    "article",
+    "based",
+    "certificate",
+    "certificates",
+    "council",
+    "data",
+    "down",
+    "electronic",
+    "european",
+    "http",
+    "parliament",
+    "provided",
+    "qualified",
+    "regard",
+    "regards",
+    "regulation",
+    "rules",
+    "seals",
+    "signature",
+    "signatures",
+    "their",
+    "trust",
+    "validation"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards the validation of qualified electronic signatures and of qualified electronic seals and the validation of advanced electronic signatures based on qualified certificates and of advanced electronic seals based on qualified certificates Qualified electronic signatures, qualified electronic seals, advanced electronic signatures based on qualified certificates for electronic signatures and advanced electronic seals based on qualified certificates for electronic seals, provided their validity can be confirmed, ensure to relying parties the integrity and authenticity of the signed or sealed data, and enhance the certainty regarding the identity of\u2026 The presumption of compliance laid down in Article\u00a032(1), Article\u00a040, Article\u00a032a(3) and Article\u00a040a of Regulation (EU)\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.327932+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified certificates for signatures and seals"
+}

@@ -1,0 +1,59 @@
+{
+  "celex": "32024R2979",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2979/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2979/2024-2979.html",
+      "sha256": "ac7e5fff2a72a3bb4ad6fa442745e59ee59ad3e65dc578f6acdd6575040b8b5a",
+      "size": 93583
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2979/2024-2979.pdf",
+      "sha256": "3e4a72ef042bba0904e3801ae92d9efd81235fe3e3a1eb7c84674a2c4b96a2e8",
+      "size": 607301
+    }
+  },
+  "id": "2024-2979",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "access",
+    "across",
+    "application",
+    "attestations",
+    "attributes",
+    "commission",
+    "core",
+    "council",
+    "cryptographic",
+    "digital",
+    "european",
+    "framework",
+    "functionalities",
+    "identification",
+    "identity",
+    "integrity",
+    "parliament",
+    "provided",
+    "regulation",
+    "secure",
+    "services",
+    "union",
+    "wallet",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards the integrity and core functionalities of European Digital Identity Wallets The European Digital Identity Framework established by Regulation (EU) No\u00a0910/2014 is a crucial component in the establishment of a secure and interoperable digital identity ecosystem across the Union. With the European Digital Identity Wallets (\u2018wallets\u2019) being the cornerstone of the framework, it aims at facilitating access to services across Member States, for natural and legal persons, while ensuring the\u2026 \u2018wallet secure cryptographic application\u2019 means an application that manages critical assets by being linked to and using the cryptographic and non-cryptographic functions provided by the wallet secure cryptographic device;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.055683+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Integrity and core functionalities of EUDI Wallets"
+}

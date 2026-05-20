@@ -1,0 +1,21 @@
+# Downloaded official texts (reproducible via sync script)
+# regulation/**/*.pdf
+# regulation/**/*.html
+# regulation/**/*.md
+# implementing-acts/**/*.pdf
+# implementing-acts/**/*.html
+# implementing-acts/**/*.md
+# implementing-decisions/**/*.pdf
+# implementing-decisions/**/*.html
+# implementing-decisions/**/*.md
+
+# Keep per-act metadata committed if present
+# !**/metadata.json
+
+# Generated references report (make report)
+# report/
+
+# Local GitHub Pages build output (scripts/build-gh-pages-site.sh)
+_site/
+*/__pycache__/*
+*__pycache__

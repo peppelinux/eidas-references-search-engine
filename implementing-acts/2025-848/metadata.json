@@ -1,0 +1,59 @@
+{
+  "celex": "32025R0848",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/848/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-848/2025-848.html",
+      "sha256": "ad3e50c59821596b3e829d6fdf08125d1da8255c9d0613648b79e0013a88226e",
+      "size": 157516
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-848/2025-848.pdf",
+      "sha256": "07ce6b4187a8e051f86992c01e113f41de7d6d0503ebae50279906606b4db1a3",
+      "size": 634312
+    }
+  },
+  "id": "2025-848",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "certificate",
+    "certificates",
+    "council",
+    "digital",
+    "european",
+    "identification",
+    "member",
+    "national",
+    "parliament",
+    "parties",
+    "party",
+    "policies",
+    "purpose",
+    "registered",
+    "registers",
+    "registration",
+    "regulation",
+    "rely",
+    "states",
+    "their",
+    "trust",
+    "wallet",
+    "wallet-relying",
+    "wallets"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards the registration of wallet-relying parties For the purposes of registering relying parties that intend to rely on European Digital Identity Wallets (\u2018wallets\u2019) for the provision of digital public or private services, as required by Regulation (EU) No\u00a0910/2014, Member States should establish and maintain national registers of wallet-relying parties established in their territory. \u2018wallet-relying party\u2019 means a relying party that intends to rely upon wallet units for the provision of public or private services by means of digital interaction;",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.525069+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Registration of wallet-relying parties"
+}

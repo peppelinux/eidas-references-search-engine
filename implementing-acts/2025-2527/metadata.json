@@ -1,0 +1,59 @@
+{
+  "celex": "32025R2527",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2527/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2527/2025-2527.html",
+      "sha256": "6740c4702f84d990c441e85d2bfadbdbbb1d2db76200366ef955484d15568f83",
+      "size": 18944
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2527/2025-2527.pdf",
+      "sha256": "421b3186a650a3812809d230ce5c56e70d114f89c89f23c58e9fb33cf5afaee1",
+      "size": 474645
+    }
+  },
+  "id": "2025-2527",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "authentication",
+    "certificate",
+    "certificates",
+    "commission",
+    "council",
+    "data",
+    "directive",
+    "european",
+    "http",
+    "issued",
+    "laying",
+    "natural",
+    "parliament",
+    "policy",
+    "practices",
+    "qualified",
+    "reference",
+    "regard",
+    "regards",
+    "regulation",
+    "standards",
+    "they",
+    "trust",
+    "website"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards for qualified certificates for website authentication Qualified certificates for website authentication are essential for ensuring trust and transparency in online interactions. They make it possible to authenticate a\u00a0website and link the website to the natural or legal person to whom the certificate is issued. The Commission is to establish a list of reference standards for such certificates. The reference standards should allow for the implementation of different types of qualified certificates for website authentication for various use cases, including their use under Directive (EU)\u00a02015/2366 of the European Parliament and of the Council\u00a0 ( 2 ) . They should reflect established practices and be widely recognised within the relevant\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.393440+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Qualified certificates for website authentication"
+}

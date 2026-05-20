@@ -1,0 +1,59 @@
+{
+  "celex": "32025R2160",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2160/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2160/2025-2160.html",
+      "sha256": "2a4ae9ca1a2277100c05aaff58a64fe31eeeca4d959e66fe5fcd756bd4b4bcaa",
+      "size": 48908
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2160/2025-2160.pdf",
+      "sha256": "e9d4815d67f154c00caa8007fc41449a7f4098a0d1137493184647c65d9fa1ab",
+      "size": 512230
+    }
+  },
+  "id": "2025-2160",
+  "kind": "implementing_regulation",
+  "scope_keywords": [
+    "accordance",
+    "article",
+    "commission",
+    "council",
+    "directive",
+    "down",
+    "ensure",
+    "european",
+    "implementing",
+    "management",
+    "non-qualified",
+    "parliament",
+    "procedures",
+    "providers",
+    "qualified",
+    "regulation",
+    "risk",
+    "risks",
+    "service",
+    "services",
+    "specifications",
+    "standards",
+    "subject",
+    "trust"
+  ],
+  "summary": "laying down rules for the application of Regulation (EU) No\u00a0910/2014 of the European Parliament and of the Council as regards reference standards, specifications and procedures for the management of risks to the provision of non-qualified trust services Non-qualified trust service providers play an important role in the digital environment by providing trust services that facilitate secure electronic transactions. Regulation (EU) No\u00a0910/2014 places fewer regulatory requirements on non-qualified trust service providers than on qualified trust service providers. However, all trust service providers are subject to requirements on security and liability to ensure\u2026 Non-qualified trust service providers can be considered important or essential entities in accordance with Article\u00a03 of Directive (EU)\u00a02022/2555 of the European Parliament and of the Council\u00a0 ( 2 ) . Thus, Commission Implementing\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:15.356443+00:00",
+    "sources": [
+      "eli-subtitle",
+      "recitals"
+    ],
+    "status": "ok"
+  },
+  "title": "Risk management for non-qualified trust service providers"
+}

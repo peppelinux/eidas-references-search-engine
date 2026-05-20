@@ -1,0 +1,59 @@
+{
+  "celex": "02014R0910-20241018",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1",
+  "consolidated_as_of": "2024-10-18",
+  "eli": "http://data.europa.eu/eli/reg/2014/910/2024-10-18/oj/eng",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1.0007.02/DOC_2",
+      "path": "regulation/eidas-consolidated/eidas-consolidated.html",
+      "sha256": "b4ab7d733d234eef3a505330717d8a8d4d6388f2d9a0a4bfcde2d1b497ba72ce",
+      "size": 454927
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1.0007.03/DOC_2",
+      "path": "regulation/eidas-consolidated/eidas-consolidated.pdf",
+      "sha256": "1fded3274b202801de22c820bed859bf27b50529faf72fdeabd0a29c32f73604",
+      "size": 735403
+    }
+  },
+  "id": "eidas-consolidated",
+  "kind": "regulation",
+  "scope_keywords": [
+    "authentication",
+    "certificate",
+    "certificates",
+    "delivery",
+    "electronic",
+    "european",
+    "identification",
+    "legal",
+    "means",
+    "natural",
+    "person",
+    "persons",
+    "qualified",
+    "registered",
+    "regulation",
+    "seal",
+    "service",
+    "services",
+    "signature",
+    "signatures",
+    "trust",
+    "union",
+    "validation",
+    "wallets"
+  ],
+  "summary": "on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC This Regulation aims to ensure the proper functioning of the internal market and the provision of an adequate level of security of electronic identification means and trust services used across the Union, in order to enable and facilitate the exercise by natural and legal persons of the right to participate in digital society safely and to access online public and private services throughout the Union. For those purposes, this Regulation:\n\n \n\n \n\n(a)\u00a0\n\n \n\n \n\nlays down the conditions under which Member States are to recognise natural and legal persons\u2019 electronic identification means falling under a\u00a0notified electronic identification scheme of another Member State and provide and recognise European Digital Identity Wallets;\n\n \n\n \n\n \n\n \n\n(b)\u00a0\n\n \n\n \n\nlays\u2026",
+  "summary_meta": {
+    "artifact": "md",
+    "generated_at": "2026-05-19T08:14:14.996299+00:00",
+    "sources": [
+      "eli-subtitle",
+      "article-1-subject-matter"
+    ],
+    "status": "ok"
+  },
+  "title": "Regulation (EU) No 910/2014 (eIDAS) \u2014 consolidated text"
+}
