@@ -34,11 +34,18 @@ Each step is scripted, parallelised where possible, and **re-runnable** when EU 
 3. **Transparency** — Unavailable (licensed) standards still appear as catalogue entries with URLs and tags, not silent omissions.
 4. **Automation** — `make all` at repo root, or step-by-step targets for partial updates.
 
-## Published report
+## Published report (GitHub Pages)
 
-A browsable, up-to-date **interactive report** (graph, tables, search) generated from this repository is hosted at:
+Two deployments share one site (branch `gh-pages`, `keep_files` in CI):
 
-**[eIDAS technical references report](https://peppelinux.github.io/eidas-references-search-engine/report/index.html)**
+| Source | URL | When updated |
+|--------|-----|----------------|
+| **Main (as-is)** | [Site root](https://peppelinux.github.io/eidas-references-search-engine/) · [report](https://peppelinux.github.io/eidas-references-search-engine/report/index.html) | Every push to `main` |
+| **Night build** | [nightbuilds/report](https://peppelinux.github.io/eidas-references-search-engine/nightbuilds/report/index.html) | Daily cron (03:15 UTC) + manual workflow |
+
+**Setup (once):** Repository → **Settings** → **Pages** → Build and deployment: **Deploy from a branch**, branch **`gh-pages`** / **`/ (root)`**.
+
+**Workflows:** [`.github/workflows/pages-main.yml`](.github/workflows/pages-main.yml) mirrors `main` via [`scripts/build-gh-pages-site.sh`](scripts/build-gh-pages-site.sh) `main`. [`.github/workflows/pages-nightbuild.yml`](.github/workflows/pages-nightbuild.yml) runs `make sync markdown specs report` on a schedule and publishes the result under **`/nightbuilds/`** (`night` mode).
 
 ## Repository layout
 

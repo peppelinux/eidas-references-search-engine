@@ -1,0 +1,30 @@
+# Deploy GitHub Pages from main branch content (no pipeline run).
+name: Pages — main (as-is)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build static site from main
+        run: bash scripts/build-gh-pages-site.sh main
+
+      - name: Deploy to gh-pages (preserve nightbuilds/)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          keep_files: true

@@ -14,5 +14,8 @@
 
 # Generated references report (make report)
 # report/
+
+# Local GitHub Pages build output (scripts/build-gh-pages-site.sh)
+_site/
 */__pycache__/*
 *__pycache__

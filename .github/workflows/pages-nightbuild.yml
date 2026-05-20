@@ -1,0 +1,67 @@
+# Nightly full corpus rebuild → /nightbuilds/ on GitHub Pages.
+name: Pages — nightbuild
+
+on:
+  schedule:
+    # 03:15 UTC daily
+    - cron: "15 10 * * 1-7 Europe/Rome" # Monday to Sunday at 10:15 AM UTC (Europe/Rome)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.gate.outputs.skip }}
+    steps:
+      - name: Skip when another nightbuild is already running
+        id: gate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const me = context.runId;
+            const runs = await github.paginate(
+              github.rest.actions.listWorkflowRuns,
+              {
+                owner,
+                repo,
+                workflow_id: "pages-nightbuild.yml",
+                status: "in_progress",
+                per_page: 100,
+              }
+            );
+            const others = runs.filter((r) => r.id !== me);
+            core.info(`In-progress runs (excluding this): ${others.length}`);
+            core.setOutput("skip", others.length > 0 ? "true" : "false");
+
+  deploy:
+    needs: gate
+    if: needs.gate.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc poppler-utils
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline and assemble nightbuilds
+        run: bash scripts/build-gh-pages-site.sh night
+        env:
+          WORKERS: "10"
+
+      - name: Deploy to gh-pages (preserve main site root)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          keep_files: true
