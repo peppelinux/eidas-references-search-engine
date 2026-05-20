@@ -34,6 +34,12 @@ Each step is scripted, parallelised where possible, and **re-runnable** when EU 
 3. **Transparency** — Unavailable (licensed) standards still appear as catalogue entries with URLs and tags, not silent omissions.
 4. **Automation** — `make all` at repo root, or step-by-step targets for partial updates.
 
+## Published report
+
+A browsable, up-to-date **interactive report** (graph, tables, search) generated from this repository is hosted at:
+
+**[eIDAS technical references report](https://peppelinux.github.io/eidas-references-search-engine/report/index.html)**
+
 ## Repository layout
 
 | Path | Content |
