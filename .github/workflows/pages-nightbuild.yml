@@ -3,8 +3,8 @@ name: Pages — nightbuild
 
 on:
   schedule:
-    # 03:15 UTC daily
-    - cron: "15 10 * * 1-7 Europe/Rome" # Monday to Sunday at 10:15 AM UTC (Europe/Rome)
+    # GitHub cron is UTC only (5 fields). 09:15 UTC ≈ 10:15 Europe/Rome (CET); 11:15 during CEST.
+    - cron: "15 9 * * *"
   workflow_dispatch:
 
 permissions:

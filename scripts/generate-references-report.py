@@ -42,6 +42,9 @@ from build_search_index import build_search_index, write_search_index
 
 DOWNLOADED_STATUSES = frozenset({"downloaded", "unchanged"})
 
+CORPUS_ANCHOR_SECTION = "regulation"
+CORPUS_ANCHOR_ACT_ID = "eidas-consolidated"
+
 ARF_TS_INDEX_URL = (
     "https://github.com/eu-digital-identity-wallet/"
     "eudi-doc-architecture-and-reference-framework/tree/main/docs/technical-specifications"
@@ -210,12 +213,42 @@ def _apply_legal_metadata(node: dict[str, Any]) -> None:
     meta = load_legal_act_metadata(node.get("section"), node.get("act_id"))
     if not meta:
         return
+    for key in ("title", "celex", "eli", "kind", "files", "consolidated_as_of"):
+        if meta.get(key) is not None and not node.get(key):
+            node[key] = meta[key]
     if meta.get("summary"):
         node["summary"] = meta["summary"]
     if meta.get("scope_keywords"):
         node["scope_keywords"] = meta["scope_keywords"]
     if meta.get("summary_meta"):
         node["summary_meta"] = meta["summary_meta"]
+
+
+def ensure_corpus_anchor(nodes: dict[str, dict[str, Any]]) -> str:
+    """Ensure consolidated eIDAS is in the graph (root node detail target)."""
+    meta = load_legal_act_metadata(CORPUS_ANCHOR_SECTION, CORPUS_ANCHOR_ACT_ID)
+    lid = legal_node_id({"id": CORPUS_ANCHOR_ACT_ID})
+    if lid not in nodes:
+        nodes[lid] = {
+            "id": lid,
+            "type": "legal_regulation",
+            "act_id": CORPUS_ANCHOR_ACT_ID,
+            "section": CORPUS_ANCHOR_SECTION,
+            "title": meta.get("title"),
+            "celex": meta.get("celex"),
+            "eli": meta.get("eli"),
+            "kind": meta.get("kind"),
+            "files": meta.get("files") or {},
+            "scope_keywords": meta.get("scope_keywords") or [],
+            "summary": meta.get("summary"),
+            "summary_meta": meta.get("summary_meta"),
+        }
+        if meta.get("consolidated_as_of"):
+            nodes[lid]["consolidated_as_of"] = meta["consolidated_as_of"]
+    else:
+        _apply_legal_metadata(nodes[lid])
+    nodes[lid]["search_text"] = _legal_search_text(nodes[lid])
+    return lid
 
 
 def _legal_search_text(node: dict[str, Any]) -> str:
@@ -362,6 +395,8 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
                 )
                 break
 
+    corpus_anchor_id = ensure_corpus_anchor(nodes)
+
     node_list = list(nodes.values())
     for n in node_list:
         if n.get("type") == "legal_regulation":
@@ -371,6 +406,7 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "corpus_anchor_id": corpus_anchor_id,
         "nodes": node_list,
         "edges": edges,
     }

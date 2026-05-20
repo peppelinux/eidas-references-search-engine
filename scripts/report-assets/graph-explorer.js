@@ -470,10 +470,21 @@
     return { ...(visNode || {}), id, raw };
   }
 
+  function corpusAnchorId() {
+    return graphData?.corpus_anchor_id || "legal:eidas-consolidated";
+  }
+
+  function resolveDetailTarget(nodeOrId) {
+    const resolved = resolveNodeForDetail(nodeOrId);
+    if (!resolved) return null;
+    if (resolved.id !== "__root__") return resolved;
+    return resolveNodeForDetail(corpusAnchorId()) || resolved;
+  }
+
   function renderDetail(node) {
     const panel = $("#graph-detail");
     if (!panel) return;
-    const resolved = resolveNodeForDetail(node);
+    const resolved = resolveDetailTarget(node);
     if (!resolved || resolved.id === "__root__") {
       panel.innerHTML =
         '<p class="placeholder">Click a legal act or specification to view summary, scope keywords, and links.</p>';
@@ -487,6 +498,13 @@
         : [];
     if (raw.type === "legal_regulation") {
       if (raw.eli) links.push({ label: "EUR-Lex (ELI)", href: raw.eli, ext: true });
+      if (raw.celex) {
+        links.push({
+          label: "EUR-Lex (CELEX)",
+          href: `https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:${encodeURIComponent(raw.celex)}`,
+          ext: true,
+        });
+      }
       if (raw.section && raw.act_id) {
         links.push({
           label: "Legal markdown",
