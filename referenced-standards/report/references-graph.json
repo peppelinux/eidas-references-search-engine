@@ -1,0 +1,6157 @@
+{
+  "edges": [
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "CEN CEN/TS 18170"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "CEN CEN/TS 18170"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "CEN CEN/TS 18170 V2025"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "CEN CEN/TS 419261 V2015"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI EN 319 102-1 V1.4.1"
+    },
+    {
+      "from": "legal:2025-1945",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1945/2025-1945.md",
+      "to": "ETSI EN 319 102-1 V1.4.1"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ETSI EN 319 102-1 V1.4.1"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ETSI EN 319 122-1 V1.3.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "ETSI EN 319 132-1 V1.2.1"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ETSI EN 319 132-1 V1.3.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "ETSI EN 319 142-1 V1.1.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "ETSI EN 319 162-1 V1.1.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "ETSI EN 319 162-2 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1566",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1566/2025-1566.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1567",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1567/2025-1567.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1569",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1569/2025-1569.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-2160",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2160/2025-2160.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "ETSI EN 319 401 V3.1.1"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ETSI EN 319 403-1 V2.3.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 411-1 V1.5.1"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ETSI EN 319 411-1 V1.5.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 411-2 V2.6.1"
+    },
+    {
+      "from": "legal:2025-2527",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2527/2025-2527.md",
+      "to": "ETSI EN 319 411-2 V2.6.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 412-1 V1.6.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 412-2 V2.4.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 412-3 V1.3.1"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ETSI EN 319 412-5 V2.5.1"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "ETSI EN 319 421 V1.3.1"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "ETSI EN 319 421 V1.3.1"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "ETSI EN 319 422 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ETSI EN 319 521 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ETSI EN 319 522-1 V1.2.1"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ETSI EN 319 522-2 V1.2.1"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ETSI EN 319 522-3 V1.2.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "ETSI EN 3191 22-1 V1.3.1"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ETSI EN 319403-1 V2.3.1"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI TS 119 101 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1945",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1945/2025-1945.md",
+      "to": "ETSI TS 119 101 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ETSI TS 119 101 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI TS 119 102-2 V1.4.1"
+    },
+    {
+      "from": "legal:2025-1945",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1945/2025-1945.md",
+      "to": "ETSI TS 119 102-2 V1.4.1"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI TS 119 172-4 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1945",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1945/2025-1945.md",
+      "to": "ETSI TS 119 172-4 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ETSI TS 119 172-4 V1.1.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "ETSI TS 119 182-1 V1.2.1"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ETSI TS 119 182-1 V1.2.1"
+    },
+    {
+      "from": "legal:2025-2527",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2527/2025-2527.md",
+      "to": "ETSI TS 119 411-5 V2.1.1"
+    },
+    {
+      "from": "legal:2025-1567",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1567/2025-1567.md",
+      "to": "ETSI TS 119 431-1 V1.3.1"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI TS 119 441 V1.2.1"
+    },
+    {
+      "from": "legal:2025-1566",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1566/2025-1566.md",
+      "to": "ETSI TS 119 461 V2.1.1"
+    },
+    {
+      "from": "legal:2026-798",
+      "kind": "cites",
+      "source": "implementing-acts/2026-798/2026-798.md",
+      "to": "ETSI TS 119 461 V2.1.1"
+    },
+    {
+      "from": "legal:2025-2527",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2527/2025-2527.md",
+      "to": "ETSI TS 119 495 V1.7.1"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ETSI TS 119 511 V1.1.1"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ETSI TS 119 612 V2.3.1"
+    },
+    {
+      "from": "legal:2025-1945",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1945/2025-1945.md",
+      "to": "ETSI TS 119 612 V2.3.1"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ETSI TS 119 612 V2.4.1"
+    },
+    {
+      "from": "legal:2025-2164",
+      "kind": "cites",
+      "source": "implementing-decisions/2025-2164/2025-2164.md",
+      "to": "ETSI TS 119 612 V2.4.1"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "IETF RFC 3161"
+    },
+    {
+      "from": "legal:2024-2980",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2980/2024-2980.md",
+      "to": "IETF RFC 3647"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "IETF RFC 3739"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "IETF RFC 5280"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "IETF RFC 5280"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "IETF RFC 5322"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "IETF RFC 7515"
+    },
+    {
+      "from": "legal:2026-248",
+      "kind": "cites",
+      "source": "implementing-acts/2026-248/2026-248.md",
+      "to": "IETF RFC 7515"
+    },
+    {
+      "from": "legal:2025-848",
+      "kind": "cites",
+      "source": "implementing-acts/2025-848/2025-848.md",
+      "to": "IETF RFC 7519"
+    },
+    {
+      "from": "legal:2025-848",
+      "kind": "cites",
+      "source": "implementing-acts/2025-848/2025-848.md",
+      "to": "IETF RFC 8392"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "IETF RFC 9110"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO 14641"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO 14721"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "ISO-IEC ISO 14721 V2025"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO 19794-5"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO 23257"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ISO-IEC ISO 23257 V2022"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO 3166"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO 3166-1"
+    },
+    {
+      "from": "legal:2025-848",
+      "kind": "cites",
+      "source": "implementing-acts/2025-848/2025-848.md",
+      "to": "ISO-IEC ISO 3166-1"
+    },
+    {
+      "from": "legal:2025-2164",
+      "kind": "cites",
+      "source": "implementing-decisions/2025-2164/2025-2164.md",
+      "to": "ISO-IEC ISO 3166-1"
+    },
+    {
+      "from": "legal:2025-2164",
+      "kind": "cites",
+      "source": "implementing-decisions/2025-2164/2025-2164.md",
+      "to": "ISO-IEC ISO 3166-1 V2006"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO 3166-2 V2020"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO 39794"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "ISO-IEC ISO/IEC 15408"
+    },
+    {
+      "from": "legal:2025-1942",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1942/2025-1942.md",
+      "to": "ISO-IEC ISO/IEC 15408-1 V2022"
+    },
+    {
+      "from": "legal:2025-1944",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1944/2025-1944.md",
+      "to": "ISO-IEC ISO/IEC 15408-1 V2022"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 15408-3 V2022"
+    },
+    {
+      "from": "legal:2025-1929",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1929/2025-1929.md",
+      "to": "ISO-IEC ISO/IEC 15408 V2022"
+    },
+    {
+      "from": "legal:2025-1943",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1943/2025-1943.md",
+      "to": "ISO-IEC ISO/IEC 15408 V2022"
+    },
+    {
+      "from": "legal:2025-1946",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1946/2025-1946.md",
+      "to": "ISO-IEC ISO/IEC 15408 V2022"
+    },
+    {
+      "from": "legal:2025-2531",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2531/2025-2531.md",
+      "to": "ISO-IEC ISO/IEC 15408 V2022"
+    },
+    {
+      "from": "legal:2025-2532",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2532/2025-2532.md",
+      "to": "ISO-IEC ISO/IEC 15408 V2022"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17000 V2020"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO/IEC 17011 V2017"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17020 V2012"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO/IEC 17020 V2012"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17021-1 V2015"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO/IEC 17021-1 V2015"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17025 V2017"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO/IEC 17025 V2017"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17029 V2019"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17065"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17065 V2012"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO/IEC 17065 V2012"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 17067 V2013"
+    },
+    {
+      "from": "legal:2025-2162",
+      "kind": "cites",
+      "source": "implementing-acts/2025-2162/2025-2162.md",
+      "to": "ISO-IEC ISO/IEC 17067 V2013"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO/IEC 18013-5 V2021"
+    },
+    {
+      "from": "legal:2024-2982",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2982/2024-2982.md",
+      "to": "ISO-IEC ISO/IEC 18013-5 V2021"
+    },
+    {
+      "from": "legal:2025-1568",
+      "kind": "cites",
+      "source": "implementing-acts/2025-1568/2025-1568.md",
+      "to": "ISO-IEC ISO/IEC 27001"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 27001 V2022"
+    },
+    {
+      "from": "legal:2024-2981",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2981/2024-2981.md",
+      "to": "ISO-IEC ISO/IEC 30111 V2019"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "ISO-IEC ISO/IEC 5218"
+    },
+    {
+      "from": "legal:2024-2977",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2977/2024-2977.md",
+      "to": "W3C vc-data-model V1.1"
+    },
+    {
+      "from": "legal:2024-2979",
+      "kind": "cites",
+      "source": "implementing-acts/2024-2979/2024-2979.md",
+      "to": "W3C vc-data-model V1.1"
+    }
+  ],
+  "generated_at": "2026-05-19T07:01:17.873160+00:00",
+  "nodes": [
+    {
+      "body": "CEN",
+      "designation": "CEN/TS 18170",
+      "download_url": "https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:18170,25",
+      "folder": "CEN/CEN-TS-18170",
+      "id": "CEN CEN/TS 18170",
+      "status": "unavailable",
+      "tags": [
+        "cen",
+        "cen-ts",
+        "cited-by-eu-law",
+        "common-criteria",
+        "european-technical-specification",
+        "implementing-acts",
+        "implementing-regulation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "act_id": "2025-2162",
+      "celex": "32025R2162",
+      "id": "legal:2025-2162",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Accreditation of conformity assessment bodies",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-2532",
+      "celex": "32025R2532",
+      "id": "legal:2025-2532",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified electronic archiving services",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "CEN",
+      "designation": "CEN/TS 18170",
+      "download_url": "https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:18170,25",
+      "folder": "CEN/CEN-TS-18170-V2025",
+      "id": "CEN CEN/TS 18170 V2025",
+      "status": "unavailable",
+      "tags": [
+        "cen",
+        "cen-ts",
+        "cited-by-eu-law",
+        "common-criteria",
+        "dated-release",
+        "european-technical-specification",
+        "implementing-acts",
+        "implementing-regulation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2025"
+    },
+    {
+      "body": "CEN",
+      "designation": "CEN/TS 419261",
+      "download_url": "https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:419261,25",
+      "folder": "CEN/CEN-TS-419261-V2015",
+      "id": "CEN CEN/TS 419261 V2015",
+      "status": "unavailable",
+      "tags": [
+        "cen",
+        "cen-ts",
+        "cited-by-eu-law",
+        "dated-release",
+        "european-technical-specification",
+        "implementing-acts",
+        "implementing-regulation",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2015"
+    },
+    {
+      "act_id": "2025-1943",
+      "celex": "32025R1943",
+      "id": "legal:2025-1943",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Reference standards and validation procedures (QTSP)",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 102-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.04.01_60/en_31910201v010401p.pdf",
+      "folder": "ETSI/EN-319-102-1-V1.4.1",
+      "id": "ETSI EN 319 102-1 V1.4.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.4.1"
+    },
+    {
+      "act_id": "2025-1942",
+      "celex": "32025R1942",
+      "id": "legal:2025-1942",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Recognition of qualified validation services",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-1945",
+      "celex": "32025R1945",
+      "id": "legal:2025-1945",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified certificates for signatures and seals",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-1946",
+      "celex": "32025R1946",
+      "id": "legal:2025-1946",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified preservation services for signatures and seals",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 122-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf",
+      "folder": "ETSI/EN-319-122-1-V1.3.1",
+      "id": "ETSI EN 319 122-1 V1.3.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.3.1"
+    },
+    {
+      "act_id": "2025-2531",
+      "celex": "32025R2531",
+      "id": "legal:2025-2531",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified electronic ledgers",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 132-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.02.01_60/en_31913201v010201p.pdf",
+      "folder": "ETSI/EN-319-132-1-V1.2.1",
+      "id": "ETSI EN 319 132-1 V1.2.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.2.1"
+    },
+    {
+      "act_id": "2024-2979",
+      "celex": "32024R2979",
+      "id": "legal:2024-2979",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Integrity and core functionalities of EUDI Wallets",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 132-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf",
+      "folder": "ETSI/EN-319-132-1-V1.3.1",
+      "id": "ETSI EN 319 132-1 V1.3.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 142-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.01.01_60/en_31914201v010101p.pdf",
+      "folder": "ETSI/EN-319-142-1-V1.1.1",
+      "id": "ETSI EN 319 142-1 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 162-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf",
+      "folder": "ETSI/EN-319-162-1-V1.1.1",
+      "id": "ETSI EN 319 162-1 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 162-2",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31916202/01.01.01_60/en_31916202v010101p.pdf",
+      "folder": "ETSI/EN-319-162-2-V1.1.1",
+      "id": "ETSI EN 319 162-2 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 401",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.01.01_60/en_319401v030101p.pdf",
+      "folder": "ETSI/EN-319-401-V3.1.1",
+      "id": "ETSI EN 319 401 V3.1.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "3.1.1"
+    },
+    {
+      "act_id": "2025-1566",
+      "celex": "32025R1566",
+      "id": "legal:2025-1566",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Identity and recipients of qualified certificates",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-1567",
+      "celex": "32025R1567",
+      "id": "legal:2025-1567",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Remote qualified signature/seal creation devices",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-1569",
+      "celex": "32025R1569",
+      "id": "legal:2025-1569",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Verification of electronic attestations of attributes",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-1929",
+      "celex": "32025R1929",
+      "id": "legal:2025-1929",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified electronic time stamps",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-1944",
+      "celex": "32025R1944",
+      "id": "legal:2025-1944",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified electronic registered delivery services",
+      "type": "legal_regulation"
+    },
+    {
+      "act_id": "2025-2160",
+      "celex": "32025R2160",
+      "id": "legal:2025-2160",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Risk management for non-qualified trust service providers",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 403-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31940301/02.03.01_60/en_31940301v020301p.pdf",
+      "folder": "ETSI/EN-319-403-1-V2.3.1",
+      "id": "ETSI EN 319 403-1 V2.3.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 411-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf",
+      "folder": "ETSI/EN-319-411-1-V1.5.1",
+      "id": "ETSI EN 319 411-1 V1.5.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.5.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 411-2",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf",
+      "folder": "ETSI/EN-319-411-2-V2.6.1",
+      "id": "ETSI EN 319 411-2 V2.6.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.6.1"
+    },
+    {
+      "act_id": "2025-2527",
+      "celex": "32025R2527",
+      "id": "legal:2025-2527",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Qualified certificates for website authentication",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 412-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf",
+      "folder": "ETSI/EN-319-412-1-V1.6.1",
+      "id": "ETSI EN 319 412-1 V1.6.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.6.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 412-2",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf",
+      "folder": "ETSI/EN-319-412-2-V2.4.1",
+      "id": "ETSI EN 319 412-2 V2.4.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.4.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 412-3",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf",
+      "folder": "ETSI/EN-319-412-3-V1.3.1",
+      "id": "ETSI EN 319 412-3 V1.3.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 412-5",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf",
+      "folder": "ETSI/EN-319-412-5-V2.5.1",
+      "id": "ETSI EN 319 412-5 V2.5.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.5.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 421",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319421/01.03.01_60/en_319421v010301p.pdf",
+      "folder": "ETSI/EN-319-421-V1.3.1",
+      "id": "ETSI EN 319 421 V1.3.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 422",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_60/en_319422v010101p.pdf",
+      "folder": "ETSI/EN-319-422-V1.1.1",
+      "id": "ETSI EN 319 422 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 521",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/319521/01.01.01_60/en_319521v010101p.pdf",
+      "folder": "ETSI/EN-319-521-V1.1.1",
+      "id": "ETSI EN 319 521 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 522-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/31952201/01.02.01_60/en_31952201v010201p.pdf",
+      "folder": "ETSI/EN-319-522-1-V1.2.1",
+      "id": "ETSI EN 319 522-1 V1.2.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.2.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 522-2",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/31952202/01.02.01_60/en_31952202v010201p.pdf",
+      "folder": "ETSI/EN-319-522-2-V1.2.1",
+      "id": "ETSI EN 319 522-2 V1.2.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.2.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319 522-3",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/31952203/01.02.01_60/en_31952203v010201p.pdf",
+      "folder": "ETSI/EN-319-522-3-V1.2.1",
+      "id": "ETSI EN 319 522-3 V1.2.1",
+      "status": "unchanged",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.2.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 3191 22-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_60/en_319102201v010301p.pdf",
+      "folder": "ETSI/EN-3191-22-1-V1.3.1",
+      "id": "ETSI EN 3191 22-1 V1.3.1",
+      "status": "unavailable",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "dated-release",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "EN 319403-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_60/en_319403001v020301p.pdf",
+      "folder": "ETSI/EN-319403-1-V2.3.1",
+      "id": "ETSI EN 319403-1 V2.3.1",
+      "status": "unavailable",
+      "tags": [
+        "319-series",
+        "cited-by-eu-law",
+        "en",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "normative-reference",
+        "technical-specification",
+        "trust-services",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 101",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/119101/01.01.01_60/ts_119101v010101p.pdf",
+      "folder": "ETSI/TS-119-101-V1.1.1",
+      "id": "ETSI TS 119 101 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 102-2",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf",
+      "folder": "ETSI/TS-119-102-2-V1.4.1",
+      "id": "ETSI TS 119 102-2 V1.4.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.4.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 172-4",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11917204/01.01.01_60/ts_11917204v010101p.pdf",
+      "folder": "ETSI/TS-119-172-4-V1.1.1",
+      "id": "ETSI TS 119 172-4 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 182-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf",
+      "folder": "ETSI/TS-119-182-1-V1.2.1",
+      "id": "ETSI TS 119 182-1 V1.2.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.2.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 411-5",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_60/ts_11941105v020101p.pdf",
+      "folder": "ETSI/TS-119-411-5-V2.1.1",
+      "id": "ETSI TS 119 411-5 V2.1.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 431-1",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_60/ts_11943101v010301p.pdf",
+      "folder": "ETSI/TS-119-431-1-V1.3.1",
+      "id": "ETSI TS 119 431-1 V1.3.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 441",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119441/01.02.01_60/ts_119441v010201p.pdf",
+      "folder": "ETSI/TS-119-441-V1.2.1",
+      "id": "ETSI TS 119 441 V1.2.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.2.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 461",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf",
+      "folder": "ETSI/TS-119-461-V2.1.1",
+      "id": "ETSI TS 119 461 V2.1.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.1.1"
+    },
+    {
+      "act_id": "2026-798",
+      "celex": "32026R0798",
+      "id": "legal:2026-798",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Remote onboarding to EUDI Wallets (eID substantial)",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 495",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119495/01.07.01_60/ts_119495v010701p.pdf",
+      "folder": "ETSI/TS-119-495-V1.7.1",
+      "id": "ETSI TS 119 495 V1.7.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.7.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 511",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119500_119599/119511/01.01.01_60/ts_119511v010101p.pdf",
+      "folder": "ETSI/TS-119-511-V1.1.1",
+      "id": "ETSI TS 119 511 V1.1.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 612",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.03.01_60/ts_119612v020301p.pdf",
+      "folder": "ETSI/TS-119-612-V2.3.1",
+      "id": "ETSI TS 119 612 V2.3.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "dated-release",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.3.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 612",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf",
+      "folder": "ETSI/TS-119-612-V2.4.1",
+      "id": "ETSI TS 119 612 V2.4.1",
+      "status": "unchanged",
+      "tags": [
+        "119-series",
+        "ades",
+        "cited-by-eu-law",
+        "esi",
+        "etsi",
+        "implementing-acts",
+        "implementing-decision",
+        "implementing-decisions",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "ts",
+        "unchanged",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2.4.1"
+    },
+    {
+      "act_id": "2025-2164",
+      "celex": "32025D2164",
+      "id": "legal:2025-2164",
+      "kind": "implementing_decision",
+      "section": "implementing-decisions",
+      "title": "Trusted lists of trust service providers",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "IEEE",
+      "designation": "IEEE 1003.1",
+      "download_url": "https://standards.ieee.org/standard/1003.1.html",
+      "folder": "IEEE/IEEE-1003.1",
+      "id": "IEEE IEEE 1003.1",
+      "status": "unavailable",
+      "tags": [
+        "ieee",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IEEE",
+      "designation": "IEEE 105",
+      "download_url": "https://standards.ieee.org/standard/105.html",
+      "folder": "IEEE/IEEE-105",
+      "id": "IEEE IEEE 105",
+      "status": "unavailable",
+      "tags": [
+        "ieee",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 0020",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc0020.txt",
+      "folder": "IETF/RFC-0020",
+      "id": "IETF RFC 0020",
+      "status": "unavailable",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 0793",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc0793.txt",
+      "folder": "IETF/RFC-0793",
+      "id": "IETF RFC 0793",
+      "status": "unavailable",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 0822",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc0822.txt",
+      "folder": "IETF/RFC-0822",
+      "id": "IETF RFC 0822",
+      "status": "unavailable",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1034",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+      "folder": "IETF/RFC-1034",
+      "id": "IETF RFC 1034",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1035",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+      "folder": "IETF/RFC-1035",
+      "id": "IETF RFC 1035",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1123",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1123.txt",
+      "folder": "IETF/RFC-1123",
+      "id": "IETF RFC 1123",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1305",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1305.txt",
+      "folder": "IETF/RFC-1305",
+      "id": "IETF RFC 1305",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1321",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1321.txt",
+      "folder": "IETF/RFC-1321",
+      "id": "IETF RFC 1321",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1422",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1422.txt",
+      "folder": "IETF/RFC-1422",
+      "id": "IETF RFC 1422",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1919",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1919.txt",
+      "folder": "IETF/RFC-1919",
+      "id": "IETF RFC 1919",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1945",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1945.txt",
+      "folder": "IETF/RFC-1945",
+      "id": "IETF RFC 1945",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1950",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1950.txt",
+      "folder": "IETF/RFC-1950",
+      "id": "IETF RFC 1950",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1951",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1951.txt",
+      "folder": "IETF/RFC-1951",
+      "id": "IETF RFC 1951",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 1952",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc1952.txt",
+      "folder": "IETF/RFC-1952",
+      "id": "IETF RFC 1952",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2044",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2044.txt",
+      "folder": "IETF/RFC-2044",
+      "id": "IETF RFC 2044",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2045",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2045.txt",
+      "folder": "IETF/RFC-2045",
+      "id": "IETF RFC 2045",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2046",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2046.txt",
+      "folder": "IETF/RFC-2046",
+      "id": "IETF RFC 2046",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2047",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2047.txt",
+      "folder": "IETF/RFC-2047",
+      "id": "IETF RFC 2047",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2049",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2049.txt",
+      "folder": "IETF/RFC-2049",
+      "id": "IETF RFC 2049",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2068",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2068.txt",
+      "folder": "IETF/RFC-2068",
+      "id": "IETF RFC 2068",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2104",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2104.txt",
+      "folder": "IETF/RFC-2104",
+      "id": "IETF RFC 2104",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2119",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2119.txt",
+      "folder": "IETF/RFC-2119",
+      "id": "IETF RFC 2119",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2145",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2145.txt",
+      "folder": "IETF/RFC-2145",
+      "id": "IETF RFC 2145",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2246",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2246.txt",
+      "folder": "IETF/RFC-2246",
+      "id": "IETF RFC 2246",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2247",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2247.txt",
+      "folder": "IETF/RFC-2247",
+      "id": "IETF RFC 2247",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2253",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2253.txt",
+      "folder": "IETF/RFC-2253",
+      "id": "IETF RFC 2253",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2277",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2277.txt",
+      "folder": "IETF/RFC-2277",
+      "id": "IETF RFC 2277",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2279",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2279.txt",
+      "folder": "IETF/RFC-2279",
+      "id": "IETF RFC 2279",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2295",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2295.txt",
+      "folder": "IETF/RFC-2295",
+      "id": "IETF RFC 2295",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2324",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2324.txt",
+      "folder": "IETF/RFC-2324",
+      "id": "IETF RFC 2324",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2459",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2459.txt",
+      "folder": "IETF/RFC-2459",
+      "id": "IETF RFC 2459",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2460",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2460.txt",
+      "folder": "IETF/RFC-2460",
+      "id": "IETF RFC 2460",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2510",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2510.txt",
+      "folder": "IETF/RFC-2510",
+      "id": "IETF RFC 2510",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2527",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2527.txt",
+      "folder": "IETF/RFC-2527",
+      "id": "IETF RFC 2527",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2557",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2557.txt",
+      "folder": "IETF/RFC-2557",
+      "id": "IETF RFC 2557",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2560",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2560.txt",
+      "folder": "IETF/RFC-2560",
+      "id": "IETF RFC 2560",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2585",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2585.txt",
+      "folder": "IETF/RFC-2585",
+      "id": "IETF RFC 2585",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2616",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2616.txt",
+      "folder": "IETF/RFC-2616",
+      "id": "IETF RFC 2616",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2617",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2617.txt",
+      "folder": "IETF/RFC-2617",
+      "id": "IETF RFC 2617",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2630",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2630.txt",
+      "folder": "IETF/RFC-2630",
+      "id": "IETF RFC 2630",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2634",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2634.txt",
+      "folder": "IETF/RFC-2634",
+      "id": "IETF RFC 2634",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2774",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2774.txt",
+      "folder": "IETF/RFC-2774",
+      "id": "IETF RFC 2774",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2797",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2797.txt",
+      "folder": "IETF/RFC-2797",
+      "id": "IETF RFC 2797",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2818",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2818.txt",
+      "folder": "IETF/RFC-2818",
+      "id": "IETF RFC 2818",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2821",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2821.txt",
+      "folder": "IETF/RFC-2821",
+      "id": "IETF RFC 2821",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2822",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2822.txt",
+      "folder": "IETF/RFC-2822",
+      "id": "IETF RFC 2822",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2978",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2978.txt",
+      "folder": "IETF/RFC-2978",
+      "id": "IETF RFC 2978",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 2985",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc2985.txt",
+      "folder": "IETF/RFC-2985",
+      "id": "IETF RFC 2985",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3039",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3039.txt",
+      "folder": "IETF/RFC-3039",
+      "id": "IETF RFC 3039",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3040",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3040.txt",
+      "folder": "IETF/RFC-3040",
+      "id": "IETF RFC 3040",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3161",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3161.txt",
+      "folder": "IETF/RFC-3161",
+      "id": "IETF RFC 3161",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3275",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3275.txt",
+      "folder": "IETF/RFC-3275",
+      "id": "IETF RFC 3275",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3279",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3279.txt",
+      "folder": "IETF/RFC-3279",
+      "id": "IETF RFC 3279",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3280",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3280.txt",
+      "folder": "IETF/RFC-3280",
+      "id": "IETF RFC 3280",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3339",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3339.txt",
+      "folder": "IETF/RFC-3339",
+      "id": "IETF RFC 3339",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3447",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3447.txt",
+      "folder": "IETF/RFC-3447",
+      "id": "IETF RFC 3447",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3454",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3454.txt",
+      "folder": "IETF/RFC-3454",
+      "id": "IETF RFC 3454",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3490",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3490.txt",
+      "folder": "IETF/RFC-3490",
+      "id": "IETF RFC 3490",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3629",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3629.txt",
+      "folder": "IETF/RFC-3629",
+      "id": "IETF RFC 3629",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3647",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3647.txt",
+      "folder": "IETF/RFC-3647",
+      "id": "IETF RFC 3647",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "act_id": "2024-2980",
+      "celex": "32024R2980",
+      "id": "legal:2024-2980",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Trust framework and electronic notification system",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3739",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3739.txt",
+      "folder": "IETF/RFC-3739",
+      "id": "IETF RFC 3739",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3864",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3864.txt",
+      "folder": "IETF/RFC-3864",
+      "id": "IETF RFC 3864",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3875",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3875.txt",
+      "folder": "IETF/RFC-3875",
+      "id": "IETF RFC 3875",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3986",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3986.txt",
+      "folder": "IETF/RFC-3986",
+      "id": "IETF RFC 3986",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 3987",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc3987.txt",
+      "folder": "IETF/RFC-3987",
+      "id": "IETF RFC 3987",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4021",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4021.txt",
+      "folder": "IETF/RFC-4021",
+      "id": "IETF RFC 4021",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4033",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4033.txt",
+      "folder": "IETF/RFC-4033",
+      "id": "IETF RFC 4033",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4055",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4055.txt",
+      "folder": "IETF/RFC-4055",
+      "id": "IETF RFC 4055",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4086",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4086.txt",
+      "folder": "IETF/RFC-4086",
+      "id": "IETF RFC 4086",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4120",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4120.txt",
+      "folder": "IETF/RFC-4120",
+      "id": "IETF RFC 4120",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4122",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4122.txt",
+      "folder": "IETF/RFC-4122",
+      "id": "IETF RFC 4122",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4210",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4210.txt",
+      "folder": "IETF/RFC-4210",
+      "id": "IETF RFC 4210",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4288",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4288.txt",
+      "folder": "IETF/RFC-4288",
+      "id": "IETF RFC 4288",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4289",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4289.txt",
+      "folder": "IETF/RFC-4289",
+      "id": "IETF RFC 4289",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4325",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4325.txt",
+      "folder": "IETF/RFC-4325",
+      "id": "IETF RFC 4325",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4491",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4491.txt",
+      "folder": "IETF/RFC-4491",
+      "id": "IETF RFC 4491",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4510",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4510.txt",
+      "folder": "IETF/RFC-4510",
+      "id": "IETF RFC 4510",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4512",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4512.txt",
+      "folder": "IETF/RFC-4512",
+      "id": "IETF RFC 4512",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4514",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4514.txt",
+      "folder": "IETF/RFC-4514",
+      "id": "IETF RFC 4514",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4516",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4516.txt",
+      "folder": "IETF/RFC-4516",
+      "id": "IETF RFC 4516",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4518",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4518.txt",
+      "folder": "IETF/RFC-4518",
+      "id": "IETF RFC 4518",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4519",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4519.txt",
+      "folder": "IETF/RFC-4519",
+      "id": "IETF RFC 4519",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4523",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4523.txt",
+      "folder": "IETF/RFC-4523",
+      "id": "IETF RFC 4523",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4559",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4559.txt",
+      "folder": "IETF/RFC-4559",
+      "id": "IETF RFC 4559",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4630",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4630.txt",
+      "folder": "IETF/RFC-4630",
+      "id": "IETF RFC 4630",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4632",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4632.txt",
+      "folder": "IETF/RFC-4632",
+      "id": "IETF RFC 4632",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4647",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4647.txt",
+      "folder": "IETF/RFC-4647",
+      "id": "IETF RFC 4647",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4648",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4648.txt",
+      "folder": "IETF/RFC-4648",
+      "id": "IETF RFC 4648",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4918",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4918.txt",
+      "folder": "IETF/RFC-4918",
+      "id": "IETF RFC 4918",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4945",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4945.txt",
+      "folder": "IETF/RFC-4945",
+      "id": "IETF RFC 4945",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 4949",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc4949.txt",
+      "folder": "IETF/RFC-4949",
+      "id": "IETF RFC 4949",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5226",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5226.txt",
+      "folder": "IETF/RFC-5226",
+      "id": "IETF RFC 5226",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5234",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5234.txt",
+      "folder": "IETF/RFC-5234",
+      "id": "IETF RFC 5234",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5246",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5246.txt",
+      "folder": "IETF/RFC-5246",
+      "id": "IETF RFC 5246",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5280",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5280.txt",
+      "folder": "IETF/RFC-5280",
+      "id": "IETF RFC 5280",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5321",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5321.txt",
+      "folder": "IETF/RFC-5321",
+      "id": "IETF RFC 5321",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5322",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5322.txt",
+      "folder": "IETF/RFC-5322",
+      "id": "IETF RFC 5322",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "act_id": "2024-2977",
+      "celex": "32024R2977",
+      "id": "legal:2024-2977",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "PID and electronic attestations of attributes (lifecycle)",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5646",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5646.txt",
+      "folder": "IETF/RFC-5646",
+      "id": "IETF RFC 5646",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5741",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5741.txt",
+      "folder": "IETF/RFC-5741",
+      "id": "IETF RFC 5741",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5789",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5789.txt",
+      "folder": "IETF/RFC-5789",
+      "id": "IETF RFC 5789",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 5905",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc5905.txt",
+      "folder": "IETF/RFC-5905",
+      "id": "IETF RFC 5905",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6125",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6125.txt",
+      "folder": "IETF/RFC-6125",
+      "id": "IETF RFC 6125",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6176",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6176.txt",
+      "folder": "IETF/RFC-6176",
+      "id": "IETF RFC 6176",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6211",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6211.txt",
+      "folder": "IETF/RFC-6211",
+      "id": "IETF RFC 6211",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6265",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6265.txt",
+      "folder": "IETF/RFC-6265",
+      "id": "IETF RFC 6265",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6365",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6365.txt",
+      "folder": "IETF/RFC-6365",
+      "id": "IETF RFC 6365",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6454",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6454.txt",
+      "folder": "IETF/RFC-6454",
+      "id": "IETF RFC 6454",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6585",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6585.txt",
+      "folder": "IETF/RFC-6585",
+      "id": "IETF RFC 6585",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6648",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6648.txt",
+      "folder": "IETF/RFC-6648",
+      "id": "IETF RFC 6648",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6755",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6755.txt",
+      "folder": "IETF/RFC-6755",
+      "id": "IETF RFC 6755",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 6838",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc6838.txt",
+      "folder": "IETF/RFC-6838",
+      "id": "IETF RFC 6838",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7049",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7049.txt",
+      "folder": "IETF/RFC-7049",
+      "id": "IETF RFC 7049",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7159",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7159.txt",
+      "folder": "IETF/RFC-7159",
+      "id": "IETF RFC 7159",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7230",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7230.txt",
+      "folder": "IETF/RFC-7230",
+      "id": "IETF RFC 7230",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7231",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7231.txt",
+      "folder": "IETF/RFC-7231",
+      "id": "IETF RFC 7231",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7232",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7232.txt",
+      "folder": "IETF/RFC-7232",
+      "id": "IETF RFC 7232",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7233",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7233.txt",
+      "folder": "IETF/RFC-7233",
+      "id": "IETF RFC 7233",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7234",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7234.txt",
+      "folder": "IETF/RFC-7234",
+      "id": "IETF RFC 7234",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7235",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7235.txt",
+      "folder": "IETF/RFC-7235",
+      "id": "IETF RFC 7235",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7405",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7405.txt",
+      "folder": "IETF/RFC-7405",
+      "id": "IETF RFC 7405",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7515",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7515.txt",
+      "folder": "IETF/RFC-7515",
+      "id": "IETF RFC 7515",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "act_id": "2026-248",
+      "celex": "32026R0248",
+      "id": "legal:2026-248",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Formats of advanced electronic signatures and seals",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7516",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7516.txt",
+      "folder": "IETF/RFC-7516",
+      "id": "IETF RFC 7516",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7517",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7517.txt",
+      "folder": "IETF/RFC-7517",
+      "id": "IETF RFC 7517",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7518",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7518.txt",
+      "folder": "IETF/RFC-7518",
+      "id": "IETF RFC 7518",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7519",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7519.txt",
+      "folder": "IETF/RFC-7519",
+      "id": "IETF RFC 7519",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "act_id": "2025-848",
+      "celex": "32025R0848",
+      "id": "legal:2025-848",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Registration of wallet-relying parties",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7525",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7525.txt",
+      "folder": "IETF/RFC-7525",
+      "id": "IETF RFC 7525",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7538",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7538.txt",
+      "folder": "IETF/RFC-7538",
+      "id": "IETF RFC 7538",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7540",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7540.txt",
+      "folder": "IETF/RFC-7540",
+      "id": "IETF RFC 7540",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7541",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7541.txt",
+      "folder": "IETF/RFC-7541",
+      "id": "IETF RFC 7541",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7578",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7578.txt",
+      "folder": "IETF/RFC-7578",
+      "id": "IETF RFC 7578",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7595",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7595.txt",
+      "folder": "IETF/RFC-7595",
+      "id": "IETF RFC 7595",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7615",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7615.txt",
+      "folder": "IETF/RFC-7615",
+      "id": "IETF RFC 7615",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7616",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7616.txt",
+      "folder": "IETF/RFC-7616",
+      "id": "IETF RFC 7616",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7617",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7617.txt",
+      "folder": "IETF/RFC-7617",
+      "id": "IETF RFC 7617",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7694",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7694.txt",
+      "folder": "IETF/RFC-7694",
+      "id": "IETF RFC 7694",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7838",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7838.txt",
+      "folder": "IETF/RFC-7838",
+      "id": "IETF RFC 7838",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 7841",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc7841.txt",
+      "folder": "IETF/RFC-7841",
+      "id": "IETF RFC 7841",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 791",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc791.txt",
+      "folder": "IETF/RFC-791",
+      "id": "IETF RFC 791",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 793",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc793.txt",
+      "folder": "IETF/RFC-793",
+      "id": "IETF RFC 793",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8126",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8126.txt",
+      "folder": "IETF/RFC-8126",
+      "id": "IETF RFC 8126",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8152",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8152.txt",
+      "folder": "IETF/RFC-8152",
+      "id": "IETF RFC 8152",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8174",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8174.txt",
+      "folder": "IETF/RFC-8174",
+      "id": "IETF RFC 8174",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8187",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8187.txt",
+      "folder": "IETF/RFC-8187",
+      "id": "IETF RFC 8187",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 822",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc822.txt",
+      "folder": "IETF/RFC-822",
+      "id": "IETF RFC 822",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8246",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8246.txt",
+      "folder": "IETF/RFC-8246",
+      "id": "IETF RFC 8246",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8288",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8288.txt",
+      "folder": "IETF/RFC-8288",
+      "id": "IETF RFC 8288",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8336",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8336.txt",
+      "folder": "IETF/RFC-8336",
+      "id": "IETF RFC 8336",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8392",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8392.txt",
+      "folder": "IETF/RFC-8392",
+      "id": "IETF RFC 8392",
+      "status": "downloaded",
+      "tags": [
+        "cited-by-eu-law",
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8446",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8446.txt",
+      "folder": "IETF/RFC-8446",
+      "id": "IETF RFC 8446",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 850",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc850.txt",
+      "folder": "IETF/RFC-850",
+      "id": "IETF RFC 850",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8615",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8615.txt",
+      "folder": "IETF/RFC-8615",
+      "id": "IETF RFC 8615",
+      "status": "downloaded",
+      "tags": [
+        "downloaded",
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 8941",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc8941.txt",
+      "folder": "IETF/RFC-8941",
+      "id": "IETF RFC 8941",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 9110",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+      "folder": "IETF/RFC-9110",
+      "id": "IETF RFC 9110",
+      "status": "unchanged",
+      "tags": [
+        "cited-by-eu-law",
+        "ietf",
+        "ietf-internet",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 9111",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc9111.txt",
+      "folder": "IETF/RFC-9111",
+      "id": "IETF RFC 9111",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 9112",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc9112.txt",
+      "folder": "IETF/RFC-9112",
+      "id": "IETF RFC 9112",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 9113",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc9113.txt",
+      "folder": "IETF/RFC-9113",
+      "id": "IETF RFC 9113",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "IETF",
+      "designation": "RFC 9114",
+      "download_url": "https://www.rfc-editor.org/rfc/rfc9114.txt",
+      "folder": "IETF/RFC-9114",
+      "id": "IETF RFC 9114",
+      "status": "unchanged",
+      "tags": [
+        "ietf",
+        "ietf-internet",
+        "local-artifact",
+        "normative-reference",
+        "rfc",
+        "technical-specification",
+        "unchanged"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 100646-1",
+      "download_url": "https://www.iso.org/search.html?q=100646-1",
+      "folder": "ISO-IEC/ISO-100646-1",
+      "id": "ISO-IEC ISO 100646-1",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 10646",
+      "download_url": "https://www.iso.org/standard/10646.html",
+      "folder": "ISO-IEC/ISO-10646",
+      "id": "ISO-IEC ISO 10646",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 14641",
+      "download_url": "https://www.iso.org/standard/14641.html",
+      "folder": "ISO-IEC/ISO-14641",
+      "id": "ISO-IEC ISO 14641",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 14721",
+      "download_url": "https://www.iso.org/standard/14721.html",
+      "folder": "ISO-IEC/ISO-14721",
+      "id": "ISO-IEC ISO 14721",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 14721",
+      "download_url": "https://www.iso.org/standard/14721.html",
+      "folder": "ISO-IEC/ISO-14721-V2025",
+      "id": "ISO-IEC ISO 14721 V2025",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2025"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 19794-5",
+      "download_url": "https://www.iso.org/search.html?q=19794-5",
+      "folder": "ISO-IEC/ISO-19794-5",
+      "id": "ISO-IEC ISO 19794-5",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 23257",
+      "download_url": "https://www.iso.org/standard/23257.html",
+      "folder": "ISO-IEC/ISO-23257",
+      "id": "ISO-IEC ISO 23257",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 23257",
+      "download_url": "https://www.iso.org/standard/23257.html",
+      "folder": "ISO-IEC/ISO-23257-V2022",
+      "id": "ISO-IEC ISO 23257 V2022",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2022"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 3166",
+      "download_url": "https://www.iso.org/standard/3166.html",
+      "folder": "ISO-IEC/ISO-3166",
+      "id": "ISO-IEC ISO 3166",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 3166-1",
+      "download_url": "https://www.iso.org/search.html?q=3166-1",
+      "folder": "ISO-IEC/ISO-3166-1",
+      "id": "ISO-IEC ISO 3166-1",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-decision",
+        "implementing-decisions",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 3166-1",
+      "download_url": "https://www.iso.org/search.html?q=3166-1",
+      "folder": "ISO-IEC/ISO-3166-1-V1997",
+      "id": "ISO-IEC ISO 3166-1 V1997",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1997"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 3166-1",
+      "download_url": "https://www.iso.org/search.html?q=3166-1",
+      "folder": "ISO-IEC/ISO-3166-1-V2006",
+      "id": "ISO-IEC ISO 3166-1 V2006",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-decision",
+        "implementing-decisions",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2006"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 3166-2",
+      "download_url": "https://www.iso.org/search.html?q=3166-2",
+      "folder": "ISO-IEC/ISO-3166-2-V2020",
+      "id": "ISO-IEC ISO 3166-2 V2020",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2020"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 39794",
+      "download_url": "https://www.iso.org/standard/39794.html",
+      "folder": "ISO-IEC/ISO-39794",
+      "id": "ISO-IEC ISO 39794",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 8859",
+      "download_url": "https://www.iso.org/standard/8859.html",
+      "folder": "ISO-IEC/ISO-8859",
+      "id": "ISO-IEC ISO 8859",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO 8859-1",
+      "download_url": "https://www.iso.org/search.html?q=8859-1",
+      "folder": "ISO-IEC/ISO-8859-1",
+      "id": "ISO-IEC ISO 8859-1",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 10181-5",
+      "download_url": "https://www.iso.org/search.html?q=10181-5",
+      "folder": "ISO-IEC/ISO-IEC-10181-5",
+      "id": "ISO-IEC ISO/IEC 10181-5",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 10646",
+      "download_url": "https://www.iso.org/standard/10646.html",
+      "folder": "ISO-IEC/ISO-IEC-10646",
+      "id": "ISO-IEC ISO/IEC 10646",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 10646",
+      "download_url": "https://www.iso.org/standard/10646.html",
+      "folder": "ISO-IEC/ISO-IEC-10646-V2003",
+      "id": "ISO-IEC ISO/IEC 10646 V2003",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2003"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 15408",
+      "download_url": "https://www.iso.org/standard/15408.html",
+      "folder": "ISO-IEC/ISO-IEC-15408",
+      "id": "ISO-IEC ISO/IEC 15408",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "common-criteria",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "security-evaluation",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 15408-1",
+      "download_url": "https://www.iso.org/search.html?q=15408-1",
+      "folder": "ISO-IEC/ISO-IEC-15408-1-V2022",
+      "id": "ISO-IEC ISO/IEC 15408-1 V2022",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "common-criteria",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "security-evaluation",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2022"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 15408-3",
+      "download_url": "https://www.iso.org/search.html?q=15408-3",
+      "folder": "ISO-IEC/ISO-IEC-15408-3-V2022",
+      "id": "ISO-IEC ISO/IEC 15408-3 V2022",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "common-criteria",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "security-evaluation",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2022"
+    },
+    {
+      "act_id": "2024-2981",
+      "celex": "32024R2981",
+      "id": "legal:2024-2981",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Certification of EUDI Wallets",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 15408",
+      "download_url": "https://www.iso.org/standard/15408.html",
+      "folder": "ISO-IEC/ISO-IEC-15408-V1999",
+      "id": "ISO-IEC ISO/IEC 15408 V1999",
+      "status": "unavailable",
+      "tags": [
+        "common-criteria",
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "security-evaluation",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1999"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 15408",
+      "download_url": "https://www.iso.org/standard/15408.html",
+      "folder": "ISO-IEC/ISO-IEC-15408-V2022",
+      "id": "ISO-IEC ISO/IEC 15408 V2022",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "common-criteria",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "security-evaluation",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2022"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17000",
+      "download_url": "https://www.iso.org/standard/17000.html",
+      "folder": "ISO-IEC/ISO-IEC-17000-V2020",
+      "id": "ISO-IEC ISO/IEC 17000 V2020",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2020"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17011",
+      "download_url": "https://www.iso.org/standard/17011.html",
+      "folder": "ISO-IEC/ISO-IEC-17011-V2017",
+      "id": "ISO-IEC ISO/IEC 17011 V2017",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2017"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17020",
+      "download_url": "https://www.iso.org/standard/17020.html",
+      "folder": "ISO-IEC/ISO-IEC-17020-V2012",
+      "id": "ISO-IEC ISO/IEC 17020 V2012",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2012"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17021-1",
+      "download_url": "https://www.iso.org/search.html?q=17021-1",
+      "folder": "ISO-IEC/ISO-IEC-17021-1-V2015",
+      "id": "ISO-IEC ISO/IEC 17021-1 V2015",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2015"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17025",
+      "download_url": "https://www.iso.org/standard/17025.html",
+      "folder": "ISO-IEC/ISO-IEC-17025-V2017",
+      "id": "ISO-IEC ISO/IEC 17025 V2017",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2017"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17029",
+      "download_url": "https://www.iso.org/standard/17029.html",
+      "folder": "ISO-IEC/ISO-IEC-17029-V2019",
+      "id": "ISO-IEC ISO/IEC 17029 V2019",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2019"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17065",
+      "download_url": "https://www.iso.org/standard/17065.html",
+      "folder": "ISO-IEC/ISO-IEC-17065",
+      "id": "ISO-IEC ISO/IEC 17065",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17065",
+      "download_url": "https://www.iso.org/standard/17065.html",
+      "folder": "ISO-IEC/ISO-IEC-17065-V2012",
+      "id": "ISO-IEC ISO/IEC 17065 V2012",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2012"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 17067",
+      "download_url": "https://www.iso.org/standard/17067.html",
+      "folder": "ISO-IEC/ISO-IEC-17067-V2013",
+      "id": "ISO-IEC ISO/IEC 17067 V2013",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2013"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 18013-5",
+      "download_url": "https://www.iso.org/search.html?q=18013-5",
+      "folder": "ISO-IEC/ISO-IEC-18013-5-V2021",
+      "id": "ISO-IEC ISO/IEC 18013-5 V2021",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "mdl",
+        "mobile-driving-licence",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned",
+        "wallet"
+      ],
+      "type": "specification",
+      "version": "2021"
+    },
+    {
+      "act_id": "2024-2982",
+      "celex": "32024R2982",
+      "id": "legal:2024-2982",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Protocols and interfaces for EUDI Wallets",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 27001",
+      "download_url": "https://www.iso.org/standard/27001.html",
+      "folder": "ISO-IEC/ISO-IEC-27001",
+      "id": "ISO-IEC ISO/IEC 27001",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "information-security-management",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "act_id": "2025-1568",
+      "celex": "32025R1568",
+      "id": "legal:2025-1568",
+      "kind": "implementing_regulation",
+      "section": "implementing-acts",
+      "title": "Peer review of electronic identification schemes",
+      "type": "legal_regulation"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 27001",
+      "download_url": "https://www.iso.org/standard/27001.html",
+      "folder": "ISO-IEC/ISO-IEC-27001-V2022",
+      "id": "ISO-IEC ISO/IEC 27001 V2022",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "information-security-management",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2022"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 30111",
+      "download_url": "https://www.iso.org/standard/30111.html",
+      "folder": "ISO-IEC/ISO-IEC-30111-V2019",
+      "id": "ISO-IEC ISO/IEC 30111 V2019",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "dated-release",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2019"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 5218",
+      "download_url": "https://www.iso.org/standard/5218.html",
+      "folder": "ISO-IEC/ISO-IEC-5218",
+      "id": "ISO-IEC ISO/IEC 5218",
+      "status": "unavailable",
+      "tags": [
+        "cited-by-eu-law",
+        "implementing-acts",
+        "implementing-regulation",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 8824-1",
+      "download_url": "https://www.iso.org/search.html?q=8824-1",
+      "folder": "ISO-IEC/ISO-IEC-8824-1-V2002",
+      "id": "ISO-IEC ISO/IEC 8824-1 V2002",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2002"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 8824-4",
+      "download_url": "https://www.iso.org/search.html?q=8824-4",
+      "folder": "ISO-IEC/ISO-IEC-8824-4-V2002",
+      "id": "ISO-IEC ISO/IEC 8824-4 V2002",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2002"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 8825-1",
+      "download_url": "https://www.iso.org/search.html?q=8825-1",
+      "folder": "ISO-IEC/ISO-IEC-8825-1",
+      "id": "ISO-IEC ISO/IEC 8825-1",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 8825-1",
+      "download_url": "https://www.iso.org/search.html?q=8825-1",
+      "folder": "ISO-IEC/ISO-IEC-8825-1-V2002",
+      "id": "ISO-IEC ISO/IEC 8825-1 V2002",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2002"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 8859-1",
+      "download_url": "https://www.iso.org/search.html?q=8859-1",
+      "folder": "ISO-IEC/ISO-IEC-8859-1-V1998",
+      "id": "ISO-IEC ISO/IEC 8859-1 V1998",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "1998"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-1",
+      "download_url": "https://www.iso.org/search.html?q=9594-1",
+      "folder": "ISO-IEC/ISO-IEC-9594-1-V2005",
+      "id": "ISO-IEC ISO/IEC 9594-1 V2005",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2005"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-2",
+      "download_url": "https://www.iso.org/search.html?q=9594-2",
+      "folder": "ISO-IEC/ISO-IEC-9594-2-V2001",
+      "id": "ISO-IEC ISO/IEC 9594-2 V2001",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2001"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-2",
+      "download_url": "https://www.iso.org/search.html?q=9594-2",
+      "folder": "ISO-IEC/ISO-IEC-9594-2-V2005",
+      "id": "ISO-IEC ISO/IEC 9594-2 V2005",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2005"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-6",
+      "download_url": "https://www.iso.org/search.html?q=9594-6",
+      "folder": "ISO-IEC/ISO-IEC-9594-6-V2001",
+      "id": "ISO-IEC ISO/IEC 9594-6 V2001",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2001"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-6",
+      "download_url": "https://www.iso.org/search.html?q=9594-6",
+      "folder": "ISO-IEC/ISO-IEC-9594-6-V2005",
+      "id": "ISO-IEC ISO/IEC 9594-6 V2005",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2005"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-8",
+      "download_url": "https://www.iso.org/search.html?q=9594-8",
+      "folder": "ISO-IEC/ISO-IEC-9594-8",
+      "id": "ISO-IEC ISO/IEC 9594-8",
+      "status": "unavailable",
+      "tags": [
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-8",
+      "download_url": "https://www.iso.org/search.html?q=9594-8",
+      "folder": "ISO-IEC/ISO-IEC-9594-8-V2001",
+      "id": "ISO-IEC ISO/IEC 9594-8 V2001",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2001"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9594-8",
+      "download_url": "https://www.iso.org/search.html?q=9594-8",
+      "folder": "ISO-IEC/ISO-IEC-9594-8-V2005",
+      "id": "ISO-IEC ISO/IEC 9594-8 V2005",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2005"
+    },
+    {
+      "body": "ISO-IEC",
+      "designation": "ISO/IEC 9834-1",
+      "download_url": "https://www.iso.org/search.html?q=9834-1",
+      "folder": "ISO-IEC/ISO-IEC-9834-1-V2005",
+      "id": "ISO-IEC ISO/IEC 9834-1 V2005",
+      "status": "unavailable",
+      "tags": [
+        "dated-release",
+        "iso-iec",
+        "normative-reference",
+        "technical-specification",
+        "unavailable",
+        "versioned"
+      ],
+      "type": "specification",
+      "version": "2005"
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.411",
+      "download_url": "https://www.itu.int/rec/T-REC-X-411/en",
+      "folder": "ITU-T/ITU-T-X.411",
+      "id": "ITU-T ITU-T X.411",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.500",
+      "download_url": "https://www.itu.int/rec/T-REC-X-500/en",
+      "folder": "ITU-T/ITU-T-X.500",
+      "id": "ITU-T ITU-T X.500",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.501",
+      "download_url": "https://www.itu.int/rec/T-REC-X-501/en",
+      "folder": "ITU-T/ITU-T-X.501",
+      "id": "ITU-T ITU-T X.501",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.509",
+      "download_url": "https://www.itu.int/rec/T-REC-X-509/en",
+      "folder": "ITU-T/ITU-T-X.509",
+      "id": "ITU-T ITU-T X.509",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.520",
+      "download_url": "https://www.itu.int/rec/T-REC-X-520/en",
+      "folder": "ITU-T/ITU-T-X.520",
+      "id": "ITU-T ITU-T X.520",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.660",
+      "download_url": "https://www.itu.int/rec/T-REC-X-660/en",
+      "folder": "ITU-T/ITU-T-X.660",
+      "id": "ITU-T ITU-T X.660",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.680",
+      "download_url": "https://www.itu.int/rec/T-REC-X-680/en",
+      "folder": "ITU-T/ITU-T-X.680",
+      "id": "ITU-T ITU-T X.680",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.683",
+      "download_url": "https://www.itu.int/rec/T-REC-X-683/en",
+      "folder": "ITU-T/ITU-T-X.683",
+      "id": "ITU-T ITU-T X.683",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "ITU-T",
+      "designation": "ITU-T X.690",
+      "download_url": "https://www.itu.int/rec/T-REC-X-690/en",
+      "folder": "ITU-T/ITU-T-X.690",
+      "id": "ITU-T ITU-T X.690",
+      "status": "unavailable",
+      "tags": [
+        "itu-t",
+        "itu-t-recommendation",
+        "normative-reference",
+        "technical-specification",
+        "unavailable"
+      ],
+      "type": "specification",
+      "version": null
+    },
+    {
+      "body": "W3C",
+      "designation": "vc-data-model",
+      "download_url": "https://www.w3.org/TR/vc-data-model/",
+      "folder": "W3C/vc-data-model-V1.1",
+      "id": "W3C vc-data-model V1.1",
+      "status": "unchanged",
+      "tags": [
+        "cited-by-eu-law",
+        "eudi",
+        "implementing-acts",
+        "implementing-regulation",
+        "local-artifact",
+        "normative-reference",
+        "technical-specification",
+        "unchanged",
+        "verifiable-credentials",
+        "versioned",
+        "w3c",
+        "w3c-recommendation",
+        "wallet"
+      ],
+      "type": "specification",
+      "version": "1.1"
+    }
+  ]
+}

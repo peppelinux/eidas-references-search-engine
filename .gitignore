@@ -10,9 +10,9 @@
 # implementing-decisions/**/*.md
 
 # Keep per-act metadata committed if present
-!**/metadata.json
+# !**/metadata.json
 
 # Generated references report (make report)
-report/
+# report/
 */__pycache__/*
 *__pycache__
