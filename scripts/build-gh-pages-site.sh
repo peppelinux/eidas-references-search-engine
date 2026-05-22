@@ -95,7 +95,8 @@ build_night() {
 
   local staging
   staging="$(mktemp -d)"
-  trap 'rm -rf "$staging"' EXIT
+  # Expand path when trap is set: local `staging` is gone when EXIT runs (set -u).
+  trap "rm -rf $(printf '%q' "$staging")" EXIT
 
   log "Assembling nightbuilds in staging"
   for path in regulation implementing-acts implementing-decisions referenced-standards report; do
