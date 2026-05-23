@@ -1,0 +1,23 @@
+{
+  "id": "2025-1944",
+  "title": "Qualified electronic registered delivery services",
+  "celex": "32025R1944",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1944/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1944/2025-1944.html",
+      "sha256": "726c6fc75820068633d1b4d64f93604bf14445c7145c3fa12a5c1f046760ba8d",
+      "size": 86721
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d8575546-9d97-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1944/2025-1944.pdf",
+      "sha256": "ad8e3d12ac7455ad46b25371ae051658fa11ded70d7936b06e5f7e21470e0b19",
+      "size": 527934
+    }
+  }
+}

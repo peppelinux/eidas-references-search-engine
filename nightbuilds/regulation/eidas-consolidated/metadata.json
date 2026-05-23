@@ -1,0 +1,23 @@
+{
+  "id": "eidas-consolidated",
+  "title": "Regulation (EU) No 910/2014 (eIDAS) \u2014 consolidated text",
+  "celex": "02014R0910-20241018",
+  "eli": "http://data.europa.eu/eli/reg/2014/910/2024-10-18/oj/eng",
+  "kind": "regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1",
+  "consolidated_as_of": "2024-10-18",
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1.0007.02/DOC_2",
+      "path": "regulation/eidas-consolidated/eidas-consolidated.html",
+      "sha256": "b4ab7d733d234eef3a505330717d8a8d4d6388f2d9a0a4bfcde2d1b497ba72ce",
+      "size": 454927
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6a1e14d9-907e-11ef-a130-01aa75ed71a1.0007.03/DOC_2",
+      "path": "regulation/eidas-consolidated/eidas-consolidated.pdf",
+      "sha256": "1fded3274b202801de22c820bed859bf27b50529faf72fdeabd0a29c32f73604",
+      "size": 735403
+    }
+  }
+}

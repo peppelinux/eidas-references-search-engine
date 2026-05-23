@@ -1,0 +1,23 @@
+{
+  "id": "2025-1572",
+  "title": "Qualified trust service applications",
+  "celex": "32025R1572",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1572/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/e4955790-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/e4955790-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1572/2025-1572.html",
+      "sha256": "3ecb11beb2ccb59e4776701aa8b9d8c3f69b3fcf92a47acd3bd1d766bf7829ec",
+      "size": 33507
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/e4955790-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1572/2025-1572.pdf",
+      "sha256": "e49ff96333ce31221abc583b3d5e8a20b059e9628528c72052f2ba6eabad7353",
+      "size": 484593
+    }
+  }
+}

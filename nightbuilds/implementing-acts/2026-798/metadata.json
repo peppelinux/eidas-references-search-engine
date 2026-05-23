@@ -1,0 +1,23 @@
+{
+  "id": "2026-798",
+  "title": "Remote onboarding to EUDI Wallets (eID substantial)",
+  "celex": "32026R0798",
+  "eli": "http://data.europa.eu/eli/reg_impl/2026/798/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2026-798/2026-798.html",
+      "sha256": "3d367d68afb6ac16f90d71e11ece5ee06e374eb037ab2f3964333151c89c634a",
+      "size": 53730
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/371b31a8-32e3-11f1-be39-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2026-798/2026-798.pdf",
+      "sha256": "cde2d10b67a421be7a6945fcdc3f4318ddde9700d3503cf88533f4b845604941",
+      "size": 529662
+    }
+  }
+}

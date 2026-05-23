@@ -1,0 +1,23 @@
+{
+  "id": "2025-849",
+  "title": "List of certified EUDI Wallets \u2014 information submission",
+  "celex": "32025R0849",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/849/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/6cc3a1f7-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6cc3a1f7-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-849/2025-849.html",
+      "sha256": "0931fc172046a8cc8e5d7ea4425e90b8ee142910e60a9ac8e0c27be4e3f64995",
+      "size": 63474
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/6cc3a1f7-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-849/2025-849.pdf",
+      "sha256": "09e29f48593fb7cbea3c61d2c445a9cdd7dfbac860bb671dd0d4bdab22a2e3cf",
+      "size": 495300
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-2531",
+  "title": "Qualified electronic ledgers",
+  "celex": "32025R2531",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2531/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2531/2025-2531.html",
+      "sha256": "59a927c37a98ac20d009012497fe173acd53b2bea32a5afea586ab7a31881abe",
+      "size": 93940
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cbd048d0-daeb-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2531/2025-2531.pdf",
+      "sha256": "be7bf1cfb854f402481e0e8dc0e50df4aa8089979d792c581d7994b73dd2a34c",
+      "size": 777193
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-847",
+  "title": "Security breaches \u2014 procedures and mitigation",
+  "celex": "32025R0847",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/847/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/574269fb-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/574269fb-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-847/2025-847.html",
+      "sha256": "a87320bddc72d4fa66c9496da4fbdaba82cddbb5b3cac70dec6906727d49017b",
+      "size": 103600
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/574269fb-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-847/2025-847.pdf",
+      "sha256": "f7024a39a0f1b04b4c7cb28cbb8bd5cadf8c9b1fc669338acbc3acdad465a18b",
+      "size": 578787
+    }
+  }
+}

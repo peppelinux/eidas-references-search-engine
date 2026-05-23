@@ -1,0 +1,23 @@
+{
+  "id": "2025-2162",
+  "title": "Accreditation of conformity assessment bodies",
+  "celex": "32025R2162",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2162/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2162/2025-2162.html",
+      "sha256": "e94ac9c98fc3ea6f81632c17a99cd8c92dfdd286bca066fb304035141d92986e",
+      "size": 217758
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99b393e7-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2162/2025-2162.pdf",
+      "sha256": "36c99f0cb42d6fde9b287cf8383e8b04ad63a3ecca03e53fb8b392f961cc39e2",
+      "size": 664557
+    }
+  }
+}

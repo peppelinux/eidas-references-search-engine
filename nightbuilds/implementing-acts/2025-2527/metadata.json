@@ -1,0 +1,23 @@
+{
+  "id": "2025-2527",
+  "title": "Qualified certificates for website authentication",
+  "celex": "32025R2527",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2527/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2527/2025-2527.html",
+      "sha256": "6740c4702f84d990c441e85d2bfadbdbbb1d2db76200366ef955484d15568f83",
+      "size": 18944
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/97a07e59-daec-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2527/2025-2527.pdf",
+      "sha256": "421b3186a650a3812809d230ce5c56e70d114f89c89f23c58e9fb33cf5afaee1",
+      "size": 474645
+    }
+  }
+}

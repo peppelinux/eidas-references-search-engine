@@ -1,0 +1,23 @@
+{
+  "id": "2025-1929",
+  "title": "Qualified electronic time stamps",
+  "celex": "32025R1929",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1929/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1929/2025-1929.html",
+      "sha256": "835e781cf749d86666a81b4faed073d507b8603c271e79ca8fdcf0bd12dbb0bf",
+      "size": 86495
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/31a2d4ad-9d98-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1929/2025-1929.pdf",
+      "sha256": "30e21df469306e69584ca2e95e2165bd2cf1d04fbc9f8f74b8551a67270edade",
+      "size": 523779
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-846",
+  "title": "Cross-border identity matching (public sector)",
+  "celex": "32025R0846",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/846/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/cf9aac3c-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cf9aac3c-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-846/2025-846.html",
+      "sha256": "065793e75f3d8142968130c1c65a090fb1d0cfc4788fa2d3fe07ca9b4db37807",
+      "size": 53092
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/cf9aac3c-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-846/2025-846.pdf",
+      "sha256": "c7b00c8003873b2017e02b1fd69a473f31591ec40c1ad69fd508c3d1a4af1a47",
+      "size": 524584
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-1571",
+  "title": "Annual reports by supervisory bodies",
+  "celex": "32025R1571",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1571/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/3dd3fad4-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/3dd3fad4-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1571/2025-1571.html",
+      "sha256": "897ef21ede9b1f6ace94dc7d7e463c9ef4f81cc31a5de4a17ab0b4c799568f63",
+      "size": 45578
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/3dd3fad4-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1571/2025-1571.pdf",
+      "sha256": "888cfdff34719ccab7db78bb421fd4324174ddd5a3e4a3c2e32a192228e39116",
+      "size": 501122
+    }
+  }
+}

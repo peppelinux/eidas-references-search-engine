@@ -1,0 +1,23 @@
+{
+  "id": "2024-2982",
+  "title": "Protocols and interfaces for EUDI Wallets",
+  "celex": "32024R2982",
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2982/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2982/2024-2982.html",
+      "sha256": "6dcd6d801df70c72976faf396166d82990cd6b3b152a10828be5eda3e7b8c213",
+      "size": 64398
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/0c2d7c7b-b1e1-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2982/2024-2982.pdf",
+      "sha256": "52008a3723815c0ba3e4473dae6ce14a1e569218ae408375e636c4a9201b731c",
+      "size": 550657
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-1566",
+  "title": "Identity and recipients of qualified certificates",
+  "celex": "32025R1566",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1566/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1566/2025-1566.html",
+      "sha256": "e5f933072b3c76a9e88d9f222a15eb66f380e7aa481d9d4955956bb9ff5f943e",
+      "size": 26051
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/9738ce8b-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1566/2025-1566.pdf",
+      "sha256": "4af0976d9f9304d468e2a0ec04d90544bba7e530bcf04c3951e6272d12773dda",
+      "size": 477654
+    }
+  }
+}

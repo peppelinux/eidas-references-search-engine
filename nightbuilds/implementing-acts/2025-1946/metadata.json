@@ -1,0 +1,23 @@
+{
+  "id": "2025-1946",
+  "title": "Qualified preservation services for signatures and seals",
+  "celex": "32025R1946",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1946/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1946/2025-1946.html",
+      "sha256": "a1e54901417db951b2adb46a9a5ec8fbc888c2ea19c936e4d83694dd4dcbffcc",
+      "size": 73380
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/2fa94e9a-9d98-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1946/2025-1946.pdf",
+      "sha256": "c76af17d87b592f7dbe5d13f129a86d954826435119bdaa0685e4932d5a14bd2",
+      "size": 513651
+    }
+  }
+}

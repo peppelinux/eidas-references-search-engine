@@ -1,0 +1,23 @@
+{
+  "id": "2025-2160",
+  "title": "Risk management for non-qualified trust service providers",
+  "celex": "32025R2160",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2160/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2160/2025-2160.html",
+      "sha256": "2a4ae9ca1a2277100c05aaff58a64fe31eeeca4d959e66fe5fcd756bd4b4bcaa",
+      "size": 48908
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/99582d76-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2160/2025-2160.pdf",
+      "sha256": "e9d4815d67f154c00caa8007fc41449a7f4098a0d1137493184647c65d9fa1ab",
+      "size": 512230
+    }
+  }
+}

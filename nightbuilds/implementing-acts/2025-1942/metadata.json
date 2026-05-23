@@ -1,0 +1,23 @@
+{
+  "id": "2025-1942",
+  "title": "Recognition of qualified validation services",
+  "celex": "32025R1942",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1942/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1942/2025-1942.html",
+      "sha256": "2cd7cdf85c0a8f990380a873992b9272867b6c924e99e6990a9f6090129817b3",
+      "size": 102860
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fb634c13-9db7-11f0-97c8-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1942/2025-1942.pdf",
+      "sha256": "dee6af13b0dbd6a7e8d080afea4604e926a2a01202e1ab126669f62050e89516",
+      "size": 537268
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2024-2979",
+  "title": "Integrity and core functionalities of EUDI Wallets",
+  "celex": "32024R2979",
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2979/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2979/2024-2979.html",
+      "sha256": "ac7e5fff2a72a3bb4ad6fa442745e59ee59ad3e65dc578f6acdd6575040b8b5a",
+      "size": 93583
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a7576de1-b1e0-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2979/2024-2979.pdf",
+      "sha256": "3e4a72ef042bba0904e3801ae92d9efd81235fe3e3a1eb7c84674a2c4b96a2e8",
+      "size": 607301
+    }
+  }
+}

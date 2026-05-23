@@ -1,0 +1,23 @@
+{
+  "id": "2025-2532",
+  "title": "Qualified electronic archiving services",
+  "celex": "32025R2532",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/2532/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-2532/2025-2532.html",
+      "sha256": "cb920d9b75851f712fecc6b47fbce552323ce1e7f51fa560b5a27a78a449449f",
+      "size": 60846
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/d3945a29-daeb-11f0-8da2-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-2532/2025-2532.pdf",
+      "sha256": "57c34f8fc5b638fb9cd0b357f1a50e176351c594a8efa77f0fa01fa3c328f05d",
+      "size": 754546
+    }
+  }
+}

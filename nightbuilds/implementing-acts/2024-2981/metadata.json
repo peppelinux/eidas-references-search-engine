@@ -1,0 +1,23 @@
+{
+  "id": "2024-2981",
+  "title": "Certification of EUDI Wallets",
+  "celex": "32024R2981",
+  "eli": "http://data.europa.eu/eli/reg_impl/2024/2981/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2024-2981/2024-2981.html",
+      "sha256": "e45c7c805a4c14082e8537d14805b159e86aa279c45a4715e2a2e161952be210",
+      "size": 450763
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/049b9eb6-b1e1-11ef-acb1-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2024-2981/2024-2981.pdf",
+      "sha256": "5957c8b08fc411c97d0fc62a9285d3b16aeb4581f40d07878bb91b46720d2a3a",
+      "size": 1221411
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-848",
+  "title": "Registration of wallet-relying parties",
+  "celex": "32025R0848",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/848/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-848/2025-848.html",
+      "sha256": "ad3e50c59821596b3e829d6fdf08125d1da8255c9d0613648b79e0013a88226e",
+      "size": 157516
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/a6ba31dd-2adb-11f0-8a44-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-848/2025-848.pdf",
+      "sha256": "07ce6b4187a8e051f86992c01e113f41de7d6d0503ebae50279906606b4db1a3",
+      "size": 634312
+    }
+  }
+}

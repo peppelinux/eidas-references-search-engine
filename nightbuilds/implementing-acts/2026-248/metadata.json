@@ -1,0 +1,23 @@
+{
+  "id": "2026-248",
+  "title": "Formats of advanced electronic signatures and seals",
+  "celex": "32026R0248",
+  "eli": "http://data.europa.eu/eli/reg_impl/2026/248/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/c539cc01-00a1-11f1-825d-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/c539cc01-00a1-11f1-825d-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2026-248/2026-248.html",
+      "sha256": "f4513524bc2bdedd1556379b64cad8821138e8f98416d7dc810076fd91ba35d3",
+      "size": 68040
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/c539cc01-00a1-11f1-825d-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2026-248/2026-248.pdf",
+      "sha256": "d5794d9ad1717d8140dcd82cf8a416b2b2ad89c5dc99e794212e061f825775ea",
+      "size": 545023
+    }
+  }
+}

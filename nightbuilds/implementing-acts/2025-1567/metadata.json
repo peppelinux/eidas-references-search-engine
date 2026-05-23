@@ -1,0 +1,23 @@
+{
+  "id": "2025-1567",
+  "title": "Remote qualified signature/seal creation devices",
+  "celex": "32025R1567",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1567/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1567/2025-1567.html",
+      "sha256": "827de55730176c120628a972672ca99a2b82c0d39e22bd6a26e45676be5bf937",
+      "size": 29116
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8a505cff-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1567/2025-1567.pdf",
+      "sha256": "aefd18408155044b3cde95c80d2fd236893756c9b29d3083bd66b854f3348e56",
+      "size": 481239
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2025-2164",
+  "title": "Trusted lists of trust service providers",
+  "celex": "32025D2164",
+  "eli": "http://data.europa.eu/eli/dec_impl/2025/2164/oj/eng",
+  "kind": "implementing_decision",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-decisions/2025-2164/2025-2164.html",
+      "sha256": "8623cd654017fc3ea5045e1e3064837fc3d9d807f39fea66f707e4c1b59c320a",
+      "size": 97717
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/8f6925cf-b39f-11f0-b37f-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-decisions/2025-2164/2025-2164.pdf",
+      "sha256": "c7b006707431357cd1f07bbcf2a467a6fbbbc42bc05ca075436ecad1d13aff82",
+      "size": 906175
+    }
+  }
+}

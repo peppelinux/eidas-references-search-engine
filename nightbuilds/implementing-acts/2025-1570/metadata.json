@@ -1,0 +1,23 @@
+{
+  "id": "2025-1570",
+  "title": "Certified qualified signature/seal creation devices (notification)",
+  "celex": "32025R1570",
+  "eli": "http://data.europa.eu/eli/reg_impl/2025/1570/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/fdc40733-6cdd-11f0-bf4e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fdc40733-6cdd-11f0-bf4e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2025-1570/2025-1570.html",
+      "sha256": "9ac28380ef66fb0cbbe7a6e9ad44d84e2aa9d37434758713bc3947b3e919cbeb",
+      "size": 26919
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/fdc40733-6cdd-11f0-bf4e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2025-1570/2025-1570.pdf",
+      "sha256": "3dd95e03f85ea11cfdc27914b9f89ad22135321dd6e333df3590cffef4d168f2",
+      "size": 477139
+    }
+  }
+}

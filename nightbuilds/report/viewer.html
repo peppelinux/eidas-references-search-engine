@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="viewer-page">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Document viewer</title>
+  <link rel="stylesheet" href="report-layout.css"/>
+</head>
+<body class="viewer-page">
+  <header class="viewer-header" role="banner">
+    <a href="#" id="back-link">Close</a>
+    <h1 id="doc-title" class="viewer-title">Loading…</h1>
+    <a id="open-tab" href="#" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+  </header>
+  <main id="frame-wrap">
+    <p id="error" role="alert"></p>
+    <iframe id="doc-frame" title="Document content"></iframe>
+    <embed id="doc-embed" type="application/pdf" title="PDF document"/>
+  </main>
+  <script src="viewer.js"></script>
+</body>
+</html>
