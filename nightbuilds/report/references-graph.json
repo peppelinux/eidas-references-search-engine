@@ -2,10 +2,10 @@
   "corpus_anchor_id": "legal:eidas-consolidated",
   "edges": [
     {
-      "from": "ARF TS01 V1.1.2",
+      "from": "ARF TS01 V1.2",
       "kind": "references",
-      "source": "ARF/TS01-V1.1.2/ts1-eudi-wallet-trust-mark.md",
-      "to": "ARF TS01 V1.1.2"
+      "source": "ARF/TS01-V1.2/ts1-eudi-wallet-trust-mark.md",
+      "to": "ARF TS01 V1.2"
     },
     {
       "from": "ARF TS02 V1.0.1",
@@ -773,7 +773,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS01 V1.1.2"
+      "to": "ARF TS01 V1.2"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
@@ -848,7 +848,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS11)"
     }
   ],
-  "generated_at": "2026-06-03T14:09:46.274319+00:00",
+  "generated_at": "2026-06-04T12:22:04.566532+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -856,19 +856,19 @@
       "download_url": "https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts1-eudi-wallet-trust-mark.md",
       "files": {
         "md": {
-          "path": "standards/ARF/TS01-V1.1.2/TS01-V1.1.2.md",
-          "sha256": "fdc67ac91635b15fd85c04e7c59fc10deee57fea128f4a254241613fd65d014d"
+          "path": "standards/ARF/TS01-V1.2/TS01-V1.2.md",
+          "sha256": "8aa27027c5734f813482466073ad208c8e91541fe70ddd132b4616042a784695"
         }
       },
-      "folder": "ARF/TS01-V1.1.2",
-      "id": "ARF TS01 V1.1.2",
+      "folder": "ARF/TS01-V1.2",
+      "id": "ARF TS01 V1.2",
       "parent_legal_regulations": [],
       "parent_specifications": [
         {
           "body": "ARF",
-          "designation": "TS01 V1.1.2",
-          "folder": "ARF/TS01-V1.1.2",
-          "source": "ARF/TS01-V1.1.2/ts1-eudi-wallet-trust-mark.md",
+          "designation": "TS01 V1.2",
+          "folder": "ARF/TS01-V1.2",
+          "source": "ARF/TS01-V1.2/ts1-eudi-wallet-trust-mark.md",
           "version": null
         }
       ],
@@ -878,7 +878,7 @@
         "trust",
         "wallet"
       ],
-      "search_text": "ARF TS01 1.1.2 Specification of EUDI Wallet Trust Mark The present document specifies the technical specification and requirements for EUDI Wallet Trust Mark. eudi trust wallet arf-technical-spec downloaded nested-reference",
+      "search_text": "ARF TS01 1.2 Specification of EUDI Wallet Trust Mark The present document specifies the technical specification and requirements for EUDI Wallet Trust Mark. eudi trust wallet arf-technical-spec downloaded nested-reference",
       "status": "downloaded",
       "summary": "The present document specifies the technical specification and requirements for EUDI Wallet Trust Mark.",
       "tags": [
@@ -888,7 +888,7 @@
       ],
       "title": "Specification of EUDI Wallet Trust Mark",
       "type": "specification",
-      "version": "1.1.2"
+      "version": "1.2"
     },
     {
       "body": "ARF",
