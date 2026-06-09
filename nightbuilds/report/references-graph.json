@@ -14,10 +14,10 @@
       "to": "ARF TS02 V1.0.1"
     },
     {
-      "from": "ARF TS03 V1.5.1",
+      "from": "ARF TS03 V1.5.2",
       "kind": "references",
-      "source": "ARF/TS03-V1.5.1/ts3-wallet-unit-attestation.md",
-      "to": "ARF TS03 V1.5.1"
+      "source": "ARF/TS03-V1.5.2/ts3-wallet-unit-attestation.md",
+      "to": "ARF TS03 V1.5.2"
     },
     {
       "from": "ARF TS04 V1.0.1",
@@ -50,10 +50,10 @@
       "to": "ARF TS08 V0.11"
     },
     {
-      "from": "ARF TS09 V1.0.1",
+      "from": "ARF TS09 V1.1",
       "kind": "references",
-      "source": "ARF/TS09-V1.0.1/ts9-wallet-to-wallet-interactions.md",
-      "to": "ARF TS09 V1.0.1"
+      "source": "ARF/TS09-V1.1/ts9-wallet-to-wallet-interactions.md",
+      "to": "ARF TS09 V1.1"
     },
     {
       "from": "ARF TS10 V1.2",
@@ -785,7 +785,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS03 V1.5.1"
+      "to": "ARF TS03 V1.5.2"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
@@ -821,7 +821,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS09 V1.0.1"
+      "to": "ARF TS09 V1.1"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
@@ -848,7 +848,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS11)"
     }
   ],
-  "generated_at": "2026-06-08T13:17:36.426318+00:00",
+  "generated_at": "2026-06-09T12:17:01.765480+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -932,19 +932,19 @@
       "download_url": "https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts3-wallet-unit-attestation.md",
       "files": {
         "md": {
-          "path": "standards/ARF/TS03-V1.5.1/TS03-V1.5.1.md",
-          "sha256": "740cf396d7f279fa087225d127170c26657ab08195de042f202915ef70fadc90"
+          "path": "standards/ARF/TS03-V1.5.2/TS03-V1.5.2.md",
+          "sha256": "14d6c1f313cd28b28e38a0611328aba62bc8b34b8971064848a823f68fafa83d"
         }
       },
-      "folder": "ARF/TS03-V1.5.1",
-      "id": "ARF TS03 V1.5.1",
+      "folder": "ARF/TS03-V1.5.2",
+      "id": "ARF TS03 V1.5.2",
       "parent_legal_regulations": [],
       "parent_specifications": [
         {
           "body": "ARF",
-          "designation": "TS03 V1.5.1",
-          "folder": "ARF/TS03-V1.5.1",
-          "source": "ARF/TS03-V1.5.1/ts3-wallet-unit-attestation.md",
+          "designation": "TS03 V1.5.2",
+          "folder": "ARF/TS03-V1.5.2",
+          "source": "ARF/TS03-V1.5.2/ts3-wallet-unit-attestation.md",
           "version": null
         }
       ],
@@ -957,7 +957,7 @@
         "pid",
         "wallet"
       ],
-      "search_text": "ARF TS03 1.5.1 Specification of Wallet Unit Attestations (WUA) used in issuance of PID and Attestations The present document specifies how Wallet Unit Attestations (WUAs) -- comprising Wallet Instance Attestations (WIAs) and Key Attestations (KAs) -- are used in connection with PID Providers and Attestation Providers. attestation attestations eudi key pid wallet arf-technical-spec downloaded nested-reference",
+      "search_text": "ARF TS03 1.5.2 Specification of Wallet Unit Attestations (WUA) used in issuance of PID and Attestations The present document specifies how Wallet Unit Attestations (WUAs) -- comprising Wallet Instance Attestations (WIAs) and Key Attestations (KAs) -- are used in connection with PID Providers and Attestation Providers. attestation attestations eudi key pid wallet arf-technical-spec downloaded nested-reference",
       "status": "downloaded",
       "summary": "The present document specifies how Wallet Unit Attestations (WUAs) -- comprising Wallet Instance Attestations (WIAs) and Key Attestations (KAs) -- are used in connection with PID Providers and Attestation Providers.",
       "tags": [
@@ -967,7 +967,7 @@
       ],
       "title": "Specification of Wallet Unit Attestations (WUA) used in issuance of PID and Attestations",
       "type": "specification",
-      "version": "1.5.1"
+      "version": "1.5.2"
     },
     {
       "body": "ARF",
@@ -1162,19 +1162,19 @@
       "download_url": "https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md",
       "files": {
         "md": {
-          "path": "standards/ARF/TS09-V1.0.1/TS09-V1.0.1.md",
-          "sha256": "aefb06249a967da4ec1b1163fd559bf3f5678246dfb90aa38dc92fadf8897dcd"
+          "path": "standards/ARF/TS09-V1.1/TS09-V1.1.md",
+          "sha256": "e0faadb1de355e40fdcb8fbb811900e48b02d94e7700dae554482194c6910b58"
         }
       },
-      "folder": "ARF/TS09-V1.0.1",
-      "id": "ARF TS09 V1.0.1",
+      "folder": "ARF/TS09-V1.1",
+      "id": "ARF TS09 V1.1",
       "parent_legal_regulations": [],
       "parent_specifications": [
         {
           "body": "ARF",
-          "designation": "TS09 V1.0.1",
-          "folder": "ARF/TS09-V1.0.1",
-          "source": "ARF/TS09-V1.0.1/ts9-wallet-to-wallet-interactions.md",
+          "designation": "TS09 V1.1",
+          "folder": "ARF/TS09-V1.1",
+          "source": "ARF/TS09-V1.1/ts9-wallet-to-wallet-interactions.md",
           "version": null
         }
       ],
@@ -1182,7 +1182,7 @@
       "scope_keywords": [
         "wallet"
       ],
-      "search_text": "ARF TS09 1.0.1 Specification of Wallet to Wallet interactions The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a) (vi) of\n(EU) No 910/2014 used by a Wallet Unit to interact with another\nWallet Unit. wallet arf-technical-spec downloaded nested-reference",
+      "search_text": "ARF TS09 1.1 Specification of Wallet to Wallet interactions The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a) (vi) of\n(EU) No 910/2014 used by a Wallet Unit to interact with another\nWallet Unit. wallet arf-technical-spec downloaded nested-reference",
       "status": "downloaded",
       "summary": "The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a) (vi) of\n(EU) No 910/2014 used by a Wallet Unit to interact with another\nWallet Unit.",
       "tags": [
@@ -1192,7 +1192,7 @@
       ],
       "title": "Specification of Wallet to Wallet interactions",
       "type": "specification",
-      "version": "1.0.1"
+      "version": "1.1"
     },
     {
       "body": "ARF",

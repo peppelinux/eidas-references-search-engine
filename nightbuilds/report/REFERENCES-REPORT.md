@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-06-08T13:17:36.426318+00:00
+Generated: 2026-06-09T12:17:01.765480+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -33,7 +33,7 @@ Open **`index.html`** in this folder for the interactive version.
 | EC technical specifications (TS01–TS11) | — | European Commission complementary technical specifications (TS01–TS11) published with the EUDI Wallet Architecture and R | attestation, eudi, pid, trust, wallet | `ARF` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/tree/main/docs/technical-specifications) |
 | TS01 | 1.2 | The present document specifies the technical specification and requirements for EUDI Wallet Trust Mark. | eudi, trust, wallet | `ARF/TS01-V1.2` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts1-eudi-wallet-trust-mark.md) |
 | TS02 | 1.0.1 | The present document specifies the data model and systems enabling the notification and subsequent publication of Provid | — | `ARF/TS02-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts2-notification-publication-provider-information.md) |
-| TS03 | 1.5.1 | The present document specifies how Wallet Unit Attestations (WUAs) -- comprising Wallet Instance Attestations (WIAs) and | attestation, attestations, eudi, key, pid | `ARF/TS03-V1.5.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts3-wallet-unit-attestation.md) |
+| TS03 | 1.5.2 | The present document specifies how Wallet Unit Attestations (WUAs) -- comprising Wallet Instance Attestations (WIAs) and | attestation, attestations, eudi, key, pid | `ARF/TS03-V1.5.2` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts3-wallet-unit-attestation.md) |
 | TS04 | 1.0.1 | The present document specifies the technical specification and requirements for Zero-Knowledge Proof (ZKP) Implementatio | eudi, wallet | `ARF/TS04-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts4-zkp.md) |
 | TS05 | 1.2.1 | The present document specifies the data formats and application programming interface (API) for the machine-readable Rel | — | `ARF/TS05-V1.2.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts5-common-formats-and-api-for-rp-registration-information.md) |
 | TS06 | 1.0.1 | The present document specifies the common data set required for Relying Party Registration as required by the European D | — | `ARF/TS06-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts6-common-set-of-rp-information-to-be-registered.md) |
@@ -41,7 +41,7 @@ Open **`index.html`** in this folder for the interactive version.
 (EU) No 910/2 | wallet | `ARF/TS07-V0.11` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) |
 | TS08 | 0.11 | The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (x) of
 (EU) No 910/20 | wallet | `ARF/TS08-V0.11` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts8-common-interface-for-reporting-of-wrp-to-dpa.md) |
-| TS09 | 1.0.1 | The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a | wallet | `ARF/TS09-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md) |
+| TS09 | 1.1 | The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a | wallet | `ARF/TS09-V1.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md) |
 | TS10 | 1.2 | The present document specifies the common format and data set for the transaction log and the Migration Object, as well  | wallet | `ARF/TS10-V1.2` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts10-data-portability-and-download-%28export%29.md) |
 | TS11 | 1.0.1 | The present document specifies the interfaces and formats of European Commission’s catalogue of attributes and catalogue | attestation, attestations, attribute, attributes, delivery | `ARF/TS11-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts11-interfaces-and-formats-for-catalogue-of-attributes-and-catalogue-of-schemes.md) |
 | TS12 | 1.0.1 | The present document specifies data structures and processing rules for conducting Strong Customer Authentication (SCA)  | authentication, wallet, wallets | `ARF/TS12-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts12-electronic-payments-SCA-implementation-with-wallet.md) |
@@ -260,25 +260,25 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 |------|-----|------------------|
 | ARF EC technical specifications (TS01–TS11) | ARF TS01 V1.2 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS02 V1.0.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
-| ARF EC technical specifications (TS01–TS11) | ARF TS03 V1.5.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
+| ARF EC technical specifications (TS01–TS11) | ARF TS03 V1.5.2 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS04 V1.0.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS05 V1.2.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS06 V1.0.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS07 V0.11 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS08 V0.11 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
-| ARF EC technical specifications (TS01–TS11) | ARF TS09 V1.0.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
+| ARF EC technical specifications (TS01–TS11) | ARF TS09 V1.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS10 V1.2 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS11 V1.0.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS11) | ARF TS12 V1.0.1 | `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF TS01 V1.2 | ARF TS01 V1.2 | `ARF/TS01-V1.2/ts1-eudi-wallet-trust-mark.md` — [md](../referenced-standards/standards/ARF/TS01-V1.2/TS01-V1.2.md), html:—, pdf:— |
 | ARF TS02 V1.0.1 | ARF TS02 V1.0.1 | `ARF/TS02-V1.0.1/ts2-notification-publication-provider-information.md` — [md](../referenced-standards/standards/ARF/TS02-V1.0.1/TS02-V1.0.1.md), html:—, pdf:— |
-| ARF TS03 V1.5.1 | ARF TS03 V1.5.1 | `ARF/TS03-V1.5.1/ts3-wallet-unit-attestation.md` — [md](../referenced-standards/standards/ARF/TS03-V1.5.1/TS03-V1.5.1.md), html:—, pdf:— |
+| ARF TS03 V1.5.2 | ARF TS03 V1.5.2 | `ARF/TS03-V1.5.2/ts3-wallet-unit-attestation.md` — [md](../referenced-standards/standards/ARF/TS03-V1.5.2/TS03-V1.5.2.md), html:—, pdf:— |
 | ARF TS04 V1.0.1 | ARF TS04 V1.0.1 | `ARF/TS04-V1.0.1/ts4-zkp.md` — [md](../referenced-standards/standards/ARF/TS04-V1.0.1/TS04-V1.0.1.md), html:—, pdf:— |
 | ARF TS05 V1.2.1 | ARF TS05 V1.2.1 | `ARF/TS05-V1.2.1/ts5-common-formats-and-api-for-rp-registration-information.md` — [md](../referenced-standards/standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md), html:—, pdf:— |
 | ARF TS06 V1.0.1 | ARF TS06 V1.0.1 | `ARF/TS06-V1.0.1/ts6-common-set-of-rp-information-to-be-registered.md` — [md](../referenced-standards/standards/ARF/TS06-V1.0.1/TS06-V1.0.1.md), html:—, pdf:— |
 | ARF TS07 V0.11 | ARF TS07 V0.11 | `ARF/TS07-V0.11/ts7-common-interface-for-data-deletion-request.md` — [md](../referenced-standards/standards/ARF/TS07-V0.11/TS07-V0.11.md), html:—, pdf:— |
 | ARF TS08 V0.11 | ARF TS08 V0.11 | `ARF/TS08-V0.11/ts8-common-interface-for-reporting-of-wrp-to-dpa.md` — [md](../referenced-standards/standards/ARF/TS08-V0.11/TS08-V0.11.md), html:—, pdf:— |
-| ARF TS09 V1.0.1 | ARF TS09 V1.0.1 | `ARF/TS09-V1.0.1/ts9-wallet-to-wallet-interactions.md` — [md](../referenced-standards/standards/ARF/TS09-V1.0.1/TS09-V1.0.1.md), html:—, pdf:— |
+| ARF TS09 V1.1 | ARF TS09 V1.1 | `ARF/TS09-V1.1/ts9-wallet-to-wallet-interactions.md` — [md](../referenced-standards/standards/ARF/TS09-V1.1/TS09-V1.1.md), html:—, pdf:— |
 | ARF TS10 V1.2 | ARF TS10 V1.2 | `ARF/TS10-V1.2/ts10-data-portability-and-download-(export).md` — [md](../referenced-standards/standards/ARF/TS10-V1.2/TS10-V1.2.md), html:—, pdf:— |
 | ARF TS11 V1.0.1 | ARF TS11 V1.0.1 | `ARF/TS11-V1.0.1/ts11-interfaces-and-formats-for-catalogue-of-attributes-and-catalogue-of-schemes.md` — [md](../referenced-standards/standards/ARF/TS11-V1.0.1/TS11-V1.0.1.md), html:—, pdf:— |
 | ARF TS12 V1.0.1 | ARF TS12 V1.0.1 | `ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md` — [md](../referenced-standards/standards/ARF/TS12-V1.0.1/TS12-V1.0.1.md), html:—, pdf:— |
@@ -292,13 +292,13 @@ flowchart LR
   classDef specOk fill:#e8fce8,stroke:#363
   ARF_TS01_V1_2["ARF TS01<br/>V1.2"]:::specOk
   ARF_TS02_V1_0_1["ARF TS02<br/>V1.0.1"]:::specOk
-  ARF_TS03_V1_5_1["ARF TS03<br/>V1.5.1"]:::specOk
+  ARF_TS03_V1_5_2["ARF TS03<br/>V1.5.2"]:::specOk
   ARF_TS04_V1_0_1["ARF TS04<br/>V1.0.1"]:::specOk
   ARF_TS05_V1_2_1["ARF TS05<br/>V1.2.1"]:::specOk
   ARF_TS06_V1_0_1["ARF TS06<br/>V1.0.1"]:::specOk
   ARF_TS07_V0_11["ARF TS07<br/>V0.11"]:::specOk
   ARF_TS08_V0_11["ARF TS08<br/>V0.11"]:::specOk
-  ARF_TS09_V1_0_1["ARF TS09<br/>V1.0.1"]:::specOk
+  ARF_TS09_V1_1["ARF TS09<br/>V1.1"]:::specOk
   ARF_TS10_V1_2["ARF TS10<br/>V1.2"]:::specOk
   ARF_TS11_V1_0_1["ARF TS11<br/>V1.0.1"]:::specOk
   ARF_TS12_V1_0_1["ARF TS12<br/>V1.0.1"]:::specOk
@@ -398,13 +398,13 @@ flowchart LR
   legal_eidas_consolidated["eidas-consolidated<br/>Regulation (EU) No 910/2014 (eIDAS) — consoli..."]:::legal
   ARF_TS01_V1_2 -.->|references| ARF_TS01_V1_2
   ARF_TS02_V1_0_1 -.->|references| ARF_TS02_V1_0_1
-  ARF_TS03_V1_5_1 -.->|references| ARF_TS03_V1_5_1
+  ARF_TS03_V1_5_2 -.->|references| ARF_TS03_V1_5_2
   ARF_TS04_V1_0_1 -.->|references| ARF_TS04_V1_0_1
   ARF_TS05_V1_2_1 -.->|references| ARF_TS05_V1_2_1
   ARF_TS06_V1_0_1 -.->|references| ARF_TS06_V1_0_1
   ARF_TS07_V0_11 -.->|references| ARF_TS07_V0_11
   ARF_TS08_V0_11 -.->|references| ARF_TS08_V0_11
-  ARF_TS09_V1_0_1 -.->|references| ARF_TS09_V1_0_1
+  ARF_TS09_V1_1 -.->|references| ARF_TS09_V1_1
   ARF_TS10_V1_2 -.->|references| ARF_TS10_V1_2
   ARF_TS11_V1_0_1 -.->|references| ARF_TS11_V1_0_1
   ARF_TS12_V1_0_1 -.->|references| ARF_TS12_V1_0_1
@@ -526,13 +526,13 @@ flowchart LR
   legal_2024_2979 -->|cites| W3C_vc_data_model_V1_1
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS01_V1_2
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS02_V1_0_1
-  ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS03_V1_5_1
+  ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS03_V1_5_2
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS04_V1_0_1
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS05_V1_2_1
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS06_V1_0_1
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS07_V0_11
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS08_V0_11
-  ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS09_V1_0_1
+  ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS09_V1_1
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS10_V1_2
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS11_V1_0_1
   ARF_EC_technical_specifications__TS01_TS11_ -.->|references| ARF_TS12_V1_0_1
