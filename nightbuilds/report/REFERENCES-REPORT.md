@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-06-12T12:34:25.459232+00:00
+Generated: 2026-06-13T11:25:25.295607+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -9,8 +9,8 @@ Open **`index.html`** in this folder for the interactive version.
 | Metric | Count |
 |--------|------:|
 | Total references | 81 |
-| Downloaded / unchanged | 53 |
-| Unavailable | 28 |
+| Downloaded / unchanged | 54 |
+| Unavailable | 27 |
 | Other | 0 |
 | Legal → specification links | 116 |
 | Specification → specification links | 24 |
@@ -19,7 +19,7 @@ Open **`index.html`** in this folder for the interactive version.
 
 | Body | Total | Downloaded |
 |------|------:|-----------:|
-| ARF | 13 | 12 |
+| ARF | 13 | 13 |
 | CEN | 2 | 0 |
 | ETSI | 33 | 31 |
 | IETF | 9 | 9 |
@@ -44,6 +44,7 @@ Open **`index.html`** in this folder for the interactive version.
 | TS09 | 1.1 | The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a | wallet | `ARF/TS09-V1.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md) |
 | TS10 | 1.2 | The present document specifies the common format and data set for the transaction log and the Migration Object, as well  | wallet | `ARF/TS10-V1.2` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts10-data-portability-and-download-%28export%29.md) |
 | TS11 | 1.0.1 | The present document specifies the interfaces and formats of European Commission’s catalogue of attributes and catalogue | attestation, attestations, attribute, attributes, delivery | `ARF/TS11-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts11-interfaces-and-formats-for-catalogue-of-attributes-and-catalogue-of-schemes.md) |
+| TS12 | 1.0.1 | The present document specifies data structures and processing rules for conducting Strong Customer Authentication (SCA)  | authentication, wallet, wallets | `ARF/TS12-V1.0.1` | [link](https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts12-electronic-payments-SCA-implementation-with-wallet.md) |
 | EN 319 102-1 | 1.4.1 | Covers: electronic signature, security, trust services. | electronic signature, security, trust services, 319, 102-1 | `ETSI/EN-319-102-1-V1.4.1` | [link](https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.04.01_60/en_31910201v010401p.pdf) |
 | EN 319 122-1 | 1.3.1 | Covers: ASN.1, CAdES, electronic signature, profile, security. | asn.1, cades, electronic signature, profile, security | `ETSI/EN-319-122-1-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf) |
 | EN 319 132-1 | 1.3.1 | Covers: electronic signature, security, XAdES, XML. | electronic signature, security, xades, xml, 319 | `ETSI/EN-319-132-1-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf) |
@@ -104,7 +105,6 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 
 | Specification | Version | Tags | Download URL |
 |---------------|---------|------|--------------|
-| ARF TS12 V1.0.1 | 1.0.1 | arf-technical-spec, nested-reference, unavailable | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/tree/main/docs/technical-specifications) |
 | CEN CEN/TS 18170 V2025 | 2025 | cited-by-eu-law, common-criteria, implementing-regulation, unavailable | [link](https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:18170,25) |
 | CEN CEN/TS 419261 V2015 | 2015 | cited-by-eu-law, implementing-regulation, trust-services, unavailable | [link](https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:419261,25) |
 | ETSI EN 3191 22-1 V1.3.1 | 1.3.1 | 319-series, cited-by-eu-law, implementing-regulation, trust-services, unavailabl | [link](https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_60/en_319102201v010301p.pdf) |
@@ -281,7 +281,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ARF TS09 V1.1 | ARF TS09 V1.1 | `ARF/TS09-V1.1/ts9-wallet-to-wallet-interactions.md` — [md](../referenced-standards/standards/ARF/TS09-V1.1/TS09-V1.1.md), html:—, pdf:— |
 | ARF TS10 V1.2 | ARF TS10 V1.2 | `ARF/TS10-V1.2/ts10-data-portability-and-download-(export).md` — [md](../referenced-standards/standards/ARF/TS10-V1.2/TS10-V1.2.md), html:—, pdf:— |
 | ARF TS11 V1.0.1 | ARF TS11 V1.0.1 | `ARF/TS11-V1.0.1/ts11-interfaces-and-formats-for-catalogue-of-attributes-and-catalogue-of-schemes.md` — [md](../referenced-standards/standards/ARF/TS11-V1.0.1/TS11-V1.0.1.md), html:—, pdf:— |
-| ARF TS12 V1.0.1 | ARF TS12 V1.0.1 | `ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md` — md:—, html:—, pdf:— |
+| ARF TS12 V1.0.1 | ARF TS12 V1.0.1 | `ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md` — [md](../referenced-standards/standards/ARF/TS12-V1.0.1/TS12-V1.0.1.md), html:—, pdf:— |
 
 ## Reference graph (Mermaid)
 
@@ -301,7 +301,7 @@ flowchart LR
   ARF_TS09_V1_1["ARF TS09<br/>V1.1"]:::specOk
   ARF_TS10_V1_2["ARF TS10<br/>V1.2"]:::specOk
   ARF_TS11_V1_0_1["ARF TS11<br/>V1.0.1"]:::specOk
-  ARF_TS12_V1_0_1["ARF TS12<br/>V1.0.1"]:::spec
+  ARF_TS12_V1_0_1["ARF TS12<br/>V1.0.1"]:::specOk
   ARF_EC_technical_specifications__TS01_TS11_["ARF EC technical specifications (TS01–TS11)"]:::specOk
   CEN_CEN_TS_18170_V2025["CEN CEN/TS 18170<br/>V2025"]:::spec
   legal_2025_2162["2025-2162<br/>Accreditation of conformity assessment bodies"]:::legal
