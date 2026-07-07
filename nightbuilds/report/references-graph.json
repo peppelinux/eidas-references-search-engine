@@ -68,6 +68,12 @@
       "to": "ARF TS11 V1.0.1"
     },
     {
+      "from": "ARF TS12 V1.0.1",
+      "kind": "references",
+      "source": "ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md",
+      "to": "ARF TS12 V1.0.1"
+    },
+    {
       "from": "legal:2025-2162",
       "kind": "cites",
       "source": "implementing-acts/2025-2162/2025-2162.md",
@@ -833,7 +839,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS11)",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS12"
+      "to": "ARF TS12 V1.0.1"
     },
     {
       "from": "legal:2024-2979",
@@ -842,7 +848,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS11)"
     }
   ],
-  "generated_at": "2026-07-06T12:59:53.088894+00:00",
+  "generated_at": "2026-07-07T12:10:47.427941+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -1272,24 +1278,42 @@
     {
       "body": "ARF",
       "designation": "TS12",
-      "download_url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/tree/main/docs/technical-specifications",
-      "files": {},
-      "folder": "ARF/TS12",
-      "id": "ARF TS12",
+      "download_url": "https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts12-electronic-payments-SCA-implementation-with-wallet.md",
+      "files": {
+        "md": {
+          "path": "standards/ARF/TS12-V1.0.1/TS12-V1.0.1.md",
+          "sha256": "a8a7fd731c8a421c8d7236f1d5b40a798ff689fe3eeaf2e52d064548e525e2cb"
+        }
+      },
+      "folder": "ARF/TS12-V1.0.1",
+      "id": "ARF TS12 V1.0.1",
       "parent_legal_regulations": [],
-      "parent_specifications": [],
+      "parent_specifications": [
+        {
+          "body": "ARF",
+          "designation": "TS12 V1.0.1",
+          "folder": "ARF/TS12-V1.0.1",
+          "source": "ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md",
+          "version": null
+        }
+      ],
       "purpose": null,
-      "scope_keywords": [],
-      "search_text": "ARF TS12 ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md arf-technical-spec unavailable",
-      "status": "unavailable",
-      "summary": null,
+      "scope_keywords": [
+        "authentication",
+        "wallet",
+        "wallets"
+      ],
+      "search_text": "ARF TS12 1.0.1 Specification of Strong Customer Authentication (SCA) Implementation with the Wallet The present document specifies data structures and processing rules for conducting Strong Customer Authentication (SCA) according to [PSD2] with use of the European Digital Identity Wallets. authentication wallet wallets arf-technical-spec downloaded nested-reference",
+      "status": "downloaded",
+      "summary": "The present document specifies data structures and processing rules for conducting Strong Customer Authentication (SCA) according to [PSD2] with use of the European Digital Identity Wallets.",
       "tags": [
         "arf-technical-spec",
-        "unavailable"
+        "downloaded",
+        "nested-reference"
       ],
-      "title": "ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md",
+      "title": "Specification of Strong Customer Authentication (SCA) Implementation with the Wallet",
       "type": "specification",
-      "version": null
+      "version": "1.0.1"
     },
     {
       "body": "ARF",
