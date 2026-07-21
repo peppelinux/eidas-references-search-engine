@@ -70,8 +70,20 @@
     {
       "from": "ARF TS12 V1.0.1",
       "kind": "references",
-      "source": "ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md",
+      "source": "ARF/TS12-V1.0.1/ts12-electronic-payments-SCA-implementation-with-wallet.md",
       "to": "ARF TS12 V1.0.1"
+    },
+    {
+      "from": "ARF TS13 V1.0.1",
+      "kind": "references",
+      "source": "ARF/TS13-V1.0.1/ts13-zksnark.md",
+      "to": "ARF TS13 V1.0.1"
+    },
+    {
+      "from": "ARF TS14 V1.0",
+      "kind": "references",
+      "source": "ARF/TS14-V1.0/ts14-zkps-from-mms.md",
+      "to": "ARF TS14 V1.0"
     },
     {
       "from": "legal:2025-2162",
@@ -842,13 +854,25 @@
       "to": "ARF TS12 V1.0.1"
     },
     {
+      "from": "ARF EC technical specifications (TS01\u2013TS11)",
+      "kind": "references",
+      "source": "ARF/technical-specifications",
+      "to": "ARF TS13 V1.0.1"
+    },
+    {
+      "from": "ARF EC technical specifications (TS01\u2013TS11)",
+      "kind": "references",
+      "source": "ARF/technical-specifications",
+      "to": "ARF TS14 V1.0"
+    },
+    {
       "from": "legal:2024-2979",
       "kind": "related",
       "source": "corpus:arf-wallet-acts",
       "to": "ARF EC technical specifications (TS01\u2013TS11)"
     }
   ],
-  "generated_at": "2026-07-19T10:45:09.938640+00:00",
+  "generated_at": "2026-07-21T11:20:27.173349+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -1293,7 +1317,7 @@
           "body": "ARF",
           "designation": "TS12 V1.0.1",
           "folder": "ARF/TS12-V1.0.1",
-          "source": "ARF/TS12-V1.0.1/ts12-specification-of-strong-customer-authentication-(sca)-Implementation-with-the-Wallet.md",
+          "source": "ARF/TS12-V1.0.1/ts12-electronic-payments-SCA-implementation-with-wallet.md",
           "version": null
         }
       ],
@@ -1314,6 +1338,95 @@
       "title": "Specification of Strong Customer Authentication (SCA) Implementation with the Wallet",
       "type": "specification",
       "version": "1.0.1"
+    },
+    {
+      "body": "ARF",
+      "designation": "TS13",
+      "download_url": "https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts13-zksnarks.md",
+      "files": {
+        "md": {
+          "path": "standards/ARF/TS13-V1.0.1/TS13-V1.0.1.md",
+          "sha256": "c964e6471fcbc52d04b99a4b2a5472572c27a96aeffeaecf75cae580d8f1a776"
+        }
+      },
+      "folder": "ARF/TS13-V1.0.1",
+      "id": "ARF TS13 V1.0.1",
+      "parent_legal_regulations": [],
+      "parent_specifications": [
+        {
+          "body": "ARF",
+          "designation": "TS13 V1.0.1",
+          "folder": "ARF/TS13-V1.0.1",
+          "source": "ARF/TS13-V1.0.1/ts13-zksnark.md",
+          "version": null
+        }
+      ],
+      "purpose": null,
+      "scope_keywords": [
+        "attestation",
+        "attestations",
+        "attribute",
+        "attributes",
+        "credential",
+        "eudi",
+        "hash",
+        "identification",
+        "presentation",
+        "trust",
+        "wallet",
+        "wallets"
+      ],
+      "search_text": "ARF TS13 1.0.1 Specification for the implementation of Zero-Knowledge Proofs based on arithmetic circuits in the EUDI Wallet The present document specifies the modular technical specification and requirements for\nthe implementation of Zero-Knowledge Proof (ZKP) based on arithmetic circuits, without \ntrusted setup, in the EUDI Wallet. attestation attestations attribute attributes credential eudi hash identification presentation trust wallet wallets arf-technical-spec downloaded nested-reference",
+      "status": "downloaded",
+      "summary": "The present document specifies the modular technical specification and requirements for\nthe implementation of Zero-Knowledge Proof (ZKP) based on arithmetic circuits, without \ntrusted setup, in the EUDI Wallet.",
+      "tags": [
+        "arf-technical-spec",
+        "downloaded",
+        "nested-reference"
+      ],
+      "title": "Specification for the implementation of Zero-Knowledge Proofs based on arithmetic circuits in the EUDI Wallet",
+      "type": "specification",
+      "version": "1.0.1"
+    },
+    {
+      "body": "ARF",
+      "designation": "TS14",
+      "download_url": "https://raw.githubusercontent.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/main/docs/technical-specifications/ts14-zkps-from-mms.md",
+      "files": {
+        "md": {
+          "path": "standards/ARF/TS14-V1.0/TS14-V1.0.md",
+          "sha256": "37748443d581d5d67a222d9bb26a870ba209145fa8b7d3c07dc5b15ace0bd020"
+        }
+      },
+      "folder": "ARF/TS14-V1.0",
+      "id": "ARF TS14 V1.0",
+      "parent_legal_regulations": [],
+      "parent_specifications": [
+        {
+          "body": "ARF",
+          "designation": "TS14 V1.0",
+          "folder": "ARF/TS14-V1.0",
+          "source": "ARF/TS14-V1.0/ts14-zkps-from-mms.md",
+          "version": null
+        }
+      ],
+      "purpose": null,
+      "scope_keywords": [
+        "eudi",
+        "signature",
+        "wallet"
+      ],
+      "search_text": "ARF TS14 1.0 Specification for the implementation of Zero-Knowledge Proofs based on multi-message signatures in the EUDI Wallet Multi-Message-Signature (MMS) schemes are a class of signature schemes that allows signing of multiple messages at once.\nMany MMS schemes are particularly friendly to Zero Knowledge Proof (ZKP) techniques, making them interesting in an EUDI wallet ecosystem context.\nOn the other hand, MMS schemes are relatively immature (when compared to more established digital signature schemes) and so require more effort to integrate into a digital ecosystem. eudi signature wallet arf-technical-spec downloaded nested-reference",
+      "status": "downloaded",
+      "summary": "Multi-Message-Signature (MMS) schemes are a class of signature schemes that allows signing of multiple messages at once.\nMany MMS schemes are particularly friendly to Zero Knowledge Proof (ZKP) techniques, making them interesting in an EUDI wallet ecosystem context.\nOn the other hand, MMS schemes are relatively immature (when compared to more established digital signature schemes) and so require more effort to integrate into a digital ecosystem.",
+      "tags": [
+        "arf-technical-spec",
+        "downloaded",
+        "nested-reference"
+      ],
+      "title": "Specification for the implementation of Zero-Knowledge Proofs based on multi-message signatures in the EUDI Wallet",
+      "type": "specification",
+      "version": "1.0"
     },
     {
       "body": "ARF",
