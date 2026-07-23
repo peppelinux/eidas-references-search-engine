@@ -40,7 +40,7 @@ help:
 	@echo "  make markdown      Convert synced .html to .md (needs pandoc)"
 	@echo "  make specs         Download referenced standards (referenced-standards/)"
 	@echo "  make summaries     Summaries for legal acts + specs, then refresh report/"
-	@echo "  make report        Report index + search UI (report/index.html, search.html)"
+	@echo "  make report        Report landing + catalogues (report/index.html, …)"
 	@echo "  make report-specs  Alias for make report"
 	@echo "  make check         Report upstream drift (exit 2 if changed)"
 	@echo "  make dry-run       List what would be synced (no downloads)"

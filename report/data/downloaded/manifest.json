@@ -1,0 +1,16 @@
+{
+  "id": "downloaded",
+  "columns": [
+    "Body",
+    "Designation",
+    "Version",
+    "Summary",
+    "Scope keywords",
+    "Folder",
+    "Online",
+    "Tags"
+  ],
+  "total": 5636,
+  "page_size": 200,
+  "page_count": 29
+}

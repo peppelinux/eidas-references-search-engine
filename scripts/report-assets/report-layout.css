@@ -283,6 +283,20 @@ body {
   text-align: center;
 }
 
+a.stat {
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.stat:hover,
+a.stat:focus-visible {
+  border-color: var(--accent, #2563eb);
+  box-shadow: 0 0 0 1px var(--accent, #2563eb);
+  outline: none;
+}
+
 .stat strong {
   display: block;
   font-size: 1.5rem;
@@ -298,6 +312,39 @@ body {
   -webkit-overflow-scrolling: touch;
   margin: 0.5rem 0;
 }
+
+.graph-gate {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  max-width: 40rem;
+}
+
+.graph-gate .btn {
+  margin-top: 0.5rem;
+}
+
+.catalogue-pager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.catalogue-page-info {
+  margin: 0 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 
 table {
   width: 100%;

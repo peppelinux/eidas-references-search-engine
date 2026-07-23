@@ -147,6 +147,21 @@ def _spec_parent_from_source(
     body, folder = pair
     canon_source = _canonical_spec_source(source, standards_root)
     ref_path = standards_root / body / folder / "reference.json"
+
+    # Pruned ARF TS folders (e.g. TS03-V1.5.1 after V1.5.2) → remap to current on-disk TS.
+    if not ref_path.is_file() and body == "ARF":
+        from arf_technical_specs import storage_folder_for_designation
+
+        m = re.match(r"^(TS\d{1,2})(?:-V[\d.]+)?$", folder, re.I)
+        if m:
+            tm = re.match(r"^TS\s*0*(\d{1,2})$", m.group(1), re.I)
+            des = f"TS{int(tm.group(1)):02d}" if tm else m.group(1).upper()
+            latest = storage_folder_for_designation(des, standards_root)
+            if latest and latest != folder:
+                folder = latest
+                ref_path = standards_root / body / folder / "reference.json"
+                canon_source = f"{body}/{folder}/{Path(source).name}"
+
     if ref_path.is_file():
         try:
             existing = json.loads(ref_path.read_text(encoding="utf-8"))
@@ -169,6 +184,9 @@ def _spec_parent_from_source(
                     "source": canon_source,
                     "folder": f"{body}/{folder}",
                 }
+    # Do not invent ghost parents for missing folders (creates orphan deprecated ARF TS nodes).
+    if not ref_path.is_file():
+        return None
     return {
         "body": body,
         "designation": folder.replace("-", " "),
