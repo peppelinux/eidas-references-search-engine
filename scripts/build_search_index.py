@@ -178,6 +178,17 @@ def _metadata_blob(doc: dict[str, Any]) -> str:
     return " ".join(x for x in parts if x)
 
 
+def _index_full_document_text(doc: dict[str, Any]) -> bool:
+    """
+    Full-text chunking of nested IETF/… trees blows past GitHub's 100 MB limit.
+    Keep metadata for every catalogue entry; index document bodies only for
+    legally cited specs and ARF technical specifications.
+    """
+    if doc.get("body") == "ARF":
+        return True
+    return bool(doc.get("parent_legal_regulations"))
+
+
 def _load_spec_documents(standards_root: Path) -> list[dict[str, Any]]:
     docs: list[dict[str, Any]] = []
     for ref_path in sorted(standards_root.rglob("reference.json")):
@@ -233,7 +244,7 @@ def _load_spec_documents(standards_root: Path) -> list[dict[str, Any]]:
         doc_text, doc_link = _spec_document_text(folder)
         if doc_link:
             links["document"] = doc_link
-        if doc_text:
+        if doc_text and _index_full_document_text(doc):
             for i, chunk in enumerate(_chunk_text(doc_text)):
                 docs.append(
                     {
