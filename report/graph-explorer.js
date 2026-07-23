@@ -180,7 +180,7 @@
         const isArfCatalog =
           n.body === "ARF" && n.folder === "ARF";
         const shortDes = isArfCatalog
-          ? "EC TS01–TS11"
+          ? "EC TS01–TS14"
           : des.length > 36
             ? des.slice(0, 34) + "…"
             : des;
@@ -512,14 +512,28 @@
         });
       }
     } else {
+      const onlineUrls = [];
+      if (raw.download_url) onlineUrls.push(raw.download_url);
+      for (const u of raw.download_urls || []) {
+        if (u && !onlineUrls.includes(u)) onlineUrls.push(u);
+      }
+      onlineUrls.sort((a, b) => {
+        const ar = /raw\.githubusercontent\.com/.test(a) ? 1 : 0;
+        const br = /raw\.githubusercontent\.com/.test(b) ? 1 : 0;
+        return ar - br;
+      });
+      onlineUrls.forEach((href, i) => {
+        links.push({
+          label: i === 0 ? "Online" : `Online (${i + 1})`,
+          href,
+          ext: true,
+        });
+      });
       if (raw.folder) {
         links.push({
-          label: "reference.json",
+          label: "Local reference.json",
           href: `../referenced-standards/standards/${raw.folder}/reference.json`,
         });
-      }
-      if (raw.download_url) {
-        links.push({ label: "Download / catalogue", href: raw.download_url, ext: true });
       }
     }
     const localDocsHtml =

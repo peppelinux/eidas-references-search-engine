@@ -307,14 +307,14 @@
     const snippets = uniqueSnippetHits(hits, parsed);
     const links = doc.links || {};
     const linkParts = [];
+    if (links.download) linkParts.push(linkRow("Online", links.download, true));
     if (links.markdown) linkParts.push(linkRow("Legal markdown", links.markdown, false));
     if (links.reference_json)
-      linkParts.push(linkRow("reference.json", links.reference_json, false));
-    if (links.document) linkParts.push(linkRow("Specification document", links.document, false));
-    if (links.folder) linkParts.push(linkRow("Spec folder", links.folder, false));
+      linkParts.push(linkRow("Local reference.json", links.reference_json, false));
+    if (links.document) linkParts.push(linkRow("Local document", links.document, false));
+    if (links.folder) linkParts.push(linkRow("Local folder", links.folder, false));
     if (links.metadata) linkParts.push(linkRow("Act metadata", links.metadata, false));
     if (links.eli) linkParts.push(linkRow("EUR-Lex (ELI)", links.eli, true));
-    if (links.download) linkParts.push(linkRow("Download / catalogue", links.download, true));
     if (links.html) linkParts.push(linkRow("OJ HTML", links.html, false));
 
     const badges = [];

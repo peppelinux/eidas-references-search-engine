@@ -1,4 +1,5 @@
-# Deploy GitHub Pages from main branch content (no pipeline run).
+# Deploy GitHub Pages from main branch content (as-is mirror).
+# Any push to main (including report/) republishes the site root; /nightbuilds/ is preserved.
 name: Pages — main (as-is)
 
 on:
@@ -6,6 +7,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Required so peaceiris can push to gh-pages even when the repo
+# default is "Read repository contents" for GITHUB_TOKEN.
 permissions:
   contents: write
 
@@ -16,6 +19,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -28,3 +33,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           keep_files: true
+          commit_message: "deploy(main): ${{ github.sha }}"

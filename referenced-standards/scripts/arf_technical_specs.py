@@ -101,6 +101,16 @@ class ArfTechnicalSpec:
             name = "ts13-zksnarks.md"
         return f"{CONTENT_RAW_BASE}/{urllib.parse.quote(name)}"
 
+    def content_blob_url(self) -> str:
+        """Human-readable GitHub page for the full TS markdown (preferred href)."""
+        name = self.filename
+        if name == "ts13-zksnark.md":
+            name = "ts13-zksnarks.md"
+        return (
+            f"https://github.com/{CONTENT_REPO}/blob/{CONTENT_REF}/"
+            f"{DOCS_PATH}/{urllib.parse.quote(name)}"
+        )
+
 
 def _http_get(url: str, timeout: int = 60) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -318,7 +328,12 @@ def parse_title_from_markdown(markdown: str, fallback: str) -> str:
 
 
 def download_urls_for(entry: ArfTechnicalSpec) -> list[str]:
-    return [entry.arf_tree_url(), entry.content_raw_url(), entry.arf_raw_url()]
+    return [
+        entry.content_blob_url(),
+        entry.arf_tree_url(),
+        entry.content_raw_url(),
+        entry.arf_raw_url(),
+    ]
 
 
 def extract_nested_references(
