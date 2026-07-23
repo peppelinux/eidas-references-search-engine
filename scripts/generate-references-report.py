@@ -480,7 +480,7 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
                     "source": "ARF/technical-specifications",
                 }
             )
-        for act_id in ("2024-2979", "2024-2977", "2024-2982", "eidas-consolidated"):
+        for act_id in ("eidas-consolidated", "2024-2979", "2024-2977", "2024-2982"):
             lid = legal_node_id({"id": act_id})
             if lid in nodes:
                 edges.append(
@@ -842,7 +842,7 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>eIDAS technical references report</title>
-  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
   <link rel="stylesheet" href="report-layout.css"/>
   <link rel="stylesheet" href="graph-explorer.css"/>
 </head>
