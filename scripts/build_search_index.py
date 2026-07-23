@@ -201,9 +201,20 @@ def _load_spec_documents(standards_root: Path) -> list[dict[str, Any]]:
         body = doc.get("body")
         tags = normalize_tags(doc.get("tags") or [])
         label = _spec_label(doc)
+        download = doc.get("download_url")
+        if not download:
+            for u in doc.get("download_urls") or []:
+                if isinstance(u, str) and u.startswith("http"):
+                    download = u
+                    break
+        # Prefer human pages over raw.githubusercontent for search "Online" link
+        urls = [u for u in [download, *(doc.get("download_urls") or [])] if isinstance(u, str) and u.startswith("http")]
+        preferred = next((u for u in urls if "raw.githubusercontent.com" not in u), None) or (
+            urls[0] if urls else None
+        )
         links: dict[str, Any] = {
             "reference_json": _rel_from_report(ref_path),
-            "download": doc.get("download_url"),
+            "download": preferred,
             "folder": _rel_from_report(folder),
         }
         meta_out = {

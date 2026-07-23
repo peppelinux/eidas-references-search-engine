@@ -47,14 +47,45 @@ CORPUS_ANCHOR_ACT_ID = "eidas-consolidated"
 
 ARF_TS_INDEX_URL = (
     "https://github.com/eu-digital-identity-wallet/"
-    "eudi-doc-architecture-and-reference-framework/tree/main/docs/technical-specifications"
+    "eudi-doc-architecture-and-reference-framework/tree/v3.0.0/docs/technical-specifications"
 )
 
 
-def esc(value: Any) -> str:
-    if value is None:
-        return ""
-    return html.escape(str(value), quote=True)
+def esc(s: Any) -> str:
+    return html.escape("" if s is None else str(s), quote=True)
+
+
+def preferred_online_url(doc: dict[str, Any] | None) -> str | None:
+    """Best public HTTPS link for a specification (prefer human pages over raw)."""
+    if not doc:
+        return None
+    candidates: list[str] = []
+    for key in ("download_url",):
+        u = doc.get(key)
+        if isinstance(u, str) and u.startswith("http"):
+            candidates.append(u)
+    for u in doc.get("download_urls") or []:
+        if isinstance(u, str) and u.startswith("http") and u not in candidates:
+            candidates.append(u)
+    if not candidates:
+        return None
+    for u in candidates:
+        if "raw.githubusercontent.com" not in u:
+            return u
+    return candidates[0]
+
+
+def render_online_href_html(url: str | None, label: str | None = None) -> str:
+    if not url:
+        return "—"
+    text = label or url
+    return f'<a href="{esc(url)}" rel="noopener" target="_blank">{esc(text)}</a>'
+
+
+def render_online_href_md(url: str | None, label: str | None = None) -> str:
+    if not url:
+        return "—"
+    return f"[{label or 'link'}]({url})"
 
 
 def report_rel_href(abs_path: Path) -> str:
@@ -101,14 +132,27 @@ def _corpus_format_paths(stem: Path) -> dict[str, Path]:
     return found
 
 
-def render_corpus_source_links_html(source: str | None) -> str:
-    if not source:
+def render_corpus_source_links_html(
+    source: str | None,
+    *,
+    online_url: str | None = None,
+) -> str:
+    if not source and not online_url:
         return "—"
+    parts: list[str] = []
+    if online_url:
+        parts.append(
+            f'<a class="src-online" href="{esc(online_url)}" rel="noopener" target="_blank">'
+            f"Online</a>"
+        )
+    if not source:
+        return " · ".join(parts) if parts else "—"
     stem = source_stem(source)
     if not stem:
-        return f"<code>{esc(source)}</code>"
+        parts.append(f"<code>{esc(source)}</code>")
+        return " · ".join(parts)
     formats = _corpus_format_paths(stem)
-    parts: list[str] = [f'<code class="src-path">{esc(source)}</code>']
+    parts.append(f'<code class="src-path">{esc(source)}</code>')
     link_bits: list[str] = []
     for ext in ("md", "html", "pdf"):
         path = formats.get(ext)
@@ -128,25 +172,34 @@ def render_corpus_source_links_html(source: str | None) -> str:
         else:
             link_bits.append(f'<span class="src-missing" title="not in corpus">{ext}</span>')
     if link_bits:
-        parts.append("<br/>" + " · ".join(link_bits))
-    return "".join(parts)
+        parts.append(" · ".join(link_bits))
+    return "<br/>".join(parts) if len(parts) > 1 else (parts[0] if parts else "—")
 
 
-def render_corpus_source_links_md(source: str | None) -> str:
+def render_corpus_source_links_md(
+    source: str | None,
+    *,
+    online_url: str | None = None,
+) -> str:
+    bits: list[str] = []
+    if online_url:
+        bits.append(f"[online]({online_url})")
     if not source:
-        return "—"
+        return " · ".join(bits) if bits else "—"
     stem = source_stem(source)
     if not stem:
-        return f"`{source}`"
+        bits.append(f"`{source}`")
+        return " · ".join(bits)
     formats = _corpus_format_paths(stem)
-    bits: list[str] = []
+    local_bits: list[str] = []
     for ext in ("md", "html", "pdf"):
         path = formats.get(ext)
         if path:
-            bits.append(f"[{ext}]({report_rel_href(path)})")
+            local_bits.append(f"[{ext}]({report_rel_href(path)})")
         else:
-            bits.append(f"{ext}:—")
-    return f"`{source}` — " + ", ".join(bits)
+            local_bits.append(f"{ext}:—")
+    bits.append(f"`{source}` — " + ", ".join(local_bits))
+    return " · ".join(bits)
 
 
 def load_references(standards_root: Path) -> list[dict[str, Any]]:
@@ -167,6 +220,13 @@ def spec_label(doc: dict[str, Any]) -> str:
     if doc.get("version"):
         parts.append(f"V{doc['version']}")
     return " ".join(p for p in parts if p).strip()
+
+
+def _version_key(version: str | None) -> tuple[int, ...]:
+    if not version:
+        return (0,)
+    nums = [int(x) for x in re.findall(r"\d+", str(version))]
+    return tuple(nums) if nums else (0,)
 
 
 def spec_node_id(doc: dict[str, Any]) -> str:
@@ -271,6 +331,37 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
     nodes: dict[str, dict[str, Any]] = {}
     edges: list[dict[str, Any]] = []
 
+    by_exact_id = {spec_node_id(doc): doc for doc in refs}
+    # Prefer on-disk specs when parent_specifications still cite pruned versions
+    # (e.g. ARF TS01 V1.1.2 after V1.2 replaced it).
+    latest_by_identity: dict[tuple[str, str], dict[str, Any]] = {}
+    for doc in refs:
+        body = doc.get("body")
+        des = doc.get("designation")
+        if not body or not des:
+            continue
+        key = (str(body), str(des).strip().upper())
+        prev = latest_by_identity.get(key)
+        if prev is None or _version_key(doc.get("version")) >= _version_key(prev.get("version")):
+            latest_by_identity[key] = doc
+
+    def resolve_parent_spec(sp: dict[str, Any]) -> tuple[str, dict[str, Any] | None]:
+        exact_id = spec_node_id(
+            {
+                "body": sp.get("body"),
+                "designation": sp.get("designation"),
+                "version": sp.get("version"),
+            }
+        )
+        if exact_id in by_exact_id:
+            return exact_id, by_exact_id[exact_id]
+        body, des = sp.get("body"), sp.get("designation")
+        if body and des:
+            latest = latest_by_identity.get((str(body), str(des).strip().upper()))
+            if latest is not None:
+                return spec_node_id(latest), latest
+        return exact_id, None
+
     for doc in refs:
         sid = spec_node_id(doc)
         nodes[sid] = {
@@ -282,7 +373,8 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
             "title": doc.get("title"),
             "purpose": doc.get("purpose"),
             "status": doc.get("status"),
-            "download_url": doc.get("download_url"),
+            "download_url": preferred_online_url(doc) or doc.get("download_url"),
+            "download_urls": doc.get("download_urls") or [],
             "folder": doc.get("_folder"),
             "files": doc.get("files") or {},
             "tags": doc.get("tags", []),
@@ -316,22 +408,28 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
                 }
             )
         for sp in doc.get("parent_specifications") or []:
-            pid = spec_node_id(
-                {
-                    "body": sp.get("body"),
-                    "designation": sp.get("designation"),
-                    "version": sp.get("version"),
-                }
-            )
+            pid, parent_doc = resolve_parent_spec(sp)
             if pid not in nodes:
-                nodes[pid] = {
-                    "id": pid,
-                    "type": "specification",
-                    "body": sp.get("body"),
-                    "designation": sp.get("designation"),
-                    "version": sp.get("version"),
-                    "status": None,
-                }
+                if parent_doc is not None:
+                    nodes[pid] = {
+                        "id": pid,
+                        "type": "specification",
+                        "body": parent_doc.get("body"),
+                        "designation": parent_doc.get("designation"),
+                        "version": parent_doc.get("version"),
+                        "title": parent_doc.get("title"),
+                        "status": parent_doc.get("status"),
+                        "folder": parent_doc.get("_folder"),
+                    }
+                else:
+                    nodes[pid] = {
+                        "id": pid,
+                        "type": "specification",
+                        "body": sp.get("body"),
+                        "designation": sp.get("designation"),
+                        "version": sp.get("version"),
+                        "status": None,
+                    }
             edges.append(
                 {
                     "from": pid,
@@ -341,7 +439,7 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
                 }
             )
 
-    by_spec_id = {spec_node_id(doc): doc for doc in refs}
+    by_spec_id = by_exact_id
     for n in nodes.values():
         if n.get("type") != "specification":
             continue
@@ -497,6 +595,7 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
     legal_edges = data["legal_edges"]
     spec_edges = data["spec_edges"]
     legal_nodes = data["legal_nodes"]
+    by_spec_id = {spec_node_id(d): d for d in refs}
 
     lines = [
         "# Technical references report",
@@ -531,19 +630,18 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
             "",
             "## Downloaded references",
             "",
-        "| Specification | Version | Summary | Scope keywords | Folder | Download |",
-        "|---------------|---------|---------|----------------|--------|----------|",
+        "| Specification | Version | Summary | Scope keywords | Folder | Online |",
+        "|---------------|---------|---------|----------------|--------|--------|",
         ]
     )
     for doc in sorted(downloaded, key=lambda d: (d.get("body", ""), d.get("designation", ""))):
-        url = doc.get("download_url") or "—"
-        if url != "—":
-            url = f"[link]({url})"
+        url = preferred_online_url(doc)
+        url_md = render_online_href_md(url)
         sm = (doc.get("summary") or "")[:120].replace("|", "/")
         kw = ", ".join((doc.get("scope_keywords") or [])[:5])
         lines.append(
             f"| {doc.get('designation', '?')} | {doc.get('version') or '—'} | "
-            f"{sm or '—'} | {kw or '—'} | `{doc.get('_folder', '')}` | {url} |"
+            f"{sm or '—'} | {kw or '—'} | `{doc.get('_folder', '')}` | {url_md} |"
         )
 
     if unavailable:
@@ -552,17 +650,16 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
                 "",
                 "## Unavailable references",
                 "",
-                "| Specification | Version | Tags | Download URL |",
-                "|---------------|---------|------|--------------|",
+                "| Specification | Version | Tags | Online |",
+                "|---------------|---------|------|--------|",
             ]
         )
         for doc in sorted(unavailable, key=lambda d: spec_label(d)):
             tags = ", ".join(doc.get("tags") or [])[:80]
-            url = doc.get("download_url") or (doc.get("download_urls") or ["—"])[0]
-            if url and url != "—":
-                url = f"[link]({url})"
+            url = preferred_online_url(doc)
             lines.append(
-                f"| {spec_label(doc)} | {doc.get('version') or '—'} | {tags} | {url} |"
+                f"| {spec_label(doc)} | {doc.get('version') or '—'} | {tags} | "
+                f"{render_online_href_md(url)} |"
             )
 
     lines.extend(
@@ -570,8 +667,8 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
             "",
             "## Links from EU legal acts",
             "",
-            "| Legal act | CELEX | Specification cited | Source in corpus |",
-            "|-----------|-------|---------------------|------------------|",
+            "| Legal act | CELEX | Specification cited | Online | Source in corpus |",
+            "|-----------|-------|---------------------|--------|------------------|",
         ]
     )
     seen: set[tuple[str, str]] = set()
@@ -581,9 +678,11 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
             continue
         seen.add(key)
         ln = legal_nodes.get(edge["from"], {})
+        online = preferred_online_url(by_spec_id.get(edge["to"]))
         lines.append(
             f"| {ln.get('act_id', edge['from'])} | {ln.get('celex') or '—'} | {edge['to']} | "
-            f"{render_corpus_source_links_md(edge.get('source'))} |"
+            f"{render_online_href_md(online)} | "
+            f"{render_corpus_source_links_md(edge.get('source'), online_url=online)} |"
         )
 
     if spec_edges:
@@ -592,8 +691,8 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
                 "",
                 "## Links between specifications",
                 "",
-                "| From | To | Source in corpus |",
-                "|------|-----|------------------|",
+                "| From | To | Online (to) | Source in corpus |",
+                "|------|-----|-------------|------------------|",
             ]
         )
         seen_spec: set[tuple[str, str]] = set()
@@ -602,8 +701,10 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
             if key in seen_spec:
                 continue
             seen_spec.add(key)
+            online = preferred_online_url(by_spec_id.get(edge["to"]))
             lines.append(
-                f"| {edge['from']} | {edge['to']} | {render_corpus_source_links_md(edge.get('source'))} |"
+                f"| {edge['from']} | {edge['to']} | {render_online_href_md(online)} | "
+                f"{render_corpus_source_links_md(edge.get('source'), online_url=online)} |"
             )
 
     lines.extend(["", "## Reference graph (Mermaid)", "", "```mermaid", mermaid_src, "```", ""])
@@ -621,6 +722,7 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
     spec_edges = data["spec_edges"]
     legal_nodes = data["legal_nodes"]
     generated = graph["generated_at"]
+    by_spec_id = {spec_node_id(d): d for d in refs}
 
     # Summary rows by body
     body_rows = []
@@ -634,10 +736,8 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
     # Downloaded table
     dl_rows = []
     for doc in sorted(downloaded, key=lambda d: (d.get("body", ""), d.get("designation", ""))):
-        url = doc.get("download_url")
-        url_cell = (
-            f'<a href="{esc(url)}" rel="noopener">{esc(url)}</a>' if url else "—"
-        )
+        url = preferred_online_url(doc)
+        url_cell = render_online_href_html(url)
         tags = ", ".join(doc.get("tags") or [])
         summary = doc.get("summary") or ""
         if len(summary) > 160:
@@ -658,10 +758,8 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
 
     unav_rows = []
     for doc in sorted(unavailable, key=lambda d: spec_label(d)):
-        url = doc.get("download_url") or ((doc.get("download_urls") or [None])[0])
-        url_cell = (
-            f'<a href="{esc(url)}" rel="noopener">{esc(url)}</a>' if url else "—"
-        )
+        url = preferred_online_url(doc)
+        url_cell = render_online_href_html(url)
         unav_rows.append(
             f"<tr>"
             f"<td>{esc(spec_label(doc))}</td>"
@@ -682,7 +780,8 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         eli = ln.get("eli")
         act_cell = esc(ln.get("act_id", ""))
         if eli:
-            act_cell = f'<a href="{esc(eli)}" rel="noopener">{act_cell}</a>'
+            act_cell = f'<a href="{esc(eli)}" rel="noopener" target="_blank">{act_cell}</a>'
+        online = preferred_online_url(by_spec_id.get(edge["to"]))
         legal_rows.append(
             f"<tr>"
             f"<td>{act_cell}</td>"
@@ -690,7 +789,8 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
             f"<td>{esc(ln.get('celex'))}</td>"
             f"<td>{esc(ln.get('kind'))}</td>"
             f"<td>{esc(edge['to'])}</td>"
-            f"<td class=\"src-cell\">{render_corpus_source_links_html(edge.get('source'))}</td>"
+            f"<td>{render_online_href_html(online, 'Online')}</td>"
+            f"<td class=\"src-cell\">{render_corpus_source_links_html(edge.get('source'), online_url=online)}</td>"
             f"</tr>"
         )
 
@@ -701,9 +801,11 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         if key in seen_spec:
             continue
         seen_spec.add(key)
+        online = preferred_online_url(by_spec_id.get(edge["to"]))
         spec_link_rows.append(
             f"<tr><td>{esc(edge['from'])}</td><td>{esc(edge['to'])}</td>"
-            f"<td class=\"src-cell\">{render_corpus_source_links_html(edge.get('source'))}</td></tr>"
+            f"<td>{render_online_href_html(online, 'Online')}</td>"
+            f"<td class=\"src-cell\">{render_corpus_source_links_html(edge.get('source'), online_url=online)}</td></tr>"
         )
 
     spec_links_section = ""
@@ -715,10 +817,10 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         spec_links_section = f"""
     <section id="spec-links">
       <h2>Links between specifications</h2>
-      <p>Nested references found inside downloaded standard texts.</p>
+      <p>Nested references found inside downloaded standard texts. <strong>Online</strong> points to the public catalogue / SDO copy.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Referencing</th><th>Referenced</th><th>Source in corpus</th></tr></thead>
+          <thead><tr><th>Referencing</th><th>Referenced</th><th>Online</th><th>Source in corpus</th></tr></thead>
           <tbody>{"".join(spec_link_rows)}</tbody>
         </table>
       </div>
@@ -740,7 +842,7 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
   <header class="site-header" role="banner">
     <h1>eIDAS technical references report</h1>
     <p class="site-meta">Generated {esc(generated)} · Toolchain: eidas-legal-tech-references</p>
-    <p class="site-meta">For legal traceability and implementer conformance — official EU law cited against normative standards (ETSI, IETF, W3C, …) and EUDI ARF complementary technical specifications (EC TS01–TS11).</p>
+    <p class="site-meta">For legal traceability and implementer conformance — official EU law cited against normative standards (ETSI, IETF, W3C, …) and EUDI ARF complementary technical specifications (EC TS01–TS14).</p>
   </header>
 
   <nav class="site-nav" id="site-nav" aria-labelledby="nav-heading">
@@ -818,7 +920,7 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         <thead>
           <tr>
             <th>Body</th><th>Designation</th><th>Version</th><th>Summary</th>
-            <th>Scope keywords</th><th>Folder</th><th>Download URL</th><th>Tags</th>
+            <th>Scope keywords</th><th>Folder</th><th>Online</th><th>Tags</th>
           </tr>
         </thead>
         <tbody>{"".join(dl_rows) if dl_rows else '<tr><td colspan="8">None</td></tr>'}</tbody>
@@ -832,7 +934,7 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Specification</th><th>Version</th><th>Tags</th><th>Catalogue URL</th></tr>
+          <tr><th>Specification</th><th>Version</th><th>Tags</th><th>Online</th></tr>
         </thead>
         <tbody>{"".join(unav_rows) if unav_rows else '<tr><td colspan="4">None</td></tr>'}</tbody>
       </table>
@@ -847,10 +949,10 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         <thead>
           <tr>
             <th>Act</th><th>Title</th><th>CELEX</th><th>Kind</th>
-            <th>Specification cited</th><th>Source in corpus</th>
+            <th>Specification cited</th><th>Online</th><th>Source in corpus</th>
           </tr>
         </thead>
-        <tbody>{"".join(legal_rows) if legal_rows else '<tr><td colspan="6">None</td></tr>'}</tbody>
+        <tbody>{"".join(legal_rows) if legal_rows else '<tr><td colspan="7">None</td></tr>'}</tbody>
       </table>
     </div>
   </section>
