@@ -548,12 +548,6 @@
       "to": "ETSI TS 119 602 V1.1.1"
     },
     {
-      "from": "ARF TS03 V1.5.2",
-      "kind": "references",
-      "source": "ARF/TS03-V1.5.2/TS03-V1.5.2.md",
-      "to": "ETSI TS 119 602 V1.1.1"
-    },
-    {
       "from": "ARF TS11 V1.0.1",
       "kind": "references",
       "source": "ARF/TS11-V1.0.1/TS11-V1.0.1.md",
@@ -3062,12 +3056,6 @@
       "to": "IETF RFC 2119"
     },
     {
-      "from": "ARF TS03 V1.5.2",
-      "kind": "references",
-      "source": "ARF/TS03-V1.5.2/TS03-V1.5.2.md",
-      "to": "IETF RFC 2119"
-    },
-    {
       "from": "ARF TS07 V0.11",
       "kind": "references",
       "source": "ARF/TS07-V0.11/TS07-V0.11.md",
@@ -3083,12 +3071,6 @@
       "from": "ARF TS09 V1.1",
       "kind": "references",
       "source": "ARF/TS09-V1.0.1/TS09-V1.0.1.md",
-      "to": "IETF RFC 2119"
-    },
-    {
-      "from": "ARF TS09 V1.1",
-      "kind": "references",
-      "source": "ARF/TS09-V1.1/TS09-V1.1.md",
       "to": "IETF RFC 2119"
     },
     {
@@ -3971,12 +3953,6 @@
       "from": "ETSI EN 319 142-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/EN-319-142-1-V1.1.1/EN-319-142-1-V1.1.1.pdf",
-      "to": "IETF RFC 2315"
-    },
-    {
-      "from": "ETSI EN 319 142-1 V1.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
       "to": "IETF RFC 2315"
     },
     {
@@ -9236,12 +9212,6 @@
       "to": "IETF RFC 5652"
     },
     {
-      "from": "ETSI EN 319 142-1 V1.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
-      "to": "IETF RFC 5652"
-    },
-    {
       "from": "IETF RFC 6283",
       "kind": "references",
       "source": "IETF/RFC-6283/RFC-6283.txt",
@@ -9497,12 +9467,6 @@
       "from": "ETSI EN 319 142-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/EN-319-142-1-V1.1.1/EN-319-142-1-V1.1.1.pdf",
-      "to": "IETF RFC 5816"
-    },
-    {
-      "from": "ETSI EN 319 142-1 V1.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
       "to": "IETF RFC 5816"
     },
     {
@@ -10643,12 +10607,6 @@
       "from": "ETSI EN 319 142-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/EN-319-142-1-V1.1.1/EN-319-142-1-V1.1.1.pdf",
-      "to": "IETF RFC 6960"
-    },
-    {
-      "from": "ETSI EN 319 142-1 V1.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
       "to": "IETF RFC 6960"
     },
     {
@@ -12170,21 +12128,9 @@
       "to": "IETF RFC 8174"
     },
     {
-      "from": "ARF TS03 V1.5.2",
-      "kind": "references",
-      "source": "ARF/TS03-V1.5.2/TS03-V1.5.2.md",
-      "to": "IETF RFC 8174"
-    },
-    {
       "from": "ARF TS09 V1.1",
       "kind": "references",
       "source": "ARF/TS09-V1.0.1/TS09-V1.0.1.md",
-      "to": "IETF RFC 8174"
-    },
-    {
-      "from": "ARF TS09 V1.1",
-      "kind": "references",
-      "source": "ARF/TS09-V1.1/TS09-V1.1.md",
       "to": "IETF RFC 8174"
     },
     {
@@ -13832,12 +13778,6 @@
       "to": "ISO-IEC ISO 32000-1 V2008"
     },
     {
-      "from": "ETSI EN 319 142-1 V1.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
-      "to": "ISO-IEC ISO 32000-1 V2008"
-    },
-    {
       "from": "ETSI TS 119 102-2 V1.4.1",
       "kind": "references",
       "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
@@ -14129,12 +14069,6 @@
       "from": "ARF TS01 V1.2",
       "kind": "references",
       "source": "ARF/TS01-V1.1.2/TS01-V1.1.2.md",
-      "to": "ISO-IEC ISO 8859-1 V1998"
-    },
-    {
-      "from": "ARF TS01 V1.2",
-      "kind": "references",
-      "source": "ARF/TS01-V1.2/TS01-V1.2.md",
       "to": "ISO-IEC ISO 8859-1 V1998"
     },
     {
@@ -15032,12 +14966,6 @@
       "to": "ISO-IEC ISO/IEC 27002 V2022"
     },
     {
-      "from": "ETSI EN 319 401 V3.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-401-V3.2.1/EN-319-401-V3.2.1.pdf",
-      "to": "ISO-IEC ISO/IEC 27002 V2022"
-    },
-    {
       "from": "ETSI EN 319 403-1 V2.3.1",
       "kind": "references",
       "source": "ETSI/EN-319-403-1-V2.3.1/EN-319-403-1-V2.3.1.pdf",
@@ -15062,12 +14990,6 @@
       "to": "ISO-IEC ISO/IEC 27005 V2022"
     },
     {
-      "from": "ETSI EN 319 401 V3.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-401-V3.2.1/EN-319-401-V3.2.1.pdf",
-      "to": "ISO-IEC ISO/IEC 27005 V2022"
-    },
-    {
       "from": "ETSI EN 319 403-1 V2.3.1",
       "kind": "references",
       "source": "ETSI/EN-319-403-1-V2.3.1/EN-319-403-1-V2.3.1.pdf",
@@ -15083,12 +15005,6 @@
       "from": "ETSI EN 319 401 V3.2.1",
       "kind": "references",
       "source": "ETSI/EN-319-401-V3.1.1/EN-319-401-V3.1.1.pdf",
-      "to": "ISO-IEC ISO/IEC 27701 V2019"
-    },
-    {
-      "from": "ETSI EN 319 401 V3.2.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-401-V3.2.1/EN-319-401-V3.2.1.pdf",
       "to": "ISO-IEC ISO/IEC 27701 V2019"
     },
     {
@@ -16304,7 +16220,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-07-23T09:08:28.895987+00:00",
+  "generated_at": "2026-07-23T09:17:42.681241+00:00",
   "nodes": [
     {
       "body": "ARF",

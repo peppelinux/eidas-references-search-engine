@@ -207,11 +207,13 @@
 
   function buildVisEdges(rawEdges, rawNodes) {
     const visEdges = [];
+    let seq = 0;
+    const nextId = (base) => `${base}#${seq++}`;
     const legalIds = new Set(rawNodes.filter((n) => n.type === "legal_regulation").map((n) => n.id));
 
     for (const lid of legalIds) {
       visEdges.push({
-        id: `root-${lid}`,
+        id: nextId(`root-${lid}`),
         from: "__root__",
         to: lid,
         arrows: "to",
@@ -226,7 +228,7 @@
     );
     if (arfCatalog) {
       visEdges.push({
-        id: "root-arf-catalog",
+        id: nextId("root-arf-catalog"),
         from: "__root__",
         to: arfCatalog.id,
         arrows: "to",
@@ -239,7 +241,7 @@
     for (const e of rawEdges) {
       if (e.kind !== "cites") continue;
       visEdges.push({
-        id: `${e.from}-${e.to}-${e.kind}`,
+        id: nextId(`${e.from}-${e.to}-cites`),
         from: e.from,
         to: e.to,
         arrows: "to",
@@ -252,7 +254,7 @@
     for (const e of rawEdges) {
       if (e.kind !== "references") continue;
       visEdges.push({
-        id: `${e.from}-${e.to}-ref`,
+        id: nextId(`${e.from}-${e.to}-ref`),
         from: e.from,
         to: e.to,
         arrows: "to",
@@ -266,7 +268,7 @@
     for (const e of rawEdges) {
       if (e.kind !== "related") continue;
       visEdges.push({
-        id: `${e.from}-${e.to}-related`,
+        id: nextId(`${e.from}-${e.to}-related`),
         from: e.from,
         to: e.to,
         arrows: "to",
@@ -734,6 +736,18 @@
     userPositions.clear();
     const visNodes = buildVisNodes(data.nodes, data.edges);
     const visEdges = buildVisEdges(data.edges, data.nodes);
+    const large = visNodes.length > 500;
+
+    // Hierarchical + 1k nested IETF nodes crashes/blank the canvas. Hide IETF initially.
+    if (large) {
+      excludedBodies.add("IETF");
+      document.querySelectorAll(".sdo-chip").forEach((c) => {
+        if (c.dataset.body === "IETF") {
+          c.classList.remove("active");
+          c.classList.add("muted");
+        }
+      });
+    }
 
     nodesDataSet = new vis.DataSet(visNodes);
     edgesDataSet = new vis.DataSet(visEdges);
@@ -743,11 +757,11 @@
     const options = {
       layout: {
         hierarchical: {
-          enabled: true,
+          enabled: !large,
           direction: "UD",
           sortMethod: "hubsize",
           levelSeparation: 140,
-          nodeSpacing: 85,
+          nodeSpacing: large ? 60 : 85,
           treeSpacing: 75,
           blockShifting: true,
           edgeMinimization: true,
@@ -761,10 +775,22 @@
           centralGravity: 0,
           springLength: 130,
           springConstant: 0.01,
-          nodeDistance: 140,
+          nodeDistance: large ? 110 : 140,
           damping: 0.12,
         },
-        stabilization: { iterations: 120, fit: true, updateInterval: 25 },
+        barnesHut: large
+          ? {
+              gravitationalConstant: -2500,
+              springLength: 110,
+              springConstant: 0.02,
+              damping: 0.25,
+            }
+          : undefined,
+        stabilization: {
+          iterations: large ? 60 : 120,
+          fit: true,
+          updateInterval: 25,
+        },
       },
       interaction: {
         dragNodes: true,
@@ -780,7 +806,9 @@
         widthConstraint: { maximum: 200 },
       },
       edges: {
-        smooth: { type: "cubicBezier", forceDirection: "vertical", roundness: 0.5 },
+        smooth: large
+          ? false
+          : { type: "cubicBezier", forceDirection: "vertical", roundness: 0.5 },
       },
     };
 
@@ -791,7 +819,7 @@
     network.once("stabilized", freezeHierarchicalLayout);
     setTimeout(() => {
       if (!layoutFrozen) freezeHierarchicalLayout();
-    }, 2500);
+    }, large ? 4000 : 2500);
 
     network.on("click", (params) => {
       if (!params.nodes.length) return;
@@ -891,7 +919,11 @@
       })
       .catch((err) => {
         const status = $("#graph-status");
-        if (status) status.textContent = "Could not load graph data. Run: make report";
+        const detail = err && err.message ? String(err.message) : String(err);
+        if (status) {
+          status.textContent =
+            "Could not load graph (" + detail + "). Try hard-refresh or run: make report";
+        }
         console.error(err);
       });
   }

@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-07-23T09:08:28.895987+00:00
+Generated: 2026-07-23T09:17:42.681241+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -13,7 +13,7 @@ Open **`index.html`** in this folder for the interactive version.
 | Unavailable | 269 |
 | Other | 0 |
 | Legal → specification links | 152 |
-| Specification → specification links | 2564 |
+| Specification → specification links | 2550 |
 
 ### By standardization body
 
@@ -7336,7 +7336,6 @@ flowchart LR
   legal_2025_2527 -->|cites| ETSI_TS_119_495_V1_7_1
   legal_2025_1946 -->|cites| ETSI_TS_119_511_V1_1_1
   ARF_TS03_V1_5_2 -.->|references| ETSI_TS_119_602_V1_1_1
-  ARF_TS03_V1_5_2 -.->|references| ETSI_TS_119_602_V1_1_1
   ARF_TS11_V1_0_1 -.->|references| ETSI_TS_119_602_V1_1_1
   legal_2025_1942 -->|cites| ETSI_TS_119_612_V2_4_1
   legal_2025_1945 -->|cites| ETSI_TS_119_612_V2_4_1
@@ -7755,10 +7754,8 @@ flowchart LR
   IETF_RFC_2616 -.->|references| IETF_RFC_2110
   IETF_RFC_4021 -.->|references| IETF_RFC_2110
   ARF_TS03_V1_5_2 -.->|references| IETF_RFC_2119
-  ARF_TS03_V1_5_2 -.->|references| IETF_RFC_2119
   ARF_TS07_V0_11 -.->|references| IETF_RFC_2119
   ARF_TS08_V0_11 -.->|references| IETF_RFC_2119
-  ARF_TS09_V1_1 -.->|references| IETF_RFC_2119
   ARF_TS09_V1_1 -.->|references| IETF_RFC_2119
   ARF_TS10_V1_2 -.->|references| IETF_RFC_2119
   ARF_TS12_V1_0_1 -.->|references| IETF_RFC_2119
@@ -7906,7 +7903,6 @@ flowchart LR
   IETF_RFC_8551 -.->|references| IETF_RFC_2313
   IETF_RFC_2797 -.->|references| IETF_RFC_2314
   IETF_RFC_8551 -.->|references| IETF_RFC_2314
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_2315
   ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_2315
   IETF_RFC_4632 -.->|references| IETF_RFC_2317
   IETF_RFC_4949 -.->|references| IETF_RFC_2323
@@ -8784,7 +8780,6 @@ flowchart LR
   ETSI_EN_319_102_1_V1_4_1 -.->|references| IETF_RFC_5652
   ETSI_EN_319_122_1_V1_3_1 -.->|references| IETF_RFC_5652
   ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_5652
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_5652
   IETF_RFC_6283 -.->|references| IETF_RFC_5698
   IETF_RFC_8446 -.->|references| IETF_RFC_5705
   IETF_RFC_8471 -.->|references| IETF_RFC_5705
@@ -8827,7 +8822,6 @@ flowchart LR
   IETF_RFC_8126 -.->|references| IETF_RFC_5795
   ETSI_EN_319_122_1_V1_3_1 -.->|references| IETF_RFC_5816
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_5816
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_5816
   ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_5816
   ETSI_EN_319_162_1_V1_1_1 -.->|references| IETF_RFC_5816
   ETSI_EN_319_421_V1_3_1 -.->|references| IETF_RFC_5816
@@ -9018,7 +9012,6 @@ flowchart LR
   ETSI_EN_319_102_1_V1_4_1 -.->|references| IETF_RFC_6960
   ETSI_EN_319_122_1_V1_3_1 -.->|references| IETF_RFC_6960
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_6960
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_6960
   ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_6960
   ETSI_EN_319_411_1_V1_5_1 -.->|references| IETF_RFC_6960
   ETSI_EN_319_411_2_V2_6_1 -.->|references| IETF_RFC_6960
@@ -9273,8 +9266,6 @@ flowchart LR
   IETF_RFC_9360 -.->|references| IETF_RFC_8152
   IETF_RFC_9114 -.->|references| IETF_RFC_8164
   ARF_TS03_V1_5_2 -.->|references| IETF_RFC_8174
-  ARF_TS03_V1_5_2 -.->|references| IETF_RFC_8174
-  ARF_TS09_V1_1 -.->|references| IETF_RFC_8174
   ARF_TS09_V1_1 -.->|references| IETF_RFC_8174
   ARF_TS10_V1_2 -.->|references| IETF_RFC_8174
   ARF_TS12_V1_0_1 -.->|references| IETF_RFC_8174
@@ -9550,7 +9541,6 @@ flowchart LR
   legal_2024_2977 -->|cites| ISO_IEC_ISO_3166_2_V2020
   legal_2026_1731 -->|cites| ISO_IEC_ISO_3166_2_V2020
   ETSI_EN_319_142_1_V1_2_1 -.->|references| ISO_IEC_ISO_32000_1_V2008
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| ISO_IEC_ISO_32000_1_V2008
   ETSI_TS_119_102_2_V1_4_1 -.->|references| ISO_IEC_ISO_32000_1_V2008
   IETF_RFC_5741 -.->|references| ISO_IEC_ISO_3297
   IETF_RFC_1952 -.->|references| ISO_IEC_ISO_3309
@@ -9599,7 +9589,6 @@ flowchart LR
   IETF_RFC_8018 -.->|references| ISO_IEC_ISO_8824_3
   IETF_RFC_8018 -.->|references| ISO_IEC_ISO_8824_4
   IETF_RFC_5280 -.->|references| ISO_IEC_ISO_8859
-  ARF_TS01_V1_2 -.->|references| ISO_IEC_ISO_8859_1_V1998
   ARF_TS01_V1_2 -.->|references| ISO_IEC_ISO_8859_1_V1998
   IETF_RFC_1945 -.->|references| ISO_IEC_ISO_8859_1_V1998
   IETF_RFC_1952 -.->|references| ISO_IEC_ISO_8859_1_V1998
@@ -9750,15 +9739,12 @@ flowchart LR
   legal_2024_2981 -->|cites| ISO_IEC_ISO_IEC_27001_V2022
   legal_2025_1568 -->|cites| ISO_IEC_ISO_IEC_27001_V2022
   ETSI_EN_319_401_V3_2_1 -.->|references| ISO_IEC_ISO_IEC_27002_V2022
-  ETSI_EN_319_401_V3_2_1 -.->|references| ISO_IEC_ISO_IEC_27002_V2022
   ETSI_EN_319_403_1_V2_3_1 -.->|references| ISO_IEC_ISO_IEC_27002_V2022
   ETSI_EN_319_411_1_V1_5_1 -.->|references| ISO_IEC_ISO_IEC_27002_V2022
   ETSI_TS_119_101_V1_1_1 -.->|references| ISO_IEC_ISO_IEC_27002_V2022
   ETSI_EN_319_401_V3_2_1 -.->|references| ISO_IEC_ISO_IEC_27005_V2022
-  ETSI_EN_319_401_V3_2_1 -.->|references| ISO_IEC_ISO_IEC_27005_V2022
   ETSI_EN_319_403_1_V2_3_1 -.->|references| ISO_IEC_ISO_IEC_27006
   ETSI_TR_119_476_V1_2_1 -.->|references| ISO_IEC_ISO_IEC_27565
-  ETSI_EN_319_401_V3_2_1 -.->|references| ISO_IEC_ISO_IEC_27701_V2019
   ETSI_EN_319_401_V3_2_1 -.->|references| ISO_IEC_ISO_IEC_27701_V2019
   ARF_TS02_V1_0_1 -.->|references| ISO_IEC_ISO_IEC_29100
   ETSI_EN_319_132_1_V1_3_1 -.->|references| ISO_IEC_ISO_IEC_29500_2_V2021
