@@ -742,6 +742,12 @@
         keep.add(n.id);
         continue;
       }
+      // Always keep EUDI-critical IETF credential-format specs in the core graph.
+      const des = String((n.raw && n.raw.designation) || n.designation || n.id || "");
+      if (n.body === "IETF" && /(?:^|\s)(SD-JWT(?:\s+VC)?|RFC 9901)\b/i.test(des)) {
+        keep.add(n.id);
+        continue;
+      }
       if (citedIds.has(n.id)) keep.add(n.id);
     }
 
@@ -972,19 +978,73 @@
     });
   }
 
-  function loadGraphData() {
-    if (window.EIDAS_GRAPH_DATA) return Promise.resolve(window.EIDAS_GRAPH_DATA);
-    return fetch("graph-data.json").then((r) => {
-      if (!r.ok) throw new Error(r.statusText);
-      return r.json();
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const existing = document.querySelector('script[data-graph-src="' + src + '"]');
+      if (existing) {
+        if (existing.dataset.loaded === "1") return resolve();
+        existing.addEventListener("load", () => resolve());
+        existing.addEventListener("error", () => reject(new Error("Failed to load " + src)));
+        return;
+      }
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.dataset.graphSrc = src;
+      s.onload = () => {
+        s.dataset.loaded = "1";
+        resolve();
+      };
+      s.onerror = () => reject(new Error("Failed to load " + src));
+      document.head.appendChild(s);
     });
   }
 
-  function boot() {
+  function loadGraphData() {
+    if (window.EIDAS_GRAPH_DATA) return Promise.resolve(window.EIDAS_GRAPH_DATA);
+    // Prefer dynamic script (works with file://); fall back to fetch for HTTP.
+    return loadScript("graph-data.js")
+      .then(() => {
+        if (!window.EIDAS_GRAPH_DATA) throw new Error("graph-data.js did not define EIDAS_GRAPH_DATA");
+        return window.EIDAS_GRAPH_DATA;
+      })
+      .catch(() =>
+        fetch("graph-data.json").then((r) => {
+          if (!r.ok) throw new Error(r.statusText);
+          return r.json();
+        })
+      );
+  }
+
+  function ensureVisNetwork() {
+    if (window.vis && window.vis.Network) return Promise.resolve();
+    return loadScript(
+      "https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"
+    ).then(() => {
+      if (!(window.vis && window.vis.Network)) {
+        throw new Error("vis-network failed to initialize");
+      }
+    });
+  }
+
+  let bootStarted = false;
+
+  function startGraph() {
+    if (bootStarted) return;
+    bootStarted = true;
+
+    const gate = $("#graph-gate");
+    const explorer = $("#graph-explorer");
     const container = $("#graph-network");
+    const status = $("#graph-status");
     if (!container) return;
 
-    loadGraphData()
+    if (gate) gate.hidden = true;
+    if (explorer) explorer.hidden = false;
+    if (status) status.textContent = "Loading graph data…";
+
+    ensureVisNetwork()
+      .then(() => loadGraphData())
       .then((data) => {
         graphData = data;
         graphNodesById = new Map(data.nodes.map((n) => [n.id, n]));
@@ -1047,14 +1107,40 @@
         }
       })
       .catch((err) => {
-        const status = $("#graph-status");
+        bootStarted = false;
+        if (gate) gate.hidden = false;
+        if (explorer) explorer.hidden = true;
         const detail = err && err.message ? String(err.message) : String(err);
         if (status) {
           status.textContent =
             "Could not load graph (" + detail + "). Try hard-refresh or run: make report";
         }
+        const gateStatus = $("#graph-gate-status");
+        if (gateStatus) {
+          gateStatus.textContent = "Load failed: " + detail;
+        }
         console.error(err);
       });
+  }
+
+  function boot() {
+    const container = $("#graph-network");
+    if (!container) return;
+
+    const btn = $("#graph-load-btn");
+    if (btn) {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        startGraph();
+      });
+    }
+
+    // Deep-link scrolls to the gate; data loads only on explicit button / ?loadGraph=1.
+    if (window.location.hash === "#graph") {
+      document.getElementById("graph")?.scrollIntoView({ behavior: "smooth" });
+    }
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("loadGraph") === "1") startGraph();
   }
 
   if (document.readyState === "loading") {

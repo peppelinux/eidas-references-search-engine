@@ -94,6 +94,45 @@ _OPENID_NAME_TO_DESIGNATION = (
     ("oid4vp", "OpenID4VP"),
 )
 
+# IETF named specs used heavily by EUDI (not always cited as "RFC NNNN").
+IETF_SDJWT_VC_RE = re.compile(
+    r"""\b(?:
+        IETF\s+SD-JWT\s*VCs?
+        | SD-JWT-based\s+Verifiable\s+(?:Digital\s+)?Credentials?
+        | SD-JWT-VC
+        | SD-JWT\s+VCs?
+    )\b""",
+    re.IGNORECASE | re.VERBOSE,
+)
+
+# Bare SD-JWT — do not match SD-JWT VC / SD-JWT-based …
+IETF_SDJWT_RE = re.compile(
+    r"""\b(?:
+        Selective\s+Disclosure\s+for\s+(?:JSON\s+Web\s+Tokens|JWTs?)
+        | IETF\s+SD-JWT
+        | SD-JWTs?
+    )\b(?![\s-]*(?:VC|based)\b)""",
+    re.IGNORECASE | re.VERBOSE,
+)
+
+IETF_DRAFT_URL_RE = re.compile(
+    r"""https?://(?:www\.)?(?:
+        ietf\.org/archive/id/
+        | datatracker\.ietf\.org/doc/(?:html/)?
+    )
+    (?P<draft>draft-ietf-oauth-(?:sd-jwt-vc|selective-disclosure-jwt)(?:-(?P<rev>\d+))?)
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
+
+# RFC numbers that EUDI texts usually call by product name.
+IETF_RFC_ALIASES = {
+    "9901": (
+        "SD-JWT",
+        "Selective Disclosure for JWTs (RFC 9901)",
+    ),
+}
+
 
 def _openid_from_slug(slug: str) -> tuple[str, str] | None:
     s = slug.lower().removesuffix(".html")
@@ -195,13 +234,26 @@ def extract_from_text(text: str, source: str, result: ExtractionResult) -> None:
         )
 
     for m in RFC_RE.finditer(text):
-        result.add(
-            SpecReference(
-                body="IETF",
-                designation=f"RFC {m.group('num')}",
-            ),
-            source,
-        )
+        num = m.group("num")
+        alias = IETF_RFC_ALIASES.get(num)
+        if alias:
+            designation, title = alias
+            result.add(
+                SpecReference(
+                    body="IETF",
+                    designation=designation,
+                    title=title,
+                ),
+                source,
+            )
+        else:
+            result.add(
+                SpecReference(
+                    body="IETF",
+                    designation=f"RFC {num}",
+                ),
+                source,
+            )
 
     for m in CEN_RE.finditer(text):
         num = re.sub(r"\s+", "", m.group("num"))
@@ -264,6 +316,47 @@ def extract_from_text(text: str, source: str, result: ExtractionResult) -> None:
         ref = _openid_from_name(m.group("name"), m.group("ver"))
         if ref:
             result.add(ref, source)
+
+    # SD-JWT VC before bare SD-JWT.
+    if IETF_SDJWT_VC_RE.search(text):
+        result.add(
+            SpecReference(
+                body="IETF",
+                designation="SD-JWT VC",
+                title="SD-JWT-based Verifiable Credentials",
+            ),
+            source,
+        )
+    if IETF_SDJWT_RE.search(text):
+        result.add(
+            SpecReference(
+                body="IETF",
+                designation="SD-JWT",
+                title="Selective Disclosure for JWTs (RFC 9901)",
+            ),
+            source,
+        )
+
+    for m in IETF_DRAFT_URL_RE.finditer(text):
+        draft = m.group("draft").lower()
+        if "sd-jwt-vc" in draft:
+            result.add(
+                SpecReference(
+                    body="IETF",
+                    designation="SD-JWT VC",
+                    title="SD-JWT-based Verifiable Credentials",
+                ),
+                source,
+            )
+        elif "selective-disclosure-jwt" in draft:
+            result.add(
+                SpecReference(
+                    body="IETF",
+                    designation="SD-JWT",
+                    title="Selective Disclosure for JWTs (RFC 9901)",
+                ),
+                source,
+            )
 
 
 def collect_from_paths(paths: list, legal_root) -> ExtractionResult:

@@ -32,7 +32,7 @@ from arf_technical_specs import (
     parse_title_from_markdown,
     write_catalogue_reference,
 )
-from prune_stale_specs import collapse_refs_to_latest, prune_stale_specs
+from prune_stale_specs import apply_identity_aliases, collapse_refs_to_latest, prune_stale_specs
 from reference_metadata import write_reference_for_spec
 from references import ExtractionResult, SpecReference, collect_from_legal_tree, extract_from_text
 from resolvers import (
@@ -278,6 +278,7 @@ def run_sync(
     merge_extraction(all_refs, all_sources, arf_wave)
     _rekey_arf_refs(all_refs, all_sources)
     dropped = collapse_refs_to_latest(all_refs, all_sources)
+    dropped += apply_identity_aliases(all_refs, all_sources)
     print(
         f"Found {len(all_refs) - len(arf_entries)} reference(s) in legal texts; "
         f"+{len(arf_entries)} ARF technical specification(s) "
@@ -318,6 +319,7 @@ def run_sync(
                 wave = scan_standards_tree(standards_root)
                 added = merge_extraction(all_refs, all_sources, wave)
                 dropped = collapse_refs_to_latest(all_refs, all_sources)
+                dropped += apply_identity_aliases(all_refs, all_sources)
                 msg = (
                     f"Depth {depth}: +{added} nested reference(s), "
                     f"{len(all_refs)} total"

@@ -3,8 +3,13 @@
 Build reports of technical references and links (legal acts ↔ specs ↔ specs).
 
 Writes under eidas-legal-tech-references/report/:
-  index.html              — full report + interactive hierarchical graph explorer
-  graph-data.json/js      — graph nodes/edges for the explorer
+  index.html              — summary + deferred interactive graph (opt-in load)
+  downloaded.html         — downloaded references (paged catalogue)
+  unavailable.html        — unavailable references (paged catalogue)
+  legal-links.html        — legal act → specification links (paged)
+  spec-links.html         — specification cross-references (paged)
+  data/<catalogue>/       — paged row payloads (page-NNNN.js)
+  graph-data.json/js      — graph nodes/edges (loaded only when user asks)
   search.html / search.js — full-text search UI (uses search-index.json)
   REFERENCES-REPORT.md    — markdown export
   references-graph.json   — machine-readable nodes and edges
@@ -229,6 +234,28 @@ def _version_key(version: str | None) -> tuple[int, ...]:
     return tuple(nums) if nums else (0,)
 
 
+_ARF_TS_IDENTITY_RE = re.compile(
+    r"^TS\s*0*(?P<num>\d{1,2})(?:\s+V?(?P<ver>[\d.]+))?$",
+    re.IGNORECASE,
+)
+
+
+def _normalize_spec_identity(
+    body: str | None, designation: str | None, version: str | None
+) -> tuple[str | None, str | None, str | None]:
+    """Normalize ARF parents like designation 'TS03 V1.5.1' → TS03 + version 1.5.1."""
+    if not body or not designation:
+        return body, designation, version
+    if str(body) != "ARF":
+        return body, designation, version
+    m = _ARF_TS_IDENTITY_RE.match(str(designation).strip())
+    if not m:
+        return body, designation, version
+    des = f"TS{int(m.group('num')):02d}"
+    ver = m.group("ver") or version
+    return body, des, ver
+
+
 def spec_node_id(doc: dict[str, Any]) -> str:
     return spec_label(doc).replace('"', "'")
 
@@ -346,16 +373,21 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
             latest_by_identity[key] = doc
 
     def resolve_parent_spec(sp: dict[str, Any]) -> tuple[str, dict[str, Any] | None]:
+        body, des, ver = _normalize_spec_identity(
+            sp.get("body"), sp.get("designation"), sp.get("version")
+        )
+        # Also recover identity from pruned folder paths: ARF/TS03-V1.5.1
+        folder = str(sp.get("folder") or "")
+        fm = re.search(r"(?:^|/)(TS\d{1,2})-V([\d.]+)(?:/|$)", folder, re.I)
+        if body == "ARF" and fm:
+            body, des, ver = _normalize_spec_identity(
+                "ARF", fm.group(1), ver or fm.group(2)
+            )
         exact_id = spec_node_id(
-            {
-                "body": sp.get("body"),
-                "designation": sp.get("designation"),
-                "version": sp.get("version"),
-            }
+            {"body": body, "designation": des, "version": ver}
         )
         if exact_id in by_exact_id:
             return exact_id, by_exact_id[exact_id]
-        body, des = sp.get("body"), sp.get("designation")
         if body and des:
             latest = latest_by_identity.get((str(body), str(des).strip().upper()))
             if latest is not None:
@@ -409,27 +441,20 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
             )
         for sp in doc.get("parent_specifications") or []:
             pid, parent_doc = resolve_parent_spec(sp)
+            if parent_doc is None:
+                # Skip ghosts for pruned/missing parents (deprecated ARF TS versions).
+                continue
             if pid not in nodes:
-                if parent_doc is not None:
-                    nodes[pid] = {
-                        "id": pid,
-                        "type": "specification",
-                        "body": parent_doc.get("body"),
-                        "designation": parent_doc.get("designation"),
-                        "version": parent_doc.get("version"),
-                        "title": parent_doc.get("title"),
-                        "status": parent_doc.get("status"),
-                        "folder": parent_doc.get("_folder"),
-                    }
-                else:
-                    nodes[pid] = {
-                        "id": pid,
-                        "type": "specification",
-                        "body": sp.get("body"),
-                        "designation": sp.get("designation"),
-                        "version": sp.get("version"),
-                        "status": None,
-                    }
+                nodes[pid] = {
+                    "id": pid,
+                    "type": "specification",
+                    "body": parent_doc.get("body"),
+                    "designation": parent_doc.get("designation"),
+                    "version": parent_doc.get("version"),
+                    "title": parent_doc.get("title"),
+                    "status": parent_doc.get("status"),
+                    "folder": parent_doc.get("_folder"),
+                }
             edges.append(
                 {
                     "from": pid,
@@ -721,7 +746,239 @@ def render_markdown(data: dict[str, Any], mermaid_src: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def render_html(data: dict[str, Any], mermaid_src: str) -> str:
+def _nav_item(href: str, label: str, *, current: str | None, page_id: str) -> str:
+    attrs = f' href="{esc(href)}"'
+    if current == page_id:
+        attrs += ' aria-current="page"'
+    return f"<li><a{attrs}>{esc(label)}</a></li>"
+
+
+def render_site_nav(*, current: str, counts: dict[str, int] | None = None) -> str:
+    """Shared report navigation. Landing primary items first; catalogues linked out."""
+    counts = counts or {}
+    n_dl = counts.get("downloaded")
+    n_unav = counts.get("unavailable")
+    n_legal = counts.get("legal_edges")
+    n_spec = counts.get("spec_edges")
+
+    def label(base: str, n: int | None) -> str:
+        return f"{base} ({n})" if n is not None else base
+
+    items = [
+        _nav_item(
+            "index.html#summary" if current != "index" else "#summary",
+            "Summary",
+            current=current,
+            page_id="index",
+        ),
+        _nav_item(
+            "index.html#graph" if current != "index" else "#graph",
+            "Interactive graph",
+            current=current,
+            page_id="graph",
+        ),
+        _nav_item("search.html", "Search corpus", current=current, page_id="search"),
+        _nav_item(
+            "downloaded.html",
+            label("Downloaded references", n_dl),
+            current=current,
+            page_id="downloaded",
+        ),
+        _nav_item(
+            "unavailable.html",
+            label("Unavailable references", n_unav),
+            current=current,
+            page_id="unavailable",
+        ),
+        _nav_item(
+            "legal-links.html",
+            label("Legal act → specification links", n_legal),
+            current=current,
+            page_id="legal-links",
+        ),
+        _nav_item(
+            "spec-links.html",
+            label("Specification cross-references", n_spec),
+            current=current,
+            page_id="spec-links",
+        ),
+    ]
+    # Landing page: only Summary / Graph / Search in the primary nav.
+    if current == "index":
+        items = items[:3]
+
+    return f"""  <nav class="site-nav" id="site-nav" aria-labelledby="nav-heading">
+    <div class="site-nav-bar">
+      <span class="site-nav-title" id="nav-heading">Contents</span>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-panel">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+    </div>
+    <div class="site-nav-panel" id="site-nav-panel" role="navigation">
+      <ul class="site-nav-list">
+        {"".join(items)}
+      </ul>
+    </div>
+  </nav>"""
+
+
+def render_site_footer() -> str:
+    return """  <footer class="site-footer" role="contentinfo">
+    <p>
+      Also available:
+      <a href="search.html">Search</a> ·
+      <a href="downloaded.html">Downloaded</a> ·
+      <a href="unavailable.html">Unavailable</a> ·
+      <a href="legal-links.html">Legal → spec</a> ·
+      <a href="spec-links.html">Spec cross-refs</a> ·
+      <a href="REFERENCES-REPORT.md">REFERENCES-REPORT.md</a> ·
+      <a href="references-graph.json">references-graph.json</a> ·
+      <a href="graph-data.json">graph-data.json</a> ·
+      <a href="search-index.json">search-index.json</a>
+    </p>
+  </footer>"""
+
+
+def render_html_document(
+    *,
+    title: str,
+    generated: str,
+    nav: str,
+    main: str,
+    extra_head: str = "",
+    body_class: str = "",
+    scripts: str = "",
+    heading: str | None = None,
+    meta: str | None = None,
+) -> str:
+    body_attr = f' class="{esc(body_class)}"' if body_class else ""
+    h1 = heading or title
+    meta_html = meta or (
+        "For legal traceability and implementer conformance — official EU law cited "
+        "against normative standards (ETSI, IETF, W3C, …) and EUDI ARF complementary "
+        "technical specifications (EC TS01–TS14)."
+    )
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{esc(title)}</title>
+  <link rel="stylesheet" href="report-layout.css"/>
+  {extra_head}
+</head>
+<body{body_attr}>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-shell">
+  <header class="site-header" role="banner">
+    <h1>{esc(h1)}</h1>
+    <p class="site-meta">Generated {esc(generated)} · Toolchain: eidas-legal-tech-references</p>
+    <p class="site-meta">{esc(meta_html)}</p>
+  </header>
+
+{nav}
+
+  <main id="main" class="site-main">
+{main}
+  </main>
+
+{render_site_footer()}
+  </div>
+
+  <script src="report-nav.js"></script>
+{scripts}
+</body>
+</html>
+"""
+
+
+CATALOGUE_PAGE_SIZE = 200
+
+
+def write_catalogue_pages(
+    out_dir: Path,
+    catalogue_id: str,
+    columns: list[str],
+    rows: list[list[str]],
+    *,
+    page_size: int = CATALOGUE_PAGE_SIZE,
+) -> list[Path]:
+    """Write paged catalogue payloads (one JS file per page). HTML shells stay tiny."""
+    data_dir = out_dir / "data" / catalogue_id
+    if data_dir.exists():
+        shutil.rmtree(data_dir)
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    written: list[Path] = []
+    total = len(rows)
+    page_count = max(1, (total + page_size - 1) // page_size) if total else 1
+    for page in range(page_count):
+        start = page * page_size
+        chunk = rows[start : start + page_size]
+        payload = {
+            "id": catalogue_id,
+            "page": page,
+            "page_size": page_size,
+            "total": total,
+            "columns": columns,
+            "rows": chunk,
+        }
+        body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+        js_path = data_dir / f"page-{page:04d}.js"
+        js_path.write_text(f"window.EIDAS_CATALOGUE_PAGE={body};\n", encoding="utf-8")
+        written.append(js_path)
+
+    manifest = {
+        "id": catalogue_id,
+        "columns": columns,
+        "total": total,
+        "page_size": page_size,
+        "page_count": page_count,
+    }
+    manifest_path = data_dir / "manifest.json"
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    written.append(manifest_path)
+    return written
+
+
+def catalogue_shell(
+    *,
+    section_id: str,
+    heading: str,
+    intro_html: str,
+    catalogue_id: str,
+    columns: list[str],
+    total: int,
+    page_size: int = CATALOGUE_PAGE_SIZE,
+) -> str:
+    cols_json = html.escape(json.dumps(columns, ensure_ascii=False), quote=True)
+    return f"""  <section id="{esc(section_id)}">
+    <h2>{esc(heading)}</h2>
+    <p>{intro_html} <a href="index.html">← Back to summary</a></p>
+    <div id="catalogue"
+         data-catalogue="{esc(catalogue_id)}"
+         data-page-size="{page_size}"
+         data-total="{total}"
+         data-columns="{cols_json}">
+      <p id="catalogue-status" role="status" aria-live="polite">Loading…</p>
+      <div class="table-wrap">
+        <table>
+          <thead id="catalogue-head"></thead>
+          <tbody id="catalogue-body">
+            <tr><td>Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <nav id="catalogue-pager" class="catalogue-pager" aria-label="Catalogue pages"></nav>
+    </div>
+  </section>"""
+
+
+def write_html_report(out_dir: Path, data: dict[str, Any], mermaid_src: str) -> list[Path]:
+    """Write landing page + thin catalogue shells + paged row payloads."""
+    del mermaid_src  # reserved for markdown export only
     refs = data["refs"]
     graph = data["graph"]
     downloaded = data["downloaded"]
@@ -733,8 +990,13 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
     legal_nodes = data["legal_nodes"]
     generated = graph["generated_at"]
     by_spec_id = {spec_node_id(d): d for d in refs}
+    counts = {
+        "downloaded": len(downloaded),
+        "unavailable": len(unavailable),
+        "legal_edges": len(legal_edges),
+        "spec_edges": len(spec_edges),
+    }
 
-    # Summary rows by body
     body_rows = []
     for body in sorted(by_body):
         items = by_body[body]
@@ -743,43 +1005,40 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
             f"<tr><td>{esc(body)}</td><td>{len(items)}</td><td>{n_dl}</td></tr>"
         )
 
-    # Downloaded table
-    dl_rows = []
+    dl_rows: list[list[str]] = []
     for doc in sorted(downloaded, key=lambda d: (d.get("body", ""), d.get("designation", ""))):
         url = preferred_online_url(doc)
-        url_cell = render_online_href_html(url)
         tags = ", ".join(doc.get("tags") or [])
         summary = doc.get("summary") or ""
         if len(summary) > 160:
             summary = summary[:157].rsplit(" ", 1)[0] + "…"
         kw = ", ".join((doc.get("scope_keywords") or [])[:6])
         dl_rows.append(
-            f"<tr>"
-            f"<td>{esc(doc.get('body'))}</td>"
-            f"<td>{esc(doc.get('designation'))}</td>"
-            f"<td>{esc(doc.get('version'))}</td>"
-            f"<td class=\"summary\">{esc(summary) or '—'}</td>"
-            f"<td class=\"tags\">{esc(kw) or '—'}</td>"
-            f"<td><code>{esc(doc.get('_folder'))}</code></td>"
-            f"<td>{url_cell}</td>"
-            f"<td class=\"tags\">{esc(tags)}</td>"
-            f"</tr>"
+            [
+                esc(doc.get("body")),
+                esc(doc.get("designation")),
+                esc(doc.get("version")),
+                f'<span class="summary">{esc(summary) or "—"}</span>',
+                f'<span class="tags">{esc(kw) or "—"}</span>',
+                f"<code>{esc(doc.get('_folder'))}</code>",
+                render_online_href_html(url),
+                f'<span class="tags">{esc(tags)}</span>',
+            ]
         )
 
-    unav_rows = []
+    unav_rows: list[list[str]] = []
     for doc in sorted(unavailable, key=lambda d: spec_label(d)):
         url = preferred_online_url(doc)
-        url_cell = render_online_href_html(url)
         unav_rows.append(
-            f"<tr>"
-            f"<td>{esc(spec_label(doc))}</td>"
-            f"<td>{esc(doc.get('version'))}</td>"
-            f"<td class=\"tags\">{esc(', '.join(doc.get('tags') or []))}</td>"
-            f"<td>{url_cell}</td>"
-            f"</tr>"
+            [
+                esc(spec_label(doc)),
+                esc(doc.get("version")),
+                f'<span class="tags">{esc(", ".join(doc.get("tags") or []))}</span>',
+                render_online_href_html(url),
+            ]
         )
 
-    legal_rows = []
+    legal_rows: list[list[str]] = []
     seen: set[tuple[str, str]] = set()
     for edge in sorted(legal_edges, key=lambda e: (e["from"], e["to"])):
         key = (edge["from"], edge["to"])
@@ -793,18 +1052,18 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
             act_cell = f'<a href="{esc(eli)}" rel="noopener" target="_blank">{act_cell}</a>'
         online = preferred_online_url(by_spec_id.get(edge["to"]))
         legal_rows.append(
-            f"<tr>"
-            f"<td>{act_cell}</td>"
-            f"<td>{esc(ln.get('title'))}</td>"
-            f"<td>{esc(ln.get('celex'))}</td>"
-            f"<td>{esc(ln.get('kind'))}</td>"
-            f"<td>{esc(edge['to'])}</td>"
-            f"<td>{render_online_href_html(online, 'Online')}</td>"
-            f"<td class=\"src-cell\">{render_corpus_source_links_html(edge.get('source'), online_url=online)}</td>"
-            f"</tr>"
+            [
+                act_cell,
+                esc(ln.get("title")),
+                esc(ln.get("celex")),
+                esc(ln.get("kind")),
+                esc(edge["to"]),
+                render_online_href_html(online, "Online"),
+                f'<span class="src-cell">{render_corpus_source_links_html(edge.get("source"), online_url=online)}</span>',
+            ]
         )
 
-    spec_link_rows = []
+    spec_link_rows: list[list[str]] = []
     seen_spec: set[tuple[str, str]] = set()
     for edge in sorted(spec_edges, key=lambda e: (e["from"], e["to"])):
         key = (edge["from"], edge["to"])
@@ -813,80 +1072,85 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         seen_spec.add(key)
         online = preferred_online_url(by_spec_id.get(edge["to"]))
         spec_link_rows.append(
-            f"<tr><td>{esc(edge['from'])}</td><td>{esc(edge['to'])}</td>"
-            f"<td>{render_online_href_html(online, 'Online')}</td>"
-            f"<td class=\"src-cell\">{render_corpus_source_links_html(edge.get('source'), online_url=online)}</td></tr>"
+            [
+                esc(edge["from"]),
+                esc(edge["to"]),
+                render_online_href_html(online, "Online"),
+                f'<span class="src-cell">{render_corpus_source_links_html(edge.get("source"), online_url=online)}</span>',
+            ]
         )
 
-    spec_links_section = ""
-    spec_nav_item = ""
-    if spec_link_rows:
-        spec_nav_item = (
-            f'<li><a href="#spec-links">Specification cross-references ({len(spec_edges)})</a></li>'
+    written_data: list[Path] = []
+    written_data.extend(
+        write_catalogue_pages(
+            out_dir,
+            "downloaded",
+            [
+                "Body",
+                "Designation",
+                "Version",
+                "Summary",
+                "Scope keywords",
+                "Folder",
+                "Online",
+                "Tags",
+            ],
+            dl_rows,
         )
-        spec_links_section = f"""
-    <section id="spec-links">
-      <h2>Links between specifications</h2>
-      <p>Nested references found inside downloaded standard texts. <strong>Online</strong> points to the public catalogue / SDO copy.</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Referencing</th><th>Referenced</th><th>Online</th><th>Source in corpus</th></tr></thead>
-          <tbody>{"".join(spec_link_rows)}</tbody>
-        </table>
-      </div>
-    </section>"""
+    )
+    written_data.extend(
+        write_catalogue_pages(
+            out_dir,
+            "unavailable",
+            ["Specification", "Version", "Tags", "Online"],
+            unav_rows,
+        )
+    )
+    written_data.extend(
+        write_catalogue_pages(
+            out_dir,
+            "legal-links",
+            [
+                "Act",
+                "Title",
+                "CELEX",
+                "Kind",
+                "Specification cited",
+                "Online",
+                "Source in corpus",
+            ],
+            legal_rows,
+        )
+    )
+    written_data.extend(
+        write_catalogue_pages(
+            out_dir,
+            "spec-links",
+            ["Referencing", "Referenced", "Online", "Source in corpus"],
+            spec_link_rows,
+        )
+    )
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>eIDAS technical references report</title>
-  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
-  <link rel="stylesheet" href="report-layout.css"/>
-  <link rel="stylesheet" href="graph-explorer.css"/>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="site-shell">
-  <header class="site-header" role="banner">
-    <h1>eIDAS technical references report</h1>
-    <p class="site-meta">Generated {esc(generated)} · Toolchain: eidas-legal-tech-references</p>
-    <p class="site-meta">For legal traceability and implementer conformance — official EU law cited against normative standards (ETSI, IETF, W3C, …) and EUDI ARF complementary technical specifications (EC TS01–TS14).</p>
-  </header>
-
-  <nav class="site-nav" id="site-nav" aria-labelledby="nav-heading">
-    <div class="site-nav-bar">
-      <span class="site-nav-title" id="nav-heading">Contents</span>
-      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-panel">
-        <span class="nav-toggle-label">Menu</span>
-      </button>
-    </div>
-    <div class="site-nav-panel" id="site-nav-panel" role="navigation">
-      <ul class="site-nav-list">
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#graph">Interactive graph</a></li>
-        <li><a href="#downloaded">Downloaded references ({len(downloaded)})</a></li>
-        <li><a href="#unavailable">Unavailable references ({len(unavailable)})</a></li>
-        <li><a href="#legal-links">Legal act → specification links ({len(legal_edges)})</a></li>
-        {spec_nav_item}
-        <li><a href="search.html">Search corpus</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main id="main" class="site-main">
-  <section id="summary">
+    index_main = f"""  <section id="summary">
     <h2>Summary</h2>
     <div class="stats">
       <div class="stat"><strong>{len(refs)}</strong><span>Total references</span></div>
-      <div class="stat"><strong>{len(downloaded)}</strong><span>Downloaded</span></div>
-      <div class="stat"><strong>{len(unavailable)}</strong><span>Unavailable</span></div>
+      <a class="stat" href="downloaded.html"><strong>{len(downloaded)}</strong><span>Downloaded</span></a>
+      <a class="stat" href="unavailable.html"><strong>{len(unavailable)}</strong><span>Unavailable</span></a>
       <div class="stat"><strong>{len(other)}</strong><span>Other status</span></div>
-      <div class="stat"><strong>{len(legal_edges)}</strong><span>Legal → spec links</span></div>
-      <div class="stat"><strong>{len(spec_edges)}</strong><span>Spec → spec links</span></div>
+      <a class="stat" href="legal-links.html"><strong>{len(legal_edges)}</strong><span>Legal → spec links</span></a>
+      <a class="stat" href="spec-links.html"><strong>{len(spec_edges)}</strong><span>Spec → spec links</span></a>
       <div class="stat"><strong>{len(graph['nodes'])}</strong><span>Graph nodes</span></div>
     </div>
+    <h3>Catalogue pages</h3>
+    <p>Large tables are separate pages and load one page of rows at a time (not on this landing page).</p>
+    <ul>
+      <li><a href="downloaded.html">Downloaded references ({len(downloaded)})</a></li>
+      <li><a href="unavailable.html">Unavailable references ({len(unavailable)})</a></li>
+      <li><a href="legal-links.html">Legal act → specification links ({len(legal_edges)})</a></li>
+      <li><a href="spec-links.html">Specification cross-references ({len(spec_edges)})</a></li>
+      <li><a href="search.html">Search corpus</a></li>
+    </ul>
     <h3>By standardization body</h3>
     <div class="table-wrap">
       <table>
@@ -901,9 +1165,14 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
     <p class="graph-legend">
       <span class="legal">EU legal act</span>
       <span class="ok">Downloaded specification</span>
-      Hierarchical view (top → bottom): framework → legal acts → cited standards; ARF EC TS (catalogue node, linked to core wallet acts). Drag a node — it stays where you place it. Pan/zoom the canvas. Filters hide nodes without shifting the view.
+      Hierarchical view (top → bottom): framework → legal acts → cited standards; ARF EC TS (catalogue node, linked to core wallet acts).
     </p>
-    <div id="graph-explorer">
+    <div id="graph-gate" class="graph-gate">
+      <p>Graph data is large (~tens of MB). It is <strong>not</strong> loaded with this page.</p>
+      <button type="button" class="btn btn-primary" id="graph-load-btn">Load interactive graph</button>
+      <p id="graph-gate-status" class="hint" role="status"></p>
+    </div>
+    <div id="graph-explorer" hidden>
       <div class="graph-toolbar">
         <div class="search-row">
           <label class="visually-hidden" for="graph-search">Filter graph</label>
@@ -920,76 +1189,139 @@ def render_html(data: dict[str, Any], mermaid_src: str) -> str:
         <aside id="graph-detail" aria-label="Node details"></aside>
       </div>
     </div>
-  </section>
+  </section>"""
 
-  <section id="downloaded">
-    <h2>Downloaded references</h2>
-    <p>Specifications with a local copy under <code>referenced-standards/standards/</code>.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Body</th><th>Designation</th><th>Version</th><th>Summary</th>
-            <th>Scope keywords</th><th>Folder</th><th>Online</th><th>Tags</th>
-          </tr>
-        </thead>
-        <tbody>{"".join(dl_rows) if dl_rows else '<tr><td colspan="8">None</td></tr>'}</tbody>
-      </table>
-    </div>
-  </section>
+    catalogue_script = '  <script src="catalogue-viewer.js"></script>'
+    pages = [
+        (
+            "index.html",
+            render_html_document(
+                title="eIDAS technical references report",
+                generated=generated,
+                nav=render_site_nav(current="index", counts=counts),
+                main=index_main,
+                extra_head='  <link rel="stylesheet" href="graph-explorer.css"/>',
+                scripts=(
+                    '  <script src="eidas-search-core.js"></script>\n'
+                    '  <script src="document-links.js"></script>\n'
+                    '  <script src="graph-explorer.js"></script>'
+                ),
+            ),
+        ),
+        (
+            "downloaded.html",
+            render_html_document(
+                title="Downloaded references — eIDAS report",
+                heading="Downloaded references",
+                generated=generated,
+                nav=render_site_nav(current="downloaded", counts=counts),
+                main=catalogue_shell(
+                    section_id="downloaded",
+                    heading="Downloaded references",
+                    intro_html=(
+                        "Specifications with a local copy under "
+                        "<code>referenced-standards/standards/</code>."
+                    ),
+                    catalogue_id="downloaded",
+                    columns=[
+                        "Body",
+                        "Designation",
+                        "Version",
+                        "Summary",
+                        "Scope keywords",
+                        "Folder",
+                        "Online",
+                        "Tags",
+                    ],
+                    total=len(dl_rows),
+                ),
+                meta="Catalogue of specifications with a local copy in this corpus.",
+                scripts=catalogue_script,
+            ),
+        ),
+        (
+            "unavailable.html",
+            render_html_document(
+                title="Unavailable references — eIDAS report",
+                heading="Unavailable references",
+                generated=generated,
+                nav=render_site_nav(current="unavailable", counts=counts),
+                main=catalogue_shell(
+                    section_id="unavailable",
+                    heading="Unavailable references (catalogue)",
+                    intro_html=(
+                        "Typically licensed standards (ISO, CEN, …) — metadata and catalogue URLs only."
+                    ),
+                    catalogue_id="unavailable",
+                    columns=["Specification", "Version", "Tags", "Online"],
+                    total=len(unav_rows),
+                ),
+                meta="Licensed or otherwise undownloaded standards — catalogue URLs only.",
+                scripts=catalogue_script,
+            ),
+        ),
+        (
+            "legal-links.html",
+            render_html_document(
+                title="Legal act → specification links — eIDAS report",
+                heading="Legal act → specification links",
+                generated=generated,
+                nav=render_site_nav(current="legal-links", counts=counts),
+                main=catalogue_shell(
+                    section_id="legal-links",
+                    heading="Links from EU legal acts",
+                    intro_html=(
+                        "Normative citations from implementing regulations and decisions "
+                        "to technical specifications."
+                    ),
+                    catalogue_id="legal-links",
+                    columns=[
+                        "Act",
+                        "Title",
+                        "CELEX",
+                        "Kind",
+                        "Specification cited",
+                        "Online",
+                        "Source in corpus",
+                    ],
+                    total=len(legal_rows),
+                ),
+                meta="Normative citations from EU legal acts to technical specifications.",
+                scripts=catalogue_script,
+            ),
+        ),
+        (
+            "spec-links.html",
+            render_html_document(
+                title="Specification cross-references — eIDAS report",
+                heading="Specification cross-references",
+                generated=generated,
+                nav=render_site_nav(current="spec-links", counts=counts),
+                main=catalogue_shell(
+                    section_id="spec-links",
+                    heading="Specification cross-references",
+                    intro_html=(
+                        "Nested references found inside downloaded standard texts. "
+                        "<strong>Online</strong> points to the public catalogue / SDO copy. "
+                        "Rows load 200 at a time."
+                    ),
+                    catalogue_id="spec-links",
+                    columns=["Referencing", "Referenced", "Online", "Source in corpus"],
+                    total=len(spec_link_rows),
+                ),
+                meta="Nested references found inside downloaded standard texts.",
+                scripts=catalogue_script,
+            ),
+        ),
+    ]
 
-  <section id="unavailable">
-    <h2>Unavailable references (catalogue)</h2>
-    <p>Typically licensed standards (ISO, CEN, …) — metadata and catalogue URLs only.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Specification</th><th>Version</th><th>Tags</th><th>Online</th></tr>
-        </thead>
-        <tbody>{"".join(unav_rows) if unav_rows else '<tr><td colspan="4">None</td></tr>'}</tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="legal-links">
-    <h2>Links from EU legal acts</h2>
-    <p>Normative citations from implementing regulations and decisions to technical specifications.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Act</th><th>Title</th><th>CELEX</th><th>Kind</th>
-            <th>Specification cited</th><th>Online</th><th>Source in corpus</th>
-          </tr>
-        </thead>
-        <tbody>{"".join(legal_rows) if legal_rows else '<tr><td colspan="7">None</td></tr>'}</tbody>
-      </table>
-    </div>
-  </section>
-{spec_links_section}
-
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <p>
-      Also available:
-      <a href="search.html">Search</a> ·
-      <a href="REFERENCES-REPORT.md">REFERENCES-REPORT.md</a> ·
-      <a href="references-graph.json">references-graph.json</a> ·
-      <a href="graph-data.json">graph-data.json</a> ·
-      <a href="search-index.json">search-index.json</a>
-    </p>
-  </footer>
-  </div>
-
-  <script src="report-nav.js"></script>
-  <script src="graph-data.js"></script>
-  <script src="eidas-search-core.js"></script>
-  <script src="document-links.js"></script>
-  <script src="graph-explorer.js"></script>
-</body>
-</html>
-"""
+    written: list[Path] = []
+    for name, content in pages:
+        path = out_dir / name
+        path.write_text(content, encoding="utf-8")
+        written.append(path)
+    written.extend(written_data)
+    return written
 
 
 def main() -> int:
@@ -1023,11 +1355,10 @@ def main() -> int:
     data = report_data(refs, graph)
     mermaid_src = render_mermaid(graph, downloaded_only=args.downloaded_only_graph)
 
-    html_path = out_dir / "index.html"
+    html_paths = write_html_report(out_dir, data, mermaid_src)
     md_path = out_dir / "REFERENCES-REPORT.md"
     json_path = out_dir / "references-graph.json"
 
-    html_path.write_text(render_html(data, mermaid_src), encoding="utf-8")
     md_path.write_text(render_markdown(data, mermaid_src), encoding="utf-8")
     json_path.write_text(json.dumps(graph, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     graph_json_path, graph_js_path = write_graph_bundle(out_dir, graph)
@@ -1045,6 +1376,7 @@ def main() -> int:
         "viewer.js",
         "graph-explorer.js",
         "graph-explorer.css",
+        "catalogue-viewer.js",
     )
     for name in asset_names:
         src = REPORT_ASSETS / name
@@ -1052,7 +1384,11 @@ def main() -> int:
             shutil.copy2(src, out_dir / name)
 
     n_dl = len(data["downloaded"])
-    print(f"Wrote {html_path}")
+    html_only = [p for p in html_paths if p.suffix == ".html"]
+    for path in html_only:
+        print(f"Wrote {path}")
+    data_pages = [p for p in html_paths if p.parent.name in {"downloaded", "unavailable", "legal-links", "spec-links"} and p.suffix == ".js"]
+    print(f"Wrote {len(data_pages)} catalogue page payload(s) under {out_dir / 'data'}")
     print(f"Wrote {md_path} ({len(refs)} references, {n_dl} downloaded)")
     print(f"Wrote {json_path} ({len(graph['nodes'])} nodes, {len(graph['edges'])} edges)")
     print(f"Wrote {graph_json_path} and {graph_js_path.name} (interactive graph)")

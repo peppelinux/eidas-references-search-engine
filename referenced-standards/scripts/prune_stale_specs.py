@@ -30,6 +30,53 @@ def spec_identity(ref: SpecReference) -> tuple[str, str]:
     return ref.body, ref.designation.strip().upper()
 
 
+# When a product name replaces an RFC number (or similar), drop the obsolete identity.
+OBSOLETE_IDENTITIES: dict[tuple[str, str], tuple[str, str]] = {
+    ("IETF", "RFC 9901"): ("IETF", "SD-JWT"),
+}
+
+
+def apply_identity_aliases(
+    all_refs: dict[str, SpecReference],
+    all_sources: dict[str, set[str]],
+) -> int:
+    """Merge obsolete designations into their canonical product-name keys."""
+    removed = 0
+    for obsolete, canonical in OBSOLETE_IDENTITIES.items():
+        obsolete_keys = [
+            k
+            for k, ref in list(all_refs.items())
+            if spec_identity(ref) == obsolete
+        ]
+        if not obsolete_keys:
+            continue
+        canon_key = next(
+            (k for k, ref in all_refs.items() if spec_identity(ref) == canonical),
+            None,
+        )
+        if canon_key is None:
+            # Rename first obsolete entry into the canonical designation.
+            old = obsolete_keys[0]
+            old_ref = all_refs.pop(old)
+            new_ref = SpecReference(
+                body=canonical[0],
+                designation="SD-JWT" if canonical[1] == "SD-JWT" else old_ref.designation,
+                version=old_ref.version,
+                date=old_ref.date,
+                title=old_ref.title or "Selective Disclosure for JWTs (RFC 9901)",
+            )
+            all_refs[new_ref.key] = new_ref
+            all_sources[new_ref.key] = all_sources.pop(old, set())
+            obsolete_keys = obsolete_keys[1:]
+            canon_key = new_ref.key
+            removed += 1
+        for key in obsolete_keys:
+            all_sources.setdefault(canon_key, set()).update(all_sources.pop(key, set()))
+            all_refs.pop(key, None)
+            removed += 1
+    return removed
+
+
 def collapse_refs_to_latest(
     all_refs: dict[str, SpecReference],
     all_sources: dict[str, set[str]],
@@ -95,7 +142,15 @@ def prune_superseded_directories(
             if not ident:
                 continue
             body, designation, version = ident
-            by_identity[(body, designation)].append((folder, version))
+            identity = (body, designation)
+            # Drop obsolete aliased folders when the canonical product-name folder exists.
+            if identity in OBSOLETE_IDENTITIES:
+                canon_id = OBSOLETE_IDENTITIES[identity]
+                if canon_id in canonical_by_id:
+                    shutil.rmtree(folder)
+                    removed += 1
+                    continue
+            by_identity[identity].append((folder, version))
 
         for identity, entries in by_identity.items():
             if len(entries) <= 1:
@@ -121,6 +176,17 @@ def prune_superseded_lock(
     specs: dict[str, Any] = lock.get("specs") or {}
     canonical_by_id = {spec_identity(ref): ref for ref in canonical_refs.values()}
     removed = 0
+
+    # Drop obsolete aliases (e.g. IETF|RFC 9901 when IETF|SD-JWT exists).
+    for key, entry in list(specs.items()):
+        body = entry.get("body")
+        designation = (entry.get("designation") or "").strip().upper()
+        if not body or not designation:
+            continue
+        identity = (body, designation)
+        if identity in OBSOLETE_IDENTITIES and OBSOLETE_IDENTITIES[identity] in canonical_by_id:
+            del specs[key]
+            removed += 1
 
     groups: dict[tuple[str, str], list[str]] = defaultdict(list)
     for key, entry in specs.items():
