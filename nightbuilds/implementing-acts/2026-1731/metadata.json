@@ -1,0 +1,23 @@
+{
+  "id": "2026-1731",
+  "title": "Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs",
+  "celex": "32026R1731",
+  "eli": "http://data.europa.eu/eli/reg_impl/2026/1731/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/802ddc72-856b-11f1-bf5e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/802ddc72-856b-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2026-1731/2026-1731.html",
+      "sha256": "716f17c983e24d60d54e577a696e691518bc082330920298c6f7fe64c24d0f73",
+      "size": 698370
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/802ddc72-856b-11f1-bf5e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2026-1731/2026-1731.pdf",
+      "sha256": "c8680b48a5ff5eb0f600c6e5aeaea775e8b2e31dbb0a10797b317bc9d4b6be1c",
+      "size": 1692338
+    }
+  }
+}

@@ -46,7 +46,7 @@ make discover
 ## How discovery works
 
 1. Scan `../**/*.md` for normative references.
-2. Include the [ARF technical specifications](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/tree/main/docs/technical-specifications) catalogue (TS01–TS11) as first-class sources (always synced, not only when cited in EU law).
+2. Include the [ARF technical specifications](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/tree/v3.0.0/docs/technical-specifications) catalogue (TS01–TS14, ARF `v3.0.0`) as first-class sources (always synced, not only when cited in EU law). Full markdown is pulled from [eudi-doc-standards-and-technical-specifications](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/tree/main/docs/technical-specifications) (`main`). Override with `ARF_REF` / `ARF_CONTENT_REF`.
 3. Download into `standards/<body>/`.
 4. Extract text from downloaded files and repeat for nested references up to `DEPTH`.
 5. **Prune superseded versions** — if the same specification appears in several versions (e.g. ETSI TS 119 612 V2.3.1 and V2.4.1, or an ARF TS bump), only the **latest** is kept on disk and in `manifest.lock.json`; older folders are deleted automatically.

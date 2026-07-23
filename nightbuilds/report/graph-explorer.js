@@ -72,14 +72,35 @@
     return label ? String(label).replace(/"/g, "'") : "";
   }
 
+  function corpusAnchorId() {
+    return graphData?.corpus_anchor_id || "legal:eidas-consolidated";
+  }
+
+  function isImplementingAct(node) {
+    if (!node || node.type !== "legal_regulation") return false;
+    if (node.id === corpusAnchorId()) return false;
+    const kind = String(node.kind || "");
+    const section = String(node.section || "");
+    return (
+      kind.startsWith("implementing_") ||
+      section === "implementing-acts" ||
+      section === "implementing-decisions"
+    );
+  }
+
   /**
-   * Assign vis-network hierarchical levels: root → legal → specs → nested specs (deeper = lower).
+   * Hierarchical levels: eIDAS/EUDIW regulation (root) → CIR/implementing acts → specs → nested.
+   * Caps depth so reference cycles cannot push nodes to extreme levels (blank/tiny canvas).
    */
   function computeNodeLevels(rawNodes, rawEdges) {
-    const levels = new Map([["__root__", 0]]);
+    const anchor = corpusAnchorId();
+    const MAX_LEVEL = 6;
+    const levels = new Map([[anchor, 0]]);
 
     for (const n of rawNodes) {
-      if (n.type === "legal_regulation") levels.set(n.id, 1);
+      if (n.type === "legal_regulation" && n.id !== anchor) {
+        levels.set(n.id, 1);
+      }
       if (n.type === "specification" && n.body === "ARF" && n.folder === "ARF") {
         levels.set(n.id, 1);
       }
@@ -88,29 +109,22 @@
     for (const e of rawEdges) {
       if (e.kind !== "cites") continue;
       const fromLv = levels.get(e.from) ?? 0;
-      levels.set(e.to, Math.max(levels.get(e.to) ?? 0, fromLv + 1));
+      levels.set(e.to, Math.min(Math.max(levels.get(e.to) ?? 0, fromLv + 1), MAX_LEVEL));
     }
 
     let changed = true;
     let guard = 0;
-    while (changed && guard++ < 64) {
+    while (changed && guard++ < MAX_LEVEL + 2) {
       changed = false;
-    for (const e of rawEdges) {
-      if (e.kind !== "references" && e.kind !== "related") continue;
-      const parentLv = levels.get(e.from);
+      for (const e of rawEdges) {
+        if (e.kind !== "references" && e.kind !== "related") continue;
+        const parentLv = levels.get(e.from);
+        if (parentLv === undefined) continue;
+        const want = Math.min(parentLv + 1, MAX_LEVEL);
         const childLv = levels.get(e.to) ?? 0;
-        if (parentLv !== undefined) {
-          const want = parentLv + 1;
-          if (want > childLv) {
-            levels.set(e.to, want);
-            changed = true;
-          }
-        } else if (childLv > 2) {
-          const wantParent = childLv - 1;
-          if ((levels.get(e.from) ?? 0) < wantParent) {
-            levels.set(e.from, wantParent);
-            changed = true;
-          }
+        if (want > childLv) {
+          levels.set(e.to, want);
+          if (want < MAX_LEVEL) changed = true;
         }
       }
     }
@@ -142,33 +156,42 @@
   function buildVisNodes(rawNodes, rawEdges) {
     const levels = computeNodeLevels(rawNodes, rawEdges);
     const visNodes = [];
-    visNodes.push({
-      id: "__root__",
-      label: "eIDAS / EUDI\nlegal & technical references",
-      level: levels.get("__root__") ?? 0,
-      shape: "box",
-      color: { background: "#1a365d", border: "#0f2440", highlight: { background: "#2c5282", border: "#1a365d" } },
-      font: { color: "#fff", size: 14 },
-      type: "root",
-      fixed: false,
-    });
+    const anchor = corpusAnchorId();
 
     for (const n of rawNodes) {
       const id = n.id;
       if (n.type === "legal_regulation") {
         const title = n.title || "";
-        const short = title.length > 42 ? title.slice(0, 40) + "…" : title;
+        const isAnchor = id === anchor;
+        const short = isAnchor
+          ? title.length > 56
+            ? title.slice(0, 54) + "…"
+            : title
+          : title.length > 42
+            ? title.slice(0, 40) + "…"
+            : title;
+        const label = isAnchor
+          ? `eIDAS / EUDI Wallet\n${n.act_id || "regulation"}${short ? "\n" + short : ""}`
+          : `${n.act_id || "?"}\n${short}`;
         visNodes.push({
           id,
-          label: `${n.act_id || "?"}\n${short}`,
-          level: levels.get(id) ?? 1,
+          label,
+          level: levels.get(id) ?? (isAnchor ? 0 : 1),
           shape: "box",
-          color: {
-            background: "#e8f4fc",
-            border: "#0366d6",
-            highlight: { background: "#cce5ff", border: "#024ea4" },
-          },
-          font: { size: 12, multi: true },
+          color: isAnchor
+            ? {
+                background: "#1a365d",
+                border: "#0f2440",
+                highlight: { background: "#2c5282", border: "#1a365d" },
+              }
+            : {
+                background: "#e8f4fc",
+                border: "#0366d6",
+                highlight: { background: "#cce5ff", border: "#024ea4" },
+              },
+          font: isAnchor
+            ? { color: "#fff", size: 14, multi: true }
+            : { size: 12, multi: true },
           type: "legal_regulation",
           raw: n,
         });
@@ -180,7 +203,7 @@
         const isArfCatalog =
           n.body === "ARF" && n.folder === "ARF";
         const shortDes = isArfCatalog
-          ? "EC TS01–TS11"
+          ? "EC TS01–TS14"
           : des.length > 36
             ? des.slice(0, 34) + "…"
             : des;
@@ -207,17 +230,23 @@
 
   function buildVisEdges(rawEdges, rawNodes) {
     const visEdges = [];
-    const legalIds = new Set(rawNodes.filter((n) => n.type === "legal_regulation").map((n) => n.id));
+    let seq = 0;
+    const nextId = (base) => `${base}#${seq++}`;
+    const anchor = corpusAnchorId();
+    const legalNodes = rawNodes.filter((n) => n.type === "legal_regulation");
 
-    for (const lid of legalIds) {
+    // Regulation root → implementing acts / decisions (CIR hierarchy).
+    for (const n of legalNodes) {
+      if (n.id === anchor) continue;
       visEdges.push({
-        id: `root-${lid}`,
-        from: "__root__",
-        to: lid,
+        id: nextId(`anchor-${n.id}`),
+        from: anchor,
+        to: n.id,
         arrows: "to",
         color: { color: "#aab", highlight: "#0366d6" },
-        width: 1,
+        width: 1.5,
         dashes: true,
+        title: isImplementingAct(n) ? "implementing act under eIDAS" : "under eIDAS",
       });
     }
 
@@ -226,20 +255,21 @@
     );
     if (arfCatalog) {
       visEdges.push({
-        id: "root-arf-catalog",
-        from: "__root__",
+        id: nextId("anchor-arf-catalog"),
+        from: anchor,
         to: arfCatalog.id,
         arrows: "to",
         color: { color: "#003399", highlight: "#0366d6" },
         width: 1.5,
         dashes: true,
+        title: "ARF complementary TS catalogue",
       });
     }
 
     for (const e of rawEdges) {
       if (e.kind !== "cites") continue;
       visEdges.push({
-        id: `${e.from}-${e.to}-${e.kind}`,
+        id: nextId(`${e.from}-${e.to}-cites`),
         from: e.from,
         to: e.to,
         arrows: "to",
@@ -252,7 +282,7 @@
     for (const e of rawEdges) {
       if (e.kind !== "references") continue;
       visEdges.push({
-        id: `${e.from}-${e.to}-ref`,
+        id: nextId(`${e.from}-${e.to}-ref`),
         from: e.from,
         to: e.to,
         arrows: "to",
@@ -265,8 +295,10 @@
 
     for (const e of rawEdges) {
       if (e.kind !== "related") continue;
+      // Skip related edges that would duplicate the regulation→ARF catalog link.
+      if (arfCatalog && e.to === arfCatalog.id && e.from === anchor) continue;
       visEdges.push({
-        id: `${e.from}-${e.to}-related`,
+        id: nextId(`${e.from}-${e.to}-related`),
         from: e.from,
         to: e.to,
         arrows: "to",
@@ -292,9 +324,10 @@
   function computeVisibility(parsed) {
     const visible = new Set();
     const highlight = new Set();
+    const anchor = corpusAnchorId();
 
     for (const [id, node] of nodeById) {
-      if (id === "__root__") {
+      if (id === anchor) {
         visible.add(id);
         continue;
       }
@@ -327,7 +360,7 @@
           const parents = adjacency.in.get(id);
           if (!parents) continue;
           for (const p of parents) {
-            if (p !== "__root__" && !visible.has(p)) {
+            if (!visible.has(p)) {
               visible.add(p);
               next.push(p);
             }
@@ -356,28 +389,31 @@
           }
         }
       }
-      visible.add("__root__");
+      visible.add(anchor);
     }
 
     return { visible, highlight };
   }
 
-  function applyFilters() {
+  function applyFilters(opts) {
     if (!nodesDataSet || !network) return;
     if (!layoutFrozen) {
       layoutFreezePending = true;
       return;
     }
 
+    const preserveCamera = !opts || opts.preserveCamera !== false;
     const q = $("#graph-search")?.value || "";
     const parsed = EidasSearch.parseQuery(q);
     const { visible, highlight } = computeVisibility(parsed);
     const hasFilter = EidasSearch.hasQuery(parsed) || excludedBodies.size > 0;
 
-    const camera = {
-      position: network.getViewPosition(),
-      scale: network.getScale(),
-    };
+    const camera = preserveCamera
+      ? {
+          position: network.getViewPosition(),
+          scale: network.getScale(),
+        }
+      : null;
 
     const updates = [];
     for (const id of nodeById.keys()) {
@@ -405,16 +441,18 @@
     });
     edgesDataSet.update(edgeUpdates);
 
-    requestAnimationFrame(() => {
-      network.moveTo({
-        position: camera.position,
-        scale: camera.scale,
-        animation: false,
+    if (camera) {
+      requestAnimationFrame(() => {
+        network.moveTo({
+          position: camera.position,
+          scale: camera.scale,
+          animation: false,
+        });
       });
-    });
+    }
 
-    const shown = [...visible].filter((id) => id !== "__root__").length;
-    const total = nodeById.size - 1;
+    const shown = visible.size;
+    const total = nodeById.size;
     const status = $("#graph-status");
     if (status) {
       let msg = `Showing ${shown} of ${total} nodes · hierarchical layout`;
@@ -432,6 +470,9 @@
         msg += ` · SDO shown: ${bodies || "—"}`;
       }
       msg += " · drag to reposition (nodes stay put)";
+      if (nodeById.size < (graphData?.nodes?.length || 0)) {
+        msg += " · graph: regulation → CIR → cited specs (nested IETF omitted)";
+      }
       status.textContent = msg;
     }
   }
@@ -470,22 +511,15 @@
     return { ...(visNode || {}), id, raw };
   }
 
-  function corpusAnchorId() {
-    return graphData?.corpus_anchor_id || "legal:eidas-consolidated";
-  }
-
   function resolveDetailTarget(nodeOrId) {
-    const resolved = resolveNodeForDetail(nodeOrId);
-    if (!resolved) return null;
-    if (resolved.id !== "__root__") return resolved;
-    return resolveNodeForDetail(corpusAnchorId()) || resolved;
+    return resolveNodeForDetail(nodeOrId);
   }
 
   function renderDetail(node) {
     const panel = $("#graph-detail");
     if (!panel) return;
     const resolved = resolveDetailTarget(node);
-    if (!resolved || resolved.id === "__root__") {
+    if (!resolved) {
       panel.innerHTML =
         '<p class="placeholder">Click a legal act or specification to view summary, scope keywords, and links.</p>';
       return;
@@ -512,14 +546,28 @@
         });
       }
     } else {
+      const onlineUrls = [];
+      if (raw.download_url) onlineUrls.push(raw.download_url);
+      for (const u of raw.download_urls || []) {
+        if (u && !onlineUrls.includes(u)) onlineUrls.push(u);
+      }
+      onlineUrls.sort((a, b) => {
+        const ar = /raw\.githubusercontent\.com/.test(a) ? 1 : 0;
+        const br = /raw\.githubusercontent\.com/.test(b) ? 1 : 0;
+        return ar - br;
+      });
+      onlineUrls.forEach((href, i) => {
+        links.push({
+          label: i === 0 ? "Online" : `Online (${i + 1})`,
+          href,
+          ext: true,
+        });
+      });
       if (raw.folder) {
         links.push({
-          label: "reference.json",
+          label: "Local reference.json",
           href: `../referenced-standards/standards/${raw.folder}/reference.json`,
         });
-      }
-      if (raw.download_url) {
-        links.push({ label: "Download / catalogue", href: raw.download_url, ext: true });
       }
     }
     const localDocsHtml =
@@ -661,6 +709,9 @@
   function freezeHierarchicalLayout() {
     if (!network || layoutFrozen) return;
     layoutFrozen = true;
+    // Capture before clear — previous code set layoutFreezePending=false then
+    // checked it, so applyFilters never ran and large graphs stayed blank/overloaded.
+    const pendingFilter = layoutFreezePending;
     layoutFreezePending = false;
 
     rememberNodePositions();
@@ -681,9 +732,11 @@
 
     if (typeof network.stopSimulation === "function") network.stopSimulation();
 
-    network.fit({ animation: { duration: 300, easingFunction: "easeInOutQuad" } });
-
-    if (layoutFreezePending) applyFilters();
+    // Sync visibility first (no camera restore), then fit the hierarchical tree.
+    if (pendingFilter || excludedBodies.size > 0) {
+      applyFilters({ preserveCamera: false });
+    }
+    network.fit({ animation: { duration: 350, easingFunction: "easeInOutQuad" } });
   }
 
   function setupDragPinning() {
@@ -718,8 +771,42 @@
     layoutFrozen = false;
     layoutFreezePending = false;
     userPositions.clear();
-    const visNodes = buildVisNodes(data.nodes, data.edges);
-    const visEdges = buildVisEdges(data.edges, data.nodes);
+    let visNodes = buildVisNodes(data.nodes, data.edges);
+    let visEdges = buildVisEdges(data.edges, data.nodes);
+    const large = visNodes.length > 500;
+
+    // Large corpora: keep hierarchical layout readable (regulation → CIR → cited specs).
+    // Drop IETF + nested-only refs from the laid-out graph (still in tables / corpus search).
+    if (large) {
+      excludedBodies.add("IETF");
+      document.querySelectorAll(".sdo-chip").forEach((c) => {
+        if (c.dataset.body === "IETF") {
+          c.classList.remove("active");
+          c.classList.add("muted");
+        }
+      });
+
+      const citedIds = new Set(
+        (data.edges || []).filter((e) => e.kind === "cites").map((e) => e.to)
+      );
+      const keep = new Set();
+      for (const n of visNodes) {
+        if (n.type === "legal_regulation") {
+          keep.add(n.id);
+          continue;
+        }
+        if (n.type !== "specification") continue;
+        const raw = n.raw || {};
+        if (raw.body === "IETF" || n.body === "IETF") continue;
+        if (raw.body === "ARF" || n.body === "ARF") {
+          keep.add(n.id);
+          continue;
+        }
+        if (citedIds.has(n.id)) keep.add(n.id);
+      }
+      visNodes = visNodes.filter((n) => keep.has(n.id));
+      visEdges = visEdges.filter((e) => keep.has(e.from) && keep.has(e.to));
+    }
 
     nodesDataSet = new vis.DataSet(visNodes);
     edgesDataSet = new vis.DataSet(visEdges);
@@ -731,10 +818,10 @@
         hierarchical: {
           enabled: true,
           direction: "UD",
-          sortMethod: "hubsize",
-          levelSeparation: 140,
-          nodeSpacing: 85,
-          treeSpacing: 75,
+          sortMethod: "directed",
+          levelSeparation: 180,
+          nodeSpacing: large ? 100 : 110,
+          treeSpacing: 90,
           blockShifting: true,
           edgeMinimization: true,
           parentCentralization: true,
@@ -747,10 +834,14 @@
           centralGravity: 0,
           springLength: 130,
           springConstant: 0.01,
-          nodeDistance: 140,
-          damping: 0.12,
+          nodeDistance: 130,
+          damping: 0.14,
         },
-        stabilization: { iterations: 120, fit: true, updateInterval: 25 },
+        stabilization: {
+          iterations: large ? 100 : 120,
+          fit: true,
+          updateInterval: 25,
+        },
       },
       interaction: {
         dragNodes: true,
@@ -777,7 +868,7 @@
     network.once("stabilized", freezeHierarchicalLayout);
     setTimeout(() => {
       if (!layoutFrozen) freezeHierarchicalLayout();
-    }, 2500);
+    }, large ? 3500 : 2500);
 
     network.on("click", (params) => {
       if (!params.nodes.length) return;
@@ -870,14 +961,20 @@
         const params = new URLSearchParams(window.location.search);
         const qParam = params.get("q");
         if (qParam && search) search.value = qParam;
+        // Ensure post-stabilize applyFilters runs even if stabilize fired before this line.
         layoutFreezePending = true;
+        if (layoutFrozen) applyFilters();
         if (window.location.hash === "#graph") {
           document.getElementById("graph")?.scrollIntoView({ behavior: "smooth" });
         }
       })
       .catch((err) => {
         const status = $("#graph-status");
-        if (status) status.textContent = "Could not load graph data. Run: make report";
+        const detail = err && err.message ? String(err.message) : String(err);
+        if (status) {
+          status.textContent =
+            "Could not load graph (" + detail + "). Try hard-refresh or run: make report";
+        }
         console.error(err);
       });
   }

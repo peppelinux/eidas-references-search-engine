@@ -1,0 +1,23 @@
+{
+  "id": "2026-1735",
+  "title": "Amending CIR 2025/1569 \u2014 electronic attestations of attributes (EAA)",
+  "celex": "32026R1735",
+  "eli": "http://data.europa.eu/eli/reg_impl/2026/1735/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/f0386031-856a-11f1-bf5e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "item_url": "http://publications.europa.eu/resource/cellar/f0386031-856a-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2026-1735/2026-1735.html",
+      "sha256": "5c1546cdd7c673694780e978cc75ab1af0963df6d5bdf6664bdf036baacd0b76",
+      "size": 77165
+    },
+    "pdf": {
+      "item_url": "http://publications.europa.eu/resource/cellar/f0386031-856a-11f1-bf5e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2026-1735/2026-1735.pdf",
+      "sha256": "a014d6b100160ae66de2b842c6712ceedf6cc065d5c633d0d81f256d75891cee",
+      "size": 535382
+    }
+  }
+}

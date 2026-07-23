@@ -16,17 +16,28 @@ from pathlib import Path
 
 from references import ExtractionResult, SpecReference, extract_from_text
 
+import os
+
 USER_AGENT = "Wallet-Presentations/1.0 (+https://github.com/peppelinux/Wallet-Presentations; arf-ts-sync)"
 
 ARF_REPO = "eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework"
 CONTENT_REPO = "eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications"
 DOCS_PATH = "docs/technical-specifications"
 
+# ARF framework release tag (index / stubs). Content repo has no release tags — use main.
+ARF_REF = os.environ.get("ARF_REF", "v3.0.0")
+CONTENT_REF = os.environ.get("ARF_CONTENT_REF", "main")
+
 ARF_INDEX_TREE = (
-    f"https://github.com/{ARF_REPO}/tree/main/{DOCS_PATH}"
+    f"https://github.com/{ARF_REPO}/tree/{ARF_REF}/{DOCS_PATH}"
 )
-ARF_RAW_BASE = f"https://raw.githubusercontent.com/{ARF_REPO}/main/{DOCS_PATH}"
-CONTENT_RAW_BASE = f"https://raw.githubusercontent.com/{CONTENT_REPO}/main/{DOCS_PATH}"
+ARF_RAW_BASE = f"https://raw.githubusercontent.com/{ARF_REPO}/{ARF_REF}/{DOCS_PATH}"
+CONTENT_RAW_BASE = (
+    f"https://raw.githubusercontent.com/{CONTENT_REPO}/{CONTENT_REF}/{DOCS_PATH}"
+)
+ARF_RELEASE_URL = (
+    f"https://github.com/{ARF_REPO}/releases/tag/{ARF_REF}"
+)
 
 _STUB_REPO_RE = re.compile(
     r"github\.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications"
@@ -54,6 +65,9 @@ _STATIC_FILES: list[tuple[str, str]] = [
     ("TS09", "ts9-wallet-to-wallet-interactions.md", "Specification of Wallet-to-Wallet interactions"),
     ("TS10", "ts10-data-portability-and-download-(export).md", "Specification of Data Portability and Download (export)"),
     ("TS11", "ts11-interfaces-and-formats-for-catalogue-of-attributes-and-catalogue-of-schemes.md", "Specification of interfaces and formats for the catalogue of Attestation Rulebooks and attributes"),
+    ("TS12", "ts12-electronic-payments-SCA-implementation-with-wallet.md", "Specification of electronic payments SCA implementation with the Wallet"),
+    ("TS13", "ts13-zksnarks.md", "Specification of zk-SNARKs"),
+    ("TS14", "ts14-zkps-from-mms.md", "Specification of ZKPs from Merkle Membership Statements"),
 ]
 
 
@@ -82,7 +96,20 @@ class ArfTechnicalSpec:
         return f"{ARF_RAW_BASE}/{urllib.parse.quote(self.filename)}"
 
     def content_raw_url(self) -> str:
-        return f"{CONTENT_RAW_BASE}/{urllib.parse.quote(self.filename)}"
+        name = self.filename
+        if name == "ts13-zksnark.md":
+            name = "ts13-zksnarks.md"
+        return f"{CONTENT_RAW_BASE}/{urllib.parse.quote(name)}"
+
+    def content_blob_url(self) -> str:
+        """Human-readable GitHub page for the full TS markdown (preferred href)."""
+        name = self.filename
+        if name == "ts13-zksnark.md":
+            name = "ts13-zksnarks.md"
+        return (
+            f"https://github.com/{CONTENT_REPO}/blob/{CONTENT_REF}/"
+            f"{DOCS_PATH}/{urllib.parse.quote(name)}"
+        )
 
 
 def _http_get(url: str, timeout: int = 60) -> bytes:
@@ -93,7 +120,7 @@ def _http_get(url: str, timeout: int = 60) -> bytes:
 
 def _list_ts_files_via_api() -> list[str] | None:
     api = (
-        f"https://api.github.com/repos/{ARF_REPO}/contents/{DOCS_PATH}?ref=main"
+        f"https://api.github.com/repos/{ARF_REPO}/contents/{DOCS_PATH}?ref={ARF_REF}"
     )
     try:
         data = json.loads(_http_get(api, timeout=30).decode("utf-8"))
@@ -162,7 +189,7 @@ def resolve_body_folder_from_source(
 
 
 def catalog() -> list[ArfTechnicalSpec]:
-    """TS01–TS11 from the ARF technical-specifications folder."""
+    """TS01–TS14 from the ARF technical-specifications folder (ARF release tag)."""
     files = _list_ts_files_via_api()
     if files:
         out: list[ArfTechnicalSpec] = []
@@ -186,7 +213,7 @@ def catalog() -> list[ArfTechnicalSpec]:
     ]
 
 
-ARF_CATALOG_DESIGNATION = "EC technical specifications (TS01–TS11)"
+ARF_CATALOG_DESIGNATION = "EC technical specifications (TS01–TS14)"
 
 
 def write_catalogue_reference(standards_root: Path) -> Path:
@@ -219,18 +246,21 @@ def write_catalogue_reference(standards_root: Path) -> Path:
     doc = {
         "body": "ARF",
         "designation": ARF_CATALOG_DESIGNATION,
+        "version": ARF_REF.lstrip("v"),
         "title": "EUDI Wallet ARF complementary technical specifications",
         "status": "downloaded",
         "download_url": ARF_INDEX_TREE,
         "download_urls": [
+            ARF_RELEASE_URL,
             ARF_INDEX_TREE,
-            f"https://github.com/{CONTENT_REPO}/tree/main/{DOCS_PATH}",
+            f"https://github.com/{CONTENT_REPO}/tree/{CONTENT_REF}/{DOCS_PATH}",
         ],
         "tags": ["arf-technical-spec"],
         "summary": (
-            "European Commission complementary technical specifications (TS01–TS11) "
-            "published with the EUDI Wallet Architecture and Reference Framework; "
-            "each TS is synced under standards/ARF/<designation>-<version>/."
+            f"European Commission complementary technical specifications (TS01–TS14) "
+            f"aligned with EUDI Wallet Architecture and Reference Framework {ARF_REF}; "
+            "each TS is synced under standards/ARF/<designation>-<version>/ "
+            f"(index: {ARF_REPO}@{ARF_REF}; full text: {CONTENT_REPO}@{CONTENT_REF})."
         ),
         "scope_keywords": [
             "attestation",
@@ -242,6 +272,8 @@ def write_catalogue_reference(standards_root: Path) -> Path:
         "parent_legal_regulations": [],
         "parent_specifications": [],
         "child_specifications": children,
+        "arf_ref": ARF_REF,
+        "content_ref": CONTENT_REF,
     }
     path = arf_dir / "reference.json"
     path.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -262,6 +294,9 @@ def resolve_content_url(arf_markdown: str, filename: str) -> str:
         return f"{CONTENT_RAW_BASE}/{urllib.parse.quote(m.group(1))}"
     if len(arf_markdown.strip()) < 800 and "standards-and-technical-specifications" in arf_markdown:
         return f"{CONTENT_RAW_BASE}/{urllib.parse.quote(filename)}"
+    # ARF index uses ts13-zksnark.md; content repo publishes ts13-zksnarks.md
+    if filename == "ts13-zksnark.md":
+        return f"{CONTENT_RAW_BASE}/{urllib.parse.quote('ts13-zksnarks.md')}"
     return f"{ARF_RAW_BASE}/{urllib.parse.quote(filename)}"
 
 
@@ -293,7 +328,12 @@ def parse_title_from_markdown(markdown: str, fallback: str) -> str:
 
 
 def download_urls_for(entry: ArfTechnicalSpec) -> list[str]:
-    return [entry.arf_tree_url(), entry.content_raw_url(), entry.arf_raw_url()]
+    return [
+        entry.content_blob_url(),
+        entry.arf_tree_url(),
+        entry.content_raw_url(),
+        entry.arf_raw_url(),
+    ]
 
 
 def extract_nested_references(

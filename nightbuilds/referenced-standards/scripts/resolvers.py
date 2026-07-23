@@ -334,21 +334,22 @@ def resolve_and_download(
             )
         dest = dest_dir / f"{safe_filename(ref)}.md"
         urls = arf_download_urls(entry)
+        primary = entry.content_blob_url()
         if dest.exists() and not force:
             return ResolveResult(
-                "unchanged", dest, urls[0], download_urls=urls
+                "unchanged", dest, primary, download_urls=urls
             )
         try:
-            text, content_url = fetch_markdown(entry)
+            text, _content_url = fetch_markdown(entry)
             dest.write_text(text, encoding="utf-8")
             return ResolveResult(
-                "downloaded", dest, content_url, download_urls=urls
+                "downloaded", dest, primary, download_urls=urls
             )
         except Exception as exc:
             return ResolveResult(
                 "error",
                 error=str(exc),
-                url=entry.content_raw_url(),
+                url=primary,
                 download_urls=urls,
             )
 
