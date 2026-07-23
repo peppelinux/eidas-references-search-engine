@@ -44,6 +44,7 @@ def body_folder(body: str) -> str:
         "CEN": "CEN",
         "ITU-T": "ITU-T",
         "IEEE": "IEEE",
+        "OpenID": "OpenID",
     }
     return mapping.get(body, "other")
 
@@ -141,6 +142,32 @@ W3C_KNOWN = {
     ],
 }
 
+# Final / stable OpenID Foundation specs used by EUDI Wallet CIRs and ARF TS.
+OPENID_KNOWN = {
+    ("OpenID4VP", "1.0"): [
+        ("https://openid.net/specs/openid-4-verifiable-presentations-1_0.html", ".html"),
+    ],
+    ("OpenID4VCI", "1.0"): [
+        (
+            "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html",
+            ".html",
+        ),
+    ],
+    ("OpenID4VC-HAIP", "1.0"): [
+        (
+            "https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-final.html",
+            ".html",
+        ),
+        (
+            "https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0.html",
+            ".html",
+        ),
+    ],
+    ("OpenID Federation", "1.0"): [
+        ("https://openid.net/specs/openid-federation-1_0.html", ".html"),
+    ],
+}
+
 
 def iso_catalogue_urls(ref: SpecReference) -> list[str]:
     """
@@ -182,6 +209,9 @@ def catalog_download_urls(ref: SpecReference) -> list[str]:
     if ref.body == "W3C":
         ver = ref.version or "1.1"
         return [u for u, _ in W3C_KNOWN.get((ref.designation, ver), [])]
+    if ref.body == "OpenID":
+        ver = ref.version or "1.0"
+        return [u for u, _ in OPENID_KNOWN.get((ref.designation, ver), [])]
     if ref.body == "ISO-IEC":
         return iso_catalogue_urls(ref)
     if ref.body == "CEN":
@@ -315,6 +345,34 @@ def resolve_and_download(
             "unavailable",
             reason="W3C document not in local catalog; add URL to W3C_KNOWN in resolvers.py",
             download_urls=[u for u, _ in urls],
+        )
+
+    if ref.body == "OpenID":
+        ver = ref.version or "1.0"
+        urls = OPENID_KNOWN.get((ref.designation, ver), [])
+        last_err: str | None = None
+        for url, ext in urls:
+            dest = dest_dir / f"{safe_filename(ref)}{ext}"
+            if dest.exists() and not force:
+                return ResolveResult(
+                    "unchanged", dest, url, download_urls=[u for u, _ in urls]
+                )
+            try:
+                http_download(url, dest)
+                return ResolveResult(
+                    "downloaded", dest, url, download_urls=[u for u, _ in urls]
+                )
+            except Exception as exc:
+                last_err = str(exc)
+                continue
+        return ResolveResult(
+            "unavailable",
+            reason=(
+                "OpenID document not in local catalog or download failed"
+                + (f": {last_err}" if last_err else "")
+            ),
+            download_urls=[u for u, _ in urls],
+            error=last_err,
         )
 
     if ref.body in {"ISO-IEC", "CEN", "ITU-T", "IEEE"}:

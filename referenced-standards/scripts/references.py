@@ -53,6 +53,84 @@ W3C_TR_RE = re.compile(
     re.IGNORECASE,
 )
 
+# OpenID Foundation (OIDF) — EUDI wallet protocols / profiles
+OPENID_URL_RE = re.compile(
+    r"https?://openid\.net/specs/(?P<slug>[a-zA-Z0-9._\-]+?)(?:\.html)?\b",
+    re.IGNORECASE,
+)
+
+OPENID_NAMED_RE = re.compile(
+    r"""
+    (?P<name>
+        OpenID\s+for\s+Verifiable\s+Credential\s+Issuance
+        | OpenID\s+for\s+Verifiable\s+Presentations?
+        | OpenID\s+for\s+Verifiable\s+Credential\s+Presentation
+        | OpenID4VC-HAIP
+        | OpenID4VC\s+HAIP
+        | OIDF\s+OpenID4VC\s+High\s+Assurance\s+Interoperability\s+Profile
+        | OpenID4VC\s+High\s+Assurance\s+Interoperability\s+Profile
+        | OpenID\s+Federation
+        | OpenID4VCI
+        | OID4VCI
+        | OpenID4VP
+        | OID4VP
+    )
+    (?:\s+v(?P<ver>\d+(?:\.\d+)*))?
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
+
+_OPENID_NAME_TO_DESIGNATION = (
+    ("for verifiable credential issuance", "OpenID4VCI"),
+    ("for verifiable presentations", "OpenID4VP"),
+    ("for verifiable credential presentation", "OpenID4VP"),
+    ("high assurance interoperability", "OpenID4VC-HAIP"),
+    ("openid4vc-haip", "OpenID4VC-HAIP"),
+    ("openid4vc haip", "OpenID4VC-HAIP"),
+    ("openid federation", "OpenID Federation"),
+    ("openid4vci", "OpenID4VCI"),
+    ("oid4vci", "OpenID4VCI"),
+    ("openid4vp", "OpenID4VP"),
+    ("oid4vp", "OpenID4VP"),
+)
+
+
+def _openid_from_slug(slug: str) -> tuple[str, str] | None:
+    s = slug.lower().removesuffix(".html")
+    if "verifiable-presentations" in s:
+        return "OpenID4VP", "1.0"
+    if "verifiable-credential-issuance" in s:
+        return "OpenID4VCI", "1.0"
+    if "high-assurance-interoperability" in s:
+        return "OpenID4VC-HAIP", "1.0"
+    if "openid-federation" in s or s.startswith("openid-federation"):
+        return "OpenID Federation", "1.0"
+    return None
+
+
+def _openid_from_name(name: str, ver: str | None) -> SpecReference | None:
+    key = re.sub(r"\s+", " ", name.strip().lower())
+    designation = None
+    for needle, des in _OPENID_NAME_TO_DESIGNATION:
+        if needle in key:
+            designation = des
+            break
+    if not designation:
+        return None
+    version = ver or "1.0"
+    titles = {
+        "OpenID4VP": "OpenID for Verifiable Presentations",
+        "OpenID4VCI": "OpenID for Verifiable Credential Issuance",
+        "OpenID4VC-HAIP": "OpenID4VC High Assurance Interoperability Profile",
+        "OpenID Federation": "OpenID Federation",
+    }
+    return SpecReference(
+        body="OpenID",
+        designation=designation,
+        version=version,
+        title=titles.get(designation),
+    )
+
 
 @dataclass(frozen=True)
 class SpecReference:
@@ -167,6 +245,25 @@ def extract_from_text(text: str, source: str, result: ExtractionResult) -> None:
                     ),
                     source,
                 )
+
+    for m in OPENID_URL_RE.finditer(text):
+        parsed = _openid_from_slug(m.group("slug"))
+        if not parsed:
+            continue
+        designation, version = parsed
+        result.add(
+            SpecReference(
+                body="OpenID",
+                designation=designation,
+                version=version,
+            ),
+            source,
+        )
+
+    for m in OPENID_NAMED_RE.finditer(text):
+        ref = _openid_from_name(m.group("name"), m.group("ver"))
+        if ref:
+            result.add(ref, source)
 
 
 def collect_from_paths(paths: list, legal_root) -> ExtractionResult:

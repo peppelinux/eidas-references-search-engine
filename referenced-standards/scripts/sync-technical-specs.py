@@ -331,6 +331,18 @@ def run_sync(
                 for k, v in all_refs.items()
                 if k not in fetched_keys or (force and depth == 0)
             }
+            # Specs already downloaded in an earlier wave may gain new citation
+            # sources from nested scans (e.g. OpenID found in legal, then again in ARF TS).
+            # Re-process those so reference.json parent_* links stay complete.
+            if depth > 0:
+                lock_specs = lock.get("specs") or {}
+                for k, v in all_refs.items():
+                    if k in pending:
+                        continue
+                    current = set(all_sources.get(k) or ())
+                    locked = set(lock_specs.get(k, {}).get("sources") or ())
+                    if current - locked:
+                        pending[k] = v
             if not pending:
                 break
             print(f"Downloading wave {depth} ({len(pending)} spec(s), {workers} workers) …")

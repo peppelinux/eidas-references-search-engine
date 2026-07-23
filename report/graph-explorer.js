@@ -9,6 +9,7 @@
     ETSI: { icon: "📡", label: "ETSI", color: "#0b5cad" },
     IETF: { icon: "🌐", label: "IETF", color: "#2d7d46" },
     W3C: { icon: "🔗", label: "W3C", color: "#005a9c" },
+    OpenID: { icon: "🪪", label: "OpenID", color: "#f78b1e" },
     CEN: { icon: "🇪🇺", label: "CEN", color: "#003399" },
     ARF: { icon: "🇪🇺", label: "ARF (EC TS)", color: "#003399" },
     "ISO-IEC": { icon: "🔒", label: "ISO/IEC", color: "#6b4c9a" },
@@ -30,6 +31,10 @@
   let excludedBodies = new Set();
   let layoutFrozen = false;
   let layoutFreezePending = false;
+  /** Large corpus: graph is pruned; IETF RFCs are omitted until the IETF chip is enabled. */
+  let graphIsPruned = false;
+  /** When true on a pruned graph, include IETF RFCs linked to the core (cites + one hop). */
+  let includeIetfNeighborhood = false;
   /** @type {Map<string, {x: number, y: number}>} */
   const userPositions = new Map();
 
@@ -471,7 +476,9 @@
       }
       msg += " · drag to reposition (nodes stay put)";
       if (nodeById.size < (graphData?.nodes?.length || 0)) {
-        msg += " · graph: regulation → CIR → cited specs (nested IETF omitted)";
+        msg += includeIetfNeighborhood
+          ? " · graph: core + linked IETF RFCs (deep nested RFCs still omitted)"
+          : " · graph: regulation → CIR → cited specs (click IETF to show linked RFCs)";
       }
       status.textContent = msg;
     }
@@ -685,7 +692,10 @@
       btn.className = "sdo-chip active";
       btn.dataset.body = body;
       btn.innerHTML = `<span class="icon">${meta.icon}</span><span>${EidasSearch.escapeHtml(meta.label)}</span>`;
-      btn.title = `Show/hide ${meta.label} specifications`;
+      btn.title =
+        body === "IETF" && graphIsPruned
+          ? "Show/hide IETF RFCs linked to the visible graph (nested corpus RFCs stay in tables/search)"
+          : `Show/hide ${meta.label} specifications`;
       btn.addEventListener("click", () => {
         if (excludedBodies.has(body)) {
           excludedBodies.delete(body);
@@ -696,11 +706,61 @@
           btn.classList.remove("active");
           btn.classList.add("muted");
         }
+        // Pruned graphs remove IETF nodes from the DataSet; toggling requires a rebuild.
+        if (graphIsPruned && body === "IETF") {
+          includeIetfNeighborhood = !excludedBodies.has("IETF");
+          const container = $("#graph-network");
+          if (container && graphData) initNetwork(container, graphData);
+          return;
+        }
         applyFilters();
       });
       wrap.appendChild(btn);
     }
     excludedBodies.clear();
+  }
+
+  /**
+   * Core keep-set for large graphs: regulation → CIR → cited specs (+ ARF/OpenID).
+   * Optionally add IETF RFCs that are cited by law or linked to the core (one hop).
+   */
+  function prunedKeepIds(data, { withIetf }) {
+    const citedIds = new Set(
+      (data.edges || []).filter((e) => e.kind === "cites").map((e) => e.to)
+    );
+    const byId = new Map((data.nodes || []).map((n) => [n.id, n]));
+    const keep = new Set();
+
+    for (const n of data.nodes || []) {
+      if (n.type === "legal_regulation") {
+        keep.add(n.id);
+        continue;
+      }
+      if (n.type !== "specification") continue;
+      if (n.body === "IETF") continue;
+      if (n.body === "ARF" || n.body === "OpenID") {
+        keep.add(n.id);
+        continue;
+      }
+      if (citedIds.has(n.id)) keep.add(n.id);
+    }
+
+    if (withIetf) {
+      const nonIetf = new Set(keep);
+      for (const n of data.nodes || []) {
+        if (n.body === "IETF" && citedIds.has(n.id)) keep.add(n.id);
+      }
+      // One hop only from non-IETF core (do not expand through RFC→RFC chains).
+      for (const e of data.edges || []) {
+        if (e.kind !== "cites" && e.kind !== "references" && e.kind !== "related") continue;
+        const a = byId.get(e.from);
+        const b = byId.get(e.to);
+        if (nonIetf.has(e.from) && b?.body === "IETF") keep.add(e.to);
+        if (nonIetf.has(e.to) && a?.body === "IETF") keep.add(e.from);
+      }
+    }
+
+    return keep;
   }
 
   /**
@@ -771,41 +831,41 @@
     layoutFrozen = false;
     layoutFreezePending = false;
     userPositions.clear();
+    if (network) {
+      network.destroy();
+      network = null;
+    }
+    container.innerHTML = "";
+
     let visNodes = buildVisNodes(data.nodes, data.edges);
     let visEdges = buildVisEdges(data.edges, data.nodes);
     const large = visNodes.length > 500;
+    graphIsPruned = large;
 
     // Large corpora: keep hierarchical layout readable (regulation → CIR → cited specs).
-    // Drop IETF + nested-only refs from the laid-out graph (still in tables / corpus search).
+    // Nested IETF (~thousands) stay out unless the IETF chip is enabled (linked RFCs only).
     if (large) {
-      excludedBodies.add("IETF");
-      document.querySelectorAll(".sdo-chip").forEach((c) => {
-        if (c.dataset.body === "IETF") {
-          c.classList.remove("active");
-          c.classList.add("muted");
-        }
-      });
-
-      const citedIds = new Set(
-        (data.edges || []).filter((e) => e.kind === "cites").map((e) => e.to)
-      );
-      const keep = new Set();
-      for (const n of visNodes) {
-        if (n.type === "legal_regulation") {
-          keep.add(n.id);
-          continue;
-        }
-        if (n.type !== "specification") continue;
-        const raw = n.raw || {};
-        if (raw.body === "IETF" || n.body === "IETF") continue;
-        if (raw.body === "ARF" || n.body === "ARF") {
-          keep.add(n.id);
-          continue;
-        }
-        if (citedIds.has(n.id)) keep.add(n.id);
-      }
+      const keep = prunedKeepIds(data, { withIetf: includeIetfNeighborhood });
       visNodes = visNodes.filter((n) => keep.has(n.id));
       visEdges = visEdges.filter((e) => keep.has(e.from) && keep.has(e.to));
+
+      if (!includeIetfNeighborhood) {
+        excludedBodies.add("IETF");
+        document.querySelectorAll(".sdo-chip").forEach((c) => {
+          if (c.dataset.body === "IETF") {
+            c.classList.remove("active");
+            c.classList.add("muted");
+          }
+        });
+      } else {
+        excludedBodies.delete("IETF");
+        document.querySelectorAll(".sdo-chip").forEach((c) => {
+          if (c.dataset.body === "IETF") {
+            c.classList.add("active");
+            c.classList.remove("muted");
+          }
+        });
+      }
     }
 
     nodesDataSet = new vis.DataSet(visNodes);
@@ -879,6 +939,8 @@
     network.on("doubleClick", (params) => {
       if (params.nodes.length) network.focus(params.nodes[0], { scale: 1.2, animation: true });
     });
+
+    layoutFreezePending = true;
   }
 
   /** Keys that vis-network uses for pan/zoom — keep them in the search field when it is focused. */
@@ -926,6 +988,8 @@
       .then((data) => {
         graphData = data;
         graphNodesById = new Map(data.nodes.map((n) => [n.id, n]));
+        graphIsPruned = (data.nodes || []).length > 500;
+        includeIetfNeighborhood = false;
         const bodies = [...new Set(data.nodes.filter((n) => n.type === "specification" && n.body).map((n) => n.body))].sort();
         initSdoChips(bodies);
         initNetwork(container, data);
@@ -951,6 +1015,20 @@
             c.classList.add("active");
             c.classList.remove("muted");
           });
+          if (graphIsPruned) {
+            // Reset keeps the readable core; IETF stays opt-in via its chip.
+            includeIetfNeighborhood = false;
+            excludedBodies.add("IETF");
+            document.querySelectorAll(".sdo-chip").forEach((c) => {
+              if (c.dataset.body === "IETF") {
+                c.classList.remove("active");
+                c.classList.add("muted");
+              }
+            });
+            initNetwork(container, graphData);
+            renderDetail(null);
+            return;
+          }
           applyFilters();
           renderDetail(null);
           if (layoutFrozen) {
