@@ -45,13 +45,14 @@
   function loadPage(catalogueId, page) {
     const key = catalogueId + ":" + page;
     if (PAGE_CACHE.has(key)) return Promise.resolve(PAGE_CACHE.get(key));
+    // Clear any stale payload before loading the next page script.
+    window.EIDAS_CATALOGUE_PAGE = null;
     return loadScript(pagePath(catalogueId, page)).then(() => {
       const payload = window.EIDAS_CATALOGUE_PAGE;
-      if (!payload || payload.id !== catalogueId || payload.page !== page) {
+      if (!payload || payload.id !== catalogueId || Number(payload.page) !== Number(page)) {
         throw new Error("Catalogue page payload missing for " + key);
       }
       PAGE_CACHE.set(key, payload);
-      window.EIDAS_CATALOGUE_PAGE = null;
       return payload;
     });
   }
@@ -122,7 +123,8 @@
 
     let columns = [];
     try {
-      columns = JSON.parse(root.dataset.columns || "[]");
+      const raw = root.getAttribute("data-columns") || root.dataset.columns || "[]";
+      columns = JSON.parse(raw);
     } catch (_err) {
       columns = [];
     }

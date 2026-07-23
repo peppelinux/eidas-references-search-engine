@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-07-23T14:06:52.188853+00:00
+Generated: 2026-07-23T14:55:51.620742+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -13,7 +13,7 @@ Open **`index.html`** in this folder for the interactive version.
 | Unavailable | 840 |
 | Other | 0 |
 | Legal → specification links | 157 |
-| Specification → specification links | 63125 |
+| Specification → specification links | 63124 |
 
 ### By standardization body
 
@@ -16393,7 +16393,6 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI EN 319 132-1 V1.3.1 | IETF RFC 6960 | [link](https://www.rfc-editor.org/rfc/rfc6960.txt) | [online](https://www.rfc-editor.org/rfc/rfc6960.txt) · `ETSI/EN-319-132-1-V1.3.1/EN-319-132-1-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-132-1-V1.3.1/EN-319-132-1-V1.3.1.pdf) |
 | ETSI EN 319 132-1 V1.3.1 | ISO-IEC ISO/IEC 29500-2 V2021 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+29500-2) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+29500-2) · `ETSI/EN-319-132-1-V1.3.1/EN-319-132-1-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-132-1-V1.3.1/EN-319-132-1-V1.3.1.pdf) |
 | ETSI EN 319 132-1 V1.3.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-132-1-V1.3.1/EN-319-132-1-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-132-1-V1.3.1/EN-319-132-1-V1.3.1.pdf) |
-| ETSI EN 319 142-1 V1.2.1 | ETSI TS 119 142-1 V1.1.0 | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11914201/01.01.00_60/ts_11914201v010100p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119100_119199/11914201/01.01.00_60/ts_11914201v010100p.pdf) · `ETSI/EN-319-142-1-V1.1.1/EN-319-142-1-V1.1.1.pdf` — md:—, html:—, pdf:— |
 | ETSI EN 319 142-1 V1.2.1 | IETF RFC 2315 | [link](https://www.rfc-editor.org/rfc/rfc2315.txt) | [online](https://www.rfc-editor.org/rfc/rfc2315.txt) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
 | ETSI EN 319 142-1 V1.2.1 | IETF RFC 3161 | [link](https://www.rfc-editor.org/rfc/rfc3161.txt) | [online](https://www.rfc-editor.org/rfc/rfc3161.txt) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
 | ETSI EN 319 142-1 V1.2.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
@@ -85932,7 +85931,6 @@ flowchart LR
   ETSI_TS_119_441_V1_2_1 -.->|references| ETSI_TS_119_102_1_V1_3_1
   legal_2025_1942 -->|cites| ETSI_TS_119_102_2_V1_4_1
   legal_2025_1945 -->|cites| ETSI_TS_119_102_2_V1_4_1
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| ETSI_TS_119_142_1_V1_1_0
   ETSI_EN_319_162_1_V1_1_1 -.->|references| ETSI_TS_119_162_1_V1_1_0
   ETSI_EN_319_162_2_V1_1_1 -.->|references| ETSI_TS_119_162_2_V1_1_0
   legal_2025_1942 -->|cites| ETSI_TS_119_172_4_V1_1_1

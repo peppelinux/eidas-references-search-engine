@@ -81,6 +81,8 @@ build_main() {
   mkdir -p "$SITE"
   rsync_site "$ROOT" "$SITE"
   write_landing_index "$SITE"
+  # Prevent Jekyll from filtering static assets on GitHub Pages.
+  : >"$SITE/.nojekyll"
 }
 
 build_night() {
@@ -114,6 +116,8 @@ build_night() {
   rm -rf "$SITE"
   mkdir -p "$SITE/nightbuilds"
   rsync_site "$staging" "$SITE/nightbuilds"
+  : >"$SITE/.nojekyll"
+  : >"$SITE/nightbuilds/.nojekyll"
 }
 
 case "$MODE" in
