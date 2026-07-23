@@ -155,15 +155,65 @@ def storage_folder_for_designation(
     designation: str,
     standards_root: Path | None = None,
 ) -> str | None:
-    """Resolve on-disk folder name (e.g. TS03-V1.5.1) for a TS designation."""
+    """Resolve on-disk folder name (e.g. TS03-V1.5.2) for a TS designation."""
     prefix = designation.strip().upper()
     if standards_root is not None:
         arf_dir = standards_root / "ARF"
         if arf_dir.is_dir():
             for path in sorted(arf_dir.iterdir()):
-                if path.is_dir() and path.name.upper().startswith(prefix):
+                if path.is_dir() and path.name.upper().startswith(prefix + "-"):
+                    return path.name
+                if path.is_dir() and path.name.upper() == prefix:
                     return path.name
     return prefix
+
+
+# Deprecated ARF TS folders removed from disk after a newer TS replaced them.
+# Keep this list so lock/sources/parents never resurrect ghost graph nodes.
+ARF_SUPERSEDED_FOLDERS: dict[str, str] = {
+    "TS01-V1.1.2": "TS01-V1.2",
+    "TS03-V1.5.1": "TS03-V1.5.2",
+    "TS09-V1.0.1": "TS09-V1.1",
+}
+
+
+_ARF_VERSIONED_FOLDER_RE = re.compile(
+    r"^(?P<body>ARF)/(?P<folder>TS(?P<num>\d{1,2})-V[\d.]+)(?P<rest>/.*)?$",
+    re.IGNORECASE,
+)
+
+
+def remap_arf_source_path(source: str, standards_root: Path | None = None) -> str:
+    """Rewrite citations of pruned ARF TS folders to the current on-disk TS."""
+    norm = source.replace("\\", "/").lstrip("/")
+    m = _ARF_VERSIONED_FOLDER_RE.match(norm)
+    if not m:
+        return source
+    folder = m.group("folder")
+    mapped = None
+    for obsolete, current in ARF_SUPERSEDED_FOLDERS.items():
+        if folder.upper() == obsolete.upper():
+            mapped = current
+            break
+    if mapped is None and standards_root is not None:
+        des = f"TS{int(m.group('num')):02d}"
+        on_disk = standards_root / "ARF" / folder
+        if not on_disk.is_dir():
+            mapped = storage_folder_for_designation(des, standards_root)
+    if not mapped or mapped.upper() == folder.upper():
+        return source
+    rest = m.group("rest") or ""
+    # Prefer real filename in the current folder when the old basename is gone.
+    if standards_root is not None and rest.startswith("/"):
+        old_name = Path(rest).name
+        new_dir = standards_root / "ARF" / mapped
+        if new_dir.is_dir():
+            candidate = new_dir / old_name
+            if not candidate.is_file():
+                mds = sorted(new_dir.glob("*.md"))
+                if mds:
+                    rest = "/" + mds[0].name
+    return f"ARF/{mapped}{rest}"
 
 
 def resolve_body_folder_from_source(

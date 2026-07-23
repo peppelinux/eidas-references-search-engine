@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>eIDAS technical references report</title>
   <link rel="stylesheet" href="report-layout.css"/>
-    <link rel="stylesheet" href="graph-explorer.css"/>
+  
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <div class="site-shell">
   <header class="site-header" role="banner">
     <h1>eIDAS technical references report</h1>
-    <p class="site-meta">Generated 2026-07-23T14:06:52.188853+00:00 · Toolchain: eidas-legal-tech-references</p>
+    <p class="site-meta">Generated 2026-07-23T14:55:51.620742+00:00 · Toolchain: eidas-legal-tech-references</p>
     <p class="site-meta">For legal traceability and implementer conformance — official EU law cited against normative standards (ETSI, IETF, W3C, …) and EUDI ARF complementary technical specifications (EC TS01–TS14).</p>
   </header>
 
@@ -25,7 +25,7 @@
     </div>
     <div class="site-nav-panel" id="site-nav-panel" role="navigation">
       <ul class="site-nav-list">
-        <li><a href="#summary" aria-current="page">Summary</a></li><li><a href="#graph">Interactive graph</a></li><li><a href="search.html">Search corpus</a></li>
+        <li><a href="index.html" aria-current="page">Summary</a></li><li><a href="graph.html">Interactive graph</a></li><li><a href="search.html">Search corpus</a></li>
       </ul>
     </div>
   </nav>
@@ -33,24 +33,31 @@
   <main id="main" class="site-main">
   <section id="summary">
     <h2>Summary</h2>
+    <p>This landing page is only the summary. Graph, search, and every catalogue table live on <strong>separate HTML pages</strong> (opened via the links below).</p>
     <div class="stats">
       <div class="stat"><strong>6476</strong><span>Total references</span></div>
       <a class="stat" href="downloaded.html"><strong>5636</strong><span>Downloaded</span></a>
       <a class="stat" href="unavailable.html"><strong>840</strong><span>Unavailable</span></a>
       <div class="stat"><strong>0</strong><span>Other status</span></div>
       <a class="stat" href="legal-links.html"><strong>157</strong><span>Legal → spec links</span></a>
-      <a class="stat" href="spec-links.html"><strong>63125</strong><span>Spec → spec links</span></a>
-      <div class="stat"><strong>6504</strong><span>Graph nodes</span></div>
+      <a class="stat" href="spec-links.html"><strong>63124</strong><span>Spec → spec links</span></a>
+      <a class="stat" href="graph.html"><strong>6504</strong><span>Graph nodes</span></a>
     </div>
+
+    <h3>Primary pages</h3>
+    <ul class="page-links">
+      <li><a href="graph.html"><strong>Interactive graph</strong></a> — hierarchical legal → specification view (loads large data only on that page)</li>
+      <li><a href="search.html"><strong>Search corpus</strong></a> — full-text search over legal acts and specifications</li>
+    </ul>
+
     <h3>Catalogue pages</h3>
-    <p>Large tables are separate pages and load one page of rows at a time (not on this landing page).</p>
-    <ul>
+    <ul class="page-links">
       <li><a href="downloaded.html">Downloaded references (5636)</a></li>
       <li><a href="unavailable.html">Unavailable references (840)</a></li>
       <li><a href="legal-links.html">Legal act → specification links (157)</a></li>
-      <li><a href="spec-links.html">Specification cross-references (63125)</a></li>
-      <li><a href="search.html">Search corpus</a></li>
+      <li><a href="spec-links.html">Specification cross-references (63124)</a></li>
     </ul>
+
     <h3>By standardization body</h3>
     <div class="table-wrap">
       <table>
@@ -59,47 +66,21 @@
       </table>
     </div>
   </section>
-
-  <section id="graph">
-    <h2>Interactive reference graph</h2>
-    <p class="graph-legend">
-      <span class="legal">EU legal act</span>
-      <span class="ok">Downloaded specification</span>
-      Hierarchical view (top → bottom): framework → legal acts → cited standards; ARF EC TS (catalogue node, linked to core wallet acts).
-    </p>
-    <div id="graph-gate" class="graph-gate">
-      <p>Graph data is large (~tens of MB). It is <strong>not</strong> loaded with this page.</p>
-      <button type="button" class="btn btn-primary" id="graph-load-btn">Load interactive graph</button>
-      <p id="graph-gate-status" class="hint" role="status"></p>
-    </div>
-    <div id="graph-explorer" hidden>
-      <div class="graph-toolbar">
-        <div class="search-row">
-          <label class="visually-hidden" for="graph-search">Filter graph</label>
-          <input type="search" id="graph-search" placeholder='Filter: +required -excluded · "exact phrase"' autocomplete="off" aria-describedby="graph-status" title="Case-insensitive. Use +word, -word, or &quot;phrase&quot; (same syntax as corpus search)."/>
-          <button type="button" class="btn btn-primary" id="graph-search-btn">Apply</button>
-          <button type="button" class="btn" id="graph-clear">Reset filters</button>
-          <a class="btn" href="search.html">Full corpus search</a>
-        </div>
-        <div id="sdo-filters" class="sdo-filters" aria-label="Standardization body filters"></div>
-        <p id="graph-status"></p>
-      </div>
-      <div class="graph-layout">
-        <div id="graph-network" aria-label="Reference graph visualization"></div>
-        <aside id="graph-detail" aria-label="Node details"></aside>
-      </div>
-    </div>
-  </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <p>
-      Also available:
+      Pages:
+      <a href="index.html">Summary</a> ·
+      <a href="graph.html">Graph</a> ·
       <a href="search.html">Search</a> ·
       <a href="downloaded.html">Downloaded</a> ·
       <a href="unavailable.html">Unavailable</a> ·
       <a href="legal-links.html">Legal → spec</a> ·
-      <a href="spec-links.html">Spec cross-refs</a> ·
+      <a href="spec-links.html">Spec cross-refs</a>
+    </p>
+    <p>
+      Data:
       <a href="REFERENCES-REPORT.md">REFERENCES-REPORT.md</a> ·
       <a href="references-graph.json">references-graph.json</a> ·
       <a href="graph-data.json">graph-data.json</a> ·
@@ -109,8 +90,6 @@
   </div>
 
   <script src="report-nav.js"></script>
-  <script src="eidas-search-core.js"></script>
-  <script src="document-links.js"></script>
-  <script src="graph-explorer.js"></script>
+
 </body>
 </html>

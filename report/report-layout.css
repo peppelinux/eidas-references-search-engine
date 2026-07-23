@@ -345,6 +345,15 @@ a.stat:focus-visible {
   font-size: 0.9rem;
 }
 
+.page-links {
+  line-height: 1.7;
+}
+
+.page-links a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 
 table {
   width: 100%;
