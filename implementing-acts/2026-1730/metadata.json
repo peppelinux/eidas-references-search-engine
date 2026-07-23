@@ -1,0 +1,23 @@
+{
+  "id": "2026-1730",
+  "title": "Amending CIR 2025/848 \u2014 Relying Party Registration",
+  "celex": "32026R1730",
+  "eli": "http://data.europa.eu/eli/reg_impl/2026/1730/oj/eng",
+  "kind": "implementing_regulation",
+  "cellar_work": "http://publications.europa.eu/resource/cellar/933ea5f2-856a-11f1-bf5e-01aa75ed71a1",
+  "consolidated_as_of": null,
+  "files": {
+    "html": {
+      "sha256": "2d939d209aeb176ac76a05062e05fad7f630251c95afa8f0874f815c8421269f",
+      "size": 42532,
+      "item_url": "http://publications.europa.eu/resource/cellar/933ea5f2-856a-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+      "path": "implementing-acts/2026-1730/2026-1730.html"
+    },
+    "pdf": {
+      "sha256": "841c17589b842a2249a2eb35091e6c0d4c6b1218a3e6c56f0346cef3f8bb8fd4",
+      "size": 495492,
+      "item_url": "http://publications.europa.eu/resource/cellar/933ea5f2-856a-11f1-bf5e-01aa75ed71a1.0006.01/DOC_1",
+      "path": "implementing-acts/2026-1730/2026-1730.pdf"
+    }
+  }
+}

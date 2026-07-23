@@ -311,16 +311,28 @@ def run_sync(
 
     for depth in depth_range:
         if not metadata_only:
-            pending = {k: v for k, v in all_refs.items() if k not in fetched_keys or force}
-            if not pending:
-                break
+            # Scan already-downloaded specs for nested citations BEFORE deciding
+            # whether this depth has work. Otherwise wave 0 empties `pending` and
+            # we break without ever discovering nested IETF/ISO/… references.
             if depth > 0:
                 wave = scan_standards_tree(standards_root)
                 added = merge_extraction(all_refs, all_sources, wave)
-                print(f"Depth {depth}: +{added} nested reference(s), {len(all_refs)} total")
-                pending = {k: v for k, v in all_refs.items() if k not in fetched_keys}
-                if not pending:
-                    break
+                dropped = collapse_refs_to_latest(all_refs, all_sources)
+                msg = (
+                    f"Depth {depth}: +{added} nested reference(s), "
+                    f"{len(all_refs)} total"
+                )
+                if dropped:
+                    msg += f"; dropped {dropped} older duplicate version(s)"
+                print(msg)
+
+            pending = {
+                k: v
+                for k, v in all_refs.items()
+                if k not in fetched_keys or (force and depth == 0)
+            }
+            if not pending:
+                break
             print(f"Downloading wave {depth} ({len(pending)} spec(s), {workers} workers) …")
 
         with ThreadPoolExecutor(max_workers=workers) as pool:

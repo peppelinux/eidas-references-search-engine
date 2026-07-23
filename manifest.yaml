@@ -141,6 +141,18 @@ implementing_acts:
     title: "Remote onboarding to EUDI Wallets (eID substantial)"
     celex: "32026R0798"
     eli: "http://data.europa.eu/eli/reg_impl/2026/798/oj/eng"
+  - id: "2026-1730"
+    title: "Amending CIR 2025/848 — Relying Party Registration"
+    celex: "32026R1730"
+    eli: "http://data.europa.eu/eli/reg_impl/2026/1730/oj/eng"
+  - id: "2026-1731"
+    title: "Amending CIRs 2024/2977, 2979, 2980, 2982 — reference standards and specs"
+    celex: "32026R1731"
+    eli: "http://data.europa.eu/eli/reg_impl/2026/1731/oj/eng"
+  - id: "2026-1735"
+    title: "Amending CIR 2025/1569 — electronic attestations of attributes (EAA)"
+    celex: "32026R1735"
+    eli: "http://data.europa.eu/eli/reg_impl/2026/1735/oj/eng"
 
 implementing_decisions:
   - id: "2025-2164"
