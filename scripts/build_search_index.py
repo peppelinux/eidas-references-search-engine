@@ -24,7 +24,7 @@ MAX_SPEC_FILE_BYTES = 400_000
 SPEC_FILE_SUFFIXES = (".md", ".txt", ".html")
 
 # Canonical SDO folders (order used in search UI)
-SDO_BODIES = ("ARF", "ETSI", "IETF", "W3C", "CEN", "ISO-IEC", "ITU-T", "IEEE")
+SDO_BODIES = ("ARF", "ETSI", "IETF", "OpenID", "W3C", "CEN", "ISO-IEC", "ITU-T", "IEEE")
 
 _FRONT_MATTER = re.compile(r"^---\s*\n.*?\n---\s*\n", re.DOTALL)
 
