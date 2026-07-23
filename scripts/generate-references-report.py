@@ -502,11 +502,21 @@ def build_graph(refs: list[dict[str, Any]]) -> dict[str, Any]:
             if "search_text" not in n or n.get("summary"):
                 n["search_text"] = _legal_search_text(n)
 
+    # Deduplicate identical (from, to, kind) edges — duplicate IDs blank vis-network.
+    seen_edges: set[tuple[str, str, str]] = set()
+    unique_edges: list[dict[str, Any]] = []
+    for e in edges:
+        key = (str(e.get("from")), str(e.get("to")), str(e.get("kind")))
+        if key in seen_edges:
+            continue
+        seen_edges.add(key)
+        unique_edges.append(e)
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "corpus_anchor_id": corpus_anchor_id,
         "nodes": node_list,
-        "edges": edges,
+        "edges": unique_edges,
     }
 
 
