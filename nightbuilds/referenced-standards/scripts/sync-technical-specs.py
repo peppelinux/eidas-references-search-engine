@@ -32,7 +32,7 @@ from arf_technical_specs import (
     parse_title_from_markdown,
     write_catalogue_reference,
 )
-from prune_stale_specs import collapse_refs_to_latest, prune_stale_specs
+from prune_stale_specs import apply_identity_aliases, collapse_refs_to_latest, prune_stale_specs
 from reference_metadata import write_reference_for_spec
 from references import ExtractionResult, SpecReference, collect_from_legal_tree, extract_from_text
 from resolvers import (
@@ -278,6 +278,7 @@ def run_sync(
     merge_extraction(all_refs, all_sources, arf_wave)
     _rekey_arf_refs(all_refs, all_sources)
     dropped = collapse_refs_to_latest(all_refs, all_sources)
+    dropped += apply_identity_aliases(all_refs, all_sources)
     print(
         f"Found {len(all_refs) - len(arf_entries)} reference(s) in legal texts; "
         f"+{len(arf_entries)} ARF technical specification(s) "
@@ -318,6 +319,7 @@ def run_sync(
                 wave = scan_standards_tree(standards_root)
                 added = merge_extraction(all_refs, all_sources, wave)
                 dropped = collapse_refs_to_latest(all_refs, all_sources)
+                dropped += apply_identity_aliases(all_refs, all_sources)
                 msg = (
                     f"Depth {depth}: +{added} nested reference(s), "
                     f"{len(all_refs)} total"
@@ -331,6 +333,18 @@ def run_sync(
                 for k, v in all_refs.items()
                 if k not in fetched_keys or (force and depth == 0)
             }
+            # Specs already downloaded in an earlier wave may gain new citation
+            # sources from nested scans (e.g. OpenID found in legal, then again in ARF TS).
+            # Re-process those so reference.json parent_* links stay complete.
+            if depth > 0:
+                lock_specs = lock.get("specs") or {}
+                for k, v in all_refs.items():
+                    if k in pending:
+                        continue
+                    current = set(all_sources.get(k) or ())
+                    locked = set(lock_specs.get(k, {}).get("sources") or ())
+                    if current - locked:
+                        pending[k] = v
             if not pending:
                 break
             print(f"Downloading wave {depth} ({len(pending)} spec(s), {workers} workers) …")

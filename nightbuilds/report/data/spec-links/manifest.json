@@ -1,0 +1,12 @@
+{
+  "id": "spec-links",
+  "columns": [
+    "Referencing",
+    "Referenced",
+    "Online",
+    "Source in corpus"
+  ],
+  "total": 4855,
+  "page_size": 200,
+  "page_count": 25
+}

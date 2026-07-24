@@ -44,6 +44,7 @@ def body_folder(body: str) -> str:
         "CEN": "CEN",
         "ITU-T": "ITU-T",
         "IEEE": "IEEE",
+        "OpenID": "OpenID",
     }
     return mapping.get(body, "other")
 
@@ -123,10 +124,14 @@ def etsi_pdf_urls(ref: SpecReference) -> list[str]:
 
 
 def rfc_urls(ref: SpecReference) -> list[tuple[str, str]]:
-    m = re.search(r"(\d{3,5})", ref.designation)
-    if not m:
-        return []
-    n = m.group(1)
+    # EUDI alias: SD-JWT == RFC 9901
+    if ref.designation.strip().upper() in {"SD-JWT", "SDJWT"}:
+        n = "9901"
+    else:
+        m = re.search(r"(\d{3,5})", ref.designation)
+        if not m:
+            return []
+        n = m.group(1)
     base = f"https://www.rfc-editor.org/rfc/rfc{n}"
     return [
         (f"{base}.txt", ".txt"),
@@ -134,10 +139,51 @@ def rfc_urls(ref: SpecReference) -> list[tuple[str, str]]:
     ]
 
 
+# Non-RFC IETF specs (Internet-Drafts) used by EUDI Wallet.
+IETF_NAMED_URLS: dict[str, list[tuple[str, str]]] = {
+    "SD-JWT VC": [
+        (
+            "https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-17.html",
+            ".html",
+        ),
+        (
+            "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-sd-jwt-vc",
+            ".html",
+        ),
+    ],
+}
+
+
 W3C_KNOWN = {
     ("vc-data-model", "1.1"): [
         ("https://www.w3.org/TR/vc-data-model/", ".html"),
         ("https://www.w3.org/TR/vc-data-model-1.1/", ".html"),
+    ],
+}
+
+# Final / stable OpenID Foundation specs used by EUDI Wallet CIRs and ARF TS.
+OPENID_KNOWN = {
+    ("OpenID4VP", "1.0"): [
+        ("https://openid.net/specs/openid-4-verifiable-presentations-1_0.html", ".html"),
+    ],
+    ("OpenID4VCI", "1.0"): [
+        (
+            "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html",
+            ".html",
+        ),
+    ],
+    ("OpenID4VC-HAIP", "1.0"): [
+        (
+            "https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-final.html",
+            ".html",
+        ),
+        (
+            "https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0.html",
+            ".html",
+        ),
+    ],
+    ("OpenID Federation", "1.0"): [
+        ("https://openid.net/specs/openid-federation-1_0.html", ".html"),
     ],
 }
 
@@ -178,10 +224,15 @@ def catalog_download_urls(ref: SpecReference) -> list[str]:
     if ref.body == "ETSI":
         return etsi_pdf_urls(ref) if ref.version else []
     if ref.body == "IETF":
-        return [u for u, _ in rfc_urls(ref)]
+        return [u for u, _ in rfc_urls(ref)] or [
+            u for u, _ in IETF_NAMED_URLS.get(ref.designation, [])
+        ]
     if ref.body == "W3C":
         ver = ref.version or "1.1"
         return [u for u, _ in W3C_KNOWN.get((ref.designation, ver), [])]
+    if ref.body == "OpenID":
+        ver = ref.version or "1.0"
+        return [u for u, _ in OPENID_KNOWN.get((ref.designation, ver), [])]
     if ref.body == "ISO-IEC":
         return iso_catalogue_urls(ref)
     if ref.body == "CEN":
@@ -260,6 +311,37 @@ def resolve_and_download(
         )
 
     if ref.body == "IETF":
+        named = IETF_NAMED_URLS.get(ref.designation, [])
+        if named and not rfc_urls(ref):
+            last_err: str | None = None
+            for url, ext in named:
+                dest = dest_dir / f"{safe_filename(ref)}{ext}"
+                if dest.exists() and not force:
+                    return ResolveResult(
+                        "unchanged",
+                        dest,
+                        url,
+                        download_urls=[u for u, _ in named],
+                    )
+                try:
+                    http_download(url, dest)
+                    return ResolveResult(
+                        "downloaded",
+                        dest,
+                        url,
+                        download_urls=[u for u, _ in named],
+                    )
+                except Exception as exc:
+                    last_err = str(exc)
+                    continue
+            return ResolveResult(
+                "unavailable",
+                reason="IETF draft/named download failed"
+                + (f": {last_err}" if last_err else ""),
+                download_urls=[u for u, _ in named],
+                error=last_err,
+            )
+
         extras: list[Path] = []
         primary: Path | None = None
         primary_url: str | None = None
@@ -280,7 +362,7 @@ def resolve_and_download(
             except Exception:
                 continue
         if primary:
-            status = "unchanged" if not force and len(extras) == 2 else "downloaded"
+            status = "unchanged" if not force and len(extras) >= 1 else "downloaded"
             urls = [u for u, _ in rfc_urls(ref)]
             return ResolveResult(
                 status,
@@ -315,6 +397,34 @@ def resolve_and_download(
             "unavailable",
             reason="W3C document not in local catalog; add URL to W3C_KNOWN in resolvers.py",
             download_urls=[u for u, _ in urls],
+        )
+
+    if ref.body == "OpenID":
+        ver = ref.version or "1.0"
+        urls = OPENID_KNOWN.get((ref.designation, ver), [])
+        last_err: str | None = None
+        for url, ext in urls:
+            dest = dest_dir / f"{safe_filename(ref)}{ext}"
+            if dest.exists() and not force:
+                return ResolveResult(
+                    "unchanged", dest, url, download_urls=[u for u, _ in urls]
+                )
+            try:
+                http_download(url, dest)
+                return ResolveResult(
+                    "downloaded", dest, url, download_urls=[u for u, _ in urls]
+                )
+            except Exception as exc:
+                last_err = str(exc)
+                continue
+        return ResolveResult(
+            "unavailable",
+            reason=(
+                "OpenID document not in local catalog or download failed"
+                + (f": {last_err}" if last_err else "")
+            ),
+            download_urls=[u for u, _ in urls],
+            error=last_err,
         )
 
     if ref.body in {"ISO-IEC", "CEN", "ITU-T", "IEEE"}:

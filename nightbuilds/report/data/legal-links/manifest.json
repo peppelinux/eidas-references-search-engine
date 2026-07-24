@@ -1,0 +1,15 @@
+{
+  "id": "legal-links",
+  "columns": [
+    "Act",
+    "Title",
+    "CELEX",
+    "Kind",
+    "Specification cited",
+    "Online",
+    "Source in corpus"
+  ],
+  "total": 157,
+  "page_size": 200,
+  "page_count": 1
+}

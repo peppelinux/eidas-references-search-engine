@@ -18,6 +18,7 @@
     ETSI: "etsi",
     IETF: "ietf",
     W3C: "w3c",
+    OpenID: "openid",
     CEN: "cen",
     "ISO-IEC": "iso-iec",
     "ITU-T": "itu-t",
@@ -29,6 +30,7 @@
     ETSI: "ETSI",
     IETF: "IETF",
     W3C: "W3C",
+    OpenID: "OpenID",
     CEN: "CEN",
     "ISO-IEC": "ISO/IEC",
     "ITU-T": "ITU-T",
@@ -510,9 +512,11 @@
 
   function syncGraphLink() {
     const q = qInput?.value?.trim();
-    const graphLink = document.querySelector('a[href="index.html#graph"]');
+    const graphLink = document.querySelector('a[href="graph.html"], a[href^="graph.html?"]');
     if (graphLink && q) {
-      graphLink.href = `index.html?q=${encodeURIComponent(q)}#graph`;
+      graphLink.href = `graph.html?q=${encodeURIComponent(q)}&loadGraph=1`;
+    } else if (graphLink) {
+      graphLink.href = "graph.html";
     }
   }
 
