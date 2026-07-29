@@ -206,22 +206,10 @@
       "to": "ETSI EN 319 411-2 V2.6.1"
     },
     {
-      "from": "legal:2025-1943",
-      "kind": "cites",
-      "source": "implementing-acts/2025-1943/2025-1943.md",
-      "to": "ETSI EN 319 412-1 V1.6.1"
-    },
-    {
-      "from": "legal:2026-1731",
-      "kind": "cites",
-      "source": "implementing-acts/2026-1731/2026-1731.md",
-      "to": "ETSI EN 319 412-1 V1.6.1"
-    },
-    {
       "from": "ARF TS05 V1.2.1",
       "kind": "references",
       "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
-      "to": "ETSI EN 319 412-1 V1.6.1"
+      "to": "ETSI EN 319 412-1 V1.7.0"
     },
     {
       "from": "legal:2025-1943",
@@ -252,18 +240,6 @@
       "kind": "references",
       "source": "ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf",
       "to": "ETSI EN 319 412-4 V1.3.0"
-    },
-    {
-      "from": "legal:2025-1943",
-      "kind": "cites",
-      "source": "implementing-acts/2025-1943/2025-1943.md",
-      "to": "ETSI EN 319 412-5 V2.5.1"
-    },
-    {
-      "from": "legal:2026-1731",
-      "kind": "cites",
-      "source": "implementing-acts/2026-1731/2026-1731.md",
-      "to": "ETSI EN 319 412-5 V2.5.1"
     },
     {
       "from": "legal:2025-1929",
@@ -446,16 +422,16 @@
       "to": "ETSI TS 119 411-8 V1.1.1"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ETSI TS 119 412-1 V1.4.4"
     },
     {
-      "from": "legal:2026-1731",
-      "kind": "cites",
-      "source": "implementing-acts/2026-1731/2026-1731.md",
-      "to": "ETSI TS 119 412-6 V1.1.1"
+      "from": "ETSI EN 319 412-4 V1.3.0",
+      "kind": "references",
+      "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+      "to": "ETSI TS 119 412-4 V1.1.1"
     },
     {
       "from": "ETSI EN 319 422 V1.1.1",
@@ -9188,21 +9164,9 @@
       "to": "IETF RFC 2818"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
-      "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-      "to": "IETF RFC 2818"
-    },
-    {
       "from": "ETSI EN 319 422 V1.1.1",
       "kind": "references",
       "source": "ETSI/EN-319-422-V1.1.1/EN-319-422-V1.1.1.pdf",
-      "to": "IETF RFC 2818"
-    },
-    {
-      "from": "ETSI TS 119 412-6 V1.1.1",
-      "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
       "to": "IETF RFC 2818"
     },
     {
@@ -10031,6 +9995,12 @@
       "from": "ETSI TS 119 511 V1.1.1",
       "kind": "references",
       "source": "ETSI/TS-119-511-V1.1.1/TS-119-511-V1.1.1.pdf",
+      "to": "IETF RFC 3161"
+    },
+    {
+      "from": "ETSI TS 119 615 V1.3.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
       "to": "IETF RFC 3161"
     },
     {
@@ -11678,15 +11648,15 @@
       "to": "IETF RFC 3739"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "IETF RFC 3739"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "IETF RFC 3739"
     },
     {
@@ -12407,6 +12377,12 @@
       "from": "ETSI TS 119 182-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf",
+      "to": "IETF RFC 3986"
+    },
+    {
+      "from": "ETSI TS 119 412-6 V1.2.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "IETF RFC 3986"
     },
     {
@@ -14282,6 +14258,12 @@
       "to": "IETF RFC 4518"
     },
     {
+      "from": "ETSI TS 119 412-6 V1.2.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+      "to": "IETF RFC 4519"
+    },
+    {
       "from": "IETF RFC 4510",
       "kind": "references",
       "source": "IETF/RFC-4510/RFC-4510.txt",
@@ -15830,9 +15812,15 @@
       "to": "IETF RFC 5246"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+      "to": "IETF RFC 5246"
+    },
+    {
+      "from": "ETSI EN 319 412-4 V1.3.0",
+      "kind": "references",
+      "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
       "to": "IETF RFC 5246"
     },
     {
@@ -16094,9 +16082,9 @@
       "to": "IETF RFC 5280"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "IETF RFC 5280"
     },
     {
@@ -16112,9 +16100,9 @@
       "to": "IETF RFC 5280"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "IETF RFC 5280"
     },
     {
@@ -16142,9 +16130,9 @@
       "to": "IETF RFC 5280"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI TS 119 412-6 V1.2.1",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "IETF RFC 5280"
     },
     {
@@ -16181,6 +16169,12 @@
       "from": "ETSI TS 119 612 V2.4.1",
       "kind": "references",
       "source": "ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf",
+      "to": "IETF RFC 5280"
+    },
+    {
+      "from": "ETSI TS 119 615 V1.3.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
       "to": "IETF RFC 5280"
     },
     {
@@ -17360,9 +17354,9 @@
       "to": "IETF RFC 5755"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI TS 119 412-6 V1.2.1",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "IETF RFC 5755"
     },
     {
@@ -17678,9 +17672,9 @@
       "to": "IETF RFC 5912"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "IETF RFC 5912"
     },
     {
@@ -24830,9 +24824,9 @@
       "to": "IETF RFC 9110"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "IETF RFC 9110"
     },
     {
@@ -26066,9 +26060,9 @@
       "to": "ISO-IEC ISO 16363 V2011"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ISO-IEC ISO 17442"
     },
     {
@@ -26300,15 +26294,15 @@
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
@@ -26360,6 +26354,12 @@
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
+      "from": "ETSI TS 119 615 V1.3.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
+      "to": "ISO-IEC ISO 3166-1 V2020"
+    },
+    {
       "from": "IETF RFC 3739",
       "kind": "references",
       "source": "IETF/RFC-3739/RFC-3739.txt",
@@ -26396,9 +26396,9 @@
       "to": "ISO-IEC ISO 3166-2 V2020"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ISO-IEC ISO 3166-2 V2020"
     },
     {
@@ -26414,9 +26414,9 @@
       "to": "ISO-IEC ISO 3166 V1988"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI TS 119 412-6 V1.2.1",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "ISO-IEC ISO 3166 V1988"
     },
     {
@@ -26504,9 +26504,9 @@
       "to": "ISO-IEC ISO 4217"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "ISO-IEC ISO 4217"
     },
     {
@@ -26528,9 +26528,9 @@
       "to": "ISO-IEC ISO 6093"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "ISO-IEC ISO 639-1 V2002"
     },
     {
@@ -26588,9 +26588,9 @@
       "to": "ISO-IEC ISO 639 V2023"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "ISO-IEC ISO 639 V2023"
     },
     {
@@ -27656,9 +27656,9 @@
       "to": "ISO-IEC ISO/IEC 18013-5 V2021"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI TS 119 412-6 V1.2.1",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "ISO-IEC ISO/IEC 18013-5 V2021"
     },
     {
@@ -28706,9 +28706,9 @@
       "to": "ISO-IEC ISO/IEC 9594-8 V2020"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ISO-IEC ISO/IEC 9594-8 V2020"
     },
     {
@@ -28724,15 +28724,21 @@
       "to": "ISO-IEC ISO/IEC 9594-8 V2020"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-4 V1.3.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
       "to": "ISO-IEC ISO/IEC 9594-8 V2020"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+      "to": "ISO-IEC ISO/IEC 9594-8 V2020"
+    },
+    {
+      "from": "ETSI TS 119 412-6 V1.2.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "ISO-IEC ISO/IEC 9594-8 V2020"
     },
     {
@@ -29150,9 +29156,9 @@
       "to": "ITU-T ITU-T X.509"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ITU-T ITU-T X.509"
     },
     {
@@ -29168,9 +29174,15 @@
       "to": "ITU-T ITU-T X.509"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-4 V1.3.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+      "to": "ITU-T ITU-T X.509"
+    },
+    {
+      "from": "ETSI EN 319 412-5 V2.6.0",
+      "kind": "references",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "ITU-T ITU-T X.509"
     },
     {
@@ -29180,9 +29192,9 @@
       "to": "ITU-T ITU-T X.509"
     },
     {
-      "from": "ETSI TS 119 412-6 V1.1.1",
+      "from": "ETSI TS 119 412-6 V1.2.1",
       "kind": "references",
-      "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
+      "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
       "to": "ITU-T ITU-T X.509"
     },
     {
@@ -29306,9 +29318,9 @@
       "to": "ITU-T ITU-T X.520"
     },
     {
-      "from": "ETSI EN 319 412-1 V1.6.1",
+      "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
+      "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
       "to": "ITU-T ITU-T X.520"
     },
     {
@@ -29444,9 +29456,9 @@
       "to": "ITU-T ITU-T X.680"
     },
     {
-      "from": "ETSI EN 319 412-5 V2.5.1",
+      "from": "ETSI EN 319 412-5 V2.6.0",
       "kind": "references",
-      "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
+      "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
       "to": "ITU-T ITU-T X.680"
     },
     {
@@ -30080,7 +30092,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-07-28T11:30:20.640141+00:00",
+  "generated_at": "2026-07-29T11:37:56.078909+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -30665,7 +30677,8 @@
       "designation": "EN 319 421",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319421/01.03.01_60/en_319421v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/319421/01.03.01_60/en_319421v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319421/01.03.01_60/en_319421v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319421/01.03.01_20/en_319421v010301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -30894,7 +30907,8 @@
       "designation": "EN 319 102-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.04.01_60/en_31910201v010401p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.04.01_60/en_31910201v010401p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.04.01_60/en_31910201v010401p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.04.01_20/en_31910201v010401a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31056,7 +31070,8 @@
       "designation": "TS 119 441",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119441/01.02.01_60/ts_119441v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119441/01.02.01_60/ts_119441v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119441/01.02.01_60/ts_119441v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119441/01.02.01_20/ts_119441v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31115,7 +31130,8 @@
       "designation": "EN 319 122-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_20/en_31912201v010301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31200,7 +31216,8 @@
       "designation": "EN 319 132-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_20/en_31913201v010301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31294,7 +31311,8 @@
       "designation": "EN 319 142-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_20/en_31914201v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31388,7 +31406,8 @@
       "designation": "EN 319 162-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_20/en_31916201v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31448,7 +31467,8 @@
       "designation": "EN 319 162-2",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319100_319199/31916202/01.01.01_60/en_31916202v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319100_319199/31916202/01.01.01_60/en_31916202v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31916202/01.01.01_60/en_31916202v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319100_319199/31916202/01.01.01_20/en_31916202v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31508,7 +31528,8 @@
       "designation": "EN 319 401",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_20/en_319401v030201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31851,7 +31872,8 @@
       "designation": "TS 119 431-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_60/ts_11943101v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_60/ts_11943101v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_60/ts_11943101v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_20/ts_11943101v010301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31910,7 +31932,8 @@
       "designation": "EN 319 403-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31940301/02.03.01_60/en_31940301v020301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31940301/02.03.01_60/en_31940301v020301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31940301/02.03.01_60/en_31940301v020301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31940301/02.03.01_20/en_31940301v020301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -31970,7 +31993,8 @@
       "designation": "EN 319 403",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319403/02.03.00_60/en_319403v020300p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/319403/02.03.00_60/en_319403v020300p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319403/02.03.00_60/en_319403v020300p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319403/02.03.00_20/en_319403v020300a.pdf"
       ],
       "files": {},
       "folder": "ETSI/EN-319-403-V2.3.0",
@@ -32005,7 +32029,8 @@
       "designation": "EN 319 411-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_20/en_31941101v010501a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32074,7 +32099,8 @@
       "designation": "EN 319 411-2",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_20/en_31941102v020601a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32166,38 +32192,20 @@
     {
       "body": "ETSI",
       "designation": "EN 319 412-1",
-      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.07.00_20/en_31941201v010700a.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.07.00_60/en_31941201v010700p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.07.00_20/en_31941201v010700a.pdf"
       ],
       "files": {
         "pdf": {
-          "path": "standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "sha256": "f105d482e45aaeaa92efca1be21ecbd89247d9dddd3d7bc7569bd6db1b66ba79"
+          "path": "standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "sha256": "196c7eca2f649af100146173f2fe93909dc696e6dfecfe3a79d8c17ff1d4a2ff"
         }
       },
-      "folder": "ETSI/EN-319-412-1-V1.6.1",
-      "id": "ETSI EN 319 412-1 V1.6.1",
-      "parent_legal_regulations": [
-        {
-          "celex": "32025R1943",
-          "eli": "https://data.europa.eu/eli/reg_impl/2025/1943/oj/eng",
-          "id": "2025-1943",
-          "kind": "implementing_regulation",
-          "section": "implementing-acts",
-          "source": "implementing-acts/2025-1943/2025-1943.md",
-          "title": "Reference standards and validation procedures (QTSP)"
-        },
-        {
-          "celex": "32026R1731",
-          "eli": "https://data.europa.eu/eli/reg_impl/2026/1731/oj/eng",
-          "id": "2026-1731",
-          "kind": "implementing_regulation",
-          "section": "implementing-acts",
-          "source": "implementing-acts/2026-1731/2026-1731.md",
-          "title": "Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs"
-        }
-      ],
+      "folder": "ETSI/EN-319-412-1-V1.7.0",
+      "id": "ETSI EN 319 412-1 V1.7.0",
+      "parent_legal_regulations": [],
       "parent_specifications": [
         {
           "body": "ARF",
@@ -32221,32 +32229,30 @@
         "key",
         "profile",
         "profiles",
-        "qtsp",
         "signature",
         "signatures",
         "trust"
       ],
-      "search_text": "ETSI EN 319 412-1 1.6.1 ETSI EN 319 412-1 Covers: e-commerce, electronic signature, security, trust services. e-commerce electronic signature security trust services 319 412-1 authorization certificate eidas key profile profiles qtsp signature signatures trust 319-series cited-by-eu-law implementing-regulation nested-reference trust-services unchanged 2025-1943 Reference standards and validation procedures (QTSP) 32025R1943 2026-1731 Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs 32026R1731",
+      "search_text": "ETSI EN 319 412-1 1.7.0 Covers: e-commerce, electronic signature, security, trust services. e-commerce electronic signature security trust services 319 412-1 authorization certificate eidas key profile profiles signature signatures trust 319-series nested-reference trust-services unchanged",
       "status": "unchanged",
       "summary": "Covers: e-commerce, electronic signature, security, trust services.",
       "tags": [
         "319-series",
-        "cited-by-eu-law",
-        "implementing-regulation",
         "nested-reference",
         "trust-services",
         "unchanged"
       ],
-      "title": "ETSI EN 319 412-1",
+      "title": null,
       "type": "specification",
-      "version": "1.6.1"
+      "version": "1.7.0"
     },
     {
       "body": "ETSI",
       "designation": "EN 319 412-2",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_20/en_31941202v020401a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32315,7 +32321,8 @@
       "designation": "EN 319 412-3",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_20/en_31941203v010301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32382,11 +32389,17 @@
     {
       "body": "ETSI",
       "designation": "EN 319 412-4",
-      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_60/en_31941204v010300p.pdf",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_20/en_31941204v010300a.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_60/en_31941204v010300p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_60/en_31941204v010300p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_20/en_31941204v010300a.pdf"
       ],
-      "files": {},
+      "files": {
+        "pdf": {
+          "path": "standards/ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+          "sha256": "385ee2d1a475cea4a64583f14449a70b3b4520e69c1d582c0fd291304f0ff511"
+        }
+      },
       "folder": "ETSI/EN-319-412-4-V1.3.0",
       "id": "ETSI EN 319 412-4 V1.3.0",
       "parent_legal_regulations": [],
@@ -32400,15 +32413,32 @@
         }
       ],
       "purpose": null,
-      "scope_keywords": [],
-      "search_text": "ETSI EN 319 412-4 1.3.0 319-series nested-reference trust-services unavailable",
-      "status": "unavailable",
-      "summary": null,
+      "scope_keywords": [
+        "electronic signature",
+        "profile",
+        "security",
+        "trust services",
+        "319",
+        "412-4",
+        "authorization",
+        "certificate",
+        "certificates",
+        "http",
+        "https",
+        "key",
+        "policies",
+        "policy",
+        "profiles",
+        "qualified"
+      ],
+      "search_text": "ETSI EN 319 412-4 1.3.0 Covers: electronic signature, profile, security, trust services. electronic signature profile security trust services 319 412-4 authorization certificate certificates http https key policies policy profiles qualified 319-series nested-reference trust-services unchanged",
+      "status": "unchanged",
+      "summary": "Covers: electronic signature, profile, security, trust services.",
       "tags": [
         "319-series",
         "nested-reference",
         "trust-services",
-        "unavailable"
+        "unchanged"
       ],
       "title": null,
       "type": "specification",
@@ -32419,7 +32449,8 @@
       "designation": "TS 119 495",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119495/01.07.01_60/ts_119495v010701p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119495/01.07.01_60/ts_119495v010701p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119495/01.07.01_60/ts_119495v010701p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119495/01.07.01_20/ts_119495v010701a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32476,38 +32507,20 @@
     {
       "body": "ETSI",
       "designation": "EN 319 412-5",
-      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf",
+      "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.06.00_20/en_31941205v020600a.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.06.00_60/en_31941205v020600p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.06.00_20/en_31941205v020600a.pdf"
       ],
       "files": {
         "pdf": {
-          "path": "standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "sha256": "debadfb156172fdab49c500a4be707ec79cb41afc3a31a59196435b2f92146ea"
+          "path": "standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "sha256": "c1f77caa81f41ac5a27d99c15e3cccec8650f17d8674a6b59741f03bcefe9628"
         }
       },
-      "folder": "ETSI/EN-319-412-5-V2.5.1",
-      "id": "ETSI EN 319 412-5 V2.5.1",
-      "parent_legal_regulations": [
-        {
-          "celex": "32025R1943",
-          "eli": "https://data.europa.eu/eli/reg_impl/2025/1943/oj/eng",
-          "id": "2025-1943",
-          "kind": "implementing_regulation",
-          "section": "implementing-acts",
-          "source": "implementing-acts/2025-1943/2025-1943.md",
-          "title": "Reference standards and validation procedures (QTSP)"
-        },
-        {
-          "celex": "32026R1731",
-          "eli": "https://data.europa.eu/eli/reg_impl/2026/1731/oj/eng",
-          "id": "2026-1731",
-          "kind": "implementing_regulation",
-          "section": "implementing-acts",
-          "source": "implementing-acts/2026-1731/2026-1731.md",
-          "title": "Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs"
-        }
-      ],
+      "folder": "ETSI/EN-319-412-5-V2.6.0",
+      "id": "ETSI EN 319 412-5 V2.6.0",
+      "parent_legal_regulations": [],
       "parent_specifications": [],
       "purpose": null,
       "scope_keywords": [
@@ -32526,28 +32539,27 @@
         "pki",
         "profile",
         "profiles",
-        "qtsp"
+        "qualified"
       ],
-      "search_text": "ETSI EN 319 412-5 2.5.1 ETSI EN 319 412-5 Covers: e-commerce, electronic signature, security, trust services. e-commerce electronic signature security trust services 319 412-5 authorization certificate certificates eidas identification key pki profile profiles qtsp 319-series cited-by-eu-law implementing-regulation trust-services unchanged 2025-1943 Reference standards and validation procedures (QTSP) 32025R1943 2026-1731 Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs 32026R1731",
+      "search_text": "ETSI EN 319 412-5 2.6.0 Covers: e-commerce, electronic signature, security, trust services. e-commerce electronic signature security trust services 319 412-5 authorization certificate certificates eidas identification key pki profile profiles qualified 319-series trust-services unchanged",
       "status": "unchanged",
       "summary": "Covers: e-commerce, electronic signature, security, trust services.",
       "tags": [
         "319-series",
-        "cited-by-eu-law",
-        "implementing-regulation",
         "trust-services",
         "unchanged"
       ],
-      "title": "ETSI EN 319 412-5",
+      "title": null,
       "type": "specification",
-      "version": "2.5.1"
+      "version": "2.6.0"
     },
     {
       "body": "ETSI",
       "designation": "EN 319 422",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_60/en_319422v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_60/en_319422v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_60/en_319422v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_20/en_319422v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32607,7 +32619,8 @@
       "designation": "EN 319 521",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/319521/01.01.01_60/en_319521v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319500_319599/319521/01.01.01_60/en_319521v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/319521/01.01.01_60/en_319521v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/319521/01.01.01_20/en_319521v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32667,7 +32680,8 @@
       "designation": "EN 319 522-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/31952201/01.02.01_60/en_31952201v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952201/01.02.01_60/en_31952201v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952201/01.02.01_60/en_31952201v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952201/01.02.01_20/en_31952201v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32726,7 +32740,8 @@
       "designation": "EN 319 522-2",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/31952202/01.02.01_60/en_31952202v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952202/01.02.01_60/en_31952202v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952202/01.02.01_60/en_31952202v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952202/01.02.01_20/en_31952202v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32786,7 +32801,8 @@
       "designation": "EN 319 522-3",
       "download_url": "https://www.etsi.org/deliver/etsi_en/319500_319599/31952203/01.02.01_60/en_31952203v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952203/01.02.01_60/en_31952203v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952203/01.02.01_60/en_31952203v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/319500_319599/31952203/01.02.01_20/en_31952203v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -32845,7 +32861,8 @@
       "designation": "EN 3191 22-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_60/en_319102201v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_60/en_319102201v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_60/en_319102201v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_20/en_319102201v010301a.pdf"
       ],
       "files": {},
       "folder": "ETSI/EN-3191-22-1-V1.3.1",
@@ -32883,7 +32900,8 @@
       "designation": "EN 319403-1",
       "download_url": "https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_60/en_319403001v020301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_60/en_319403001v020301p.pdf"
+        "https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_60/en_319403001v020301p.pdf",
+        "https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_20/en_319403001v020301a.pdf"
       ],
       "files": {},
       "folder": "ETSI/EN-319403-1-V2.3.1",
@@ -32921,7 +32939,8 @@
       "designation": "TR 119 411-5",
       "download_url": "https://www.etsi.org/deliver/etsi_tr/119400_119499/11941105/02.01.01_60/tr_11941105v020101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_tr/119400_119499/11941105/02.01.01_60/tr_11941105v020101p.pdf"
+        "https://www.etsi.org/deliver/etsi_tr/119400_119499/11941105/02.01.01_60/tr_11941105v020101p.pdf",
+        "https://www.etsi.org/deliver/etsi_tr/119400_119499/11941105/02.01.01_20/tr_11941105v020101a.pdf"
       ],
       "files": {},
       "folder": "ETSI/TR-119-411-5-V2.1.1",
@@ -32955,7 +32974,8 @@
       "designation": "TS 119 411-5",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_60/ts_11941105v020101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_60/ts_11941105v020101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_60/ts_11941105v020101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_20/ts_11941105v020101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33014,7 +33034,8 @@
       "designation": "TR 119 476",
       "download_url": "https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_60/tr_119476v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_60/tr_119476v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_60/tr_119476v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_20/tr_119476v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33070,7 +33091,8 @@
       "designation": "TS 101 861",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/101800_101899/101861/01.04.01_60/ts_101861v010401p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/101800_101899/101861/01.04.01_60/ts_101861v010401p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/101800_101899/101861/01.04.01_60/ts_101861v010401p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/101800_101899/101861/01.04.01_20/ts_101861v010401a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33125,7 +33147,8 @@
       "designation": "TS 102 176-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/102100_102199/10217601/02.00.00_60/ts_10217601v020000p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/102100_102199/10217601/02.00.00_60/ts_10217601v020000p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/102100_102199/10217601/02.00.00_60/ts_10217601v020000p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/102100_102199/10217601/02.00.00_20/ts_10217601v020000a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33394,7 +33417,8 @@
       "designation": "TS 119 101",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/119101/01.01.01_60/ts_119101v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/119101/01.01.01_60/ts_119101v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/119101/01.01.01_60/ts_119101v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/119101/01.01.01_20/ts_119101v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33471,7 +33495,8 @@
       "designation": "TS 119 102-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910201/01.03.01_60/ts_11910201v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910201/01.03.01_60/ts_11910201v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910201/01.03.01_60/ts_11910201v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910201/01.03.01_20/ts_11910201v010301a.pdf"
       ],
       "files": {},
       "folder": "ETSI/TS-119-102-1-V1.3.1",
@@ -33512,7 +33537,8 @@
       "designation": "TS 119 102-2",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_20/ts_11910202v010401a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33580,7 +33606,8 @@
       "designation": "TS 119 162-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_20/ts_11916201v010100a.pdf"
       ],
       "files": {},
       "folder": "ETSI/TS-119-162-1-V1.1.0",
@@ -33614,7 +33641,8 @@
       "designation": "TS 119 162-2",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916202/01.01.00_60/ts_11916202v010100p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916202/01.01.00_60/ts_11916202v010100p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916202/01.01.00_60/ts_11916202v010100p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11916202/01.01.00_20/ts_11916202v010100a.pdf"
       ],
       "files": {},
       "folder": "ETSI/TS-119-162-2-V1.1.0",
@@ -33648,7 +33676,8 @@
       "designation": "TS 119 172-4",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11917204/01.01.01_60/ts_11917204v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11917204/01.01.01_60/ts_11917204v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11917204/01.01.01_60/ts_11917204v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11917204/01.01.01_20/ts_11917204v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33725,7 +33754,8 @@
       "designation": "TS 119 182-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_20/ts_11918201v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33793,7 +33823,8 @@
       "designation": "TS 119 411-8",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_20/ts_11941108v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -33877,7 +33908,8 @@
       "designation": "TS 119 412-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_20/ts_11941201v010404a.pdf"
       ],
       "files": {},
       "folder": "ETSI/TS-119-412-1-V1.4.4",
@@ -33887,9 +33919,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         }
       ],
       "purpose": null,
@@ -33908,30 +33940,56 @@
     },
     {
       "body": "ETSI",
-      "designation": "TS 119 412-6",
-      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.01.01_60/ts_11941206v010101p.pdf",
+      "designation": "TS 119 412-4",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941204/01.01.01_60/ts_11941204v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.01.01_60/ts_11941206v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941204/01.01.01_60/ts_11941204v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941204/01.01.01_20/ts_11941204v010101a.pdf"
+      ],
+      "files": {},
+      "folder": "ETSI/TS-119-412-4-V1.1.1",
+      "id": "ETSI TS 119 412-4 V1.1.1",
+      "parent_legal_regulations": [],
+      "parent_specifications": [
+        {
+          "body": "ETSI",
+          "designation": "EN 319 412-4",
+          "folder": "ETSI/EN-319-412-4-V1.3.0",
+          "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+          "version": "1.3.0"
+        }
+      ],
+      "purpose": null,
+      "scope_keywords": [],
+      "search_text": "ETSI TS 119 412-4 1.1.1 119-series nested-reference unavailable",
+      "status": "unavailable",
+      "summary": null,
+      "tags": [
+        "119-series",
+        "nested-reference",
+        "unavailable"
+      ],
+      "title": null,
+      "type": "specification",
+      "version": "1.1.1"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 412-6",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.02.01_60/ts_11941206v010201p.pdf",
+      "download_urls": [
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.02.01_60/ts_11941206v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.02.01_20/ts_11941206v010201a.pdf"
       ],
       "files": {
         "pdf": {
-          "path": "standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "sha256": "3de74f49d7f543f7ce3b83b3952f7a6ef60e01615535ea6d354b3911fdaef226"
+          "path": "standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "sha256": "d0dc8b9ea239e46528c19e741bb64f9989f102cdfdf6db5ead19648fe71dd1e1"
         }
       },
-      "folder": "ETSI/TS-119-412-6-V1.1.1",
-      "id": "ETSI TS 119 412-6 V1.1.1",
-      "parent_legal_regulations": [
-        {
-          "celex": "32026R1731",
-          "eli": "https://data.europa.eu/eli/reg_impl/2026/1731/oj/eng",
-          "id": "2026-1731",
-          "kind": "implementing_regulation",
-          "section": "implementing-acts",
-          "source": "implementing-acts/2026-1731/2026-1731.md",
-          "title": "Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs"
-        }
-      ],
+      "folder": "ETSI/TS-119-412-6-V1.2.1",
+      "id": "ETSI TS 119 412-6 V1.2.1",
+      "parent_legal_regulations": [],
       "parent_specifications": [],
       "purpose": null,
       "scope_keywords": [
@@ -33952,25 +34010,24 @@
         "profiles",
         "seal"
       ],
-      "search_text": "ETSI TS 119 412-6 1.1.1 ETSI TS 119 412-6 Covers: e-commerce, electronic signature, security, trust services. e-commerce electronic signature security trust services 119 412-6 attribute authorization certificate issuer key pid presentation profile profiles seal 119-series cited-by-eu-law implementing-regulation unchanged 2026-1731 Amending CIRs 2024/2977, 2979, 2980, 2982 \u2014 reference standards and specs 32026R1731",
+      "search_text": "ETSI TS 119 412-6 1.2.1 ETSI TS 119 412-6 Covers: e-commerce, electronic signature, security, trust services. e-commerce electronic signature security trust services 119 412-6 attribute authorization certificate issuer key pid presentation profile profiles seal 119-series unchanged",
       "status": "unchanged",
       "summary": "Covers: e-commerce, electronic signature, security, trust services.",
       "tags": [
         "119-series",
-        "cited-by-eu-law",
-        "implementing-regulation",
         "unchanged"
       ],
       "title": "ETSI TS 119 412-6",
       "type": "specification",
-      "version": "1.1.1"
+      "version": "1.2.1"
     },
     {
       "body": "ETSI",
       "designation": "TS 119 422",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119422/01.01.00_60/ts_119422v010100p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119422/01.01.00_60/ts_119422v010100p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119422/01.01.00_60/ts_119422v010100p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119422/01.01.00_20/ts_119422v010100a.pdf"
       ],
       "files": {},
       "folder": "ETSI/TS-119-422-V1.1.0",
@@ -34004,7 +34061,8 @@
       "designation": "TS 119 432",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_60/ts_119432v010301p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_60/ts_119432v010301p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_60/ts_119432v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_20/ts_119432v010301a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34063,7 +34121,8 @@
       "designation": "TS 119 461",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_60/ts_119461v020101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119461/02.01.01_20/ts_119461v020101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34156,7 +34215,8 @@
       "designation": "TS 119 471",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119471/01.01.01_60/ts_119471v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119471/01.01.01_60/ts_119471v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119471/01.01.01_60/ts_119471v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119471/01.01.01_20/ts_119471v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34215,7 +34275,8 @@
       "designation": "TS 119 472-1",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_20/ts_11947201v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34274,7 +34335,8 @@
       "designation": "TS 119 472-2",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947202/01.02.01_60/ts_11947202v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947202/01.02.01_60/ts_11947202v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947202/01.02.01_60/ts_11947202v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947202/01.02.01_20/ts_11947202v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34333,7 +34395,8 @@
       "designation": "TS 119 472-3",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947203/01.01.01_60/ts_11947203v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947203/01.01.01_60/ts_11947203v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947203/01.01.01_60/ts_11947203v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/11947203/01.01.01_20/ts_11947203v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34392,7 +34455,8 @@
       "designation": "TS 119 475",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_20/ts_119475v010201a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34467,7 +34531,8 @@
       "designation": "TS 119 478",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119478/01.01.01_60/ts_119478v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119478/01.01.01_60/ts_119478v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119478/01.01.01_60/ts_119478v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119400_119499/119478/01.01.01_20/ts_119478v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34535,7 +34600,8 @@
       "designation": "TS 119 511",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119500_119599/119511/01.01.01_60/ts_119511v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119500_119599/119511/01.01.01_60/ts_119511v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119500_119599/119511/01.01.01_60/ts_119511v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119500_119599/119511/01.01.01_20/ts_119511v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34594,7 +34660,8 @@
       "designation": "TS 119 602",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/01.01.01_60/ts_119602v010101p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/01.01.01_60/ts_119602v010101p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/01.01.01_60/ts_119602v010101p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/01.01.01_20/ts_119602v010101a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34657,7 +34724,8 @@
       "designation": "TS 119 612",
       "download_url": "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf",
       "download_urls": [
-        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf"
+        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_20/ts_119612v020401a.pdf"
       ],
       "files": {
         "pdf": {
@@ -34779,6 +34847,53 @@
       "section": "implementing-decisions",
       "title": "Trusted lists of trust service providers",
       "type": "legal_regulation"
+    },
+    {
+      "body": "ETSI",
+      "designation": "TS 119 615",
+      "download_url": "https://www.etsi.org/deliver/etsi_ts/119600_119699/119615/01.03.01_60/ts_119615v010301p.pdf",
+      "download_urls": [
+        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119615/01.03.01_60/ts_119615v010301p.pdf",
+        "https://www.etsi.org/deliver/etsi_ts/119600_119699/119615/01.03.01_20/ts_119615v010301a.pdf"
+      ],
+      "files": {
+        "pdf": {
+          "path": "standards/ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
+          "sha256": "06507df3ae7d1d2b957964c264f18477c6cfa6f40b352d550002f9202286869c"
+        }
+      },
+      "folder": "ETSI/TS-119-615-V1.3.1",
+      "id": "ETSI TS 119 615 V1.3.1",
+      "parent_legal_regulations": [],
+      "parent_specifications": [],
+      "purpose": null,
+      "scope_keywords": [
+        "e-commerce",
+        "electronic signature",
+        "eu qualified",
+        "security",
+        "trust services",
+        "119",
+        "615",
+        "authorization",
+        "certificate",
+        "key",
+        "presentation",
+        "qualified",
+        "signature",
+        "signatures",
+        "trust"
+      ],
+      "search_text": "ETSI TS 119 615 1.3.1 ETSI TS 119 615 Covers: e-commerce, electronic signature, EU qualified, security, trust services. e-commerce electronic signature eu qualified security trust services 119 615 authorization certificate key presentation qualified signature signatures trust 119-series unchanged",
+      "status": "unchanged",
+      "summary": "Covers: e-commerce, electronic signature, EU qualified, security, trust services.",
+      "tags": [
+        "119-series",
+        "unchanged"
+      ],
+      "title": "ETSI TS 119 615",
+      "type": "specification",
+      "version": "1.3.1"
     },
     {
       "body": "IEEE",
@@ -35735,10 +35850,10 @@
       "parent_specifications": [
         {
           "body": "ETSI",
-          "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "designation": "EN 319 412-5",
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
@@ -42483,6 +42598,13 @@
         },
         {
           "body": "ETSI",
+          "designation": "TS 119 412-6",
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
+        },
+        {
+          "body": "ETSI",
           "designation": "TS 119 478",
           "folder": "ETSI/TS-119-478-V1.1.1",
           "source": "ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf",
@@ -44397,6 +44519,13 @@
       "parent_legal_regulations": [],
       "parent_specifications": [
         {
+          "body": "ETSI",
+          "designation": "TS 119 412-6",
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
+        },
+        {
           "body": "IETF",
           "designation": "RFC 4510",
           "folder": "IETF/RFC-4510",
@@ -44547,9 +44676,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "ETSI",
@@ -44568,9 +44697,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
@@ -44603,9 +44732,9 @@
         {
           "body": "ETSI",
           "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
         },
         {
           "body": "ETSI",
@@ -44648,6 +44777,13 @@
           "folder": "ETSI/TS-119-612-V2.4.1",
           "source": "ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf",
           "version": "2.4.1"
+        },
+        {
+          "body": "ETSI",
+          "designation": "TS 119 615",
+          "folder": "ETSI/TS-119-615-V1.3.1",
+          "source": "ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
+          "version": "1.3.1"
         },
         {
           "body": "IETF",
@@ -50675,6 +50811,13 @@
           "version": "1.1.1"
         },
         {
+          "body": "ETSI",
+          "designation": "TS 119 615",
+          "folder": "ETSI/TS-119-615-V1.3.1",
+          "source": "ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
+          "version": "1.3.1"
+        },
+        {
           "body": "IETF",
           "designation": "RFC 3280",
           "folder": "IETF/RFC-3280",
@@ -50831,9 +50974,16 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
+        },
+        {
+          "body": "ETSI",
+          "designation": "EN 319 412-4",
+          "folder": "ETSI/EN-319-412-4-V1.3.0",
+          "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+          "version": "1.3.0"
         },
         {
           "body": "ETSI",
@@ -53441,9 +53591,9 @@
         {
           "body": "ETSI",
           "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
         },
         {
           "body": "ETSI",
@@ -60042,23 +60192,9 @@
         },
         {
           "body": "ETSI",
-          "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
-        },
-        {
-          "body": "ETSI",
           "designation": "EN 319 422",
           "folder": "ETSI/EN-319-422-V1.1.1",
           "source": "ETSI/EN-319-422-V1.1.1/EN-319-422-V1.1.1.pdf",
-          "version": "1.1.1"
-        },
-        {
-          "body": "ETSI",
-          "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
           "version": "1.1.1"
         },
         {
@@ -63336,9 +63472,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "IETF",
@@ -65368,16 +65504,16 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
@@ -70356,7 +70492,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "dc13db1b3d2e82bc6e11dfcc370777c23932e45ca11ddefa90002356cc99eac6"
+          "sha256": "deca30842fc235f19e4d6d31f233828f31687d75ac4146626934cf4e9ff9b35a"
         }
       },
       "folder": "IETF/SD-JWT-VC",
@@ -109375,9 +109511,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         }
       ],
       "purpose": null,
@@ -110159,16 +110295,16 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
@@ -110225,6 +110361,13 @@
           "folder": "ETSI/TS-119-612-V2.4.1",
           "source": "ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf",
           "version": "2.4.1"
+        },
+        {
+          "body": "ETSI",
+          "designation": "TS 119 615",
+          "folder": "ETSI/TS-119-615-V1.3.1",
+          "source": "ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf",
+          "version": "1.3.1"
         },
         {
           "body": "IETF",
@@ -110305,9 +110448,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         }
       ],
       "purpose": null,
@@ -110359,9 +110502,9 @@
         {
           "body": "ETSI",
           "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
         },
         {
           "body": "IETF",
@@ -110599,9 +110742,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         }
       ],
       "purpose": null,
@@ -110731,9 +110874,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "IETF",
@@ -110908,9 +111051,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
@@ -113906,9 +114049,9 @@
         {
           "body": "ETSI",
           "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
         },
         {
           "body": "ETSI",
@@ -117131,9 +117274,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "ETSI",
@@ -117151,17 +117294,24 @@
         },
         {
           "body": "ETSI",
+          "designation": "EN 319 412-4",
+          "folder": "ETSI/EN-319-412-4-V1.3.0",
+          "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+          "version": "1.3.0"
+        },
+        {
+          "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
           "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
         },
         {
           "body": "ETSI",
@@ -118351,9 +118501,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "ETSI",
@@ -118371,10 +118521,17 @@
         },
         {
           "body": "ETSI",
+          "designation": "EN 319 412-4",
+          "folder": "ETSI/EN-319-412-4-V1.3.0",
+          "source": "ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf",
+          "version": "1.3.0"
+        },
+        {
+          "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",
@@ -118386,9 +118543,9 @@
         {
           "body": "ETSI",
           "designation": "TS 119 412-6",
-          "folder": "ETSI/TS-119-412-6-V1.1.1",
-          "source": "ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf",
-          "version": "1.1.1"
+          "folder": "ETSI/TS-119-412-6-V1.2.1",
+          "source": "ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf",
+          "version": "1.2.1"
         },
         {
           "body": "ETSI",
@@ -118559,9 +118716,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-1",
-          "folder": "ETSI/EN-319-412-1-V1.6.1",
-          "source": "ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf",
-          "version": "1.6.1"
+          "folder": "ETSI/EN-319-412-1-V1.7.0",
+          "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
+          "version": "1.7.0"
         },
         {
           "body": "ETSI",
@@ -118824,9 +118981,9 @@
         {
           "body": "ETSI",
           "designation": "EN 319 412-5",
-          "folder": "ETSI/EN-319-412-5-V2.5.1",
-          "source": "ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf",
-          "version": "2.5.1"
+          "folder": "ETSI/EN-319-412-5-V2.6.0",
+          "source": "ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf",
+          "version": "2.6.0"
         },
         {
           "body": "ETSI",

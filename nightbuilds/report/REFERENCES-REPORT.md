@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-07-28T11:30:20.640141+00:00
+Generated: 2026-07-29T11:37:56.078909+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -8,12 +8,12 @@ Open **`index.html`** in this folder for the interactive version.
 
 | Metric | Count |
 |--------|------:|
-| Total references | 1401 |
-| Downloaded / unchanged | 1132 |
+| Total references | 1403 |
+| Downloaded / unchanged | 1134 |
 | Unavailable | 269 |
 | Other | 0 |
-| Legal → specification links | 157 |
-| Specification → specification links | 4855 |
+| Legal → specification links | 152 |
+| Specification → specification links | 4862 |
 
 ### By standardization body
 
@@ -21,7 +21,7 @@ Open **`index.html`** in this folder for the interactive version.
 |------|------:|-----------:|
 | ARF | 15 | 15 |
 | CEN | 3 | 0 |
-| ETSI | 54 | 44 |
+| ETSI | 56 | 46 |
 | IEEE | 20 | 0 |
 | IETF | 1070 | 1068 |
 | ISO-IEC | 204 | 0 |
@@ -61,10 +61,11 @@ the implementation of Zero-Knowl | attestation, attestations, attribute, attribu
 | EN 319 403-1 | 2.3.1 | Covers: conformity, e-commerce, electronic signature, security, trust services. | conformity, e-commerce, electronic signature, security, trust services | `ETSI/EN-319-403-1-V2.3.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31940301/02.03.01_60/en_31940301v020301p.pdf) |
 | EN 319 411-1 | 1.5.1 | Covers: e-commerce, electronic signature, extended validation certificate, public key, security, trust services. | e-commerce, electronic signature, extended validation certificate, public key, security | `ETSI/EN-319-411-1-V1.5.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf) |
 | EN 319 411-2 | 2.6.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 319 | `ETSI/EN-319-411-2-V2.6.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf) |
-| EN 319 412-1 | 1.6.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 319 | `ETSI/EN-319-412-1-V1.6.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) |
+| EN 319 412-1 | 1.7.0 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 319 | `ETSI/EN-319-412-1-V1.7.0` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.07.00_20/en_31941201v010700a.pdf) |
 | EN 319 412-2 | 2.4.1 | Covers: electronic signature, profile, security, trust services. | electronic signature, profile, security, trust services, 319 | `ETSI/EN-319-412-2-V2.4.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf) |
 | EN 319 412-3 | 1.3.1 | Covers: electronic signature, profile, security, trust services. | electronic signature, profile, security, trust services, 319 | `ETSI/EN-319-412-3-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf) |
-| EN 319 412-5 | 2.5.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 319 | `ETSI/EN-319-412-5-V2.5.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf) |
+| EN 319 412-4 | 1.3.0 | Covers: electronic signature, profile, security, trust services. | electronic signature, profile, security, trust services, 319 | `ETSI/EN-319-412-4-V1.3.0` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_20/en_31941204v010300a.pdf) |
+| EN 319 412-5 | 2.6.0 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 319 | `ETSI/EN-319-412-5-V2.6.0` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.06.00_20/en_31941205v020600a.pdf) |
 | EN 319 421 | 1.3.1 | Covers: e-commerce, electronic signature, security, timestamping, trust services. | e-commerce, electronic signature, security, timestamping, trust services | `ETSI/EN-319-421-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/319421/01.03.01_60/en_319421v010301p.pdf) |
 | EN 319 422 | 1.1.1 | Covers: electronic signature, security, time-stamping, trust services. | electronic signature, security, time-stamping, trust services, 319 | `ETSI/EN-319-422-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_60/en_319422v010101p.pdf) |
 | EN 319 521 | 1.1.1 | Covers: e-delivery services, policy requirements, registered e-delivery services, security, trust services. | e-delivery services, policy requirements, registered e-delivery services, security, trust services | `ETSI/EN-319-521-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_en/319500_319599/319521/01.01.01_60/en_319521v010101p.pdf) |
@@ -80,7 +81,7 @@ the implementation of Zero-Knowl | attestation, attestations, attribute, attribu
 | TS 119 182-1 | 1.2.1 | Covers: electronic signature, JSON. | electronic signature, json, 119, 182-1, authorization | `ETSI/TS-119-182-1-V1.2.1` | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf) |
 | TS 119 411-5 | 2.1.1 | Covers: cyber security, electronic signature, extended validation certificate, internet, public key, security, trust ser | cyber security, electronic signature, extended validation certificate, internet, public key | `ETSI/TS-119-411-5-V2.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_60/ts_11941105v020101p.pdf) |
 | TS 119 411-8 | 1.1.1 | Covers: e-commerce, electronic signature, EUDI wallet, security, trust services. | e-commerce, electronic signature, eudi wallet, security, trust services | `ETSI/TS-119-411-8-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf) |
-| TS 119 412-6 | 1.1.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 119 | `ETSI/TS-119-412-6-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.01.01_60/ts_11941206v010101p.pdf) |
+| TS 119 412-6 | 1.2.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 119 | `ETSI/TS-119-412-6-V1.2.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.02.01_60/ts_11941206v010201p.pdf) |
 | TS 119 431-1 | 1.3.1 | Covers: e-commerce, electronic signature, remote, security, trust services. | e-commerce, electronic signature, remote, security, trust services | `ETSI/TS-119-431-1-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11943101/01.03.01_60/ts_11943101v010301p.pdf) |
 | TS 119 432 | 1.3.1 | Covers: authentication, authorization, electronic signature, protocol, remote, security, trust services. | authentication, authorization, electronic signature, protocol, remote | `ETSI/TS-119-432-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_60/ts_119432v010301p.pdf) |
 | TS 119 441 | 1.2.1 | Covers: electronic signature, security, trust services. | electronic signature, security, trust services, 119, 441 | `ETSI/TS-119-441-V1.2.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119441/01.02.01_60/ts_119441v010201p.pdf) |
@@ -95,6 +96,7 @@ the implementation of Zero-Knowl | attestation, attestations, attribute, attribu
 | TS 119 511 | 1.1.1 | Covers: electronic preservation, electronic signature, trust services. | electronic preservation, electronic signature, trust services, 119, 511 | `ETSI/TS-119-511-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119500_119599/119511/01.01.01_60/ts_119511v010101p.pdf) |
 | TS 119 602 | 1.1.1 | Covers: e-commerce, electronic signature, eudi wallet, security, trust services. | e-commerce, electronic signature, eudi wallet, security, trust services | `ETSI/TS-119-602-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/01.01.01_60/ts_119602v010101p.pdf) |
 | TS 119 612 | 2.4.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 119 | `ETSI/TS-119-612-V2.4.1` | [link](https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf) |
+| TS 119 615 | 1.3.1 | Covers: e-commerce, electronic signature, EU qualified, security, trust services. | e-commerce, electronic signature, eu qualified, security, trust services | `ETSI/TS-119-615-V1.3.1` | [link](https://www.etsi.org/deliver/etsi_ts/119600_119699/119615/01.03.01_60/ts_119615v010301p.pdf) |
 | RFC 0003 | — | Network Working Group 4689
 RFC-3 April 1969
  Steve Crocker
@@ -2895,7 +2897,6 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | CEN CEN/TS 18170 V2025 | 2025 | cited-by-eu-law, common-criteria, implementing-regulation, unavailable | [link](https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:18170,25) |
 | CEN CEN/TS 419261 V2015 | 2015 | cited-by-eu-law, implementing-regulation, trust-services, unavailable | [link](https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:419261,25) |
 | ETSI EN 319 403 V2.3.0 | 2.3.0 | 319-series, nested-reference, trust-services, unavailable | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/319403/02.03.00_60/en_319403v020300p.pdf) |
-| ETSI EN 319 412-4 V1.3.0 | 1.3.0 | 319-series, nested-reference, trust-services, unavailable | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_60/en_31941204v010300p.pdf) |
 | ETSI EN 3191 22-1 V1.3.1 | 1.3.1 | 319-series, cited-by-eu-law, implementing-regulation, trust-services, unavailabl | [link](https://www.etsi.org/deliver/etsi_en/3191000_3191099/319102201/01.03.01_60/en_319102201v010301p.pdf) |
 | ETSI EN 319403-1 V2.3.1 | 2.3.1 | 319-series, cited-by-eu-law, implementing-regulation, trust-services, unavailabl | [link](https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_60/en_319403001v020301p.pdf) |
 | ETSI TR 119 411-5 V2.1.1 | 2.1.1 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_tr/119400_119499/11941105/02.01.01_60/tr_11941105v020101p.pdf) |
@@ -2903,6 +2904,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI TS 119 162-1 V1.1.0 | 1.1.0 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf) |
 | ETSI TS 119 162-2 V1.1.0 | 1.1.0 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11916202/01.01.00_60/ts_11916202v010100p.pdf) |
 | ETSI TS 119 412-1 V1.4.4 | 1.4.4 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf) |
+| ETSI TS 119 412-4 V1.1.1 | 1.1.1 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941204/01.01.01_60/ts_11941204v010101p.pdf) |
 | ETSI TS 119 422 V1.1.0 | 1.1.0 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119422/01.01.00_60/ts_119422v010100p.pdf) |
 | IEEE IEEE 1003.1 | — | nested-reference, unavailable | [link](https://standards.ieee.org/standard/1003.1.html) |
 | IEEE IEEE 1003.1-2008 | — | nested-reference, unavailable | [link](https://standards.ieee.org/standard/1003.1-2008.html) |
@@ -3219,10 +3221,8 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | 2025-1943 | 32025R1943 | ETSI EN 319 401 V3.2.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1943 | 32025R1943 | ETSI EN 319 411-1 V1.5.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941101/01.05.01_60/en_31941101v010501p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1943 | 32025R1943 | ETSI EN 319 411-2 V2.6.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941102/02.06.01_60/en_31941102v020601p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
-| 2025-1943 | 32025R1943 | ETSI EN 319 412-1 V1.6.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1943 | 32025R1943 | ETSI EN 319 412-2 V2.4.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1943 | 32025R1943 | ETSI EN 319 412-3 V1.3.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
-| 2025-1943 | 32025R1943 | ETSI EN 319 412-5 V2.5.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1943 | 32025R1943 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1943 | 32025R1943 | ISO-IEC ISO/IEC 15408 V2022 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+15408) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+15408) · `implementing-acts/2025-1943/2025-1943.md` — [md](../implementing-acts/2025-1943/2025-1943.md), [html](../implementing-acts/2025-1943/2025-1943.html), [pdf](../implementing-acts/2025-1943/2025-1943.pdf) |
 | 2025-1944 | 32025R1944 | ETSI EN 319 401 V3.2.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf) · `implementing-acts/2025-1944/2025-1944.md` — [md](../implementing-acts/2025-1944/2025-1944.md), [html](../implementing-acts/2025-1944/2025-1944.html), [pdf](../implementing-acts/2025-1944/2025-1944.pdf) |
@@ -3282,11 +3282,8 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | 2026-1730 | 32026R1730 | ETSI TS 119 411-8 V1.1.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf) · `implementing-acts/2026-1730/2026-1730.md` — [md](../implementing-acts/2026-1730/2026-1730.md), [html](../implementing-acts/2026-1730/2026-1730.html), [pdf](../implementing-acts/2026-1730/2026-1730.pdf) |
 | 2026-1730 | 32026R1730 | ETSI TS 119 475 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) · `implementing-acts/2026-1730/2026-1730.md` — [md](../implementing-acts/2026-1730/2026-1730.md), [html](../implementing-acts/2026-1730/2026-1730.html), [pdf](../implementing-acts/2026-1730/2026-1730.pdf) |
 | 2026-1731 | 32026R1731 | ETSI EN 319 142-1 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
-| 2026-1731 | 32026R1731 | ETSI EN 319 412-1 V1.6.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
 | 2026-1731 | 32026R1731 | ETSI EN 319 412-2 V2.4.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.04.01_60/en_31941202v020401p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
 | 2026-1731 | 32026R1731 | ETSI EN 319 412-3 V1.3.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941203/01.03.01_60/en_31941203v010301p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
-| 2026-1731 | 32026R1731 | ETSI EN 319 412-5 V2.5.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941205/02.05.01_60/en_31941205v020501p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
-| 2026-1731 | 32026R1731 | ETSI TS 119 412-6 V1.1.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.01.01_60/ts_11941206v010101p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941206/01.01.01_60/ts_11941206v010101p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
 | 2026-1731 | 32026R1731 | ETSI TS 119 432 V1.3.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_60/ts_119432v010301p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/119432/01.03.01_60/ts_119432v010301p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
 | 2026-1731 | 32026R1731 | ETSI TS 119 472-1 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
 | 2026-1731 | 32026R1731 | ETSI TS 119 472-2 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947202/01.02.01_60/ts_11947202v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947202/01.02.01_60/ts_11947202v010201p.pdf) · `implementing-acts/2026-1731/2026-1731.md` — [md](../implementing-acts/2026-1731/2026-1731.md), [html](../implementing-acts/2026-1731/2026-1731.html), [pdf](../implementing-acts/2026-1731/2026-1731.pdf) |
@@ -3364,7 +3361,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ARF TS04 V1.0.1 | ETSI TR 119 476 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_60/tr_119476v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_tr/119400_119499/119476/01.02.01_60/tr_119476v010201p.pdf) · `ARF/TS04-V1.0.1/TS04-V1.0.1.md` — [md](../referenced-standards/standards/ARF/TS04-V1.0.1/TS04-V1.0.1.md), html:—, pdf:— |
 | ARF TS04 V1.0.1 | IETF SD-JWT VC | [link](https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-17.html) | [online](https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-17.html) · `ARF/TS04-V1.0.1/TS04-V1.0.1.md` — [md](../referenced-standards/standards/ARF/TS04-V1.0.1/TS04-V1.0.1.md), html:—, pdf:— |
 | ARF TS04 V1.0.1 | ISO-IEC ISO/IEC 18013-5 V2021 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+18013-5) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+18013-5) · `ARF/TS04-V1.0.1/TS04-V1.0.1.md` — [md](../referenced-standards/standards/ARF/TS04-V1.0.1/TS04-V1.0.1.md), html:—, pdf:— |
-| ARF TS05 V1.2.1 | ETSI EN 319 412-1 V1.6.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.06.01_60/en_31941201v010601p.pdf) · `ARF/TS05-V1.2.1/TS05-V1.2.1.md` — [md](../referenced-standards/standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md), html:—, pdf:— |
+| ARF TS05 V1.2.1 | ETSI EN 319 412-1 V1.7.0 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.07.00_20/en_31941201v010700a.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.07.00_20/en_31941201v010700a.pdf) · `ARF/TS05-V1.2.1/TS05-V1.2.1.md` — [md](../referenced-standards/standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md), html:—, pdf:— |
 | ARF TS05 V1.2.1 | ETSI TS 119 475 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) · `ARF/TS05-V1.2.1/TS05-V1.2.1.md` — [md](../referenced-standards/standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md), html:—, pdf:— |
 | ARF TS05 V1.2.1 | ETSI TS 119 612 V2.4.1 | [link](https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf) · `ARF/TS05-V1.2.1/TS05-V1.2.1.md` — [md](../referenced-standards/standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md), html:—, pdf:— |
 | ARF TS05 V1.2.1 | IETF RFC 2806 | [link](https://www.rfc-editor.org/rfc/rfc2806.txt) | [online](https://www.rfc-editor.org/rfc/rfc2806.txt) · `ARF/TS05-V1.2.1/TS05-V1.2.1.md` — [md](../referenced-standards/standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md), html:—, pdf:— |
@@ -3554,17 +3551,17 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI EN 319 411-2 V2.6.1 | IETF RFC 6960 | [link](https://www.rfc-editor.org/rfc/rfc6960.txt) | [online](https://www.rfc-editor.org/rfc/rfc6960.txt) · `ETSI/EN-319-411-2-V2.6.1/EN-319-411-2-V2.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-411-2-V2.6.1/EN-319-411-2-V2.6.1.pdf) |
 | ETSI EN 319 411-2 V2.6.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-411-2-V2.6.1/EN-319-411-2-V2.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-411-2-V2.6.1/EN-319-411-2-V2.6.1.pdf) |
 | ETSI EN 319 411-2 V2.6.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-411-2-V2.6.1/EN-319-411-2-V2.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-411-2-V2.6.1/EN-319-411-2-V2.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ETSI TS 119 412-1 V1.4.4 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | IETF RFC 3739 | [link](https://www.rfc-editor.org/rfc/rfc3739.txt) | [online](https://www.rfc-editor.org/rfc/rfc3739.txt) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | IETF RFC 5246 | [link](https://www.rfc-editor.org/rfc/rfc5246.txt) | [online](https://www.rfc-editor.org/rfc/rfc5246.txt) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | IETF RFC 5912 | [link](https://www.rfc-editor.org/rfc/rfc5912.txt) | [online](https://www.rfc-editor.org/rfc/rfc5912.txt) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ISO-IEC ISO 17442 | [link](https://www.iso.org/search.html?q=ISO+17442) | [online](https://www.iso.org/search.html?q=ISO+17442) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ISO-IEC ISO 3166-2 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-2) | [online](https://www.iso.org/search.html?q=ISO+3166-2) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
-| ETSI EN 319 412-1 V1.6.1 | ITU-T ITU-T X.520 | [link](https://www.itu.int/rec/T-REC-X-520/en) | [online](https://www.itu.int/rec/T-REC-X-520/en) · `ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.6.1/EN-319-412-1-V1.6.1.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ETSI TS 119 412-1 V1.4.4 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | IETF RFC 3739 | [link](https://www.rfc-editor.org/rfc/rfc3739.txt) | [online](https://www.rfc-editor.org/rfc/rfc3739.txt) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | IETF RFC 5246 | [link](https://www.rfc-editor.org/rfc/rfc5246.txt) | [online](https://www.rfc-editor.org/rfc/rfc5246.txt) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | IETF RFC 5912 | [link](https://www.rfc-editor.org/rfc/rfc5912.txt) | [online](https://www.rfc-editor.org/rfc/rfc5912.txt) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ISO-IEC ISO 17442 | [link](https://www.iso.org/search.html?q=ISO+17442) | [online](https://www.iso.org/search.html?q=ISO+17442) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ISO-IEC ISO 3166-2 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-2) | [online](https://www.iso.org/search.html?q=ISO+3166-2) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
+| ETSI EN 319 412-1 V1.7.0 | ITU-T ITU-T X.520 | [link](https://www.itu.int/rec/T-REC-X-520/en) | [online](https://www.itu.int/rec/T-REC-X-520/en) · `ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf) |
 | ETSI EN 319 412-2 V2.4.1 | IETF RFC 2818 | [link](https://www.rfc-editor.org/rfc/rfc2818.txt) | [online](https://www.rfc-editor.org/rfc/rfc2818.txt) · `ETSI/EN-319-412-2-V2.4.1/EN-319-412-2-V2.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-2-V2.4.1/EN-319-412-2-V2.4.1.pdf) |
 | ETSI EN 319 412-2 V2.4.1 | IETF RFC 4516 | [link](https://www.rfc-editor.org/rfc/rfc4516.txt) | [online](https://www.rfc-editor.org/rfc/rfc4516.txt) · `ETSI/EN-319-412-2-V2.4.1/EN-319-412-2-V2.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-2-V2.4.1/EN-319-412-2-V2.4.1.pdf) |
 | ETSI EN 319 412-2 V2.4.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-412-2-V2.4.1/EN-319-412-2-V2.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-2-V2.4.1/EN-319-412-2-V2.4.1.pdf) |
@@ -3579,16 +3576,20 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI EN 319 412-3 V1.3.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-412-3-V1.3.1/EN-319-412-3-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-3-V1.3.1/EN-319-412-3-V1.3.1.pdf) |
 | ETSI EN 319 412-3 V1.3.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-412-3-V1.3.1/EN-319-412-3-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-3-V1.3.1/EN-319-412-3-V1.3.1.pdf) |
 | ETSI EN 319 412-3 V1.3.1 | ITU-T ITU-T X.520 | [link](https://www.itu.int/rec/T-REC-X-520/en) | [online](https://www.itu.int/rec/T-REC-X-520/en) · `ETSI/EN-319-412-3-V1.3.1/EN-319-412-3-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-3-V1.3.1/EN-319-412-3-V1.3.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | IETF RFC 2818 | [link](https://www.rfc-editor.org/rfc/rfc2818.txt) | [online](https://www.rfc-editor.org/rfc/rfc2818.txt) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | IETF RFC 3739 | [link](https://www.rfc-editor.org/rfc/rfc3739.txt) | [online](https://www.rfc-editor.org/rfc/rfc3739.txt) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ISO-IEC ISO 4217 | [link](https://www.iso.org/search.html?q=ISO+4217) | [online](https://www.iso.org/search.html?q=ISO+4217) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ISO-IEC ISO 639 V2023 | [link](https://www.iso.org/search.html?q=ISO+639) | [online](https://www.iso.org/search.html?q=ISO+639) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ISO-IEC ISO 639-1 V2002 | [link](https://www.iso.org/search.html?q=ISO+639-1) | [online](https://www.iso.org/search.html?q=ISO+639-1) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
-| ETSI EN 319 412-5 V2.5.1 | ITU-T ITU-T X.680 | [link](https://www.itu.int/rec/T-REC-X-680/en) | [online](https://www.itu.int/rec/T-REC-X-680/en) · `ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.5.1/EN-319-412-5-V2.5.1.pdf) |
+| ETSI EN 319 412-4 V1.3.0 | ETSI TS 119 412-4 V1.1.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941204/01.01.01_60/ts_11941204v010101p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941204/01.01.01_60/ts_11941204v010101p.pdf) · `ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf) |
+| ETSI EN 319 412-4 V1.3.0 | IETF RFC 5246 | [link](https://www.rfc-editor.org/rfc/rfc5246.txt) | [online](https://www.rfc-editor.org/rfc/rfc5246.txt) · `ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf) |
+| ETSI EN 319 412-4 V1.3.0 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf) |
+| ETSI EN 319 412-4 V1.3.0 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-4-V1.3.0/EN-319-412-4-V1.3.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | IETF RFC 3739 | [link](https://www.rfc-editor.org/rfc/rfc3739.txt) | [online](https://www.rfc-editor.org/rfc/rfc3739.txt) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | IETF RFC 9110 | [link](https://www.rfc-editor.org/rfc/rfc9110.txt) | [online](https://www.rfc-editor.org/rfc/rfc9110.txt) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ISO-IEC ISO 4217 | [link](https://www.iso.org/search.html?q=ISO+4217) | [online](https://www.iso.org/search.html?q=ISO+4217) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ISO-IEC ISO 639 V2023 | [link](https://www.iso.org/search.html?q=ISO+639) | [online](https://www.iso.org/search.html?q=ISO+639) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ISO-IEC ISO 639-1 V2002 | [link](https://www.iso.org/search.html?q=ISO+639-1) | [online](https://www.iso.org/search.html?q=ISO+639-1) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
+| ETSI EN 319 412-5 V2.6.0 | ITU-T ITU-T X.680 | [link](https://www.itu.int/rec/T-REC-X-680/en) | [online](https://www.itu.int/rec/T-REC-X-680/en) · `ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-412-5-V2.6.0/EN-319-412-5-V2.6.0.pdf) |
 | ETSI EN 319 421 V1.3.1 | CEN CEN/TS | [link](https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:,25) | [online](https://standards.cencenelec.eu/dyn/www/f?p=204:32:0::::FSP_PROJECT,FSP_LANG_ID:,25) · `ETSI/EN-319-421-V1.3.1/EN-319-421-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-421-V1.3.1/EN-319-421-V1.3.1.pdf) |
 | ETSI EN 319 421 V1.3.1 | IETF RFC 3161 | [link](https://www.rfc-editor.org/rfc/rfc3161.txt) | [online](https://www.rfc-editor.org/rfc/rfc3161.txt) · `ETSI/EN-319-421-V1.3.1/EN-319-421-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-421-V1.3.1/EN-319-421-V1.3.1.pdf) |
 | ETSI EN 319 421 V1.3.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/EN-319-421-V1.3.1/EN-319-421-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-421-V1.3.1/EN-319-421-V1.3.1.pdf) |
@@ -3711,14 +3712,14 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI TS 119 411-8 V1.1.1 | IETF RFC 9162 | [link](https://www.rfc-editor.org/rfc/rfc9162.txt) | [online](https://www.rfc-editor.org/rfc/rfc9162.txt) · `ETSI/TS-119-411-8-V1.1.1/TS-119-411-8-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-411-8-V1.1.1/TS-119-411-8-V1.1.1.pdf) |
 | ETSI TS 119 411-8 V1.1.1 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ETSI/TS-119-411-8-V1.1.1/TS-119-411-8-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-411-8-V1.1.1/TS-119-411-8-V1.1.1.pdf) |
 | ETSI TS 119 411-8 V1.1.1 | ITU-T ITU-T X.520 | [link](https://www.itu.int/rec/T-REC-X-520/en) | [online](https://www.itu.int/rec/T-REC-X-520/en) · `ETSI/TS-119-411-8-V1.1.1/TS-119-411-8-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-411-8-V1.1.1/TS-119-411-8-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | IETF RFC 2818 | [link](https://www.rfc-editor.org/rfc/rfc2818.txt) | [online](https://www.rfc-editor.org/rfc/rfc2818.txt) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | IETF RFC 5755 | [link](https://www.rfc-editor.org/rfc/rfc5755.txt) | [online](https://www.rfc-editor.org/rfc/rfc5755.txt) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | IETF RFC 9110 | [link](https://www.rfc-editor.org/rfc/rfc9110.txt) | [online](https://www.rfc-editor.org/rfc/rfc9110.txt) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | ISO-IEC ISO 3166 V1988 | [link](https://www.iso.org/search.html?q=ISO+3166) | [online](https://www.iso.org/search.html?q=ISO+3166) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | ISO-IEC ISO/IEC 18013-5 V2021 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+18013-5) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+18013-5) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
-| ETSI TS 119 412-6 V1.1.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.1.1/TS-119-412-6-V1.1.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | IETF RFC 3986 | [link](https://www.rfc-editor.org/rfc/rfc3986.txt) | [online](https://www.rfc-editor.org/rfc/rfc3986.txt) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | IETF RFC 4519 | [link](https://www.rfc-editor.org/rfc/rfc4519.txt) | [online](https://www.rfc-editor.org/rfc/rfc4519.txt) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | IETF RFC 5755 | [link](https://www.rfc-editor.org/rfc/rfc5755.txt) | [online](https://www.rfc-editor.org/rfc/rfc5755.txt) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | ISO-IEC ISO 3166 V1988 | [link](https://www.iso.org/search.html?q=ISO+3166) | [online](https://www.iso.org/search.html?q=ISO+3166) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | ISO-IEC ISO/IEC 18013-5 V2021 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+18013-5) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+18013-5) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
+| ETSI TS 119 412-6 V1.2.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-412-6-V1.2.1/TS-119-412-6-V1.2.1.pdf) |
 | ETSI TS 119 431-1 V1.3.1 | ETSI EN 319 401 V3.2.1 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/319401/03.02.01_60/en_319401v030201p.pdf) · `ETSI/TS-119-431-1-V1.3.1/TS-119-431-1-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-431-1-V1.3.1/TS-119-431-1-V1.3.1.pdf) |
 | ETSI TS 119 431-1 V1.3.1 | IETF RFC 3647 | [link](https://www.rfc-editor.org/rfc/rfc3647.txt) | [online](https://www.rfc-editor.org/rfc/rfc3647.txt) · `ETSI/TS-119-431-1-V1.3.1/TS-119-431-1-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-431-1-V1.3.1/TS-119-431-1-V1.3.1.pdf) |
 | ETSI TS 119 431-1 V1.3.1 | ISO-IEC ISO/IEC 15408 V2022 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+15408) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+15408) · `ETSI/TS-119-431-1-V1.3.1/TS-119-431-1-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-431-1-V1.3.1/TS-119-431-1-V1.3.1.pdf) |
@@ -3865,7 +3866,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI TS 119 478 V1.1.1 | OpenID OpenID4VCI V1.0 | [link](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html) | [online](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html) · `ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf) |
 | ETSI TS 119 478 V1.1.1 | OpenID OpenID4VP V1.0 | [link](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html) | [online](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html) · `ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf) |
 | ETSI TS 119 478 V1.1.1 | W3C vc-data-model V1.1 | [link](https://www.w3.org/TR/vc-data-model/) | [online](https://www.w3.org/TR/vc-data-model/) · `ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-478-V1.1.1/TS-119-478-V1.1.1.pdf) |
-| ETSI TS 119 495 V1.7.1 | ETSI EN 319 412-4 V1.3.0 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_60/en_31941204v010300p.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_60/en_31941204v010300p.pdf) · `ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf) |
+| ETSI TS 119 495 V1.7.1 | ETSI EN 319 412-4 V1.3.0 | [link](https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_20/en_31941204v010300a.pdf) | [online](https://www.etsi.org/deliver/etsi_en/319400_319499/31941204/01.03.00_20/en_31941204v010300a.pdf) · `ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf) |
 | ETSI TS 119 495 V1.7.1 | IETF RFC 3739 | [link](https://www.rfc-editor.org/rfc/rfc3739.txt) | [online](https://www.rfc-editor.org/rfc/rfc3739.txt) · `ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf) |
 | ETSI TS 119 495 V1.7.1 | IETF RFC 5246 | [link](https://www.rfc-editor.org/rfc/rfc5246.txt) | [online](https://www.rfc-editor.org/rfc/rfc5246.txt) · `ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf) |
 | ETSI TS 119 495 V1.7.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-495-V1.7.1/TS-119-495-V1.7.1.pdf) |
@@ -3912,6 +3913,9 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI TS 119 612 V2.4.1 | ISO-IEC ISO/IEC 6429 V1992 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+6429) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+6429) · `ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf) |
 | ETSI TS 119 612 V2.4.1 | ISO-IEC ISO/IEC 9594-8 V2020 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+9594-8) · `ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf) |
 | ETSI TS 119 612 V2.4.1 | ITU-T ITU-T X.509 | [link](https://www.itu.int/rec/T-REC-X-509/en) | [online](https://www.itu.int/rec/T-REC-X-509/en) · `ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-612-V2.4.1/TS-119-612-V2.4.1.pdf) |
+| ETSI TS 119 615 V1.3.1 | IETF RFC 3161 | [link](https://www.rfc-editor.org/rfc/rfc3161.txt) | [online](https://www.rfc-editor.org/rfc/rfc3161.txt) · `ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf) |
+| ETSI TS 119 615 V1.3.1 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf) |
+| ETSI TS 119 615 V1.3.1 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-615-V1.3.1/TS-119-615-V1.3.1.pdf) |
 | IETF RFC 0713 | IETF RFC 680 | [link](https://www.rfc-editor.org/rfc/rfc680.txt) | [online](https://www.rfc-editor.org/rfc/rfc680.txt) · `IETF/RFC-0713/RFC-0713.txt` — md:—, html:—, pdf:— |
 | IETF RFC 0793 | IETF RFC 761 | [link](https://www.rfc-editor.org/rfc/rfc761.txt) | [online](https://www.rfc-editor.org/rfc/rfc761.txt) · `IETF/RFC-0793/RFC-0793.txt` — md:—, html:—, pdf:— |
 | IETF RFC 0793 | IETF RFC 790 | [link](https://www.rfc-editor.org/rfc/rfc790.txt) | [online](https://www.rfc-editor.org/rfc/rfc790.txt) · `IETF/RFC-0793/RFC-0793.txt` — md:—, html:—, pdf:— |
@@ -8239,12 +8243,12 @@ flowchart LR
   ETSI_EN_319_411_1_V1_5_1["ETSI EN 319 411-1<br/>V1.5.1"]:::specOk
   ETSI_EN_319_411_2_V2_6_1["ETSI EN 319 411-2<br/>V2.6.1"]:::specOk
   legal_2025_2527["2025-2527<br/>Qualified certificates for website authentica..."]:::legal
-  ETSI_EN_319_412_1_V1_6_1["ETSI EN 319 412-1<br/>V1.6.1"]:::specOk
+  ETSI_EN_319_412_1_V1_7_0["ETSI EN 319 412-1<br/>V1.7.0"]:::specOk
   ETSI_EN_319_412_2_V2_4_1["ETSI EN 319 412-2<br/>V2.4.1"]:::specOk
   ETSI_EN_319_412_3_V1_3_1["ETSI EN 319 412-3<br/>V1.3.1"]:::specOk
-  ETSI_EN_319_412_4_V1_3_0["ETSI EN 319 412-4<br/>V1.3.0"]:::spec
+  ETSI_EN_319_412_4_V1_3_0["ETSI EN 319 412-4<br/>V1.3.0"]:::specOk
   ETSI_TS_119_495_V1_7_1["ETSI TS 119 495<br/>V1.7.1"]:::specOk
-  ETSI_EN_319_412_5_V2_5_1["ETSI EN 319 412-5<br/>V2.5.1"]:::specOk
+  ETSI_EN_319_412_5_V2_6_0["ETSI EN 319 412-5<br/>V2.6.0"]:::specOk
   ETSI_EN_319_422_V1_1_1["ETSI EN 319 422<br/>V1.1.1"]:::specOk
   ETSI_EN_319_521_V1_1_1["ETSI EN 319 521<br/>V1.1.1"]:::specOk
   ETSI_EN_319_522_1_V1_2_1["ETSI EN 319 522-1<br/>V1.2.1"]:::specOk
@@ -8269,7 +8273,8 @@ flowchart LR
   ETSI_TS_119_411_8_V1_1_1["ETSI TS 119 411-8<br/>V1.1.1"]:::specOk
   legal_2026_1730["2026-1730<br/>Amending CIR 2025/848 — Relying Party Registr..."]:::legal
   ETSI_TS_119_412_1_V1_4_4["ETSI TS 119 412-1<br/>V1.4.4"]:::spec
-  ETSI_TS_119_412_6_V1_1_1["ETSI TS 119 412-6<br/>V1.1.1"]:::specOk
+  ETSI_TS_119_412_4_V1_1_1["ETSI TS 119 412-4<br/>V1.1.1"]:::spec
+  ETSI_TS_119_412_6_V1_2_1["ETSI TS 119 412-6<br/>V1.2.1"]:::specOk
   ETSI_TS_119_422_V1_1_0["ETSI TS 119 422<br/>V1.1.0"]:::spec
   ETSI_TS_119_432_V1_3_1["ETSI TS 119 432<br/>V1.3.1"]:::specOk
   ETSI_TS_119_461_V2_1_1["ETSI TS 119 461<br/>V2.1.1"]:::specOk
@@ -8284,6 +8289,7 @@ flowchart LR
   ETSI_TS_119_602_V1_1_1["ETSI TS 119 602<br/>V1.1.1"]:::specOk
   ETSI_TS_119_612_V2_4_1["ETSI TS 119 612<br/>V2.4.1"]:::specOk
   legal_2025_2164["2025-2164<br/>Trusted lists of trust service providers"]:::legal
+  ETSI_TS_119_615_V1_3_1["ETSI TS 119 615<br/>V1.3.1"]:::specOk
   IEEE_IEEE_1003_1["IEEE IEEE 1003.1"]:::spec
   IETF_RFC_4949["IETF RFC 4949"]:::specOk
   IETF_RFC_7049["IETF RFC 7049"]:::specOk
@@ -9653,16 +9659,12 @@ flowchart LR
   legal_2025_1944 -->|cites| ETSI_EN_319_411_1_V1_5_1
   legal_2025_1943 -->|cites| ETSI_EN_319_411_2_V2_6_1
   legal_2025_2527 -->|cites| ETSI_EN_319_411_2_V2_6_1
-  legal_2025_1943 -->|cites| ETSI_EN_319_412_1_V1_6_1
-  legal_2026_1731 -->|cites| ETSI_EN_319_412_1_V1_6_1
-  ARF_TS05_V1_2_1 -.->|references| ETSI_EN_319_412_1_V1_6_1
+  ARF_TS05_V1_2_1 -.->|references| ETSI_EN_319_412_1_V1_7_0
   legal_2025_1943 -->|cites| ETSI_EN_319_412_2_V2_4_1
   legal_2026_1731 -->|cites| ETSI_EN_319_412_2_V2_4_1
   legal_2025_1943 -->|cites| ETSI_EN_319_412_3_V1_3_1
   legal_2026_1731 -->|cites| ETSI_EN_319_412_3_V1_3_1
   ETSI_TS_119_495_V1_7_1 -.->|references| ETSI_EN_319_412_4_V1_3_0
-  legal_2025_1943 -->|cites| ETSI_EN_319_412_5_V2_5_1
-  legal_2026_1731 -->|cites| ETSI_EN_319_412_5_V2_5_1
   legal_2025_1929 -->|cites| ETSI_EN_319_421_V1_3_1
   legal_2025_2532 -->|cites| ETSI_EN_319_421_V1_3_1
   legal_2025_1929 -->|cites| ETSI_EN_319_422_V1_1_1
@@ -9693,8 +9695,8 @@ flowchart LR
   legal_2025_2531 -->|cites| ETSI_TS_119_182_1_V1_2_1
   legal_2025_2527 -->|cites| ETSI_TS_119_411_5_V2_1_1
   legal_2026_1730 -->|cites| ETSI_TS_119_411_8_V1_1_1
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ETSI_TS_119_412_1_V1_4_4
-  legal_2026_1731 -->|cites| ETSI_TS_119_412_6_V1_1_1
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ETSI_TS_119_412_1_V1_4_4
+  ETSI_EN_319_412_4_V1_3_0 -.->|references| ETSI_TS_119_412_4_V1_1_1
   ETSI_EN_319_422_V1_1_1 -.->|references| ETSI_TS_119_422_V1_1_0
   legal_2025_1567 -->|cites| ETSI_TS_119_431_1_V1_3_1
   legal_2026_1731 -->|cites| ETSI_TS_119_432_V1_3_1
@@ -11150,9 +11152,7 @@ flowchart LR
   IETF_RFC_7230 -.->|references| IETF_RFC_2817
   IETF_RFC_7231 -.->|references| IETF_RFC_2817
   ETSI_EN_319_412_2_V2_4_1 -.->|references| IETF_RFC_2818
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| IETF_RFC_2818
   ETSI_EN_319_422_V1_1_1 -.->|references| IETF_RFC_2818
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| IETF_RFC_2818
   IETF_RFC_3552 -.->|references| IETF_RFC_2818
   IETF_RFC_3739 -.->|references| IETF_RFC_2818
   IETF_RFC_3875 -.->|references| IETF_RFC_2818
@@ -11291,6 +11291,7 @@ flowchart LR
   ETSI_TS_119_172_4_V1_1_1 -.->|references| IETF_RFC_3161
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_3161
   ETSI_TS_119_511_V1_1_1 -.->|references| IETF_RFC_3161
+  ETSI_TS_119_615_V1_3_1 -.->|references| IETF_RFC_3161
   IETF_RFC_3280 -.->|references| IETF_RFC_3161
   IETF_RFC_4949 -.->|references| IETF_RFC_3161
   IETF_RFC_4998 -.->|references| IETF_RFC_3161
@@ -11565,8 +11566,8 @@ flowchart LR
   IETF_RFC_6931 -.->|references| IETF_RFC_3713
   IETF_RFC_4949 -.->|references| IETF_RFC_3720
   legal_2025_1929 -->|cites| IETF_RFC_3739
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| IETF_RFC_3739
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| IETF_RFC_3739
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| IETF_RFC_3739
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| IETF_RFC_3739
   ETSI_EN_319_422_V1_1_1 -.->|references| IETF_RFC_3739
   ETSI_TS_119_495_V1_7_1 -.->|references| IETF_RFC_3739
   IETF_RFC_4949 -.->|references| IETF_RFC_3739
@@ -11687,6 +11688,7 @@ flowchart LR
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_3986
   ETSI_EN_319_162_1_V1_1_1 -.->|references| IETF_RFC_3986
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_3986
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| IETF_RFC_3986
   ETSI_TS_119_478_V1_1_1 -.->|references| IETF_RFC_3986
   ETSI_TS_119_511_V1_1_1 -.->|references| IETF_RFC_3986
   ETSI_TS_119_602_V1_1_1 -.->|references| IETF_RFC_3986
@@ -11999,6 +12001,7 @@ flowchart LR
   IETF_RFC_8705 -.->|references| IETF_RFC_4517
   IETF_RFC_4510 -.->|references| IETF_RFC_4518
   IETF_RFC_5280 -.->|references| IETF_RFC_4518
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| IETF_RFC_4519
   IETF_RFC_4510 -.->|references| IETF_RFC_4519
   IETF_RFC_4512 -.->|references| IETF_RFC_4519
   IETF_RFC_4514 -.->|references| IETF_RFC_4519
@@ -12257,7 +12260,8 @@ flowchart LR
   IETF_RFC_9147 -.->|references| IETF_RFC_5238
   IETF_RFC_7157 -.->|references| IETF_RFC_5245
   ETSI_EN_319_411_1_V1_5_1 -.->|references| IETF_RFC_5246
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| IETF_RFC_5246
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| IETF_RFC_5246
+  ETSI_EN_319_412_4_V1_3_0 -.->|references| IETF_RFC_5246
   ETSI_TS_119_495_V1_7_1 -.->|references| IETF_RFC_5246
   IETF_RFC_6125 -.->|references| IETF_RFC_5246
   IETF_RFC_6176 -.->|references| IETF_RFC_5246
@@ -12301,21 +12305,22 @@ flowchart LR
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_5280
   ETSI_EN_319_142_1_V1_2_1 -.->|references| IETF_RFC_5280
   ETSI_EN_319_411_1_V1_5_1 -.->|references| IETF_RFC_5280
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| IETF_RFC_5280
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| IETF_RFC_5280
   ETSI_EN_319_412_2_V2_4_1 -.->|references| IETF_RFC_5280
   ETSI_EN_319_412_3_V1_3_1 -.->|references| IETF_RFC_5280
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| IETF_RFC_5280
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| IETF_RFC_5280
   ETSI_EN_319_421_V1_3_1 -.->|references| IETF_RFC_5280
   ETSI_TR_119_476_V1_2_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_411_8_V1_1_1 -.->|references| IETF_RFC_5280
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| IETF_RFC_5280
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_472_1_V1_2_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_475_V1_2_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_478_V1_1_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_495_V1_7_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_511_V1_1_1 -.->|references| IETF_RFC_5280
   ETSI_TS_119_612_V2_4_1 -.->|references| IETF_RFC_5280
+  ETSI_TS_119_615_V1_3_1 -.->|references| IETF_RFC_5280
   IETF_RFC_5652 -.->|references| IETF_RFC_5280
   IETF_RFC_5753 -.->|references| IETF_RFC_5280
   IETF_RFC_5755 -.->|references| IETF_RFC_5280
@@ -12512,7 +12517,7 @@ flowchart LR
   IETF_RFC_8551 -.->|references| IETF_RFC_5754
   ETSI_EN_319_122_1_V1_3_1 -.->|references| IETF_RFC_5755
   ETSI_TR_119_476_V1_2_1 -.->|references| IETF_RFC_5755
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| IETF_RFC_5755
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| IETF_RFC_5755
   ETSI_TS_119_472_1_V1_2_1 -.->|references| IETF_RFC_5755
   IETF_RFC_5912 -.->|references| IETF_RFC_5755
   IETF_RFC_5755 -.->|references| IETF_RFC_5756
@@ -12565,7 +12570,7 @@ flowchart LR
   IETF_RFC_5940 -.->|references| IETF_RFC_5911
   IETF_RFC_6268 -.->|references| IETF_RFC_5911
   ETSI_EN_319_122_1_V1_3_1 -.->|references| IETF_RFC_5912
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| IETF_RFC_5912
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| IETF_RFC_5912
   IETF_RFC_5911 -.->|references| IETF_RFC_5912
   IETF_RFC_5940 -.->|references| IETF_RFC_5912
   IETF_RFC_6211 -.->|references| IETF_RFC_5912
@@ -13757,7 +13762,7 @@ flowchart LR
   IETF_RFC_9052 -.->|references| IETF_RFC_9106
   IETF_RFC_9380 -.->|references| IETF_RFC_9106
   legal_2025_1929 -->|cites| IETF_RFC_9110
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| IETF_RFC_9110
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| IETF_RFC_9110
   ETSI_TS_119_432_V1_3_1 -.->|references| IETF_RFC_9110
   ETSI_TS_119_478_V1_1_1 -.->|references| IETF_RFC_9110
   IETF_RFC_9111 -.->|references| IETF_RFC_9110
@@ -13963,7 +13968,7 @@ flowchart LR
   ETSI_EN_319_162_1_V1_1_1 -.->|references| ISO_IEC_ISO_15489_1_V2001
   IETF_RFC_5646 -.->|references| ISO_IEC_ISO_15924_V2004
   ETSI_TS_119_511_V1_1_1 -.->|references| ISO_IEC_ISO_16363_V2011
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ISO_IEC_ISO_17442
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ISO_IEC_ISO_17442
   ARF_TS02_V1_0_1 -.->|references| ISO_IEC_ISO_17442_1_V2020
   ETSI_TS_119_475_V1_2_1 -.->|references| ISO_IEC_ISO_17442_1_V2020
   ETSI_TS_119_478_V1_1_1 -.->|references| ISO_IEC_ISO_17442_1_V2020
@@ -14002,8 +14007,8 @@ flowchart LR
   legal_2025_2164 -->|cites| ISO_IEC_ISO_3166_1_V2020
   ARF_TS02_V1_0_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ARF_TS05_V1_2_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ISO_IEC_ISO_3166_1_V2020
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_TS_119_182_1_V1_2_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_TS_119_411_8_V1_1_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_TS_119_472_1_V1_2_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
@@ -14012,16 +14017,17 @@ flowchart LR
   ETSI_TS_119_495_V1_7_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_TS_119_602_V1_1_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_TS_119_612_V2_4_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
+  ETSI_TS_119_615_V1_3_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   IETF_RFC_3739 -.->|references| ISO_IEC_ISO_3166_1_V2020
   IETF_RFC_4949 -.->|references| ISO_IEC_ISO_3166_1_V2020
   IETF_RFC_5646 -.->|references| ISO_IEC_ISO_3166_1_V2020
   IETF_RFC_6365 -.->|references| ISO_IEC_ISO_3166_1_V2020
   legal_2024_2977 -->|cites| ISO_IEC_ISO_3166_2_V2020
   legal_2026_1731 -->|cites| ISO_IEC_ISO_3166_2_V2020
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ISO_IEC_ISO_3166_2_V2020
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ISO_IEC_ISO_3166_2_V2020
   legal_2024_2977 -->|cites| ISO_IEC_ISO_3166_V1988
   legal_2026_1731 -->|cites| ISO_IEC_ISO_3166_V1988
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| ISO_IEC_ISO_3166_V1988
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| ISO_IEC_ISO_3166_V1988
   IETF_RFC_2068 -.->|references| ISO_IEC_ISO_3166_V1988
   IETF_RFC_2616 -.->|references| ISO_IEC_ISO_3166_V1988
   IETF_RFC_3039 -.->|references| ISO_IEC_ISO_3166_V1988
@@ -14036,11 +14042,11 @@ flowchart LR
   IETF_RFC_1952 -.->|references| ISO_IEC_ISO_3309
   legal_2024_2977 -->|cites| ISO_IEC_ISO_39794
   ARF_TS12_V1_0_1 -.->|references| ISO_IEC_ISO_4217
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ISO_IEC_ISO_4217
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ISO_IEC_ISO_4217
   W3C_vc_data_model_V1_1 -.->|references| ISO_IEC_ISO_5786
   IETF_RFC_5141 -.->|references| ISO_IEC_ISO_5817
   IETF_RFC_8610 -.->|references| ISO_IEC_ISO_6093
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ISO_IEC_ISO_639_1_V2002
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ISO_IEC_ISO_639_1_V2002
   IETF_RFC_3066 -.->|references| ISO_IEC_ISO_639_1_V2002
   IETF_RFC_5141 -.->|references| ISO_IEC_ISO_639_1_V2002
   IETF_RFC_5646 -.->|references| ISO_IEC_ISO_639_1_V2002
@@ -14050,7 +14056,7 @@ flowchart LR
   IETF_RFC_5646 -.->|references| ISO_IEC_ISO_639_3_V2007
   IETF_RFC_5646 -.->|references| ISO_IEC_ISO_639_5_V2008
   legal_2026_1731 -->|cites| ISO_IEC_ISO_639_V2023
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ISO_IEC_ISO_639_V2023
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ISO_IEC_ISO_639_V2023
   ETSI_TS_119_472_2_V1_2_1 -.->|references| ISO_IEC_ISO_639_V2023
   ETSI_TS_119_475_V1_2_1 -.->|references| ISO_IEC_ISO_639_V2023
   ETSI_TS_119_478_V1_1_1 -.->|references| ISO_IEC_ISO_639_V2023
@@ -14228,7 +14234,7 @@ flowchart LR
   ARF_TS10_V1_2 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
   ARF_TS13_V1_0_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
   ETSI_TR_119_476_V1_2_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
   ETSI_TS_119_471_V1_1_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
   ETSI_TS_119_472_1_V1_2_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
   ETSI_TS_119_472_2_V1_2_1 -.->|references| ISO_IEC_ISO_IEC_18013_5_V2021
@@ -14403,11 +14409,12 @@ flowchart LR
   ETSI_EN_319_122_1_V1_3_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   ETSI_EN_319_411_1_V1_5_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   ETSI_EN_319_411_2_V2_6_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   ETSI_EN_319_412_2_V2_4_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   ETSI_EN_319_412_3_V1_3_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
+  ETSI_EN_319_412_4_V1_3_0 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   ETSI_TS_119_612_V2_4_1 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   IETF_RFC_2510 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
   IETF_RFC_2527 -.->|references| ISO_IEC_ISO_IEC_9594_8_V2020
@@ -14477,12 +14484,13 @@ flowchart LR
   ETSI_EN_319_132_1_V1_3_1 -.->|references| ITU_T_ITU_T_X_509
   ETSI_EN_319_411_1_V1_5_1 -.->|references| ITU_T_ITU_T_X_509
   ETSI_EN_319_411_2_V2_6_1 -.->|references| ITU_T_ITU_T_X_509
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ITU_T_ITU_T_X_509
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ITU_T_ITU_T_X_509
   ETSI_EN_319_412_2_V2_4_1 -.->|references| ITU_T_ITU_T_X_509
   ETSI_EN_319_412_3_V1_3_1 -.->|references| ITU_T_ITU_T_X_509
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ITU_T_ITU_T_X_509
+  ETSI_EN_319_412_4_V1_3_0 -.->|references| ITU_T_ITU_T_X_509
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ITU_T_ITU_T_X_509
   ETSI_TS_119_182_1_V1_2_1 -.->|references| ITU_T_ITU_T_X_509
-  ETSI_TS_119_412_6_V1_1_1 -.->|references| ITU_T_ITU_T_X_509
+  ETSI_TS_119_412_6_V1_2_1 -.->|references| ITU_T_ITU_T_X_509
   ETSI_TS_119_602_V1_1_1 -.->|references| ITU_T_ITU_T_X_509
   ETSI_TS_119_612_V2_4_1 -.->|references| ITU_T_ITU_T_X_509
   IETF_RFC_2459 -.->|references| ITU_T_ITU_T_X_509
@@ -14503,7 +14511,7 @@ flowchart LR
   IETF_RFC_9608 -.->|references| ITU_T_ITU_T_X_509
   ARF_TS02_V1_0_1 -.->|references| ITU_T_ITU_T_X_520
   ETSI_EN_319_122_1_V1_3_1 -.->|references| ITU_T_ITU_T_X_520
-  ETSI_EN_319_412_1_V1_6_1 -.->|references| ITU_T_ITU_T_X_520
+  ETSI_EN_319_412_1_V1_7_0 -.->|references| ITU_T_ITU_T_X_520
   ETSI_EN_319_412_2_V2_4_1 -.->|references| ITU_T_ITU_T_X_520
   ETSI_EN_319_412_3_V1_3_1 -.->|references| ITU_T_ITU_T_X_520
   ETSI_TS_101_861_V1_4_1 -.->|references| ITU_T_ITU_T_X_520
@@ -14526,7 +14534,7 @@ flowchart LR
   IETF_RFC_9562 -.->|references| ITU_T_ITU_T_X_660
   IETF_RFC_9562 -.->|references| ITU_T_ITU_T_X_667
   ETSI_EN_319_122_1_V1_3_1 -.->|references| ITU_T_ITU_T_X_680
-  ETSI_EN_319_412_5_V2_5_1 -.->|references| ITU_T_ITU_T_X_680
+  ETSI_EN_319_412_5_V2_6_0 -.->|references| ITU_T_ITU_T_X_680
   ETSI_TS_119_411_5_V2_1_1 -.->|references| ITU_T_ITU_T_X_680
   ETSI_TS_119_472_1_V1_2_1 -.->|references| ITU_T_ITU_T_X_680
   ETSI_TS_119_495_V1_7_1 -.->|references| ITU_T_ITU_T_X_680
