@@ -35,6 +35,11 @@
   let graphIsPruned = false;
   /** When true on a pruned graph, include IETF RFCs linked to the core (cites + one hop). */
   let includeIetfNeighborhood = false;
+  /** Nodes temporarily added so search hits outside the pruned core become visible. */
+  let searchBoostIds = new Set();
+  /** Edge ids created for search-boosted nodes. */
+  let searchBoostEdgeIds = new Set();
+  const SEARCH_BOOST_MAX = 50;
   /** @type {Map<string, {x: number, y: number}>} */
   const userPositions = new Map();
 
@@ -347,8 +352,11 @@
       const textMatch = EidasSearch.matchesQuery(hay, parsed);
       const hasTextFilter = EidasSearch.hasQuery(parsed);
 
-      if (hasTextFilter && raw.type === "specification") {
-        show = show && textMatch;
+      if (hasTextFilter && textMatch) {
+        // Searched specs/acts are always shown (even if their SDO chip is muted).
+        show = true;
+      } else if (hasTextFilter && raw.type === "specification") {
+        show = false;
       } else if (hasTextFilter && raw.type === "legal_regulation") {
         show = show && textMatch;
       }
@@ -400,6 +408,153 @@
     return { visible, highlight };
   }
 
+  function removeSearchBoosts() {
+    if (!nodesDataSet || !edgesDataSet) return false;
+    if (!searchBoostIds.size && !searchBoostEdgeIds.size) return false;
+    if (searchBoostEdgeIds.size) {
+      edgesDataSet.remove([...searchBoostEdgeIds]);
+      searchBoostEdgeIds.clear();
+    }
+    if (searchBoostIds.size) {
+      const ids = [...searchBoostIds];
+      nodesDataSet.remove(ids);
+      for (const id of ids) {
+        nodeById.delete(id);
+        userPositions.delete(id);
+      }
+      searchBoostIds.clear();
+    }
+    buildAdjacency(edgesDataSet.get());
+    return true;
+  }
+
+  function boostEdgeStyle(kind) {
+    if (kind === "cites") {
+      return { color: { color: "#888", highlight: "#0366d6" }, width: 1.5, dashes: false, title: "cites" };
+    }
+    if (kind === "references") {
+      return {
+        color: { color: "#c9a", highlight: "#b80" },
+        width: 1,
+        dashes: [4, 4],
+        title: "references",
+      };
+    }
+    return {
+      color: { color: "#9ab", highlight: "#0366d6" },
+      width: 1,
+      dashes: [2, 6],
+      title: "related (EUDI Wallet)",
+    };
+  }
+
+  function findSearchBoostCandidates(parsed) {
+    const hits = [];
+    for (const n of graphData.nodes || []) {
+      if (!EidasSearch.matchesQuery(nodeHaystack(n), parsed)) continue;
+      // Already in the pruned core — no temporary inject needed.
+      if (nodeById.has(n.id) && !searchBoostIds.has(n.id)) continue;
+      hits.push(n);
+    }
+    if (hits.length <= SEARCH_BOOST_MAX) return { hits, truncated: false };
+    hits.sort(
+      (a, b) =>
+        String(a.designation || a.id || "").length - String(b.designation || b.id || "").length
+    );
+    return { hits: hits.slice(0, SEARCH_BOOST_MAX), truncated: true };
+  }
+
+  /**
+   * On pruned graphs, inject corpus nodes that match the search query so they
+   * become visible even when the default keep-set omitted them.
+   */
+  function syncSearchBoostNodes(parsed) {
+    if (!graphIsPruned || !graphData || !nodesDataSet || !edgesDataSet || !layoutFrozen) {
+      return { changed: false, truncated: false };
+    }
+    if (!EidasSearch.hasQuery(parsed)) {
+      return { changed: removeSearchBoosts(), truncated: false };
+    }
+
+    const { hits, truncated } = findSearchBoostCandidates(parsed);
+    const desired = new Set(hits.map((n) => n.id));
+    let changed = false;
+
+    for (const id of [...searchBoostIds]) {
+      if (desired.has(id)) continue;
+      const edgeIds = edgesDataSet.get().filter((e) => e.from === id || e.to === id).map((e) => e.id);
+      if (edgeIds.length) {
+        edgesDataSet.remove(edgeIds);
+        for (const eid of edgeIds) searchBoostEdgeIds.delete(eid);
+      }
+      nodesDataSet.remove(id);
+      nodeById.delete(id);
+      userPositions.delete(id);
+      searchBoostIds.delete(id);
+      changed = true;
+    }
+
+    const toAddRaw = hits.filter((n) => !nodeById.has(n.id));
+    if (toAddRaw.length) {
+      const visChunk = buildVisNodes(toAddRaw, graphData.edges);
+      const positions = network.getPositions([...nodeById.keys()]);
+      for (const vn of visChunk) {
+        let placed = false;
+        for (const e of graphData.edges || []) {
+          if (e.to !== vn.id && e.from !== vn.id) continue;
+          if (e.kind !== "cites" && e.kind !== "references" && e.kind !== "related") continue;
+          const parentId = e.to === vn.id ? e.from : e.to;
+          if (!nodeById.has(parentId) && !toAddRaw.some((n) => n.id === parentId)) continue;
+          const pp = userPositions.get(parentId) || positions[parentId];
+          if (!pp) continue;
+          vn.x = pp.x + ((Math.abs(hashStr(vn.id)) % 120) - 60);
+          vn.y = pp.y + 160;
+          vn.fixed = pinFixed();
+          userPositions.set(vn.id, { x: vn.x, y: vn.y });
+          placed = true;
+          break;
+        }
+        if (!placed) {
+          const view = network.getViewPosition();
+          vn.x = view.x + ((Math.abs(hashStr(vn.id)) % 200) - 100);
+          vn.y = view.y + 180;
+          vn.fixed = pinFixed();
+          userPositions.set(vn.id, { x: vn.x, y: vn.y });
+        }
+        searchBoostIds.add(vn.id);
+        nodeById.set(vn.id, vn);
+      }
+      nodesDataSet.add(visChunk);
+      changed = true;
+    }
+
+    const present = new Set(nodeById.keys());
+    const newEdges = [];
+    for (const e of graphData.edges || []) {
+      if (e.kind !== "cites" && e.kind !== "references" && e.kind !== "related") continue;
+      if (!present.has(e.from) || !present.has(e.to)) continue;
+      if (!searchBoostIds.has(e.from) && !searchBoostIds.has(e.to)) continue;
+      const id = `boost:${e.kind}:${e.from}->${e.to}`;
+      if (edgesDataSet.get(id) || searchBoostEdgeIds.has(id)) continue;
+      const style = boostEdgeStyle(e.kind);
+      newEdges.push({ id, from: e.from, to: e.to, arrows: "to", ...style });
+      searchBoostEdgeIds.add(id);
+    }
+    if (newEdges.length) {
+      edgesDataSet.add(newEdges);
+      changed = true;
+    }
+
+    if (changed) buildAdjacency(edgesDataSet.get());
+    return { changed, truncated };
+  }
+
+  function hashStr(s) {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+    return h;
+  }
+
   function applyFilters(opts) {
     if (!nodesDataSet || !network) return;
     if (!layoutFrozen) {
@@ -410,6 +565,7 @@
     const preserveCamera = !opts || opts.preserveCamera !== false;
     const q = $("#graph-search")?.value || "";
     const parsed = EidasSearch.parseQuery(q);
+    const boostInfo = syncSearchBoostNodes(parsed);
     const { visible, highlight } = computeVisibility(parsed);
     const hasFilter = EidasSearch.hasQuery(parsed) || excludedBodies.size > 0;
 
@@ -446,7 +602,10 @@
     });
     edgesDataSet.update(edgeUpdates);
 
-    if (camera) {
+    const shouldFocusBoost =
+      boostInfo.changed && highlight.size > 0 && EidasSearch.hasQuery(parsed);
+
+    if (camera && !shouldFocusBoost) {
       requestAnimationFrame(() => {
         network.moveTo({
           position: camera.position,
@@ -475,12 +634,26 @@
         msg += ` · SDO shown: ${bodies || "—"}`;
       }
       msg += " · drag to reposition (nodes stay put)";
-      if (nodeById.size < (graphData?.nodes?.length || 0)) {
+      if (nodeById.size < (graphData?.nodes?.length || 0) || searchBoostIds.size) {
         msg += includeIetfNeighborhood
           ? " · graph: core + linked IETF RFCs (deep nested RFCs still omitted)"
           : " · graph: regulation → CIR → cited specs (click IETF to show linked RFCs)";
       }
+      if (searchBoostIds.size) {
+        msg += ` · search brought in ${searchBoostIds.size} pruned node(s)`;
+        if (boostInfo.truncated) msg += ` (capped at ${SEARCH_BOOST_MAX})`;
+      }
       status.textContent = msg;
+    }
+
+    if (shouldFocusBoost) {
+      const focusId = [...highlight].find((id) => searchBoostIds.has(id)) || [...highlight][0];
+      if (focusId && nodeById.has(focusId)) {
+        network.focus(focusId, {
+          scale: Math.max(network.getScale(), 0.85),
+          animation: { duration: 350, easingFunction: "easeInOutQuad" },
+        });
+      }
     }
   }
 
@@ -850,6 +1023,9 @@
 
     // Large corpora: keep hierarchical layout readable (regulation → CIR → cited specs).
     // Nested IETF (~thousands) stay out unless the IETF chip is enabled (linked RFCs only).
+    // Search can temporarily inject pruned hits (see syncSearchBoostNodes).
+    searchBoostIds.clear();
+    searchBoostEdgeIds.clear();
     if (large) {
       const keep = prunedKeepIds(data, { withIetf: includeIetfNeighborhood });
       visNodes = visNodes.filter((n) => keep.has(n.id));
