@@ -117,9 +117,11 @@ def etsi_pdf_urls(ref: SpecReference) -> list[str]:
     rng = etsi_range(doc)
     vp = etsi_version_path(ref.version)
     vcompact = vp.replace(".", "")
+    base = f"https://www.etsi.org/deliver/etsi_{typ}/{rng}/{doc}"
+    # Prefer published (_60 / p.pdf); fall back to EN approval drafts (_20 / a.pdf).
     return [
-        f"https://www.etsi.org/deliver/etsi_{typ}/{rng}/{doc}/{vp}_60/"
-        f"{typ}_{doc}v{vcompact}p.pdf"
+        f"{base}/{vp}_60/{typ}_{doc}v{vcompact}p.pdf",
+        f"{base}/{vp}_20/{typ}_{doc}v{vcompact}a.pdf",
     ]
 
 
@@ -285,12 +287,14 @@ def resolve_and_download(
                 reason="ETSI reference without version",
                 download_urls=candidates,
             )
+        dest = dest_dir / f"{safe_filename(ref)}.pdf"
+        if dest.exists() and not force:
+            # Report a URL that still resolves (published _60 preferred, else draft _20).
+            chosen = next((u for u in candidates if http_exists(u)), candidates[0])
+            return ResolveResult(
+                "unchanged", dest, chosen, download_urls=candidates
+            )
         for url in candidates:
-            dest = dest_dir / f"{safe_filename(ref)}.pdf"
-            if dest.exists() and not force:
-                return ResolveResult(
-                    "unchanged", dest, url, download_urls=candidates
-                )
             if http_exists(url):
                 try:
                     http_download(url, dest)

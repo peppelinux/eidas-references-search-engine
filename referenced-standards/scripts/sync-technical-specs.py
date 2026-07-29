@@ -32,7 +32,12 @@ from arf_technical_specs import (
     parse_title_from_markdown,
     write_catalogue_reference,
 )
-from prune_stale_specs import apply_identity_aliases, collapse_refs_to_latest, prune_stale_specs
+from prune_stale_specs import (
+    apply_identity_aliases,
+    collapse_refs_to_latest,
+    prune_stale_specs,
+    spec_identity,
+)
 from reference_metadata import write_reference_for_spec
 from references import ExtractionResult, SpecReference, collect_from_legal_tree, extract_from_text
 from resolvers import (
@@ -90,6 +95,9 @@ def merged_sources(
 ) -> set[str]:
     """Union runtime discovery with provenance stored in manifest.lock.json."""
     out = set(sources)
+    # Pinned extras replace discovered versions — do not reattach stale legal sources.
+    if out == {"extra-references.md"}:
+        return out
     lock_entry = lock.get("specs", {}).get(key, {})
     out.update(lock_entry.get("sources") or [])
     return out
@@ -279,6 +287,34 @@ def run_sync(
     _rekey_arf_refs(all_refs, all_sources)
     dropped = collapse_refs_to_latest(all_refs, all_sources)
     dropped += apply_identity_aliases(all_refs, all_sources)
+
+    # Pin newer versions from extra-references.md after collapse so they replace
+    # (not inherit) older legal citations of the same designation.
+    extra_path = ROOT / "extra-references.md"
+    if extra_path.is_file():
+        extra = ExtractionResult()
+        extract_from_text(
+            extra_path.read_text(encoding="utf-8"),
+            str(extra_path.relative_to(ROOT)),
+            extra,
+        )
+        replaced = 0
+        for key, ref in extra.references.items():
+            identity = spec_identity(ref)
+            for existing_key in [
+                k for k, r in list(all_refs.items()) if spec_identity(r) == identity
+            ]:
+                all_refs.pop(existing_key, None)
+                all_sources.pop(existing_key, None)
+                replaced += 1
+            all_refs[key] = ref
+            all_sources[key] = set(extra.sources.get(key, ()))
+        if extra.references:
+            print(
+                f"+{len(extra.references)} pinned reference(s) from {extra_path.name}"
+                + (f" (replaced {replaced} discovered)" if replaced else "")
+            )
+
     print(
         f"Found {len(all_refs) - len(arf_entries)} reference(s) in legal texts; "
         f"+{len(arf_entries)} ARF technical specification(s) "
