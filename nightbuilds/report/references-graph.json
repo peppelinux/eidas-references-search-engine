@@ -506,9 +506,9 @@
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
-      "from": "ARF TS06 V1.0.1",
+      "from": "ARF TS06 V1.1",
       "kind": "references",
-      "source": "ARF/TS06-V1.0.1/TS06-V1.0.1.md",
+      "source": "ARF/TS06-V1.1/TS06-V1.1.md",
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
@@ -25022,12 +25022,6 @@
       "to": "IETF RFC 9147"
     },
     {
-      "from": "ARF TS05 V1.2.1",
-      "kind": "references",
-      "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
-      "to": "IETF RFC 9162"
-    },
-    {
       "from": "ETSI TR 119 476 V1.2.1",
       "kind": "references",
       "source": "ETSI/TR-119-476-V1.2.1/TR-119-476-V1.2.1.pdf",
@@ -30035,7 +30029,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS06 V1.0.1"
+      "to": "ARF TS06 V1.1"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
@@ -30092,7 +30086,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-07-29T11:37:56.078909+00:00",
+  "generated_at": "2026-08-01T10:52:12.973561+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -30253,7 +30247,7 @@
       "files": {
         "md": {
           "path": "standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md",
-          "sha256": "3260450645d27ca566ac8e8a1ced18094d6481dc787467349abf2bb5e5686979"
+          "sha256": "f7b831e938796b744c39c2cb428715c7b0f43b130bf80e161aa597016e29027c"
         }
       },
       "folder": "ARF/TS05-V1.2.1",
@@ -30285,17 +30279,17 @@
       ],
       "files": {
         "md": {
-          "path": "standards/ARF/TS06-V1.0.1/TS06-V1.0.1.md",
-          "sha256": "ced31ac20a516f529b642fd8a46d2b49b533c2d415bff70c5b91bcd5d4871f8e"
+          "path": "standards/ARF/TS06-V1.1/TS06-V1.1.md",
+          "sha256": "86a121beae412a8e22f49608410bc8b93ac94f1d1a940b41765bae7a9b37b9a9"
         }
       },
-      "folder": "ARF/TS06-V1.0.1",
-      "id": "ARF TS06 V1.0.1",
+      "folder": "ARF/TS06-V1.1",
+      "id": "ARF TS06 V1.1",
       "parent_legal_regulations": [],
       "parent_specifications": [],
       "purpose": null,
       "scope_keywords": [],
-      "search_text": "ARF TS06 1.0.1 Common Set of Relying Party Information to be Registered The present document specifies the common data set required for Relying Party Registration as required by the European Digital Identity Regulation (EU 2024/1183). arf-technical-spec downloaded",
+      "search_text": "ARF TS06 1.1 Common Set of Relying Party Information to be Registered The present document specifies the common data set required for Relying Party Registration as required by the European Digital Identity Regulation (EU 2024/1183). arf-technical-spec downloaded",
       "status": "downloaded",
       "summary": "The present document specifies the common data set required for Relying Party Registration as required by the European Digital Identity Regulation (EU 2024/1183).",
       "tags": [
@@ -30304,7 +30298,7 @@
       ],
       "title": "Common Set of Relying Party Information to be Registered",
       "type": "specification",
-      "version": "1.0.1"
+      "version": "1.1"
     },
     {
       "body": "ARF",
@@ -34488,9 +34482,9 @@
         {
           "body": "ARF",
           "designation": "TS06",
-          "folder": "ARF/TS06-V1.0.1",
-          "source": "ARF/TS06-V1.0.1/TS06-V1.0.1.md",
-          "version": "1.0.1"
+          "folder": "ARF/TS06-V1.1",
+          "source": "ARF/TS06-V1.1/TS06-V1.1.md",
+          "version": "1.1"
         }
       ],
       "purpose": null,
@@ -35731,13 +35725,6 @@
       "id": "IETF RFC 9162",
       "parent_legal_regulations": [],
       "parent_specifications": [
-        {
-          "body": "ARF",
-          "designation": "TS05",
-          "folder": "ARF/TS05-V1.2.1",
-          "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
-          "version": "1.2.1"
-        },
         {
           "body": "ETSI",
           "designation": "TR 119 476",
@@ -70492,7 +70479,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "deca30842fc235f19e4d6d31f233828f31687d75ac4146626934cf4e9ff9b35a"
+          "sha256": "44d1638b0d312bafc6c12526e40e17cf9b7bef87f2f9db6a313d711c31648e95"
         }
       },
       "folder": "IETF/SD-JWT-VC",
