@@ -506,9 +506,9 @@
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
-      "from": "ARF TS06 V1.1",
+      "from": "ARF TS06 V1.2",
       "kind": "references",
-      "source": "ARF/TS06-V1.1/TS06-V1.1.md",
+      "source": "ARF/TS06-V1.2/TS06-V1.2.md",
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
@@ -4835,6 +4835,12 @@
       "from": "ARF TS03 V1.5.2",
       "kind": "references",
       "source": "ARF/TS03-V1.5.2/TS03-V1.5.2.md",
+      "to": "IETF RFC 2119"
+    },
+    {
+      "from": "ARF TS06 V1.2",
+      "kind": "references",
+      "source": "ARF/TS06-V1.2/TS06-V1.2.md",
       "to": "IETF RFC 2119"
     },
     {
@@ -26288,6 +26294,12 @@
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
+      "from": "ARF TS06 V1.2",
+      "kind": "references",
+      "source": "ARF/TS06-V1.2/TS06-V1.2.md",
+      "to": "ISO-IEC ISO 3166-1 V2020"
+    },
+    {
       "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
       "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
@@ -30029,7 +30041,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS06 V1.1"
+      "to": "ARF TS06 V1.2"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
@@ -30086,7 +30098,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-08-03T12:38:40.131076+00:00",
+  "generated_at": "2026-08-04T11:37:27.702043+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -30279,26 +30291,26 @@
       ],
       "files": {
         "md": {
-          "path": "standards/ARF/TS06-V1.1/TS06-V1.1.md",
-          "sha256": "86a121beae412a8e22f49608410bc8b93ac94f1d1a940b41765bae7a9b37b9a9"
+          "path": "standards/ARF/TS06-V1.2/TS06-V1.2.md",
+          "sha256": "0619ed66e66c15253af0671b4f80f06594e5ac10ea6ae4052eb0329522c668f7"
         }
       },
-      "folder": "ARF/TS06-V1.1",
-      "id": "ARF TS06 V1.1",
+      "folder": "ARF/TS06-V1.2",
+      "id": "ARF TS06 V1.2",
       "parent_legal_regulations": [],
       "parent_specifications": [],
       "purpose": null,
       "scope_keywords": [],
-      "search_text": "ARF TS06 1.1 Common Set of Relying Party Information to be Registered The present document specifies the common data set required for Relying Party Registration as required by the European Digital Identity Regulation (EU 2024/1183). arf-technical-spec downloaded",
+      "search_text": "ARF TS06 1.2 Common Set of Relying Party Information to be Registered The present document specifies the common data set required for Relying Party Registration, as required by Regulation\n(EU) No. 910/2014, as augmented by the \"European Digital Identity Regulation\"\n(EU) 2024/1183 and further detailed by the Commission Implementation Regulation\n(CIR) (EU) 2025/848, as amended by CIR (EU) 2026/1730. arf-technical-spec downloaded",
       "status": "downloaded",
-      "summary": "The present document specifies the common data set required for Relying Party Registration as required by the European Digital Identity Regulation (EU 2024/1183).",
+      "summary": "The present document specifies the common data set required for Relying Party Registration, as required by Regulation\n(EU) No. 910/2014, as augmented by the \"European Digital Identity Regulation\"\n(EU) 2024/1183 and further detailed by the Commission Implementation Regulation\n(CIR) (EU) 2025/848, as amended by CIR (EU) 2026/1730.",
       "tags": [
         "arf-technical-spec",
         "downloaded"
       ],
       "title": "Common Set of Relying Party Information to be Registered",
       "type": "specification",
-      "version": "1.1"
+      "version": "1.2"
     },
     {
       "body": "ARF",
@@ -34482,9 +34494,9 @@
         {
           "body": "ARF",
           "designation": "TS06",
-          "folder": "ARF/TS06-V1.1",
-          "source": "ARF/TS06-V1.1/TS06-V1.1.md",
-          "version": "1.1"
+          "folder": "ARF/TS06-V1.2",
+          "source": "ARF/TS06-V1.2/TS06-V1.2.md",
+          "version": "1.2"
         }
       ],
       "purpose": null,
@@ -63779,6 +63791,13 @@
         },
         {
           "body": "ARF",
+          "designation": "TS06",
+          "folder": "ARF/TS06-V1.2",
+          "source": "ARF/TS06-V1.2/TS06-V1.2.md",
+          "version": "1.2"
+        },
+        {
+          "body": "ARF",
           "designation": "TS07",
           "folder": "ARF/TS07-V0.11",
           "source": "ARF/TS07-V0.11/TS07-V0.11.md",
@@ -70479,7 +70498,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "4b3de4678aab995f2d84bb4ae604a207b7b587850c9f1f9b35201b9cce0aead1"
+          "sha256": "2de7b708eb2fecccc8ec47612d705ccd14e58b141a139a8a7a4a57b5aed49f72"
         }
       },
       "folder": "IETF/SD-JWT-VC",
@@ -110278,6 +110297,13 @@
           "folder": "ARF/TS05-V1.2.1",
           "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
           "version": "1.2.1"
+        },
+        {
+          "body": "ARF",
+          "designation": "TS06",
+          "folder": "ARF/TS06-V1.2",
+          "source": "ARF/TS06-V1.2/TS06-V1.2.md",
+          "version": "1.2"
         },
         {
           "body": "ETSI",
