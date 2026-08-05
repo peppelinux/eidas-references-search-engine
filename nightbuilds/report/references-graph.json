@@ -422,6 +422,12 @@
       "to": "ETSI TS 119 411-8 V1.1.1"
     },
     {
+      "from": "ARF TS07 V1.0",
+      "kind": "references",
+      "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+      "to": "ETSI TS 119 411-8 V1.1.1"
+    },
+    {
       "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
       "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
@@ -509,6 +515,12 @@
       "from": "ARF TS06 V1.2",
       "kind": "references",
       "source": "ARF/TS06-V1.2/TS06-V1.2.md",
+      "to": "ETSI TS 119 475 V1.2.1"
+    },
+    {
+      "from": "ARF TS07 V1.0",
+      "kind": "references",
+      "source": "ARF/TS07-V1.0/TS07-V1.0.md",
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
@@ -4844,9 +4856,9 @@
       "to": "IETF RFC 2119"
     },
     {
-      "from": "ARF TS07 V0.11",
+      "from": "ARF TS07 V1.0",
       "kind": "references",
-      "source": "ARF/TS07-V0.11/TS07-V0.11.md",
+      "source": "ARF/TS07-V1.0/TS07-V1.0.md",
       "to": "IETF RFC 2119"
     },
     {
@@ -16046,6 +16058,12 @@
       "to": "IETF RFC 5280"
     },
     {
+      "from": "ARF TS07 V1.0",
+      "kind": "references",
+      "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+      "to": "IETF RFC 5280"
+    },
+    {
       "from": "ARF TS10 V1.2",
       "kind": "references",
       "source": "ARF/TS10-V1.2/TS10-V1.2.md",
@@ -26300,6 +26318,12 @@
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
+      "from": "ARF TS07 V1.0",
+      "kind": "references",
+      "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+      "to": "ISO-IEC ISO 3166-1 V2020"
+    },
+    {
       "from": "ETSI EN 319 412-1 V1.7.0",
       "kind": "references",
       "source": "ETSI/EN-319-412-1-V1.7.0/EN-319-412-1-V1.7.0.pdf",
@@ -29888,12 +29912,6 @@
       "to": "OpenID OpenID4VP V1.0"
     },
     {
-      "from": "ARF TS07 V0.11",
-      "kind": "references",
-      "source": "ARF/TS07-V0.11/TS07-V0.11.md",
-      "to": "OpenID OpenID4VP V1.0"
-    },
-    {
       "from": "ARF TS10 V1.2",
       "kind": "references",
       "source": "ARF/TS10-V1.2/TS10-V1.2.md",
@@ -30047,7 +30065,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS07 V0.11"
+      "to": "ARF TS07 V1.0"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
@@ -30098,7 +30116,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-08-04T11:37:27.702043+00:00",
+  "generated_at": "2026-08-05T11:32:35.149968+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -30324,19 +30342,19 @@
       ],
       "files": {
         "md": {
-          "path": "standards/ARF/TS07-V0.11/TS07-V0.11.md",
-          "sha256": "ac97dbeac075c143fb1a5e956a15da070b417d48fc8e6c41ec6f5eae99f10d1a"
+          "path": "standards/ARF/TS07-V1.0/TS07-V1.0.md",
+          "sha256": "569b188b2f49de0852b7b93006d1dde3ffa1c046377e159a2405ad6749f83a70"
         }
       },
-      "folder": "ARF/TS07-V0.11",
-      "id": "ARF TS07 V0.11",
+      "folder": "ARF/TS07-V1.0",
+      "id": "ARF TS07 V1.0",
       "parent_legal_regulations": [],
       "parent_specifications": [],
       "purpose": null,
       "scope_keywords": [
         "wallet"
       ],
-      "search_text": "ARF TS07 0.11 Specification of Common Interface for Data Deletion Requests to Relying Parties The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (ix) of\n(EU) No 910/2014 used by a Wallet Unit for invoking a suitable external application,\nsuch as a browser, an email client or a phone application, for requesting the\nerasure of personal data pursuant to Article 17 of Regulation (EU) 2016/679\nat a Wallet-Relying Party for personal data, which was previously provided by a Wallet Unit. wallet arf-technical-spec downloaded",
+      "search_text": "ARF TS07 1.0 Specification of Common Interface for Data Deletion Requests to Relying Parties The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (ix) of\n(EU) No 910/2014 used by a Wallet Unit for invoking a suitable external application,\nsuch as a browser, an email client or a phone application, for requesting the\nerasure of personal data pursuant to Article 17 of Regulation (EU) 2016/679\nat a Wallet-Relying Party for personal data, which was previously provided by a Wallet Unit. wallet arf-technical-spec downloaded",
       "status": "downloaded",
       "summary": "The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (ix) of\n(EU) No 910/2014 used by a Wallet Unit for invoking a suitable external application,\nsuch as a browser, an email client or a phone application, for requesting the\nerasure of personal data pursuant to Article 17 of Regulation (EU) 2016/679\nat a Wallet-Relying Party for personal data, which was previously provided by a Wallet Unit.",
       "tags": [
@@ -30345,7 +30363,7 @@
       ],
       "title": "Specification of Common Interface for Data Deletion Requests to Relying Parties",
       "type": "specification",
-      "version": "0.11"
+      "version": "1.0"
     },
     {
       "body": "ARF",
@@ -33851,7 +33869,15 @@
           "title": "Amending CIR 2025/848 \u2014 Relying Party Registration"
         }
       ],
-      "parent_specifications": [],
+      "parent_specifications": [
+        {
+          "body": "ARF",
+          "designation": "TS07",
+          "folder": "ARF/TS07-V1.0",
+          "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+          "version": "1.0"
+        }
+      ],
       "purpose": null,
       "scope_keywords": [
         "e-commerce",
@@ -33871,13 +33897,14 @@
         "policies",
         "policy"
       ],
-      "search_text": "ETSI TS 119 411-8 1.1.1 ETSI TS 119 411-8 Covers: e-commerce, electronic signature, EUDI wallet, security, trust services. e-commerce electronic signature eudi wallet security trust services 119 411-8 authorization certificate certificates eudi identification key pki policies policy 119-series cited-by-eu-law implementing-regulation unchanged 2026-1730 Amending CIR 2025/848 \u2014 Relying Party Registration 32026R1730",
+      "search_text": "ETSI TS 119 411-8 1.1.1 ETSI TS 119 411-8 Covers: e-commerce, electronic signature, EUDI wallet, security, trust services. e-commerce electronic signature eudi wallet security trust services 119 411-8 authorization certificate certificates eudi identification key pki policies policy 119-series cited-by-eu-law implementing-regulation nested-reference unchanged 2026-1730 Amending CIR 2025/848 \u2014 Relying Party Registration 32026R1730",
       "status": "unchanged",
       "summary": "Covers: e-commerce, electronic signature, EUDI wallet, security, trust services.",
       "tags": [
         "119-series",
         "cited-by-eu-law",
         "implementing-regulation",
+        "nested-reference",
         "unchanged"
       ],
       "title": "ETSI TS 119 411-8",
@@ -34497,6 +34524,13 @@
           "folder": "ARF/TS06-V1.2",
           "source": "ARF/TS06-V1.2/TS06-V1.2.md",
           "version": "1.2"
+        },
+        {
+          "body": "ARF",
+          "designation": "TS07",
+          "folder": "ARF/TS07-V1.0",
+          "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+          "version": "1.0"
         }
       ],
       "purpose": null,
@@ -44622,6 +44656,13 @@
           "folder": "ARF/TS02-V1.0.1",
           "source": "ARF/TS02-V1.0.1/TS02-V1.0.1.md",
           "version": "1.0.1"
+        },
+        {
+          "body": "ARF",
+          "designation": "TS07",
+          "folder": "ARF/TS07-V1.0",
+          "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+          "version": "1.0"
         },
         {
           "body": "ARF",
@@ -63799,9 +63840,9 @@
         {
           "body": "ARF",
           "designation": "TS07",
-          "folder": "ARF/TS07-V0.11",
-          "source": "ARF/TS07-V0.11/TS07-V0.11.md",
-          "version": "0.11"
+          "folder": "ARF/TS07-V1.0",
+          "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+          "version": "1.0"
         },
         {
           "body": "ARF",
@@ -70498,7 +70539,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "2de7b708eb2fecccc8ec47612d705ccd14e58b141a139a8a7a4a57b5aed49f72"
+          "sha256": "fb00a59a3308fd356408189b11680e3b4d676bba3a8e717485a69fc241ac0bdb"
         }
       },
       "folder": "IETF/SD-JWT-VC",
@@ -110306,6 +110347,13 @@
           "version": "1.2"
         },
         {
+          "body": "ARF",
+          "designation": "TS07",
+          "folder": "ARF/TS07-V1.0",
+          "source": "ARF/TS07-V1.0/TS07-V1.0.md",
+          "version": "1.0"
+        },
+        {
           "body": "ETSI",
           "designation": "EN 319 412-1",
           "folder": "ETSI/EN-319-412-1-V1.7.0",
@@ -119845,13 +119893,6 @@
           "folder": "ARF/TS05-V1.2.1",
           "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
           "version": "1.2.1"
-        },
-        {
-          "body": "ARF",
-          "designation": "TS07",
-          "folder": "ARF/TS07-V0.11",
-          "source": "ARF/TS07-V0.11/TS07-V0.11.md",
-          "version": "0.11"
         },
         {
           "body": "ARF",

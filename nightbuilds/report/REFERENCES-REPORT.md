@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-08-04T11:37:27.702043+00:00
+Generated: 2026-08-05T11:32:35.149968+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -13,7 +13,7 @@ Open **`index.html`** in this folder for the interactive version.
 | Unavailable | 269 |
 | Other | 0 |
 | Legal → specification links | 152 |
-| Specification → specification links | 4863 |
+| Specification → specification links | 4866 |
 
 ### By standardization body
 
@@ -41,8 +41,8 @@ Open **`index.html`** in this folder for the interactive version.
 | TS05 | 1.2.1 | The present document specifies the data formats and application programming interface (API) for the machine-readable Rel | — | `ARF/TS05-V1.2.1` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts5-common-formats-and-api-for-rp-registration-information.md) |
 | TS06 | 1.2 | The present document specifies the common data set required for Relying Party Registration, as required by Regulation
 (E | — | `ARF/TS06-V1.2` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts6-common-set-of-rp-information-to-be-registered.md) |
-| TS07 | 0.11 | The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (ix) of
-(EU) No 910/2 | wallet | `ARF/TS07-V0.11` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) |
+| TS07 | 1.0 | The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (ix) of
+(EU) No 910/2 | wallet | `ARF/TS07-V1.0` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) |
 | TS08 | 0.11 | The present document specifies the common protocols and interfaces according to Article 5a (5) (a) (x) of
 (EU) No 910/20 | wallet | `ARF/TS08-V0.11` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts8-common-interface-for-reporting-of-wrp-to-dpa.md) |
 | TS09 | 1.1 | The present document specifies the common protocols and interfaces according to Article 5a (4) (c) and Article 5a (5) (a | wallet | `ARF/TS09-V1.1` | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md) |
@@ -3331,7 +3331,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS04 V1.0.1 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts4-zkp.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts4-zkp.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS05 V1.2.1 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts5-common-formats-and-api-for-rp-registration-information.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts5-common-formats-and-api-for-rp-registration-information.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS06 V1.2 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts6-common-set-of-rp-information-to-be-registered.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts6-common-set-of-rp-information-to-be-registered.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
-| ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS07 V0.11 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
+| ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS07 V1.0 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS08 V0.11 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts8-common-interface-for-reporting-of-wrp-to-dpa.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts8-common-interface-for-reporting-of-wrp-to-dpa.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS09 V1.1 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts9-wallet-to-wallet-interactions.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
 | ARF EC technical specifications (TS01–TS14) V3.0.0 | ARF TS10 V1.2 | [link](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts10-data-portability-and-download-%28export%29.md) | [online](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/main/docs/technical-specifications/ts10-data-portability-and-download-%28export%29.md) · `ARF/technical-specifications` — md:—, html:—, pdf:— |
@@ -3377,8 +3377,11 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ARF TS06 V1.2 | ETSI TS 119 475 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) · `ARF/TS06-V1.2/TS06-V1.2.md` — [md](../referenced-standards/standards/ARF/TS06-V1.2/TS06-V1.2.md), html:—, pdf:— |
 | ARF TS06 V1.2 | IETF RFC 2119 | [link](https://www.rfc-editor.org/rfc/rfc2119.txt) | [online](https://www.rfc-editor.org/rfc/rfc2119.txt) · `ARF/TS06-V1.2/TS06-V1.2.md` — [md](../referenced-standards/standards/ARF/TS06-V1.2/TS06-V1.2.md), html:—, pdf:— |
 | ARF TS06 V1.2 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ARF/TS06-V1.2/TS06-V1.2.md` — [md](../referenced-standards/standards/ARF/TS06-V1.2/TS06-V1.2.md), html:—, pdf:— |
-| ARF TS07 V0.11 | IETF RFC 2119 | [link](https://www.rfc-editor.org/rfc/rfc2119.txt) | [online](https://www.rfc-editor.org/rfc/rfc2119.txt) · `ARF/TS07-V0.11/TS07-V0.11.md` — [md](../referenced-standards/standards/ARF/TS07-V0.11/TS07-V0.11.md), html:—, pdf:— |
-| ARF TS07 V0.11 | OpenID OpenID4VP V1.0 | [link](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html) | [online](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html) · `ARF/TS07-V0.11/TS07-V0.11.md` — [md](../referenced-standards/standards/ARF/TS07-V0.11/TS07-V0.11.md), html:—, pdf:— |
+| ARF TS07 V1.0 | ETSI TS 119 411-8 V1.1.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941108/01.01.01_60/ts_11941108v010101p.pdf) · `ARF/TS07-V1.0/TS07-V1.0.md` — [md](../referenced-standards/standards/ARF/TS07-V1.0/TS07-V1.0.md), html:—, pdf:— |
+| ARF TS07 V1.0 | ETSI TS 119 475 V1.2.1 | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/01.02.01_60/ts_119475v010201p.pdf) · `ARF/TS07-V1.0/TS07-V1.0.md` — [md](../referenced-standards/standards/ARF/TS07-V1.0/TS07-V1.0.md), html:—, pdf:— |
+| ARF TS07 V1.0 | IETF RFC 2119 | [link](https://www.rfc-editor.org/rfc/rfc2119.txt) | [online](https://www.rfc-editor.org/rfc/rfc2119.txt) · `ARF/TS07-V1.0/TS07-V1.0.md` — [md](../referenced-standards/standards/ARF/TS07-V1.0/TS07-V1.0.md), html:—, pdf:— |
+| ARF TS07 V1.0 | IETF RFC 5280 | [link](https://www.rfc-editor.org/rfc/rfc5280.txt) | [online](https://www.rfc-editor.org/rfc/rfc5280.txt) · `ARF/TS07-V1.0/TS07-V1.0.md` — [md](../referenced-standards/standards/ARF/TS07-V1.0/TS07-V1.0.md), html:—, pdf:— |
+| ARF TS07 V1.0 | ISO-IEC ISO 3166-1 V2020 | [link](https://www.iso.org/search.html?q=ISO+3166-1) | [online](https://www.iso.org/search.html?q=ISO+3166-1) · `ARF/TS07-V1.0/TS07-V1.0.md` — [md](../referenced-standards/standards/ARF/TS07-V1.0/TS07-V1.0.md), html:—, pdf:— |
 | ARF TS08 V0.11 | IETF RFC 2119 | [link](https://www.rfc-editor.org/rfc/rfc2119.txt) | [online](https://www.rfc-editor.org/rfc/rfc2119.txt) · `ARF/TS08-V0.11/TS08-V0.11.md` — [md](../referenced-standards/standards/ARF/TS08-V0.11/TS08-V0.11.md), html:—, pdf:— |
 | ARF TS09 V1.1 | IETF RFC 2119 | [link](https://www.rfc-editor.org/rfc/rfc2119.txt) | [online](https://www.rfc-editor.org/rfc/rfc2119.txt) · `ARF/TS09-V1.1/TS09-V1.1.md` — [md](../referenced-standards/standards/ARF/TS09-V1.1/TS09-V1.1.md), html:—, pdf:— |
 | ARF TS09 V1.1 | IETF RFC 8174 | [link](https://www.rfc-editor.org/rfc/rfc8174.txt) | [online](https://www.rfc-editor.org/rfc/rfc8174.txt) · `ARF/TS09-V1.1/TS09-V1.1.md` — [md](../referenced-standards/standards/ARF/TS09-V1.1/TS09-V1.1.md), html:—, pdf:— |
@@ -8202,7 +8205,7 @@ flowchart LR
   ARF_TS04_V1_0_1["ARF TS04<br/>V1.0.1"]:::specOk
   ARF_TS05_V1_2_1["ARF TS05<br/>V1.2.1"]:::specOk
   ARF_TS06_V1_2["ARF TS06<br/>V1.2"]:::specOk
-  ARF_TS07_V0_11["ARF TS07<br/>V0.11"]:::specOk
+  ARF_TS07_V1_0["ARF TS07<br/>V1.0"]:::specOk
   ARF_TS08_V0_11["ARF TS08<br/>V0.11"]:::specOk
   ARF_TS09_V1_1["ARF TS09<br/>V1.1"]:::specOk
   ARF_TS10_V1_2["ARF TS10<br/>V1.2"]:::specOk
@@ -9697,6 +9700,7 @@ flowchart LR
   legal_2025_2531 -->|cites| ETSI_TS_119_182_1_V1_2_1
   legal_2025_2527 -->|cites| ETSI_TS_119_411_5_V2_1_1
   legal_2026_1730 -->|cites| ETSI_TS_119_411_8_V1_1_1
+  ARF_TS07_V1_0 -.->|references| ETSI_TS_119_411_8_V1_1_1
   ETSI_EN_319_412_1_V1_7_0 -.->|references| ETSI_TS_119_412_1_V1_4_4
   ETSI_EN_319_412_4_V1_3_0 -.->|references| ETSI_TS_119_412_4_V1_1_1
   ETSI_EN_319_422_V1_1_1 -.->|references| ETSI_TS_119_422_V1_1_0
@@ -9712,6 +9716,7 @@ flowchart LR
   legal_2026_1730 -->|cites| ETSI_TS_119_475_V1_2_1
   ARF_TS05_V1_2_1 -.->|references| ETSI_TS_119_475_V1_2_1
   ARF_TS06_V1_2 -.->|references| ETSI_TS_119_475_V1_2_1
+  ARF_TS07_V1_0 -.->|references| ETSI_TS_119_475_V1_2_1
   legal_2026_1735 -->|cites| ETSI_TS_119_478_V1_1_1
   ARF_TS11_V1_0_1 -.->|references| ETSI_TS_119_478_V1_1_1
   legal_2025_2527 -->|cites| ETSI_TS_119_495_V1_7_1
@@ -10434,7 +10439,7 @@ flowchart LR
   IETF_RFC_4021 -.->|references| IETF_RFC_2110
   ARF_TS03_V1_5_2 -.->|references| IETF_RFC_2119
   ARF_TS06_V1_2 -.->|references| IETF_RFC_2119
-  ARF_TS07_V0_11 -.->|references| IETF_RFC_2119
+  ARF_TS07_V1_0 -.->|references| IETF_RFC_2119
   ARF_TS08_V0_11 -.->|references| IETF_RFC_2119
   ARF_TS09_V1_1 -.->|references| IETF_RFC_2119
   ARF_TS10_V1_2 -.->|references| IETF_RFC_2119
@@ -12301,6 +12306,7 @@ flowchart LR
   legal_2025_1943 -->|cites| IETF_RFC_5280
   legal_2025_2162 -->|cites| IETF_RFC_5280
   ARF_TS02_V1_0_1 -.->|references| IETF_RFC_5280
+  ARF_TS07_V1_0 -.->|references| IETF_RFC_5280
   ARF_TS10_V1_2 -.->|references| IETF_RFC_5280
   ARF_TS11_V1_0_1 -.->|references| IETF_RFC_5280
   ETSI_EN_319_102_1_V1_4_1 -.->|references| IETF_RFC_5280
@@ -14010,6 +14016,7 @@ flowchart LR
   ARF_TS02_V1_0_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ARF_TS05_V1_2_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ARF_TS06_V1_2 -.->|references| ISO_IEC_ISO_3166_1_V2020
+  ARF_TS07_V1_0 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_EN_319_412_1_V1_7_0 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_EN_319_412_5_V2_6_0 -.->|references| ISO_IEC_ISO_3166_1_V2020
   ETSI_TS_119_182_1_V1_2_1 -.->|references| ISO_IEC_ISO_3166_1_V2020
@@ -14608,7 +14615,6 @@ flowchart LR
   IETF_SD_JWT_VC -.->|references| OpenID_OpenID4VCI_V1_0
   legal_2026_1731 -->|cites| OpenID_OpenID4VP_V1_0
   ARF_TS05_V1_2_1 -.->|references| OpenID_OpenID4VP_V1_0
-  ARF_TS07_V0_11 -.->|references| OpenID_OpenID4VP_V1_0
   ARF_TS10_V1_2 -.->|references| OpenID_OpenID4VP_V1_0
   ARF_TS11_V1_0_1 -.->|references| OpenID_OpenID4VP_V1_0
   ARF_TS12_V1_0_1 -.->|references| OpenID_OpenID4VP_V1_0
@@ -14634,7 +14640,7 @@ flowchart LR
   ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS04_V1_0_1
   ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS05_V1_2_1
   ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS06_V1_2
-  ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS07_V0_11
+  ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS07_V1_0
   ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS08_V0_11
   ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS09_V1_1
   ARF_EC_technical_specifications__TS01_TS14__V3_0_0 -.->|references| ARF_TS10_V1_2
