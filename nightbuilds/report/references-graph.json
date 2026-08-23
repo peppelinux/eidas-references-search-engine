@@ -518,9 +518,9 @@
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
-      "from": "ARF TS06 V1.2.1",
+      "from": "ARF TS06 V1.2.2",
       "kind": "references",
-      "source": "ARF/TS06-V1.2.1/TS06-V1.2.1.md",
+      "source": "ARF/TS06-V1.2.2/TS06-V1.2.2.md",
       "to": "ETSI TS 119 475 V1.2.1"
     },
     {
@@ -4862,9 +4862,9 @@
       "to": "IETF RFC 2119"
     },
     {
-      "from": "ARF TS06 V1.2.1",
+      "from": "ARF TS06 V1.2.2",
       "kind": "references",
-      "source": "ARF/TS06-V1.2.1/TS06-V1.2.1.md",
+      "source": "ARF/TS06-V1.2.2/TS06-V1.2.2.md",
       "to": "IETF RFC 2119"
     },
     {
@@ -26324,9 +26324,9 @@
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
-      "from": "ARF TS06 V1.2.1",
+      "from": "ARF TS06 V1.2.2",
       "kind": "references",
-      "source": "ARF/TS06-V1.2.1/TS06-V1.2.1.md",
+      "source": "ARF/TS06-V1.2.2/TS06-V1.2.2.md",
       "to": "ISO-IEC ISO 3166-1 V2020"
     },
     {
@@ -29852,6 +29852,12 @@
       "to": "OpenID OpenID4VCI V1.0"
     },
     {
+      "from": "ARF TS05 V1.2.1",
+      "kind": "references",
+      "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
+      "to": "OpenID OpenID4VCI V1.0"
+    },
+    {
       "from": "ARF TS10 V1.2",
       "kind": "references",
       "source": "ARF/TS10-V1.2/TS10-V1.2.md",
@@ -30071,7 +30077,7 @@
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
       "kind": "references",
       "source": "ARF/technical-specifications",
-      "to": "ARF TS06 V1.2.1"
+      "to": "ARF TS06 V1.2.2"
     },
     {
       "from": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0",
@@ -30128,7 +30134,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-08-22T09:46:27.988180+00:00",
+  "generated_at": "2026-08-23T09:47:05.976599+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -30289,7 +30295,7 @@
       "files": {
         "md": {
           "path": "standards/ARF/TS05-V1.2.1/TS05-V1.2.1.md",
-          "sha256": "f7b831e938796b744c39c2cb428715c7b0f43b130bf80e161aa597016e29027c"
+          "sha256": "038b1894420e02d26a179aaed8899860134c4969e43b685f55c97d72b96b3ca6"
         }
       },
       "folder": "ARF/TS05-V1.2.1",
@@ -30321,17 +30327,17 @@
       ],
       "files": {
         "md": {
-          "path": "standards/ARF/TS06-V1.2.1/TS06-V1.2.1.md",
-          "sha256": "ae7bac5ea8ed941fb0a476aa16911f9162a2b95acd84d7a796a7ce147de9b428"
+          "path": "standards/ARF/TS06-V1.2.2/TS06-V1.2.2.md",
+          "sha256": "03b198deb4f8151ef73c755598a399a951163d6d6b3918e03ea56c372009d77c"
         }
       },
-      "folder": "ARF/TS06-V1.2.1",
-      "id": "ARF TS06 V1.2.1",
+      "folder": "ARF/TS06-V1.2.2",
+      "id": "ARF TS06 V1.2.2",
       "parent_legal_regulations": [],
       "parent_specifications": [],
       "purpose": null,
       "scope_keywords": [],
-      "search_text": "ARF TS06 1.2.1 Common Set of Relying Party Information to be Registered The present document specifies the common data set required for Relying Party Registration, as required by Regulation\n(EU) No. 910/2014, as augmented by the \"European Digital Identity Regulation\"\n(EU) 2024/1183 and further detailed by the Commission Implementation Regulation\n(CIR) (EU) 2025/848, as amended by CIR (EU) 2026/1730. arf-technical-spec downloaded",
+      "search_text": "ARF TS06 1.2.2 Common Set of Relying Party Information to be Registered The present document specifies the common data set required for Relying Party Registration, as required by Regulation\n(EU) No. 910/2014, as augmented by the \"European Digital Identity Regulation\"\n(EU) 2024/1183 and further detailed by the Commission Implementation Regulation\n(CIR) (EU) 2025/848, as amended by CIR (EU) 2026/1730. arf-technical-spec downloaded",
       "status": "downloaded",
       "summary": "The present document specifies the common data set required for Relying Party Registration, as required by Regulation\n(EU) No. 910/2014, as augmented by the \"European Digital Identity Regulation\"\n(EU) 2024/1183 and further detailed by the Commission Implementation Regulation\n(CIR) (EU) 2025/848, as amended by CIR (EU) 2026/1730.",
       "tags": [
@@ -30340,7 +30346,7 @@
       ],
       "title": "Common Set of Relying Party Information to be Registered",
       "type": "specification",
-      "version": "1.2.1"
+      "version": "1.2.2"
     },
     {
       "body": "ARF",
@@ -34540,9 +34546,9 @@
         {
           "body": "ARF",
           "designation": "TS06",
-          "folder": "ARF/TS06-V1.2.1",
-          "source": "ARF/TS06-V1.2.1/TS06-V1.2.1.md",
-          "version": "1.2.1"
+          "folder": "ARF/TS06-V1.2.2",
+          "source": "ARF/TS06-V1.2.2/TS06-V1.2.2.md",
+          "version": "1.2.2"
         },
         {
           "body": "ARF",
@@ -63859,9 +63865,9 @@
         {
           "body": "ARF",
           "designation": "TS06",
-          "folder": "ARF/TS06-V1.2.1",
-          "source": "ARF/TS06-V1.2.1/TS06-V1.2.1.md",
-          "version": "1.2.1"
+          "folder": "ARF/TS06-V1.2.2",
+          "source": "ARF/TS06-V1.2.2/TS06-V1.2.2.md",
+          "version": "1.2.2"
         },
         {
           "body": "ARF",
@@ -70565,7 +70571,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "fac95db067b685dca011c984e09a82905955c5ebb921e1313f58b8cd033a6ca3"
+          "sha256": "979d3feb4d3c5d7f22b1417b97777aa5ba22b54e966fea4d02941b388d5211d4"
         }
       },
       "folder": "IETF/SD-JWT-VC",
@@ -110368,9 +110374,9 @@
         {
           "body": "ARF",
           "designation": "TS06",
-          "folder": "ARF/TS06-V1.2.1",
-          "source": "ARF/TS06-V1.2.1/TS06-V1.2.1.md",
-          "version": "1.2.1"
+          "folder": "ARF/TS06-V1.2.2",
+          "source": "ARF/TS06-V1.2.2/TS06-V1.2.2.md",
+          "version": "1.2.2"
         },
         {
           "body": "ARF",
@@ -119785,6 +119791,13 @@
           "folder": "ARF/TS03-V1.5.2",
           "source": "ARF/TS03-V1.5.2/TS03-V1.5.2.md",
           "version": "1.5.2"
+        },
+        {
+          "body": "ARF",
+          "designation": "TS05",
+          "folder": "ARF/TS05-V1.2.1",
+          "source": "ARF/TS05-V1.2.1/TS05-V1.2.1.md",
+          "version": "1.2.1"
         },
         {
           "body": "ARF",
