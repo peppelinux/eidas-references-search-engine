@@ -30134,7 +30134,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-09-15T14:22:42.041763+00:00",
+  "generated_at": "2026-09-16T14:14:54.253492+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -70571,7 +70571,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "03af2f09041111a4d10c4370125218ef95c83e63173582163b0abfe7c0972465"
+          "sha256": "ff0d6efbfab475618f4bb6028118ae9ba1ea501bc672f423ab39801670afb911"
         }
       },
       "folder": "IETF/SD-JWT-VC",
