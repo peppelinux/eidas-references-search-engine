@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-10-03T14:21:26.272198+00:00
+Generated: 2026-10-04T14:52:00.166753+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
@@ -9,11 +9,11 @@ Open **`index.html`** in this folder for the interactive version.
 | Metric | Count |
 |--------|------:|
 | Total references | 1403 |
-| Downloaded / unchanged | 1134 |
-| Unavailable | 269 |
+| Downloaded / unchanged | 1133 |
+| Unavailable | 270 |
 | Other | 0 |
 | Legal → specification links | 152 |
-| Specification → specification links | 4869 |
+| Specification → specification links | 4863 |
 
 ### By standardization body
 
@@ -21,7 +21,7 @@ Open **`index.html`** in this folder for the interactive version.
 |------|------:|-----------:|
 | ARF | 15 | 15 |
 | CEN | 3 | 0 |
-| ETSI | 56 | 46 |
+| ETSI | 56 | 45 |
 | IEEE | 20 | 0 |
 | IETF | 1070 | 1068 |
 | ISO-IEC | 204 | 0 |
@@ -77,7 +77,6 @@ the implementation of Zero-Knowl | attestation, attestations, attribute, attribu
 | TS 101 861 | 1.4.1 | Covers: electronic signature, security. | electronic signature, security, 101, 861, algorithm | `ETSI/TS-101-861-V1.4.1` | [link](https://www.etsi.org/deliver/etsi_ts/101800_101899/101861/01.04.01_60/ts_101861v010401p.pdf) |
 | TS 102 176-1 | 2.0.0 | Covers: e-commerce, electronic signature, security. | e-commerce, electronic signature, security, 102, 176-1 | `ETSI/TS-102-176-1-V2.0.0` | [link](https://www.etsi.org/deliver/etsi_ts/102100_102199/10217601/02.00.00_60/ts_10217601v020000p.pdf) |
 | TS 119 101 | 1.1.1 | Covers: e-commerce, electronic signature, security, trust services. | e-commerce, electronic signature, security, trust services, 119 | `ETSI/TS-119-101-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/119101/01.01.01_60/ts_119101v010101p.pdf) |
-| TS 119 102-2 | 1.4.1 | Covers: electronic signature, trust services, validation. | electronic signature, trust services, validation, 119, 102-2 | `ETSI/TS-119-102-2-V1.4.1` | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf) |
 | TS 119 172-4 | 1.1.1 | Covers: e-commerce, electronic signature, trust services. | e-commerce, electronic signature, trust services, 119, 172-4 | `ETSI/TS-119-172-4-V1.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11917204/01.01.01_60/ts_11917204v010101p.pdf) |
 | TS 119 182-1 | 1.2.1 | Covers: electronic signature, JSON. | electronic signature, json, 119, 182-1, authorization | `ETSI/TS-119-182-1-V1.2.1` | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.02.01_60/ts_11918201v010201p.pdf) |
 | TS 119 411-5 | 2.1.1 | Covers: cyber security, electronic signature, extended validation certificate, internet, public key, security, trust ser | cyber security, electronic signature, extended validation certificate, internet, public key | `ETSI/TS-119-411-5-V2.1.1` | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941105/02.01.01_60/ts_11941105v020101p.pdf) |
@@ -2902,6 +2901,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI EN 319403-1 V2.3.1 | 2.3.1 | 319-series, cited-by-eu-law, implementing-regulation, trust-services, unavailabl | [link](https://www.etsi.org/deliver/etsi_en/3194000_3194099/319403001/02.03.01_60/en_319403001v020301p.pdf) |
 | ETSI TR 119 411-5 V2.1.1 | 2.1.1 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_tr/119400_119499/11941105/02.01.01_60/tr_11941105v020101p.pdf) |
 | ETSI TS 119 102-1 V1.3.1 | 1.3.1 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11910201/01.03.01_60/ts_11910201v010301p.pdf) |
+| ETSI TS 119 102-2 V1.4.1 | 1.4.1 | 119-series, cited-by-eu-law, implementing-regulation, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf) |
 | ETSI TS 119 162-1 V1.1.0 | 1.1.0 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf) |
 | ETSI TS 119 162-2 V1.1.0 | 1.1.0 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11916202/01.01.00_60/ts_11916202v010100p.pdf) |
 | ETSI TS 119 412-1 V1.4.4 | 1.4.4 | 119-series, nested-reference, unavailable | [link](https://www.etsi.org/deliver/etsi_ts/119400_119499/11941201/01.04.04_60/ts_11941201v010404p.pdf) |
@@ -2974,7 +2974,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ISO-IEC ISO 3166 V1988 | 1988 | cited-by-eu-law, implementing-regulation, nested-reference, unavailable | [link](https://www.iso.org/search.html?q=ISO+3166) |
 | ISO-IEC ISO 3166-1 V2020 | 2020 | cited-by-eu-law, implementing-decision, implementing-regulation, nested-referenc | [link](https://www.iso.org/search.html?q=ISO+3166-1) |
 | ISO-IEC ISO 3166-2 V2020 | 2020 | cited-by-eu-law, implementing-regulation, nested-reference, unavailable | [link](https://www.iso.org/search.html?q=ISO+3166-2) |
-| ISO-IEC ISO 32000-1 V2008 | 2008 | nested-reference, unavailable | [link](https://www.iso.org/search.html?q=ISO+32000-1) |
+| ISO-IEC ISO 32000-1 | — | nested-reference, unavailable | [link](https://www.iso.org/search.html?q=ISO+32000-1) |
 | ISO-IEC ISO 3297 | — | nested-reference, unavailable | [link](https://www.iso.org/search.html?q=ISO+3297) |
 | ISO-IEC ISO 3309 | — | nested-reference, unavailable | [link](https://www.iso.org/search.html?q=ISO+3309) |
 | ISO-IEC ISO 39794 | — | cited-by-eu-law, implementing-regulation, unavailable | [link](https://www.iso.org/search.html?q=ISO+39794) |
@@ -3509,7 +3509,7 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI EN 319 142-1 V1.2.1 | IETF RFC 5652 | [link](https://www.rfc-editor.org/rfc/rfc5652.txt) | [online](https://www.rfc-editor.org/rfc/rfc5652.txt) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
 | ETSI EN 319 142-1 V1.2.1 | IETF RFC 5816 | [link](https://www.rfc-editor.org/rfc/rfc5816.txt) | [online](https://www.rfc-editor.org/rfc/rfc5816.txt) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
 | ETSI EN 319 142-1 V1.2.1 | IETF RFC 6960 | [link](https://www.rfc-editor.org/rfc/rfc6960.txt) | [online](https://www.rfc-editor.org/rfc/rfc6960.txt) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
-| ETSI EN 319 142-1 V1.2.1 | ISO-IEC ISO 32000-1 V2008 | [link](https://www.iso.org/search.html?q=ISO+32000-1) | [online](https://www.iso.org/search.html?q=ISO+32000-1) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
+| ETSI EN 319 142-1 V1.2.1 | ISO-IEC ISO 32000-1 | [link](https://www.iso.org/search.html?q=ISO+32000-1) | [online](https://www.iso.org/search.html?q=ISO+32000-1) · `ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf) |
 | ETSI EN 319 162-1 V1.1.1 | ETSI TS 119 162-1 V1.1.0 | [link](https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf) | [online](https://www.etsi.org/deliver/etsi_ts/119100_119199/11916201/01.01.00_60/ts_11916201v010100p.pdf) · `ETSI/EN-319-162-1-V1.1.1/EN-319-162-1-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-162-1-V1.1.1/EN-319-162-1-V1.1.1.pdf) |
 | ETSI EN 319 162-1 V1.1.1 | IETF RFC 1951 | [link](https://www.rfc-editor.org/rfc/rfc1951.txt) | [online](https://www.rfc-editor.org/rfc/rfc1951.txt) · `ETSI/EN-319-162-1-V1.1.1/EN-319-162-1-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-162-1-V1.1.1/EN-319-162-1-V1.1.1.pdf) |
 | ETSI EN 319 162-1 V1.1.1 | IETF RFC 2045 | [link](https://www.rfc-editor.org/rfc/rfc2045.txt) | [online](https://www.rfc-editor.org/rfc/rfc2045.txt) · `ETSI/EN-319-162-1-V1.1.1/EN-319-162-1-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/EN-319-162-1-V1.1.1/EN-319-162-1-V1.1.1.pdf) |
@@ -3677,12 +3677,6 @@ made by an issuer , such as a driver's | model, algorithm, attestation, attestat
 | ETSI TS 119 101 V1.1.1 | ISO-IEC ISO/IEC 27000 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+27000) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+27000) · `ETSI/TS-119-101-V1.1.1/TS-119-101-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-101-V1.1.1/TS-119-101-V1.1.1.pdf) |
 | ETSI TS 119 101 V1.1.1 | ISO-IEC ISO/IEC 27001 V2022 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+27001) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+27001) · `ETSI/TS-119-101-V1.1.1/TS-119-101-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-101-V1.1.1/TS-119-101-V1.1.1.pdf) |
 | ETSI TS 119 101 V1.1.1 | ISO-IEC ISO/IEC 27002 V2022 | [link](https://www.iso.org/search.html?q=ISO%2FIEC+27002) | [online](https://www.iso.org/search.html?q=ISO%2FIEC+27002) · `ETSI/TS-119-101-V1.1.1/TS-119-101-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-101-V1.1.1/TS-119-101-V1.1.1.pdf) |
-| ETSI TS 119 102-2 V1.4.1 | IETF RFC 3061 | [link](https://www.rfc-editor.org/rfc/rfc3061.txt) | [online](https://www.rfc-editor.org/rfc/rfc3061.txt) · `ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf) |
-| ETSI TS 119 102-2 V1.4.1 | IETF RFC 3161 | [link](https://www.rfc-editor.org/rfc/rfc3161.txt) | [online](https://www.rfc-editor.org/rfc/rfc3161.txt) · `ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf) |
-| ETSI TS 119 102-2 V1.4.1 | IETF RFC 4998 | [link](https://www.rfc-editor.org/rfc/rfc4998.txt) | [online](https://www.rfc-editor.org/rfc/rfc4998.txt) · `ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf) |
-| ETSI TS 119 102-2 V1.4.1 | IETF RFC 5035 | [link](https://www.rfc-editor.org/rfc/rfc5035.txt) | [online](https://www.rfc-editor.org/rfc/rfc5035.txt) · `ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf) |
-| ETSI TS 119 102-2 V1.4.1 | IETF RFC 6283 | [link](https://www.rfc-editor.org/rfc/rfc6283.txt) | [online](https://www.rfc-editor.org/rfc/rfc6283.txt) · `ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf) |
-| ETSI TS 119 102-2 V1.4.1 | ISO-IEC ISO 32000-1 V2008 | [link](https://www.iso.org/search.html?q=ISO+32000-1) | [online](https://www.iso.org/search.html?q=ISO+32000-1) · `ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf) |
 | ETSI TS 119 172-4 V1.1.1 | IETF RFC 3161 | [link](https://www.rfc-editor.org/rfc/rfc3161.txt) | [online](https://www.rfc-editor.org/rfc/rfc3161.txt) · `ETSI/TS-119-172-4-V1.1.1/TS-119-172-4-V1.1.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-172-4-V1.1.1/TS-119-172-4-V1.1.1.pdf) |
 | ETSI TS 119 182-1 V1.2.1 | IETF RFC 2616 | [link](https://www.rfc-editor.org/rfc/rfc2616.txt) | [online](https://www.rfc-editor.org/rfc/rfc2616.txt) · `ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf) |
 | ETSI TS 119 182-1 V1.2.1 | IETF RFC 3061 | [link](https://www.rfc-editor.org/rfc/rfc3061.txt) | [online](https://www.rfc-editor.org/rfc/rfc3061.txt) · `ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf` — md:—, html:—, [pdf](../referenced-standards/standards/ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf) |
@@ -8273,7 +8267,7 @@ flowchart LR
   IETF_RFC_6283["IETF RFC 6283"]:::specOk
   ETSI_TS_119_101_V1_1_1["ETSI TS 119 101<br/>V1.1.1"]:::specOk
   ETSI_TS_119_102_1_V1_3_1["ETSI TS 119 102-1<br/>V1.3.1"]:::spec
-  ETSI_TS_119_102_2_V1_4_1["ETSI TS 119 102-2<br/>V1.4.1"]:::specOk
+  ETSI_TS_119_102_2_V1_4_1["ETSI TS 119 102-2<br/>V1.4.1"]:::spec
   ETSI_TS_119_162_1_V1_1_0["ETSI TS 119 162-1<br/>V1.1.0"]:::spec
   ETSI_TS_119_162_2_V1_1_0["ETSI TS 119 162-2<br/>V1.1.0"]:::spec
   ETSI_TS_119_172_4_V1_1_1["ETSI TS 119 172-4<br/>V1.1.1"]:::specOk
@@ -9436,7 +9430,7 @@ flowchart LR
   ISO_IEC_ISO_3166_1_V2020["ISO-IEC ISO 3166-1<br/>V2020"]:::spec
   ISO_IEC_ISO_3166_2_V2020["ISO-IEC ISO 3166-2<br/>V2020"]:::spec
   ISO_IEC_ISO_3166_V1988["ISO-IEC ISO 3166<br/>V1988"]:::spec
-  ISO_IEC_ISO_32000_1_V2008["ISO-IEC ISO 32000-1<br/>V2008"]:::spec
+  ISO_IEC_ISO_32000_1["ISO-IEC ISO 32000-1"]:::spec
   ISO_IEC_ISO_3297["ISO-IEC ISO 3297"]:::spec
   ISO_IEC_ISO_3309["ISO-IEC ISO 3309"]:::spec
   ISO_IEC_ISO_39794["ISO-IEC ISO 39794"]:::spec
@@ -11274,7 +11268,6 @@ flowchart LR
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_3061
   ETSI_EN_319_522_2_V1_2_1 -.->|references| IETF_RFC_3061
   ETSI_EN_319_522_3_V1_2_1 -.->|references| IETF_RFC_3061
-  ETSI_TS_119_102_2_V1_4_1 -.->|references| IETF_RFC_3061
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_3061
   IETF_RFC_5141 -.->|references| IETF_RFC_3061
   IETF_RFC_4210 -.->|references| IETF_RFC_3066
@@ -11300,7 +11293,6 @@ flowchart LR
   ETSI_EN_319_421_V1_3_1 -.->|references| IETF_RFC_3161
   ETSI_EN_319_422_V1_1_1 -.->|references| IETF_RFC_3161
   ETSI_TS_101_861_V1_4_1 -.->|references| IETF_RFC_3161
-  ETSI_TS_119_102_2_V1_4_1 -.->|references| IETF_RFC_3161
   ETSI_TS_119_172_4_V1_1_1 -.->|references| IETF_RFC_3161
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_3161
   ETSI_TS_119_511_V1_1_1 -.->|references| IETF_RFC_3161
@@ -12148,7 +12140,6 @@ flowchart LR
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_4998
   ETSI_EN_319_162_1_V1_1_1 -.->|references| IETF_RFC_4998
   ETSI_EN_319_162_2_V1_1_1 -.->|references| IETF_RFC_4998
-  ETSI_TS_119_102_2_V1_4_1 -.->|references| IETF_RFC_4998
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_4998
   ETSI_TS_119_511_V1_1_1 -.->|references| IETF_RFC_4998
   IETF_RFC_5911 -.->|references| IETF_RFC_4998
@@ -12157,7 +12148,6 @@ flowchart LR
   ETSI_EN_319_122_1_V1_3_1 -.->|references| IETF_RFC_5035
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_5035
   ETSI_EN_319_522_3_V1_2_1 -.->|references| IETF_RFC_5035
-  ETSI_TS_119_102_2_V1_4_1 -.->|references| IETF_RFC_5035
   ETSI_TS_119_182_1_V1_2_1 -.->|references| IETF_RFC_5035
   IETF_RFC_5816 -.->|references| IETF_RFC_5035
   IETF_RFC_5911 -.->|references| IETF_RFC_5035
@@ -12707,7 +12697,6 @@ flowchart LR
   ETSI_EN_319_132_1_V1_3_1 -.->|references| IETF_RFC_6283
   ETSI_EN_319_162_1_V1_1_1 -.->|references| IETF_RFC_6283
   ETSI_EN_319_162_2_V1_1_1 -.->|references| IETF_RFC_6283
-  ETSI_TS_119_102_2_V1_4_1 -.->|references| IETF_RFC_6283
   ETSI_TS_119_511_V1_1_1 -.->|references| IETF_RFC_6283
   IETF_RFC_7157 -.->|references| IETF_RFC_6296
   IETF_RFC_9147 -.->|references| IETF_RFC_6298
@@ -14051,8 +14040,7 @@ flowchart LR
   IETF_RFC_4519 -.->|references| ISO_IEC_ISO_3166_V1988
   IETF_RFC_5646 -.->|references| ISO_IEC_ISO_3166_V1988
   IETF_RFC_6365 -.->|references| ISO_IEC_ISO_3166_V1988
-  ETSI_EN_319_142_1_V1_2_1 -.->|references| ISO_IEC_ISO_32000_1_V2008
-  ETSI_TS_119_102_2_V1_4_1 -.->|references| ISO_IEC_ISO_32000_1_V2008
+  ETSI_EN_319_142_1_V1_2_1 -.->|references| ISO_IEC_ISO_32000_1
   IETF_RFC_5741 -.->|references| ISO_IEC_ISO_3297
   IETF_RFC_1952 -.->|references| ISO_IEC_ISO_3309
   legal_2024_2977 -->|cites| ISO_IEC_ISO_39794
