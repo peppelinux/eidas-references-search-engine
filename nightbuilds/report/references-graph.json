@@ -9848,6 +9848,12 @@
       "to": "IETF RFC 3061"
     },
     {
+      "from": "ETSI TS 119 102-2 V1.4.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+      "to": "IETF RFC 3061"
+    },
+    {
       "from": "ETSI TS 119 182-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf",
@@ -9995,6 +10001,12 @@
       "from": "ETSI TS 101 861 V1.4.1",
       "kind": "references",
       "source": "ETSI/TS-101-861-V1.4.1/TS-101-861-V1.4.1.pdf",
+      "to": "IETF RFC 3161"
+    },
+    {
+      "from": "ETSI TS 119 102-2 V1.4.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
       "to": "IETF RFC 3161"
     },
     {
@@ -15080,6 +15092,12 @@
       "to": "IETF RFC 4998"
     },
     {
+      "from": "ETSI TS 119 102-2 V1.4.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+      "to": "IETF RFC 4998"
+    },
+    {
       "from": "ETSI TS 119 182-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf",
@@ -15125,6 +15143,12 @@
       "from": "ETSI EN 319 522-3 V1.2.1",
       "kind": "references",
       "source": "ETSI/EN-319-522-3-V1.2.1/EN-319-522-3-V1.2.1.pdf",
+      "to": "IETF RFC 5035"
+    },
+    {
+      "from": "ETSI TS 119 102-2 V1.4.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
       "to": "IETF RFC 5035"
     },
     {
@@ -18419,6 +18443,12 @@
       "from": "ETSI EN 319 162-2 V1.1.1",
       "kind": "references",
       "source": "ETSI/EN-319-162-2-V1.1.1/EN-319-162-2-V1.1.1.pdf",
+      "to": "IETF RFC 6283"
+    },
+    {
+      "from": "ETSI TS 119 102-2 V1.4.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
       "to": "IETF RFC 6283"
     },
     {
@@ -26483,7 +26513,13 @@
       "from": "ETSI EN 319 142-1 V1.2.1",
       "kind": "references",
       "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
-      "to": "ISO-IEC ISO 32000-1"
+      "to": "ISO-IEC ISO 32000-1 V2008"
+    },
+    {
+      "from": "ETSI TS 119 102-2 V1.4.1",
+      "kind": "references",
+      "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+      "to": "ISO-IEC ISO 32000-1 V2008"
     },
     {
       "from": "IETF RFC 5741",
@@ -30098,7 +30134,7 @@
       "to": "ARF EC technical specifications (TS01\u2013TS14) V3.0.0"
     }
   ],
-  "generated_at": "2026-10-04T14:52:00.166753+00:00",
+  "generated_at": "2026-10-06T16:00:51.538029+00:00",
   "nodes": [
     {
       "body": "ARF",
@@ -33264,6 +33300,13 @@
         },
         {
           "body": "ETSI",
+          "designation": "TS 119 102-2",
+          "folder": "ETSI/TS-119-102-2-V1.4.1",
+          "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+          "version": "1.4.1"
+        },
+        {
+          "body": "ETSI",
           "designation": "TS 119 182-1",
           "folder": "ETSI/TS-119-182-1-V1.2.1",
           "source": "ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf",
@@ -33366,6 +33409,13 @@
           "folder": "ETSI/EN-319-162-2-V1.1.1",
           "source": "ETSI/EN-319-162-2-V1.1.1/EN-319-162-2-V1.1.1.pdf",
           "version": "1.1.1"
+        },
+        {
+          "body": "ETSI",
+          "designation": "TS 119 102-2",
+          "folder": "ETSI/TS-119-102-2-V1.4.1",
+          "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+          "version": "1.4.1"
         },
         {
           "body": "ETSI",
@@ -33532,7 +33582,12 @@
         "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_60/ts_11910202v010401p.pdf",
         "https://www.etsi.org/deliver/etsi_ts/119100_119199/11910202/01.04.01_20/ts_11910202v010401a.pdf"
       ],
-      "files": {},
+      "files": {
+        "pdf": {
+          "path": "standards/ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+          "sha256": "b3481e9078e60901dd480ec2605e1daa2b84e47aebd73bf6b681e25ef27dfb83"
+        }
+      },
       "folder": "ETSI/TS-119-102-2-V1.4.1",
       "id": "ETSI TS 119 102-2 V1.4.1",
       "parent_legal_regulations": [
@@ -33557,17 +33612,34 @@
       ],
       "parent_specifications": [],
       "purpose": null,
-      "scope_keywords": [],
-      "search_text": "ETSI TS 119 102-2 1.4.1 119-series cited-by-eu-law implementing-regulation unavailable 2025-1942 Recognition of qualified validation services 32025R1942 2025-1945 Qualified certificates for signatures and seals 32025R1945",
-      "status": "unavailable",
-      "summary": null,
+      "scope_keywords": [
+        "electronic signature",
+        "trust services",
+        "validation",
+        "119",
+        "102-2",
+        "authorization",
+        "certificate",
+        "certificates",
+        "http",
+        "https",
+        "key",
+        "presentation",
+        "qualified",
+        "seal",
+        "signature",
+        "signatures"
+      ],
+      "search_text": "ETSI TS 119 102-2 1.4.1 ETSI TS 119 102-2 Covers: electronic signature, trust services, validation. electronic signature trust services validation 119 102-2 authorization certificate certificates http https key presentation qualified seal signature signatures 119-series cited-by-eu-law implementing-regulation unchanged 2025-1942 Recognition of qualified validation services 32025R1942 2025-1945 Qualified certificates for signatures and seals 32025R1945",
+      "status": "unchanged",
+      "summary": "Covers: electronic signature, trust services, validation.",
       "tags": [
         "119-series",
         "cited-by-eu-law",
         "implementing-regulation",
-        "unavailable"
+        "unchanged"
       ],
-      "title": null,
+      "title": "ETSI TS 119 102-2",
       "type": "specification",
       "version": "1.4.1"
     },
@@ -49254,6 +49326,13 @@
         },
         {
           "body": "ETSI",
+          "designation": "TS 119 102-2",
+          "folder": "ETSI/TS-119-102-2-V1.4.1",
+          "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+          "version": "1.4.1"
+        },
+        {
+          "body": "ETSI",
           "designation": "TS 119 182-1",
           "folder": "ETSI/TS-119-182-1-V1.2.1",
           "source": "ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf",
@@ -50773,6 +50852,13 @@
           "designation": "TS 101 861",
           "folder": "ETSI/TS-101-861-V1.4.1",
           "source": "ETSI/TS-101-861-V1.4.1/TS-101-861-V1.4.1.pdf",
+          "version": "1.4.1"
+        },
+        {
+          "body": "ETSI",
+          "designation": "TS 119 102-2",
+          "folder": "ETSI/TS-119-102-2-V1.4.1",
+          "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
           "version": "1.4.1"
         },
         {
@@ -66329,6 +66415,13 @@
         },
         {
           "body": "ETSI",
+          "designation": "TS 119 102-2",
+          "folder": "ETSI/TS-119-102-2-V1.4.1",
+          "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+          "version": "1.4.1"
+        },
+        {
+          "body": "ETSI",
           "designation": "TS 119 182-1",
           "folder": "ETSI/TS-119-182-1-V1.2.1",
           "source": "ETSI/TS-119-182-1-V1.2.1/TS-119-182-1-V1.2.1.pdf",
@@ -70478,7 +70571,7 @@
       "files": {
         "html": {
           "path": "standards/IETF/SD-JWT-VC/SD-JWT-VC.html",
-          "sha256": "ebbe445ce6c04cce5200b369d65b1906652b9648e3ad26b9fe85f3adccff1d5d"
+          "sha256": "59a8ead746e4171d1662c3aa786208e7eb52170c20f5da5b3ba591f14e8cd3f2"
         }
       },
       "folder": "IETF/SD-JWT-VC",
@@ -110586,8 +110679,8 @@
         "https://www.iso.org/search.html?q=ISO+32000-1"
       ],
       "files": {},
-      "folder": "ISO-IEC/ISO-32000-1",
-      "id": "ISO-IEC ISO 32000-1",
+      "folder": "ISO-IEC/ISO-32000-1-V2008",
+      "id": "ISO-IEC ISO 32000-1 V2008",
       "parent_legal_regulations": [],
       "parent_specifications": [
         {
@@ -110596,11 +110689,18 @@
           "folder": "ETSI/EN-319-142-1-V1.2.1",
           "source": "ETSI/EN-319-142-1-V1.2.1/EN-319-142-1-V1.2.1.pdf",
           "version": "1.2.1"
+        },
+        {
+          "body": "ETSI",
+          "designation": "TS 119 102-2",
+          "folder": "ETSI/TS-119-102-2-V1.4.1",
+          "source": "ETSI/TS-119-102-2-V1.4.1/TS-119-102-2-V1.4.1.pdf",
+          "version": "1.4.1"
         }
       ],
       "purpose": null,
       "scope_keywords": [],
-      "search_text": "ISO-IEC ISO 32000-1 nested-reference unavailable",
+      "search_text": "ISO-IEC ISO 32000-1 2008 nested-reference unavailable",
       "status": "unavailable",
       "summary": null,
       "tags": [
@@ -110609,7 +110709,7 @@
       ],
       "title": null,
       "type": "specification",
-      "version": null
+      "version": "2008"
     },
     {
       "body": "ISO-IEC",
