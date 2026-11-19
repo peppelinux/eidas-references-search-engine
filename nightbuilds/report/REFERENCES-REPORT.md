@@ -1,6 +1,6 @@
 # Technical references report
 
-Generated: 2026-11-18T18:09:31.326802+00:00
+Generated: 2026-11-19T18:21:00.137596+00:00
 
 Open **`index.html`** in this folder for the interactive version.
 
